@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<title>Ernest 每日市觀 Dashboard — 2026-09-01</title>
+<style>
+/* ============================================================
+   ERNEST 市觀 · WorldMonitor-style Command Center
+   深色指揮中心 · 霓虹 Glow · 交易終端 / 態勢感知
+============================================================ */
+:root{
+  --bg:#05080f;
+  --bg2:#080d18;
+  --panel:rgba(10,17,31,.72);
+  --panel-solid:#0a1120;
+  --line:rgba(86,156,214,.16);
+  --line-strong:rgba(94,190,255,.32);
+  --txt:#eaf4fd;
+  --txt-dim:#b2c5de;
+  --txt-faint:#7d93b0;
+  --cyan:#2dd4ff;
+  --green:#2ee6a8;
+  --red:#ff4d6d;
+  --amber:#ffb020;
+  --violet:#9d8cff;
+  --mono:"Chakra Petch","IBM Plex Mono",ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+  --han:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{
+  background:
+    radial-gradient(1100px 600px at 72% -8%, rgba(45,212,255,.07), transparent 60%),
+    radial-gradient(900px 520px at 8% 4%, rgba(255,77,109,.05), transparent 60%),
+    var(--bg);
+  color:var(--txt);
+  font-family:var(--han);
+  font-size:13.5px;
+  line-height:1.5;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+/* 細網格背景 */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(86,156,214,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(86,156,214,.05) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(ellipse 90% 80% at 50% 30%,#000 30%,transparent 100%);
+}
+/* 掃描線質感 */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px);
+}
+.vignette{position:fixed;inset:0;pointer-events:none;z-index:1;
+  background:radial-gradient(ellipse 120% 90% at 50% 40%,transparent 62%,rgba(0,0,0,.35) 100%);}
+
+::selection{background:rgba(45,212,255,.28)}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-track{background:#070b14}
+::-webkit-scrollbar-thumb{background:#16283f;border-radius:9px;border:2px solid #070b14}
+::-webkit-scrollbar-thumb:hover{background:#244463}
+
+.wrap{position:relative;z-index:2;max-width:1720px;margin:0 auto;padding:10px 14px 14px}
+
+/* ---------- 通用面板 ---------- */
+.panel{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  backdrop-filter:blur(7px);
+  position:relative;
+  box-shadow:0 10px 34px rgba(0,0,0,.42),inset 0 1px 0 rgba(150,200,255,.05);
+}
+.panel-head{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 12px 8px;
+  border-bottom:1px solid var(--line);
+  font-family:var(--mono);
+  font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--cyan);
+}
+.panel-head .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);
+  box-shadow:0 0 8px var(--cyan);flex:none;animation:blink 2.4s infinite}
+.panel-head .zh{font-family:var(--han);letter-spacing:.05em;color:var(--txt);
+  font-weight:700;font-size:13px;text-transform:none}
+.panel-head .sub{color:var(--txt-faint);font-weight:400;letter-spacing:.04em;text-transform:none}
+.panel-head .right{margin-left:auto;display:flex;gap:6px;align-items:center}
+.live-tag{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10px;
+  color:var(--red);border:1px solid rgba(255,77,109,.4);background:rgba(255,77,109,.09);
+  padding:2px 7px;border-radius:20px;letter-spacing:.1em}
+.live-tag i{width:6px;height:6px;border-radius:50%;background:var(--red);
+  box-shadow:0 0 8px var(--red);animation:blink 1.1s infinite}
+.chip{font-family:var(--mono);font-size:10px;color:var(--txt-dim);
+  border:1px solid var(--line);padding:2px 7px;border-radius:5px;letter-spacing:.06em}
+.chip b{color:var(--amber);font-weight:600}
+
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes pulse-ring{0%{transform:scale(.35);opacity:.95}100%{transform:scale(2.6);opacity:0}}
+@keyframes flick{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.75}98%{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.reveal{animation:rise .6s cubic-bezier(.2,.8,.25,1) both}
+
+.up{color:var(--green)} .down{color:var(--red)} .neu{color:var(--txt-dim)}
+.arrow{font-family:var(--mono);font-weight:700}
+
+/* ---------- 頂欄 ---------- */
+.topbar{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:10px 14px;margin-bottom:10px;
+  border-radius:12px;
+  background:linear-gradient(180deg,rgba(13,22,39,.92),rgba(8,13,24,.85));
+  border:1px solid var(--line-strong);
+  box-shadow:0 0 0 1px rgba(45,212,255,.05),0 12px 40px rgba(0,0,0,.5);
+}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo-mark{width:38px;height:38px;position:relative;flex:none}
+.logo-mark::before{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  border:1.5px solid rgba(45,212,255,.55);
+  box-shadow:0 0 14px rgba(45,212,255,.35),inset 0 0 12px rgba(45,212,255,.25);
+}
+.logo-mark::after{
+  content:"";position:absolute;inset:9px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,var(--cyan),#0b3a52 75%);
+  box-shadow:0 0 12px rgba(45,212,255,.6);
+}
+.logo-mark .orbit{position:absolute;inset:-4px;border-radius:50%;
+  border:1px dashed rgba(255,176,32,.5);animation:spin 14s linear infinite}
+.logo-mark .sat{position:absolute;top:-3px;left:50%;width:6px;height:6px;margin-left:-3px;
+  border-radius:50%;background:var(--amber);box-shadow:0 0 8px var(--amber)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.logo-txt b{font-size:17px;font-weight:800;letter-spacing:.06em;
+  background:linear-gradient(90deg,#eaf6ff,#7fd9ff 55%,#2dd4ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 10px rgba(45,212,255,.35))}
+.logo-txt span{display:block;font-family:var(--mono);font-size:9px;color:var(--txt-faint);
+  letter-spacing:.32em;margin-top:1px}
+.top-sep{width:1px;height:34px;background:var(--line);flex:none}
+
+.clockbox{flex:none;min-width:150px}
+.clockbox .date{font-family:var(--mono);font-size:12px;color:var(--txt);letter-spacing:.05em}
+.clockbox .time{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--cyan);
+  text-shadow:0 0 7px rgba(45,212,255,.35);letter-spacing:.08em;line-height:1.1;animation:flick 9s infinite}
+.clockbox .time small{font-size:11px;color:var(--txt-dim);margin-left:6px;letter-spacing:.1em}
+.clockbox .date small{color:var(--txt-dim);margin-left:6px}
+
+/* 風險溫度計 */
+.thermo{flex:none;display:flex;align-items:center;gap:10px}
+.thermo-label{font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--txt-faint);
+  writing-mode:initial;text-align:right;line-height:1.3}
+.thermo-bar{position:relative;width:190px}
+.thermo-segs{display:flex;gap:3px}
+.thermo-segs i{flex:1;height:9px;border-radius:2px;opacity:.22;position:relative;overflow:hidden}
+.thermo-segs i:nth-child(1){background:var(--green);box-shadow:0 0 8px rgba(46,230,168,.4)}
+.thermo-segs i:nth-child(2){background:var(--amber);box-shadow:0 0 8px rgba(255,176,32,.4)}
+.thermo-segs i:nth-child(3){background:#ff7a3c;box-shadow:0 0 10px rgba(255,122,60,.5)}
+.thermo-segs i:nth-child(4){background:var(--red);box-shadow:0 0 10px rgba(255,77,109,.5)}
+.thermo-segs i.on{opacity:1}
+.thermo-names{display:flex;justify-content:space-between;font-family:var(--mono);
+  font-size:8.5px;color:var(--txt-faint);margin-top:3px;letter-spacing:.05em}
+.thermo-names .cur{color:#ff7a3c;font-weight:700}
+.needle{position:absolute;top:-7px;width:0;height:0;border-left:6px solid transparent;
+  border-right:6px solid transparent;border-top:8px solid #fff;
+  filter:drop-shadow(0 0 6px rgba(255,255,255,.8));transition:left .8s}
+.thermo-val{font-family:var(--mono);font-size:18px;font-weight:700;color:#ff8f4a;
+  text-shadow:0 0 6px rgba(255,122,60,.35);line-height:1}
+.thermo-val small{display:block;font-size:8.5px;color:var(--txt-faint);letter-spacing:.15em;font-weight:400}
+
+/* 情緒六項 */
+.sentiment{display:flex;align-items:stretch;gap:6px;margin-left:auto}
+.sent{padding:7px 11px;min-width:88px;position:relative;border-radius:8px;
+  background:rgba(13,22,39,.85);border:1px solid var(--line)}
+.sent.g-tile{background:linear-gradient(180deg,rgba(46,230,168,.16),rgba(46,230,168,.04));border-color:rgba(46,230,168,.45)}
+.sent.r-tile{background:linear-gradient(180deg,rgba(255,77,109,.16),rgba(255,77,109,.04));border-color:rgba(255,77,109,.45)}
+.sent .k{font-family:var(--mono);font-size:9.5px;color:var(--txt-dim);letter-spacing:.08em;display:flex;gap:4px;align-items:center}
+.sent .v{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--txt);line-height:1.2;margin:1px 0}
+.sent .p{font-family:var(--mono);font-size:13px;font-weight:800;display:flex;align-items:center;gap:2px}
+.regime-pill{display:flex;align-items:center;gap:7px;padding:7px 12px;
+  background:linear-gradient(90deg,rgba(255,77,109,.16),rgba(255,176,32,.10));
+  border-left:1px solid var(--line-strong)}
+.regime-pill .ricon{font-size:15px}
+.regime-pill b{font-size:12.5px;color:#ffd0a8;white-space:nowrap}
+.regime-pill small{display:block;font-family:var(--mono);font-size:9px;color:var(--amber);letter-spacing:.08em;white-space:nowrap}
+
+/* ---------- 主版面 ---------- */
+.grid{display:grid;grid-template-columns:330px minmax(0,1fr) 350px;gap:10px;align-items:start}
+.col{display:flex;flex-direction:column;gap:10px;min-width:0}
+
+/* ---------- 左欄：風險時鐘 ---------- */
+.clock-hero{padding:12px;text-align:center;
+  background:radial-gradient(circle at 50% 0%,rgba(255,77,109,.12),transparent 70%)}
+.countdown{font-family:var(--mono);font-size:34px;font-weight:700;letter-spacing:.06em;
+  color:var(--red);text-shadow:0 0 9px rgba(255,77,109,.4);line-height:1.1}
+.countdown small{font-size:13px;color:var(--txt-dim);letter-spacing:.2em;margin:0 2px}
+.cd-label{font-size:11px;color:var(--txt-dim);margin-top:4px}
+.event-next{margin-top:10px;padding:9px 10px;border:1px solid rgba(255,77,109,.4);
+  border-radius:8px;background:rgba(255,77,109,.07);text-align:left}
+.event-next .t{display:flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:#ffc9d3}
+.event-next .t .blip{width:8px;height:8px;border-radius:50%;background:var(--red);
+  box-shadow:0 0 10px var(--red);animation:blink 1.2s infinite}
+.event-next .m{font-size:11px;color:var(--txt-dim);margin-top:3px}
+.ea-pause{margin-top:8px;display:flex;align-items:center;gap:7px;font-family:var(--mono);
+  font-size:10.5px;color:var(--amber);background:rgba(255,176,32,.08);
+  border:1px dashed rgba(255,176,32,.4);border-radius:7px;padding:7px 9px;text-align:left}
+.ea-pause b{color:var(--red)}
+.mini-cal{padding:6px 12px 10px}
+.mini-cal .row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line)}
+.mini-cal .row:last-child{border-bottom:none}
+.mini-cal .tm{font-family:var(--mono);font-size:11px;color:var(--cyan);width:44px;flex:none}
+.mini-cal .ev{flex:1;font-size:11.5px;color:var(--txt)}
+.mini-cal .impact{font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;padding:1px 6px;border-radius:4px;flex:none}
+.impact.hi{color:#fff;background:linear-gradient(180deg,rgba(255,77,109,.9),rgba(200,40,70,.85));border:1px solid rgba(255,77,109,.5);font-weight:800}
+.impact.mid{color:#1a1206;background:linear-gradient(180deg,rgba(255,176,32,.92),rgba(214,140,22,.9));border:1px solid rgba(255,176,32,.5);font-weight:800}
+.impact.lo{color:var(--txt-dim);background:rgba(126,147,173,.14);border:1px solid var(--line)}
+
+/* ---------- 事件卡 ---------- */
+.ev-card{margin:8px 10px;padding:10px 12px 10px 13px;border-radius:9px;position:relative;
+  background:rgba(13,22,39,.75);border:1px solid var(--line);border-left:3px solid var(--line-strong);
+  transition:transform .15s,border-color .2s}
+.ev-card:hover{transform:translateX(2px)}
+.ev-card.sw{background:linear-gradient(90deg,rgba(255,77,109,.16),rgba(255,77,109,.03) 70%);
+  border-color:rgba(255,77,109,.35);border-left-color:var(--red)}
+.ev-card.hot{background:linear-gradient(90deg,rgba(255,176,32,.13),rgba(255,176,32,.03) 70%);
+  border-color:rgba(255,176,32,.3);border-left-color:var(--amber)}
+.ev-card.cb{background:linear-gradient(90deg,rgba(45,212,255,.12),rgba(45,212,255,.03) 70%);
+  border-color:rgba(45,212,255,.3);border-left-color:var(--cyan)}
+.ev-card .headline{color:#f4f9ff}
+.ev-card .top{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.ev-flag{font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;padding:1px 6px;border-radius:4px;font-weight:700}
+.ev-flag.sw{color:#fff;background:linear-gradient(180deg,rgba(255,77,109,.95),rgba(190,30,65,.9));border:1px solid rgba(255,120,145,.6);font-weight:800}
+.ev-flag.hot{color:#1a1206;background:linear-gradient(180deg,rgba(255,176,32,.95),rgba(220,140,18,.9));border:1px solid rgba(255,190,70,.55);font-weight:800}
+.ev-card .loc{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--txt-dim);letter-spacing:.05em}
+.ev-card .headline{font-size:13px;font-weight:700;color:var(--txt);line-height:1.45}
+.ev-card .tags{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 6px}
+.tag{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  padding:3px 9px;border-radius:6px;border:1px solid transparent;color:#fff}
+.tag.g{background:linear-gradient(180deg,rgba(46,230,168,.85),rgba(20,160,115,.85));box-shadow:0 1px 6px rgba(46,230,168,.35)}
+.tag.r{background:linear-gradient(180deg,rgba(255,77,109,.9),rgba(200,40,70,.85));box-shadow:0 1px 6px rgba(255,77,109,.35)}
+.tag.a{background:linear-gradient(180deg,rgba(255,176,32,.9),rgba(200,130,20,.85));color:#1a1206;box-shadow:0 1px 6px rgba(255,176,32,.3)}
+.tag.c{background:linear-gradient(180deg,rgba(45,212,255,.9),rgba(20,150,200,.85));color:#04121c;box-shadow:0 1px 6px rgba(45,212,255,.3)}
+.tag .strength{font-size:11.5px;font-weight:800}
+.if-then{font-size:11px;color:var(--txt-dim);border-left:2px solid var(--cyan);
+  padding:2px 0 2px 8px;line-height:1.5}
+.if-then b{color:var(--cyan);font-weight:600}
+.strength{font-family:var(--mono);font-weight:800;letter-spacing:1px}
+
+/* ---------- 中央地球 ---------- */
+.globe-panel{overflow:hidden}
+.globe-stage{position:relative;height:640px;background:
+  radial-gradient(circle at 50% 46%,rgba(20,44,72,.5),transparent 62%),
+  radial-gradient(circle at 50% 110%,rgba(45,212,255,.05),transparent 60%);}
+#globeViz{position:absolute;inset:0;cursor:grab}
+#globeViz canvas{position:absolute!important;left:0!important;top:0!important;width:100%!important;height:100%!important;display:block}
+#globeViz:active{cursor:grabbing}
+.globe-loading{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;
+  align-items:center;justify-content:center;color:var(--txt-faint);font-family:var(--mono);
+  font-size:11px;letter-spacing:.2em;z-index:3;pointer-events:none}
+.globe-loading .ring-load{width:44px;height:44px;border-radius:50%;
+  border:2px solid rgba(45,212,255,.15);border-top-color:var(--cyan);
+  animation:spin 1s linear infinite}
+.corner{position:absolute;width:18px;height:18px;border-color:var(--cyan);opacity:.55;z-index:4;pointer-events:none}
+.corner.tl{top:10px;left:10px;border-top:1.5px solid;border-left:1.5px solid}
+.corner.tr{top:10px;right:10px;border-top:1.5px solid;border-right:1.5px solid}
+.corner.bl{bottom:10px;left:10px;border-bottom:1.5px solid;border-left:1.5px solid}
+.corner.br{bottom:10px;right:10px;border-bottom:1.5px solid;border-right:1.5px solid}
+
+/* 地球脈衝標記 */
+.g-marker{position:relative;transform:translate(-50%,-50%);cursor:pointer;pointer-events:auto}
+.g-marker::before{content:'';position:absolute;left:50%;top:50%;width:40px;height:40px;
+  transform:translate(-50%,-50%);border-radius:50%;pointer-events:auto}
+.g-marker .core{width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;
+  position:relative;z-index:2;box-shadow:0 0 12px currentColor}
+.g-marker .ripple{position:absolute;inset:-2px;border-radius:50%;border:1.5px solid currentColor;
+  animation:pulse-ring 2.1s ease-out infinite;z-index:1}
+.g-marker .ripple.r2{animation-delay:1.05s}
+.g-marker .mlabel{position:absolute;left:50%;bottom:19px;transform:translateX(-50%);
+  white-space:nowrap;pointer-events:auto;cursor:pointer;
+  font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.05em;color:#fff;z-index:3;
+  padding:3px 9px;border-radius:6px;
+  background:linear-gradient(180deg,rgba(8,15,28,.92),rgba(8,15,28,.82));
+  border:1px solid currentColor;
+  box-shadow:0 2px 10px rgba(0,0,0,.65),0 0 10px rgba(45,212,255,.12);
+  text-shadow:0 1px 2px rgba(0,0,0,.9)}
+.g-marker .mlabel::after{content:'';position:absolute;left:50%;top:100%;transform:translateX(-50%);
+  border:5px solid transparent;border-top-color:currentColor;opacity:.85}
+.g-marker.red{color:var(--red)} .g-marker.amber{color:var(--amber)} .g-marker.cyan{color:var(--cyan)}
+.g-marker.red .core{background:radial-gradient(circle at 35% 30%,#ff9db0,var(--red))}
+.g-marker.amber .core{background:radial-gradient(circle at 35% 30%,#ffe0a3,var(--amber))}
+.g-marker.cyan .core{background:radial-gradient(circle at 35% 30%,#bff2ff,var(--cyan))}
+.g-marker:hover .core{transform:scale(1.25)}
+.g-marker .core{transition:transform .15s}
+
+/* popover 傳導鏈 */
+.popover{position:absolute;top:52px;right:14px;width:288px;z-index:20;
+  background:linear-gradient(180deg,rgba(12,20,36,.96),rgba(8,13,24,.96));
+  border:1px solid var(--line-strong);border-radius:10px;
+  box-shadow:0 18px 50px rgba(0,0,0,.65),0 0 24px rgba(45,212,255,.12);
+  padding:12px;display:none;animation:rise .25s ease both}
+.popover.open{display:block}
+.popover .ph{display:flex;align-items:flex-start;gap:8px}
+.popover .ph b{font-size:13.5px;color:#fff;line-height:1.35}
+.popover .ph .x{margin-left:auto;flex:none;width:22px;height:22px;border-radius:6px;
+  border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--txt-dim);
+  font-family:var(--mono);cursor:pointer;line-height:20px;font-size:12px}
+.popover .ph .x:hover{color:var(--red);border-color:rgba(255,77,109,.4)}
+.popover .pmeta{font-family:var(--mono);font-size:10px;color:var(--txt-dim);
+  letter-spacing:.08em;margin:5px 0 9px;display:flex;gap:8px;flex-wrap:wrap}
+.chain{display:flex;flex-direction:column;gap:0;margin-bottom:9px}
+.chain .step{display:flex;align-items:center;gap:8px;font-size:11px;padding:3px 0;color:var(--txt)}
+.chain .step .n{font-family:var(--mono);width:18px;height:18px;border-radius:50%;flex:none;
+  border:1px solid rgba(45,212,255,.4);color:var(--cyan);font-size:9.5px;
+  display:flex;align-items:center;justify-content:center;background:rgba(45,212,255,.08)}
+.chain .link{width:1px;height:10px;margin-left:9px;background:linear-gradient(var(--cyan),transparent)}
+.assets-hit{border-top:1px dashed var(--line);padding-top:8px}
+.assets-hit .ah-t{font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--txt-faint);margin-bottom:6px}
+.ah-row{display:flex;align-items:center;gap:8px;font-size:11.5px;padding:3px 0}
+.ah-row .emo{font-size:13px}
+.ah-row .nm{flex:1;color:var(--txt)}
+.ah-row .dir{font-family:var(--mono);font-size:10px;font-weight:700;padding:1px 7px;border-radius:4px}
+.ah-row .dir.g{color:#fff;background:linear-gradient(180deg,rgba(46,230,168,.85),rgba(20,160,115,.85));border:1px solid rgba(46,230,168,.5);font-weight:800}
+.ah-row .dir.r{color:#fff;background:linear-gradient(180deg,rgba(255,77,109,.9),rgba(200,40,70,.85));border:1px solid rgba(255,77,109,.5);font-weight:800}
+.ah-row .dir.a{color:#1a1206;background:linear-gradient(180deg,rgba(255,176,32,.92),rgba(214,140,22,.9));border:1px solid rgba(255,176,32,.5);font-weight:800}
+.ah-row .dir.n{color:var(--txt-dim);background:rgba(126,147,173,.14);border:1px solid var(--line)}
+.pop-hint{position:absolute;left:14px;bottom:46px;z-index:5;font-family:var(--mono);
+  font-size:12px;font-weight:700;color:var(--cyan);letter-spacing:.08em;
+  border:1px solid rgba(45,212,255,.45);background:rgba(6,14,26,.88);
+  padding:7px 14px;border-radius:20px;
+  box-shadow:0 2px 12px rgba(0,0,0,.55),0 0 14px rgba(45,212,255,.12)}
+
+/* 跑馬燈 */
+.ticker{border-top:1px solid var(--line);height:30px;overflow:hidden;position:relative;
+  background:rgba(4,8,15,.8);display:flex;align-items:center}
+.ticker .t-label{flex:none;display:flex;align-items:center;gap:6px;height:100%;padding:0 14px;
+  background:#1a0d14;border-right:1px solid var(--line-strong);
+  font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.12em;color:var(--red);z-index:2}
+.ticker .t-label i{width:6px;height:6px;border-radius:50%;background:var(--red);animation:blink 1s infinite}
+.ticker .t-track{display:flex;white-space:nowrap;animation:marquee 46s linear infinite;will-change:transform;padding-left:4px}
+.ticker:hover .t-track{animation-play-state:paused}
+.ticker .t-item{font-family:var(--mono);font-size:11px;color:#c4d4e8;padding:0 22px;
+  display:flex;gap:8px;align-items:center}
+.ticker .t-item b{color:var(--txt);font-weight:600}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- 右欄：持倉矩陣 ---------- */
+.hold-row{display:grid;grid-template-columns:62px 1fr auto;grid-template-areas:"nm px tag" "nm sp tag";
+  gap:1px 9px;padding:8px 12px;border-bottom:1px solid var(--line);align-items:center;
+  position:relative;transition:background .2s}
+.hold-row:hover{background:rgba(45,212,255,.04)}
+.hold-row:last-of-type{border-bottom:none}
+.hold-row .h-nm{grid-area:nm;font-family:var(--mono);font-weight:700;font-size:12px;color:#eaf6ff;letter-spacing:.03em}
+.hold-row .h-nm small{display:block;font-family:var(--han);font-weight:400;font-size:9px;color:var(--txt-faint);letter-spacing:0}
+.hold-row .h-px{grid-area:px;font-family:var(--mono);font-size:12.5px;color:var(--txt);text-align:right;line-height:1.25}
+.hold-row .h-px span{font-size:16px;font-weight:800;display:inline-flex;align-items:center;gap:2px}
+.hold-row .h-sp{grid-area:sp;justify-self:end}
+.hold-row .h-tag{grid-area:tag;align-self:center}
+.h-tag{font-family:var(--mono);font-size:10px;font-weight:800;padding:3px 9px;border-radius:6px;letter-spacing:.04em;white-space:nowrap;color:#fff;border:1px solid transparent}
+.h-tag.g{background:linear-gradient(180deg,rgba(46,230,168,.85),rgba(20,160,115,.85));box-shadow:0 1px 6px rgba(46,230,168,.3)}
+.h-tag.r{background:linear-gradient(180deg,rgba(255,77,109,.9),rgba(200,40,70,.85));box-shadow:0 1px 6px rgba(255,77,109,.3)}
+.h-tag.n{color:var(--txt-dim);background:rgba(126,147,173,.14);border:1px solid var(--line)}
+.hold-row.alert{background:linear-gradient(90deg,rgba(255,77,109,.18),rgba(255,77,109,.04) 60%,transparent);
+  border-left:3px solid var(--red);border-radius:0 8px 8px 0;margin-left:-3px;
+  border-left:3px solid var(--red);padding-left:9px}
+.hold-row.alert .h-nm{color:#ffb3c0}
+.alert-badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:9px;font-weight:800;color:#fff;
+  background:linear-gradient(180deg,rgba(255,77,109,.95),rgba(190,30,65,.9));border:1px solid rgba(255,120,145,.6);
+  box-shadow:0 1px 6px rgba(255,77,109,.4);
+  color:var(--red);background:rgba(255,77,109,.15);border:1px solid rgba(255,77,109,.45);
+  padding:1px 6px;border-radius:4px;margin-left:5px;animation:blink 1.6s infinite}
+.attrib{grid-column:1/-1;font-size:10px;color:#ff9db0;font-family:var(--mono);
+  padding:5px 0 2px;letter-spacing:.03em}
+.attrib b{color:var(--amber)}
+.matrix-foot{padding:9px 12px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:10px;color:var(--txt-dim);line-height:1.9}
+.matrix-foot b{color:var(--txt)}
+.matrix-foot .gv{color:var(--amber)}
+
+/* ---------- 下方 Brief ---------- */
+.brief-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.brief-card{padding:12px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s;
+  background:linear-gradient(165deg,color-mix(in srgb,var(--bc,var(--cyan)) 12%,var(--panel)) 0%,var(--panel) 55%)}
+.brief-card:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+.brief-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--bc,var(--cyan)),transparent)}
+.brief-card .b-no{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--bc,var(--cyan));opacity:.8}
+.brief-card .b-txt{font-size:12.5px;line-height:1.6;color:var(--txt);margin:8px 0 9px;font-weight:600}
+.brief-card .b-foot{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.brief-card .b-if{font-family:var(--mono);font-size:9.5px;color:var(--txt-faint);width:100%;margin-top:6px}
+.brief-card .b-if b{color:var(--cyan)}
+
+/* 摺疊區 */
+.accordion{display:flex;flex-direction:column;gap:8px}
+details.fold{border:1px solid var(--line);border-radius:10px;background:var(--panel);overflow:hidden;transition:border-color .2s}
+details.fold[open]{border-color:var(--line-strong)}
+details.fold summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+  padding:11px 14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--cyan);
+  user-select:none}
+details.fold summary::-webkit-details-marker{display:none}
+details.fold summary .zh{font-family:var(--han);color:var(--txt);font-weight:700;letter-spacing:.04em;font-size:13px}
+details.fold summary .cnt{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--txt-faint);letter-spacing:.05em}
+details.fold summary .caret{width:18px;height:18px;border:1px solid var(--line);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;color:var(--cyan);font-size:11px;transition:transform .25s}
+details.fold[open] summary .caret{transform:rotate(90deg)}
+details.fold summary:hover{background:rgba(45,212,255,.05)}
+.fold-body{padding:0 14px 12px;border-top:1px dashed var(--line)}
+.feed-row{display:grid;grid-template-columns:64px 78px 1fr auto;gap:10px;align-items:center;
+  padding:8px 0;border-bottom:1px dashed var(--line);font-size:11.5px}
+.feed-row:last-child{border-bottom:none}
+.feed-row .f-time{font-family:var(--mono);font-size:10.5px;color:var(--cyan)}
+.feed-row .f-src{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--txt-faint);
+  border:1px solid var(--line);border-radius:4px;padding:1px 6px;text-align:center}
+.feed-row .f-txt{color:var(--txt)}
+.feed-row .f-txt b{color:#fff}
+.cal-row{display:grid;grid-template-columns:56px 110px 1fr 96px;gap:10px;align-items:center;
+  padding:8px 0;border-bottom:1px dashed var(--line);font-size:11.5px}
+.cal-row:last-child{border-bottom:none}
+.cal-row .c-time{font-family:var(--mono);font-size:11px;color:var(--amber)}
+.cal-row .c-name{color:var(--txt)}
+.cal-row .c-name small{display:block;color:var(--txt-faint);font-size:10px}
+.cal-row .c-fcst{font-family:var(--mono);font-size:10.5px;color:var(--txt-dim);text-align:right}
+.cal-row .c-fcst b{color:var(--txt)}
+.scen{padding:9px 0;border-bottom:1px dashed var(--line)}
+.scen:last-child{border-bottom:none}
+.scen .s-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:12px;margin-bottom:4px}
+.scen .s-p{font-family:var(--mono);font-size:9px;padding:1px 7px;border-radius:20px;margin-left:auto}
+.s-p.bull{color:var(--green);border:1px solid rgba(46,230,168,.4);background:rgba(46,230,168,.08)}
+.s-p.bear{color:var(--red);border:1px solid rgba(255,77,109,.4);background:rgba(255,77,109,.08)}
+.s-p.base{color:var(--amber);border:1px solid rgba(255,176,32,.4);background:rgba(255,176,32,.08)}
+.scen .s-b{font-size:11px;color:var(--txt-dim);line-height:1.6}
+.scen .s-b b{color:var(--cyan);font-weight:600}
+
+/* footer */
+.foot{display:flex;align-items:center;gap:14px;margin-top:12px;padding:10px 14px;
+  border-top:1px solid var(--line);font-family:var(--mono);font-size:9.5px;color:var(--txt-faint);
+  letter-spacing:.1em;flex-wrap:wrap}
+.foot .mock-warn{margin-left:auto;color:var(--amber);border:1px solid rgba(255,176,32,.35);
+  background:rgba(255,176,32,.07);padding:4px 10px;border-radius:20px;letter-spacing:.05em}
+.foot .sys{color:var(--green)}
+
+/* SVG fallback 地圖 */
+.fallback-map{position:absolute;inset:0;display:none;z-index:2;padding:20px}
+.fallback-map svg{width:100%;height:100%}
+.fb-land{fill:rgba(46,230,168,.07);stroke:rgba(46,230,168,.35);stroke-width:1}
+.fb-grid{stroke:rgba(86,156,214,.14);stroke-width:.6;fill:none}
+.fb-grid.eq{stroke:rgba(86,156,214,.28)}
+.fb-arc{fill:none;stroke-width:1.4;stroke-dasharray:5 5;opacity:.8}
+.fb-marker{cursor:pointer}
+.fb-mlabel{font-family:var(--mono);font-size:11px;fill:#fff;font-weight:700;paint-order:stroke;stroke:rgba(0,0,0,.8);stroke-width:3px}
+
+/* ---------- 即時財經直播 TV panel ---------- */
+.mini-btn{font-family:var(--mono);font-size:10px;color:var(--txt-dim);
+  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;
+  padding:3px 9px;cursor:pointer;text-decoration:none;margin-left:6px;white-space:nowrap}
+.mini-btn:hover{color:var(--cyan);border-color:rgba(45,212,255,.45)}
+.tv-tabs{display:flex;gap:6px;padding:9px 12px 0;flex-wrap:wrap}
+.tv-tab{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.06em;
+  color:var(--txt-dim);background:rgba(255,255,255,.03);border:1px solid var(--line);
+  border-radius:6px 6px 0 0;padding:6px 13px;cursor:pointer;white-space:nowrap}
+.tv-tab:hover{color:var(--txt);border-color:var(--line-strong)}
+.tv-tab.active{color:#fff;background:linear-gradient(180deg,rgba(200,30,60,.92),rgba(150,20,45,.9));
+  border-color:rgba(255,77,109,.55)}
+.tv-stage{position:relative;margin:0 12px 12px;border:1px solid var(--line-strong);border-radius:0 8px 8px 8px;
+  overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:inset 0 0 60px rgba(0,0,0,.8)}
+.tv-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.tv-poster{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:11px;cursor:pointer;background:radial-gradient(ellipse at 50% 38%,rgba(22,34,54,.94),rgba(3,6,12,.98))}
+.tv-p-live{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--red);
+  display:flex;align-items:center;gap:7px}
+.tv-p-live i{width:7px;height:7px;border-radius:50%;background:var(--red);animation:tvblink 1.3s infinite;
+  box-shadow:0 0 8px var(--red)}
+@keyframes tvblink{0%,100%{opacity:1}50%{opacity:.2}}
+.tv-p-name{font-family:var(--mono);font-size:25px;font-weight:800;letter-spacing:.16em;color:#fff;
+  text-shadow:0 0 26px rgba(45,212,255,.4)}
+.tv-play{width:62px;height:62px;border-radius:50%;border:2px solid rgba(45,212,255,.75);
+  background:rgba(45,212,255,.13);color:var(--cyan);font-size:22px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;padding-left:5px;
+  transition:all .2s;box-shadow:0 0 26px rgba(45,212,255,.28)}
+.tv-poster:hover .tv-play{background:rgba(45,212,255,.3);transform:scale(1.07)}
+.tv-p-hint{font-family:var(--han);font-size:12px;color:var(--txt-dim);letter-spacing:.05em}
+.tv-fail{position:absolute;inset:0;z-index:4;display:none;flex-direction:column;align-items:center;justify-content:center;
+  gap:7px;background:rgba(4,8,15,.97);text-align:center;padding:22px}
+.tv-f-ico{font-size:30px;opacity:.85}
+.tv-f-t1{font-family:var(--han);font-weight:700;font-size:15px;color:var(--txt)}
+.tv-f-t2{font-family:var(--han);font-size:12px;color:var(--txt-dim)}
+.tv-f-t3{font-family:var(--han);font-size:11px;color:var(--txt-dim);opacity:.65;margin-top:2px}
+.tv-f-btn{margin-top:7px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--cyan);
+  border:1px solid rgba(45,212,255,.55);border-radius:8px;padding:9px 20px;text-decoration:none;
+  background:rgba(45,212,255,.11);transition:all .2s}
+.tv-f-btn:hover{background:rgba(45,212,255,.24);box-shadow:0 0 16px rgba(45,212,255,.25)}
+
+/* ---------- NEWS ⇄ MARKETS 按鈕 + modal ---------- */
+.nm-open-btn{margin-left:10px;flex:none;display:flex;align-items:center;gap:7px;cursor:pointer;
+  font-family:var(--han);font-weight:700;font-size:13px;color:var(--cyan);
+  background:linear-gradient(180deg,rgba(45,212,255,.13),rgba(45,212,255,.05));
+  border:1px solid rgba(45,212,255,.5);border-radius:9px;padding:9px 15px;
+  box-shadow:0 0 14px rgba(45,212,255,.15);transition:all .2s}
+.nm-open-btn:hover{background:linear-gradient(180deg,rgba(45,212,255,.22),rgba(45,212,255,.08));
+  box-shadow:0 0 22px rgba(45,212,255,.3);transform:translateY(-1px)}
+.nm-open-btn .nm-ico{font-size:15px}
+.nm-overlay{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;
+  background:rgba(2,5,10,.82);backdrop-filter:blur(4px)}
+.nm-overlay.open{display:flex}
+.nm-modal{width:min(980px,94vw);max-height:92vh;overflow-y:auto;
+  background:linear-gradient(180deg,rgba(12,20,36,.98),rgba(7,12,22,.98));
+  border:1px solid var(--line-strong);border-radius:14px;
+  box-shadow:0 30px 90px rgba(0,0,0,.8),0 0 40px rgba(45,212,255,.12);padding:18px 20px}
+.nm-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.nm-head b{font-family:var(--mono);font-size:17px;letter-spacing:.06em;color:#fff}
+.nm-head .nm-sub{font-family:var(--han);font-size:12px;color:var(--txt-dim);font-weight:400;letter-spacing:.02em;margin-left:8px}
+.nm-head .x{margin-left:auto;flex:none;width:28px;height:28px;border-radius:7px;
+  border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--txt-dim);
+  font-family:var(--mono);cursor:pointer;font-size:13px}
+.nm-head .x:hover{color:var(--red);border-color:rgba(255,77,109,.4)}
+.nm-controls{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin-bottom:12px}
+.nm-controls label{display:flex;flex-direction:column;gap:5px;font-size:11.5px;color:var(--txt-dim);
+  font-family:var(--han);letter-spacing:.03em}
+.nm-controls select{background:rgba(4,8,15,.9);color:var(--txt);border:1px solid var(--line-strong);
+  border-radius:7px;padding:7px 11px;font-size:12.5px;font-family:var(--mono);cursor:pointer;min-width:150px}
+.nm-controls select:focus{outline:none;border-color:var(--cyan)}
+.nm-gen{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--txt-faint);letter-spacing:.05em}
+.nm-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:11px;color:var(--txt-dim);margin-bottom:8px}
+.nm-legend span{display:flex;align-items:center;gap:7px}
+.nm-legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.nm-legend .dot-orange{background:var(--amber);box-shadow:0 0 6px rgba(255,176,32,.5)}
+.nm-legend .dot-blue{background:var(--cyan);box-shadow:0 0 6px rgba(45,212,255,.5)}
+.nm-chart{border:1px solid var(--line);border-radius:10px;background:rgba(2,6,12,.6);padding:8px;min-height:300px}
+.nm-chart svg{width:100%;height:auto;display:block}
+.nm-chart .nm-empty{display:flex;align-items:center;justify-content:center;height:300px;
+  color:var(--txt-faint);font-size:12px;font-family:var(--mono)}
+.nm-stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:12px;font-family:var(--mono);font-size:12px}
+.nm-stats .st{color:var(--txt-faint);letter-spacing:.08em;font-size:10px;display:block;margin-bottom:2px}
+.nm-stats .r{font-size:22px;font-weight:800}
+.nm-stats .r.pos{color:var(--green)} .nm-stats .r.neg{color:var(--red)} .nm-stats .r.weak{color:var(--txt-dim)}
+.nm-stats .interp{color:var(--txt);font-size:12.5px;max-width:520px;line-height:1.6}
+.nm-stats .interp b{color:var(--cyan)}
+.nm-foot{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);
+  font-size:10.5px;color:var(--txt-faint);line-height:1.6}
+
+/* 響應式 */
+@media (max-width:1380px){
+  .grid{grid-template-columns:300px minmax(0,1fr) 320px}
+  .brief-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1100px){
+  .grid{grid-template-columns:1fr}
+  .brief-grid{grid-template-columns:repeat(2,1fr)}
+  .globe-stage{height:520px}
+  .sentiment{margin-left:0;width:100%;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="vignette"></div>
+<div class="wrap">
+
+  <!-- ================= 頂欄 ================= -->
+  <header class="topbar reveal">
+    <div class="logo">
+      <div class="logo-mark"><div class="orbit"></div><div class="sat"></div></div>
+      <div class="logo-txt">
+        <b>ERNEST 市觀</b>
+        <span>DAILY&nbsp;MARKET&nbsp;OPS</span>
+      </div>
+    </div>
+    <div class="top-sep"></div>
+
+    <div class="clockbox">
+      <div class="date" id="dateLine">—</div>
+      <div class="time" id="hkClock">—<small>HKT</small></div>
+    </div>
+    <div class="top-sep"></div>
+
+    <div class="thermo">
+      <div class="thermo-label">風險<br>溫度計</div>
+      <div class="thermo-bar">
+        <div class="needle" id="needle" style="left:30%"></div>
+        <div class="thermo-segs" id="thermoSegs"><i></i><i></i><i></i><i></i></div>
+        <div class="thermo-names" id="thermoNames"><span>LOW</span><span>MODERATE</span><span>HIGH</span><span>EXTREME</span></div>
+      </div>
+      <div class="thermo-val" id="thermoVal">—<small>RISK /100</small></div>
+    </div>
+
+    <div class="sentiment" id="sentimentBox"></div>
+    <div class="regime-pill" id="regimePill"></div>
+    <button class="nm-open-btn" id="nmOpenBtn" title="新聞熱度 × 資產價格關聯分析">
+      <span class="nm-ico">📈</span><span class="nm-txt">新聞 ⇄ 市場</span>
+    </button>
+  </header>
+
+  <!-- ========== NEWS ⇄ MARKETS 關聯圖 modal ========== -->
+  <div class="nm-overlay" id="nmOverlay">
+    <div class="nm-modal">
+      <div class="nm-head">
+        <b>NEWS ⇄ MARKETS <span class="nm-sub">新聞熱度 × 資產價格關聯</span></b>
+        <button class="x" id="nmClose">✕</button>
+      </div>
+      <div class="nm-controls">
+        <label>新聞話題
+          <select id="nmTopic"></select>
+        </label>
+        <label>市場
+          <select id="nmMarket"></select>
+        </label>
+        <label>時段
+          <select id="nmWindow">
+            <option value="1d">過去 24 小時</option>
+            <option value="7d" selected>過去 7 日</option>
+          </select>
+        </label>
+        <span class="nm-gen" id="nmGen"></span>
+      </div>
+      <div class="nm-legend">
+        <span><i class="dot-orange"></i>GDELT 新聞熱度（歸一化文章量）</span>
+        <span><i class="dot-blue"></i>資產價格（休市時段以收盤價續顯示）</span>
+      </div>
+      <div class="nm-chart" id="nmChart"></div>
+      <div class="nm-stats" id="nmStats"></div>
+      <div class="nm-foot">⚠️ 相關唔等於因果；新聞量反映關注度唔等同事件方向。數據：GDELT 2.0 + CNBC，由 pipeline 採集時快照嵌入。</div>
+    </div>
+  </div>
+
+  <!-- ================= 主版面 ================= -->
+  <main class="grid">
+
+    <!-- ========== 左欄 ========== -->
+    <section class="col">
+
+      <div class="panel reveal" style="animation-delay:.05s">
+        <div class="panel-head"><span class="dot"></span><span class="zh">未來 24h 風險時鐘</span>
+          <span class="right"><span class="chip" id="riskCountChip">EVENT&nbsp;<b>—</b></span></span></div>
+        <div class="clock-hero">
+          <div class="countdown" id="cd">—</div>
+          <div class="cd-label">距離下一個高影響事件</div>
+          <div class="event-next" id="nextEvent"></div>
+          <div class="ea-pause">🤖 <span id="fedChipLine"></span></div>
+        </div>
+        <div class="mini-cal" id="miniCal"></div>
+      </div>
+
+      <div class="panel reveal" style="animation-delay:.12s">
+        <div class="panel-head"><span class="dot" style="background:var(--red);box-shadow:0 0 8px var(--red)"></span>
+          <span class="zh">黑天鵝 / 突發事件</span><span class="right"><span class="live-tag"><i></i><span id="activeCount">0 ACTIVE</span></span></span></div>
+        <div id="eventCards"></div>
+      </div>
+    </section>
+
+    <!-- ========== 中央地球 ========== -->
+    <section class="col">
+      <div class="panel globe-panel reveal" style="animation-delay:.18s">
+        <div class="panel-head">
+          <span class="dot"></span><span class="zh">全球態勢地球</span>
+          <span class="sub">GLOBAL THREAT MAP · 3D</span>
+          <span class="right" id="globeChips"></span>
+        </div>
+
+        <div class="globe-stage" id="stage">
+          <div class="globe-loading" id="globeLoading"><div class="ring-load"></div><span>INITIALIZING GLOBE…</span></div>
+          <div id="globeViz"></div>
+
+          <!-- SVG 降級地圖 -->
+          <div class="fallback-map" id="fbMap">
+            <svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet">
+              <g>
+                <line class="fb-grid" x1="0" y1="125" x2="1000" y2="125"/><line class="fb-grid" x1="0" y1="250" x2="1000" y2="250" class="fb-grid eq"/><line class="fb-grid" x1="0" y1="375" x2="1000" y2="375"/>
+                <line class="fb-grid" x1="166" y1="0" x2="166" y2="500"/><line class="fb-grid" x1="333" y1="0" x2="333" y2="500"/><line class="fb-grid" x1="500" y1="0" x2="500" y2="500"/><line class="fb-grid" x1="666" y1="0" x2="666" y2="500"/><line class="fb-grid" x1="833" y1="0" x2="833" y2="500"/>
+                <text x="505" y="244" fill="rgba(86,156,214,.35)" font-size="9" font-family="monospace">EQUATOR 0°</text>
+              </g>
+              <!-- 簡化大陸輪廓（抽象 blob） -->
+              <path class="fb-land" d="M95,78 C130,58 205,55 245,72 C272,84 278,104 262,120 C250,132 248,148 232,158 C214,170 210,192 190,196 C170,200 162,182 150,172 C132,158 112,150 104,132 C96,114 78,98 95,78 Z"/>
+              <path class="fb-land" d="M255,250 C278,252 292,272 288,298 C284,326 272,352 262,382 C255,404 240,400 238,378 C236,348 228,322 232,296 C235,272 238,252 255,250 Z"/>
+              <path class="fb-land" d="M462,92 C492,74 542,76 568,92 C590,106 586,126 566,132 C548,138 540,156 518,158 C496,160 486,140 470,134 C452,128 444,106 462,92 Z"/>
+              <path class="fb-land" d="M478,178 C512,168 556,176 572,200 C586,222 580,256 566,286 C556,310 540,340 520,346 C504,351 496,328 490,304 C484,280 468,256 468,230 C468,208 462,188 478,178 Z"/>
+              <path class="fb-land" d="M540,96 C610,72 720,74 790,96 C842,112 858,140 828,158 C796,176 760,160 726,172 C690,186 664,206 636,196 C606,186 596,158 566,152 C540,147 518,116 540,96 Z"/>
+              <path class="fb-land" d="M640,200 C668,196 690,214 688,238 C686,262 668,280 650,274 C632,268 624,244 628,224 C631,210 628,204 640,200 Z"/>
+              <path class="fb-land" d="M792,330 C826,322 862,334 866,356 C870,378 846,392 818,388 C792,384 772,366 778,348 C781,338 782,333 792,330 Z"/>
+
+              <!-- 傳導弧線＋標記（數據驅動，DASH_DATA）-->
+<g id="fbMapSvgDynamic"></g>
+          </svg>
+          </div>
+
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="pop-hint">▸ 點擊發光標記點 · 查看資產傳導鏈</div>
+
+          <!-- popover -->
+          <div class="popover" id="popover">
+            <div class="ph">
+              <b id="popTitle"></b>
+              <button class="x" id="popClose">✕</button>
+            </div>
+            <div class="pmeta"><span id="popLoc"></span><span id="popTime"></span></div>
+            <div class="chain" id="popChain"></div>
+            <div class="assets-hit">
+              <div class="ah-t">// 受影響資產 ASSET_IMPACT</div>
+              <div id="popAssets"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticker">
+          <div class="t-label"><i></i> LIVE INTEL</div>
+          <div class="t-track" id="tickerTrack"></div>
+        </div>
+      </div>
+
+      <!-- ===== 即時財經直播（地球下方空位）===== -->
+      <div class="panel tv-panel reveal" style="animation-delay:.36s">
+        <div class="panel-head">
+          <span class="dot" style="background:var(--red);box-shadow:0 0 8px var(--red)"></span>
+          <span class="zh">📺 即時財經直播</span><span class="sub">LIVE FINANCE TV</span>
+          <span class="right">
+            <span class="live-tag"><i></i>LIVE</span>
+            <button class="mini-btn" id="tvSoundBtn" title="切換靜音">🔇 已靜音</button>
+            <a class="mini-btn" id="tvOpenYt" href="#" target="_blank" rel="noopener" title="喺 YouTube 打開">↗</a>
+          </span>
+        </div>
+        <div class="tv-tabs" id="tvTabs"></div>
+        <div class="tv-stage">
+          <div class="tv-poster" id="tvPoster">
+            <span class="tv-p-live"><i></i>LIVE</span>
+            <span class="tv-p-name" id="tvPName">BLOOMBERG</span>
+            <span class="tv-play">▶</span>
+            <span class="tv-p-hint">點擊載入直播 · 靜音自動開始，可按右上角 🔊 開聲</span>
+          </div>
+          <div class="tv-fail" id="tvFail">
+            <div class="tv-f-ico">📡</div>
+            <div class="tv-f-t1">直播載入唔到</div>
+            <div class="tv-f-t2">呢個預覽環境可能限制咗 YouTube 嵌入播放</div>
+            <a class="tv-f-btn" id="tvFailLink" href="#" target="_blank" rel="noopener">↗ 直接去 YouTube 睇直播</a>
+            <div class="tv-f-t3">💡 將 HTML 檔下載雙擊用瀏覽器開，即可內嵌睇直播</div>
+          </div>
+          <iframe id="tvFrame" title="Live finance news"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            frameborder="0"></iframe>
+          <video id="tvHls" playsinline autoplay muted style="position:absolute;inset:0;width:100%;height:100%;background:#000;display:none"></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 右欄 ========== -->
+    <section class="col">
+      <div class="panel reveal" style="animation-delay:.24s">
+        <div class="panel-head"><span class="dot" style="background:var(--amber);box-shadow:0 0 8px var(--amber)"></span>
+          <span class="zh">持倉影響矩陣</span><span class="sub">PORTFOLIO × TODAY · 模擬倉 DEMO</span>
+          <span class="right"><span class="chip">模擬倉 DEMO</span></span></div>
+        <div id="holdingsBody"></div>
+        <div class="matrix-foot" id="matrixFoot"></div>
+      </div>
+
+      <div class="panel reveal" style="animation-delay:.3s">
+        <div class="panel-head"><span class="dot" style="background:var(--violet);box-shadow:0 0 8px var(--violet)"></span>
+          <span class="zh">倉位速覽 / 動向</span><span class="right"><span class="chip">模擬倉 DEMO</span></span></div>
+        <div id="positionBody" style="padding:12px"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 今日 Brief ================= -->
+  <section class="panel reveal" style="margin-top:10px;animation-delay:.34s">
+    <div class="panel-head"><span class="dot" style="background:var(--green);box-shadow:0 0 8px var(--green)"></span>
+      <span class="zh">📋 今日 Brief</span><span class="sub" id="briefSub">DAILY INTEL</span>
+      <span class="right"><span class="chip">5 重點</span></span></div>
+    <div style="padding:12px">
+      <div class="brief-grid" id="briefCards"></div>
+      <div class="accordion" style="margin-top:12px">
+        <details class="fold" open>
+          <summary><span class="caret">▶</span><span class="zh">📰 新聞 Feed</span><span class="cnt" id="feedCount"></span></summary>
+          <div class="fold-body" id="feedBody"></div>
+        </details>
+        <details class="fold">
+          <summary><span class="caret">▶</span><span class="zh">🗓️ 經濟日曆</span><span class="cnt" id="calCount"></span></summary>
+          <div class="fold-body" id="calBody"></div>
+        </details>
+        <details class="fold">
+          <summary><span class="caret">▶</span><span class="zh">🔗 事件傳導鏈</span><span class="cnt" id="matrixFoldCount"></span></summary>
+          <div class="fold-body" id="matrixFoldBody"></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= footer ================= -->
+  <footer class="foot">
+    <span class="sys">● SYSTEM NOMINAL</span>
+    <span>ERNEST DAILY MARKET OPS · WorldMonitor v2</span>
+    <span id="footSources">DATA FEED: —</span>
+    <span>⚠️ AI 生成內容僅供參考，不構成投資建議；場景分析基於歷史數據同統計概率，唔係預測保證；投資有風險，決策請結合自身情況並咨詢專業人士。</span>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+<script>
+
+/* ============================================================
+   DASH_DATA（由 pipeline_v2 注入，真實數據驅動）
+============================================================ */
+const DASH_DATA = {"generated_iso":"2026-09-03T09:49:37.007173+08:00","date_str":"2026-09-03","date_parts":{"y":2026,"m":9,"d":3},"weekday":"星期四","edition":"evening","edition_label":"晚間版","quotes":{"VIX":{"last":15.13,"change_pct":1.41,"change_bp":null,"prev_close":14.92,"high":15.13,"low":14.95,"mkt_status":"REG_MKT"},"DXY":{"last":99.6,"change_pct":0.17,"change_bp":null,"prev_close":99.428,"high":99.607,"low":99.353,"mkt_status":"REG_MKT"},"US10Y":{"last":4.784,"change_pct":0.5464,"change_bp":2.6,"prev_close":4.758,"high":4.786,"low":4.764,"mkt_status":"REG_MKT"},"US2Y":{"last":4.36,"change_pct":-0.0234,"change_bp":1.0,"prev_close":4.35,"high":4.365,"low":4.346,"mkt_status":"REG_MKT"},"XAU":{"last":4420.82,"change_pct":-0.62,"change_bp":null,"prev_close":4448.286,"high":4452.64,"low":4415.966,"mkt_status":"REG_MKT"},"XAG":{"last":66.28,"change_pct":-0.3611,"change_bp":null,"prev_close":66.5202,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"GOLD_FUT":{"last":4473.3,"change_pct":-0.18,"change_bp":null,"prev_close":4481.5,"high":4510.5,"low":4467.5,"mkt_status":"REG_MKT"},"WTI":{"last":86.95,"change_pct":1.39,"change_bp":null,"prev_close":85.76,"high":87.17,"low":86.13,"mkt_status":"REG_MKT"},"SILVER_FUT":{"last":66.755,"change_pct":0.45,"change_bp":null,"prev_close":66.456,"high":67.13,"low":66.31,"mkt_status":"REG_MKT"},"GDX":{"last":98.51,"change_pct":-1.14,"change_bp":null,"prev_close":98.51,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"BTC":{"last":78611.32,"change_pct":-0.5,"change_bp":null,"prev_close":79009.62,"high":79195.3,"low":78178.39,"mkt_status":"REG_MKT"},"SBTU":{"last":43.68,"change_pct":10.11,"change_bp":null,"prev_close":43.68,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"VEEV":{"last":285.69,"change_pct":3.25,"change_bp":null,"prev_close":285.69,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"FND":{"last":50.27,"change_pct":-5.15,"change_bp":null,"prev_close":50.27,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"TEX":{"last":63.51,"change_pct":-0.35,"change_bp":null,"prev_close":63.51,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"UHS":{"last":170.13,"change_pct":-0.89,"change_bp":null,"prev_close":170.13,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"},"ILMN":{"last":213.63,"change_pct":-0.91,"change_bp":null,"prev_close":213.63,"high":0.0,"low":0.0,"mkt_status":"REG_MKT"}},"thermo":{"total":34,"regime":"neutral","regime_icon":"⚪","regime_label":"中性","cells":[{"key":"VIX","label":"VIX 恐慌","weight":25,"value":15.13,"chg":1.41,"chg_unit":"%","score":8,"note":"VIX 13-18，溫和"},{"key":"US10Y","label":"美債 10Y","weight":15,"value":4.784,"chg":2.6,"chg_unit":"bp","score":3,"note":"美債10Y 變幅 2.6bp <5bp，平穩（CNBC）"},{"key":"DXY","label":"美元 DXY","weight":15,"value":99.6,"chg":0.17,"chg_unit":"%","score":5,"note":"美元 ±0.3% 以內，平穩"},{"key":"BTC","label":"比特幣","weight":15,"value":78611.32,"chg":-0.5,"chg_unit":"%","score":5,"note":"BTC ±1% 以內，橫行"},{"key":"GDX","label":"金礦 GDX","weight":10,"value":98.51,"chg":-1.14,"chg_unit":"%","score":6,"note":"金礦股跌 1-2.5%"},{"key":"XAU","label":"黃金 XAU","weight":10,"value":4420.82,"chg":-0.62,"chg_unit":"%","score":4,"note":"金 ±1% 以內"},{"key":"WTI","label":"WTI 原油","weight":10,"value":86.95,"chg":1.39,"chg_unit":"%","score":3,"note":"油 ±1.5% 以內"}],"needle_pct":34},"regime_sub":"NEUTRAL · EA 正常，避開 🔴 事件窗口","events":[{"id":0,"etype":"E10","etype_name":"衰退型數據爆冷","color":"#ff4d6d","cls":"red","card_cls":"sw","flag":["🦢 BLACK SWAN","sw"],"severity":"high","lat":40.4,"lng":-3.7,"name":"馬德里 · 西班牙","title":"🔴 馬德里 · 西班牙 · 衰退型數據爆冷","loc":"📍 馬德里 · 西班牙","time":"09/01 15:15 HKT · ForexLive","headline":"Spain manufacturing falls back into contraction in August - PMI data","chain":["衰退型數據爆冷 → 需求崩塌預期","油暴跌↓↓、資金湧入美債（息急降）","VIX 升，防禦板塊（醫藥/公用）相對抗跌"],"if_then":"如果 數據連續爆冷，就 衰退交易主導：油跌、美債升、UHS 等防禦相對抗跌","assets":[["🛢️","WTI 原油","↓↓","r"],["📈","美債 10Y","↓↓","r"],["🥇","黃金 XAU","↑","g"],["🥈","白銀 XAG","↓","r"],["⛽","天然氣","↓","r"],["💵","美元 DXY","↓","r"]],"source":"ForexLive","url":"https://investinglive.com/news/spain-manufacturing-falls-back-into-contraction-in-august-pmi-data/"},{"id":1,"etype":"E5","etype_name":"俄烏戰事升級","color":"#ffb020","cls":"amber","card_cls":"hot","flag":["⚡ SIGNAL EVENT","hot"],"severity":"med","lat":50.5,"lng":30.5,"name":"烏克蘭 · 基輔","title":"🟠 烏克蘭 · 基輔 · 俄烏戰事升級","loc":"📍 烏克蘭 · 基輔","time":"09/01 11:22 HKT · CNBC","headline":"Bessent reportedly tells Russia no economic relief until Ukraine war ends as Europe snubs ","chain":["俄烏戰事升級 → 歐洲天然氣/糧食通道受擾","TTF 天然氣↑↑、小麥供應憂慮","核威脅言論 → 黃金避險需求升"],"if_then":"如果 斷供或核威脅升級，就 天然氣/金價急升，歐洲資產避險","assets":[["⛽","天然氣","↑↑","g"],["🥇","黃金 XAU","↑","g"],["🛢️","WTI 原油","↑","g"],["💵","美元 DXY","↑","g"],["😱","VIX 恐慌","↑","g"],["🇺🇸","美股","↓","r"]],"source":"CNBC","url":"https://www.cnbc.com/2026/09/01/bessent-russia-ukraine-war-sanctions-war-g20-.html"},{"id":2,"etype":"E8","etype_name":"央行意外鷹派（加息/縮表）","color":"#ffb020","cls":"amber","card_cls":"hot","flag":["⚡ SIGNAL EVENT","hot"],"severity":"med","lat":35.7,"lng":139.7,"name":"東京 · 日銀","title":"🟠 東京 · 日銀 · 央行意外鷹派（加息/縮表）","loc":"📍 東京 · 日銀","time":"09/01 10:18 HKT · ForexLive","headline":"Japan finmin Katayama and Bessent affirm need for orderly yen moves","chain":["央行意外鷹派（加息/縮表）→ 實際利率升","金/成長股估值受壓、美元走強","⚠️ 日央行加息可觸發套息拆倉跨市場連鎖急跌"],"if_then":"如果 鷹派落地，就 金/成長股受壓、美元強；留意日央行加息引發拆倉","assets":[["📈","美債 10Y","↑↑","g"],["💾","半導體","↓↓","r"],["🥇","黃金 XAU","↓","r"],["🥈","白銀 XAG","↓","r"],["💵","美元 DXY","↑","g"],["😱","VIX 恐慌","↑","g"]],"source":"ForexLive","url":"https://investinglive.com/forex/japan-finmin-katayama-and-bessent-affirm-need-for-orderly-yen-moves/"},{"id":3,"etype":"E1","etype_name":"中東武裝衝突升級","color":"#ffb020","cls":"amber","card_cls":"hot","flag":["⚡ SIGNAL EVENT","hot"],"severity":"med","lat":31.5,"lng":34.5,"name":"中東 · 伊朗/以色列","title":"🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級","loc":"📍 中東 · 伊朗/以色列","time":"09/01 15:16 HKT · 新浪7x24","headline":"以色列和希腊签“两国间最大军购协议”","chain":["中東交火升級 → 原油供應中斷風險定價","油價急升 → 通脹預期升溫、美債息升","避險資金湧入金銀，VIX 抬頭"],"if_then":"如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上","assets":[["🛢️","WTI 原油","↑↑","g"],["🥇","黃金 XAU","↑","g"],["🥈","白銀 XAG","↑","g"],["⛽","天然氣","↑","g"],["💵","美元 DXY","↑","g"],["📈","美債 10Y","↑","g"]],"source":"新浪7x24","url":"https://finance.sina.cn/7x24/2026-09-01/detail-iniqiaty1608236.d.html"},{"id":4,"etype":"E7","etype_name":"出口管制/金融制裁","color":"#ffb020","cls":"amber","card_cls":"hot","flag":["⚡ SIGNAL EVENT","hot"],"severity":"med","lat":31.5,"lng":34.5,"name":"中東 · 伊朗/以色列","title":"🟠 中東 · 伊朗/以色列 · 出口管制/金融制裁","loc":"📍 中東 · 伊朗/以色列","time":"09/01 15:37 HKT · 新浪7x24","headline":"伊朗央行行长：拥有充足外汇保障必需品进口","chain":["出口管制/金融制裁 → 被制裁板塊↓↓","國產替代受惠；貨幣體系受動搖","黃金中長線受惠（儲備多元化）"],"if_then":"如果 制裁名單擴大，就 被制裁板塊急跌、國產替代受惠，金中長線受惠","assets":[["🥇","黃金 XAU","↑","g"],["💵","美元 DXY","↑","g"],["😱","VIX 恐慌","↑","g"],["🇭🇰","港股","↓","r"],["💾","半導體","↓","r"]],"source":"新浪7x24","url":"https://finance.sina.cn/7x24/2026-09-01/detail-iniqihzw1505045.d.html"}],"arcs":[{"startLat":40.4,"startLng":-3.7,"endLat":40.7,"endLng":-74.0,"color":"#ff4d6d","etype":"E10"},{"startLat":40.4,"startLng":-3.7,"endLat":51.5,"endLng":-0.1,"color":"#ff4d6d","etype":"E10"},{"startLat":40.4,"startLng":-3.7,"endLat":35.7,"endLng":139.7,"color":"#ff4d6d","etype":"E10"},{"startLat":50.5,"startLng":30.5,"endLat":50.1,"endLng":8.7,"color":"#ffb020","etype":"E5"},{"startLat":50.5,"startLng":30.5,"endLat":51.5,"endLng":-0.1,"color":"#ffb020","etype":"E5"},{"startLat":35.7,"startLng":139.7,"endLat":40.7,"endLng":-74.0,"color":"#ffb020","etype":"E8"},{"startLat":35.7,"startLng":139.7,"endLat":51.5,"endLng":-0.1,"color":"#ffb020","etype":"E8"},{"startLat":35.7,"startLng":139.7,"endLat":22.3,"endLng":114.2,"color":"#ffb020","etype":"E8"},{"startLat":35.7,"startLng":139.7,"endLat":1.35,"endLng":103.8,"color":"#ffb020","etype":"E8"},{"startLat":31.5,"startLng":34.5,"endLat":35.7,"endLng":139.7,"color":"#ffb020","etype":"E1"},{"startLat":31.5,"startLng":34.5,"endLat":1.35,"endLng":103.8,"color":"#ffb020","etype":"E1"},{"startLat":31.5,"startLng":34.5,"endLat":50.1,"endLng":8.7,"color":"#ffb020","etype":"E1"},{"startLat":31.5,"startLng":34.5,"endLat":51.5,"endLng":-0.1,"color":"#ffb020","etype":"E1"},{"startLat":31.5,"startLng":34.5,"endLat":40.7,"endLng":-74.0,"color":"#ffb020","etype":"E7"},{"startLat":31.5,"startLng":34.5,"endLat":22.3,"endLng":114.2,"color":"#ffb020","etype":"E7"}],"calendar":{"next24h":[{"title":"ISM Manufacturing PMI","country":"USD","time_hkt":"2026-09-01 22:00","time_hm":"22:00","date_label":"09/01","delta_hours":6.3,"forecast":"55.2","previous":"55.6","impact":"High","source":"ForexFactory"},{"title":"GDP q/q","country":"AUD","time_hkt":"2026-09-02 09:30","time_hm":"09:30","date_label":"09/02","delta_hours":17.8,"forecast":"0.3%","previous":"0.3%","impact":"High","source":"ForexFactory"},{"title":"Official Cash Rate","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"2.75%","previous":"2.50%","impact":"High","source":"ForexFactory"},{"title":"RBNZ Monetary Policy Statement","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"RBNZ Rate Statement","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"RBNZ Press Conference","country":"NZD","time_hkt":"2026-09-02 11:00","time_hm":"11:00","date_label":"09/02","delta_hours":19.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"}],"next48h":[{"title":"BOC Rate Statement","country":"CAD","time_hkt":"2026-09-02 21:45","time_hm":"21:45","date_label":"09/02","delta_hours":30.0,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"Overnight Rate","country":"CAD","time_hkt":"2026-09-02 21:45","time_hm":"21:45","date_label":"09/02","delta_hours":30.0,"forecast":"2.25%","previous":"2.25%","impact":"High","source":"ForexFactory"},{"title":"BOC Press Conference","country":"CAD","time_hkt":"2026-09-02 22:30","time_hm":"22:30","date_label":"09/02","delta_hours":30.8,"forecast":"","previous":"","impact":"High","source":"ForexFactory"}],"all_high":[{"title":"ISM Manufacturing PMI","country":"USD","time_hkt":"2026-09-01 22:00","time_hm":"22:00","date_label":"09/01","delta_hours":6.3,"forecast":"55.2","previous":"55.6","impact":"High","source":"ForexFactory"},{"title":"GDP q/q","country":"AUD","time_hkt":"2026-09-02 09:30","time_hm":"09:30","date_label":"09/02","delta_hours":17.8,"forecast":"0.3%","previous":"0.3%","impact":"High","source":"ForexFactory"},{"title":"Official Cash Rate","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"2.75%","previous":"2.50%","impact":"High","source":"ForexFactory"},{"title":"RBNZ Monetary Policy Statement","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"RBNZ Rate Statement","country":"NZD","time_hkt":"2026-09-02 10:00","time_hm":"10:00","date_label":"09/02","delta_hours":18.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"RBNZ Press Conference","country":"NZD","time_hkt":"2026-09-02 11:00","time_hm":"11:00","date_label":"09/02","delta_hours":19.3,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"BOC Rate Statement","country":"CAD","time_hkt":"2026-09-02 21:45","time_hm":"21:45","date_label":"09/02","delta_hours":30.0,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"Overnight Rate","country":"CAD","time_hkt":"2026-09-02 21:45","time_hm":"21:45","date_label":"09/02","delta_hours":30.0,"forecast":"2.25%","previous":"2.25%","impact":"High","source":"ForexFactory"},{"title":"BOC Press Conference","country":"CAD","time_hkt":"2026-09-02 22:30","time_hm":"22:30","date_label":"09/02","delta_hours":30.8,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"BOE Gov Bailey Speaks","country":"GBP","time_hkt":"2026-09-04 16:50","time_hm":"16:50","date_label":"09/04","delta_hours":73.1,"forecast":"","previous":"","impact":"High","source":"ForexFactory"},{"title":"Employment Change","country":"CAD","time_hkt":"2026-09-04 20:30","time_hm":"20:30","date_label":"09/04","delta_hours":76.8,"forecast":"15.1K","previous":"75.1K","impact":"High","source":"ForexFactory"},{"title":"Unemployment Rate","country":"CAD","time_hkt":"2026-09-04 20:30","time_hm":"20:30","date_label":"09/04","delta_hours":76.8,"forecast":"6.4%","previous":"6.4%","impact":"High","source":"ForexFactory"},{"title":"Average Hourly Earnings m/m","country":"USD","time_hkt":"2026-09-04 20:30","time_hm":"20:30","date_label":"09/04","delta_hours":76.8,"forecast":"0.3%","previous":"0.1%","impact":"High","source":"ForexFactory"},{"title":"Non-Farm Employment Change","country":"USD","time_hkt":"2026-09-04 20:30","time_hm":"20:30","date_label":"09/04","delta_hours":76.8,"forecast":"55K","previous":"-23K","impact":"High","source":"ForexFactory"},{"title":"Unemployment Rate","country":"USD","time_hkt":"2026-09-04 20:30","time_hm":"20:30","date_label":"09/04","delta_hours":76.8,"forecast":"4.1%","previous":"4.1%","impact":"High","source":"ForexFactory"}]},"next_event":{"title":"ISM Manufacturing PMI","country":"USD","time_hkt":"2026-09-01 22:00","time_hm":"22:00","date_label":"09/01","delta_hours":6.3,"forecast":"55.2","previous":"55.6","impact":"High","source":"ForexFactory","iso":"2026-09-01T22:00:00+08:00"},"fed_chip":"🤖 <span><b>EA 暫停提示：</b>09/02 10:00 Official Cash Rate（NZD）｜事件前 30 分鐘＋後 60 分鐘暫停 EA。US10Y 今日 <b>+2.6bp</b>（CNBC 實時）</span>","holdings":[{"code":"XAUUSD","name_cn":"現貨黃金 EA","account_type":"mt5_ea","group":"mt5_ea","status":"open","nature":"ea","last":4420.82,"change_pct":-0.62,"prev_close":4448.286,"high":4452.64,"low":4415.966,"cost_price":null,"pnl_cost_pct":null,"attrib":"","attrib_found":false,"is_new":false,"notes":"MT5 全自動 EA；主導變量 DXY/US10Y/避險需求"},{"code":"XAGUSD","name_cn":"現貨白銀 EA","account_type":"mt5_ea","group":"mt5_ea","status":"open","nature":"ea","last":66.28,"change_pct":-0.3611,"prev_close":66.5202,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"","attrib_found":false,"is_new":false,"notes":"白銀 EA；beta 高過金；金銀比 >70 關注均值回歸"},{"code":"SBTU","name_cn":"T-REX 2X Long SBET","account_type":"us_demo","group":"us_demo_special","status":"open","nature":"leveraged2x","last":43.68,"change_pct":10.11,"prev_close":43.68,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"⚠️ 未尋獲明確歸因，需人工查證","attrib_found":false,"is_new":false,"notes":"2倍單日槓桿 ETF 追蹤 SBET（SharpLink Gaming，體育博彩營銷+ETH國庫）；波動極大；異動閾值 6%/12%；歸因搜 SBET 唔搜 SBTU；矩陣中獨立分區顯示"},{"code":"VEEV","name_cn":"Veeva Systems","account_type":"us_demo","group":"us_demo","status":"open","nature":"long","last":285.69,"change_pct":3.25,"prev_close":285.69,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"⚠️ 未尋獲明確歸因，需人工查證","attrib_found":false,"is_new":false,"notes":"生命科學 SaaS；利率敏感成長股"},{"code":"FND","name_cn":"Floor & Decor","account_type":"us_demo","group":"us_demo","status":"open","nature":"long","last":50.27,"change_pct":-5.15,"prev_close":50.27,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"⚠️ 未尋獲明確歸因，需人工查證","attrib_found":false,"is_new":false,"notes":"家居建材零售；跟按揭利率/地產週期"},{"code":"TEX","name_cn":"Terex","account_type":"us_demo","group":"us_demo","status":"open","nature":"long","last":63.51,"change_pct":-0.35,"prev_close":63.51,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"","attrib_found":false,"is_new":false,"notes":"工業機械（吊機/高空作業平台）；基建景氣；鋁鋼關稅影響成本（E6）"},{"code":"UHS","name_cn":"Universal Health","account_type":"us_demo","group":"us_demo","status":"open","nature":"long","last":170.13,"change_pct":-0.89,"prev_close":170.13,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"","attrib_found":false,"is_new":false,"notes":"醫院運營；防禦板塊；Medicaid 政策敏感"},{"code":"ILMN","name_cn":"Illumina","account_type":"us_demo","group":"us_demo","status":"open","nature":"long","last":213.63,"change_pct":-0.91,"prev_close":213.63,"high":0.0,"low":0.0,"cost_price":null,"pnl_cost_pct":null,"attrib":"","attrib_found":false,"is_new":false,"notes":"基因測序龍頭；成長股+監管敏感（出口管制/生物安全法案，E7）"}],"watchlist":[],"trade_log":[],"brief":[{"cat":"risk","txt":"ISM Manufacturing PMI（USD）22:00 公佈，高影響事件臨近","ifthen":"如果 數據偏離預期，就 事件窗口前30分鐘暫停 EA、收窄倉位","tags":["📅 高影響","ISM Manufact"],"no":"BRIEF // 01","color":"#ff4d6d","tag":"🔴"},{"cat":"hold","txt":"SBTU 今日升10.1%（T-REX 2X Long SBET）","ifthen":"如果 未尋獲明確歸因，就 人工查證後先決定操作（勿單靠價動作倉）","tags":["⚠️SBTU ↑10.1%"],"attrib":"⚠️ 未尋獲明確歸因，需人工查證","attrib_found":false,"no":"BRIEF // 02","color":"#ffb020","tag":"💼"},{"cat":"hold","txt":"FND 今日跌5.2%（Floor & Decor）","ifthen":"如果 未尋獲明確歸因，就 人工查證後先決定操作（勿單靠價動作倉）","tags":["FND ↓5.2%"],"attrib":"⚠️ 未尋獲明確歸因，需人工查證","attrib_found":false,"no":"BRIEF // 03","color":"#ffb020","tag":"💼"},{"cat":"core","txt":"金 $4,421、金銀比 66.7，油 $87.0","ifthen":"如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉","tags":["🥇金 ↓0.6%"],"no":"BRIEF // 04","color":"#ffd24a","tag":"🥇"},{"cat":"temp","txt":"風險溫度 34 分⚪中性","ifthen":"如果 VIX（15.1）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA","tags":["⚪ 34/100"],"no":"BRIEF // 05","color":"#9d8cff","tag":"📊"}],"feed":[{"time_hm":"09/01 10:18","source":"ForexLive","title":"Japan finmin Katayama and Bessent affirm need for orderly yen moves","url":"https://investinglive.com/forex/japan-finmin-katayama-and-bessent-affirm-need-for-orderly-yen-moves/","theme":"stock","is_event":true},{"time_hm":"09/01 11:22","source":"CNBC","title":"Bessent reportedly tells Russia no economic relief until Ukraine war ends as Europe snubs Moscow at G20","url":"https://www.cnbc.com/2026/09/01/bessent-russia-ukraine-war-sanctions-war-g20-.html","theme":"geo","is_event":true},{"time_hm":"09/01 15:15","source":"ForexLive","title":"Spain manufacturing falls back into contraction in August - PMI data","url":"https://investinglive.com/news/spain-manufacturing-falls-back-into-contraction-in-august-pmi-data/","theme":"stock","is_event":true},{"time_hm":"09/01 15:16","source":"新浪7x24","title":"以色列和希腊签“两国间最大军购协议”","url":"https://finance.sina.cn/7x24/2026-09-01/detail-iniqiaty1608236.d.html","theme":"stock","is_event":true},{"time_hm":"09/01 15:37","source":"新浪7x24","title":"伊朗央行行长：拥有充足外汇保障必需品进口","url":"https://finance.sina.cn/7x24/2026-09-01/detail-iniqihzw1505045.d.html","theme":"geo","is_event":true},{"time_hm":"02/03 21:46","source":"MarketWatch","title":"Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond","url":"https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"02/06 21:34","source":"MarketWatch","title":"U.S. productivity slows down in fourth quarter while unit labor costs accelerate","url":"https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse","theme":"macro","is_event":false},{"time_hm":"02/08 04:26","source":"MarketWatch","title":"Consumer credit growth soars in December","url":"https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"02/13 21:33","source":"MarketWatch","title":"Jobless claims stay low in latest week","url":"https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"06/05 19:34","source":"MarketWatch","title":"Hibbett shares fall as Q1 sales miss analysts’ estimate","url":"https://www.marketwatch.com/story/hibbett-shares-fall-as-q1-sales-miss-analysts-estimate-801a7cb0?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"06/07 22:14","source":"MarketWatch","title":"Wholesale inventories in U.S. rise 0.1% in April","url":"https://www.marketwatch.com/story/wholesale-inventories-in-u-s-rise-0-1-in-april-36e6a92d?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"07/03 20:36","source":"MarketWatch","title":"Jobless claims fall to lowest level since mid-May","url":"https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"07/19 15:08","source":"MarketWatch","title":"European stocks open lower after weak Wall Street finish, computer outages","url":"https://www.marketwatch.com/story/european-stocks-open-lower-after-weak-wall-street-finish-computer-outages-a57c53a7?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"07/29 19:43","source":"MarketWatch","title":"Alibaba stock climbs on report of vendor service fee increase","url":"https://www.marketwatch.com/story/alibaba-stock-climbs-on-report-of-vendor-service-fee-increase-db9d1854?mod=mw_rss_marketpulse","theme":"stock","is_event":false},{"time_hm":"08/02 18:14","source":"MarketWatch","title":"ArcBest misses profit expectations, as soft rate environment weighed on revenue","url":"https://www.marketwatch.com/story/arcbest-misses-profit-expectations-as-soft-rate-environment-weighed-on-revenue-4461160b?mod=mw_rss_marketpulse","theme":"macro","is_event":false},{"time_hm":"08/08 03:14","source":"CNBC Economy","title":"U.S. economy unexpectedly lost 23,000 jobs in July","url":"https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html","theme":"stock","is_event":false},{"time_hm":"08/12 22:04","source":"CNBC Economy","title":"An inflation report Wednesday should be a big deal for the Fed. Here's what to expect","url":"https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html","theme":"macro","is_event":false},{"time_hm":"08/13 01:14","source":"CNBC Economy","title":"Here are five key takeaways from the July CPI inflation report","url":"https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html","theme":"macro","is_event":false},{"time_hm":"08/13 02:56","source":"CNBC Economy","title":"U.S. budget deficit surged in July to highest level since March 2021","url":"https://www.cnbc.com/2026/08/12/us-budget-deficit-surged-in-july-to-highest-level-since-march-2021.html","theme":"stock","is_event":false},{"time_hm":"08/13 03:50","source":"CNBC Economy","title":"'Nobody wants it': Lettuce prices see record-setting plunge as cyclospora spooks consumers","url":"https://www.cnbc.com/2026/08/12/lettuce-prices-cyclospora-cpi.html","theme":"stock","is_event":false},{"time_hm":"08/13 20:42","source":"CNBC Economy","title":"The Iran war risks bringing the G7's fastest-growing economy to a halt","url":"https://www.cnbc.com/2026/08/13/iran-war-g7s-fastest-growing-economy.html","theme":"geo","is_event":false},{"time_hm":"08/13 21:18","source":"CNBC Economy","title":"Wholesale prices were flat in July, below expectations for 0.2% increase","url":"https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html","theme":"stock","is_event":false},{"time_hm":"08/13 23:59","source":"CNBC Economy","title":"AI’s costly build-out complicates the Fed’s inflation fight","url":"https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html","theme":"macro","is_event":false},{"time_hm":"08/14 22:53","source":"CNBC Economy","title":"Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%","url":"https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html","theme":"macro","is_event":false},{"time_hm":"08/18 19:51","source":"CNBC Economy","title":"Russia says its economy is strong. It just fired a top economist who warned otherwise","url":"https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html","theme":"geo","is_event":false},{"time_hm":"08/18 21:43","source":"CNBC Investing","title":"Home Depot reaffirms guidance amid 'frozen housing market conditions'","url":"https://www.cnbc.com/2026/08/18/home-depot-hd-q2-2026-earnings.html","theme":"stock","is_event":false},{"time_hm":"08/18 23:02","source":"CNBC Investing","title":"Anthropic tells investors annualized revenue run rate climbed to $65 billion in July","url":"https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html","theme":"macro","is_event":false},{"time_hm":"08/19 03:27","source":"CNBC Investing","title":"We upgraded Home Depot and raised our price target. It made the best of a terrible hand","url":"https://www.cnbc.com/2026/08/18/we-upgraded-home-depot-and-raised-our-price-target-it-made-the-best-of-a-terrible-hand.html","theme":"stock","is_event":false},{"time_hm":"08/20 02:54","source":"CNBC Finance","title":"Fed officials saw need for rate hike if inflation doesn't cool, minutes show","url":"https://www.cnbc.com/2026/08/19/fed-minutes-july-2026-officials-saw-need-for-rate-hike-if-inflation-doesnt-cool.html","theme":"macro","is_event":false},{"time_hm":"08/20 03:16","source":"CNBC Investing","title":"Why we're giving off-price retailer TJX a pass for softness in its biggest division","url":"https://www.cnbc.com/2026/08/19/why-were-giving-off-price-retailer-tjx-a-pass-for-softness-in-its-biggest-division.html","theme":"stock","is_event":false},{"time_hm":"08/20 04:00","source":"CNBC Investing","title":"Lowe's gives muted outlook as it sees 'pressure' in home improvement spending","url":"https://www.cnbc.com/2026/08/19/lowes-low-q2-2026-earnings.html","theme":"stock","is_event":false},{"time_hm":"08/20 04:00","source":"CNBC Investing","title":"Target says its turnaround is picking up steam, with help from a big tariff refund","url":"https://www.cnbc.com/2026/08/19/target-tgt-q2-2026-earnings.html","theme":"stock","is_event":false},{"time_hm":"08/20 05:05","source":"CNBC Finance","title":"Carvana shares are under pressure this week as Mark Walter probe fuels investor jitters","url":"https://www.cnbc.com/2026/08/19/carvana-shares-on-pace-for-10percent-weekly-loss-as-mark-walter-probe-fuels-investor-jitters.html","theme":"stock","is_event":false},{"time_hm":"08/20 05:29","source":"CNBC Economy","title":"Trump bemoans Fed interest rate policy, says U.S. should be paying much less","url":"https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html","theme":"macro","is_event":false},{"time_hm":"08/20 06:34","source":"CNBC Economy","title":"U.S. government debt passes $40 trillion, more than doubling in a decade","url":"https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html","theme":"stock","is_event":false},{"time_hm":"08/20 10:39","source":"CNBC Finance","title":"China is defying the global bond yield surge, boosting its diversification appeal","url":"https://www.cnbc.com/2026/08/20/china-defies-global-bond-yield-surge-safe-haven.html","theme":"stock","is_event":false},{"time_hm":"08/20 21:42","source":"CNBC Investing","title":"Alibaba shares fall 5% as AI spending drives 75% drop in net income","url":"https://www.cnbc.com/2026/08/20/alibaba-cloud-revenue.html","theme":"stock","is_event":false},{"time_hm":"08/20 23:35","source":"CNBC Economy","title":"Bessent says Treasury buyback operation could be more than $4 billion","url":"https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html","theme":"stock","is_event":false},{"time_hm":"08/20 23:57","source":"CNBC Investing","title":"Why our cyber stocks are dropping and our favorite memory play is rallying","url":"https://www.cnbc.com/2026/08/20/why-our-cyber-stocks-are-dropping-and-our-favorite-memory-play-is-rallying.html","theme":"stock","is_event":false},{"time_hm":"08/21 04:01","source":"CNBC Investing","title":"Walmart stock tumbles 9% after outlook disappoints Wall Street","url":"https://www.cnbc.com/2026/08/20/walmart-wmt-q2-2027-earnings.html","theme":"stock","is_event":false}],"sources_status":{"cnbc":"OK · 17 符號","fred":"FAIL","sina_quotes":"OK · 5 品種（備援）","forexfactory":"OK · 未來24h 6 個 High 事件","gdelt":"OK · 10 條"},"event_counts":{"E1":2,"E2":0,"E3":0,"E4":0,"E5":2,"E6":0,"E7":1,"E8":1,"E9":0,"E10":1,"E11":0,"E12":0},"market_corr":{"generated":"2026-09-03 04:39 HKT","ok":true,"topics_meta":[{"key":"sanctions","zh":"制裁 / 關稅"},{"key":"rates","zh":"利率 / 聯儲局"},{"key":"oil","zh":"原油 / 能源"},{"key":"geopolitics","zh":"戰爭 / 地緣"},{"key":"china","zh":"中國 / 台海"},{"key":"crypto","zh":"加密貨幣"}],"markets_meta":[{"key":"SPX","zh":"S&P 500"},{"key":"IXIC","zh":"納斯達克"},{"key":"BTC","zh":"比特幣"},{"key":"ETH","zh":"以太幣"},{"key":"GOLD","zh":"黃金"},{"key":"WTI","zh":"WTI 原油"}],"windows":{"7d":{"topics":{"rates":[[1787778000,359.11],[1787781600,398.79],[1787785200,589.45],[1787788800,885.45],[1787792400,869.32],[1787796000,719.42],[1787799600,733.16],[1787803200,490.38],[1787806800,598.52],[1787810400,594.84],[1787814000,306.85],[1787817600,281.45],[1787821200,169.56],[1787824800,288.32],[1787828400,221.44],[1787832000,231.9],[1787835600,323.35],[1787839200,251.13],[1787842800,276.52],[1787846400,317.24],[1787850000,464.3],[1787853600,625.62],[1787857200,505.16],[1787860800,635.8],[1787864400,412.07],[1787868000,423.98],[1787871600,418.31],[1787875200,502.03],[1787878800,762.0],[1787882400,601.68],[1787889600,350.96],[1787893200,452.43],[1787896800,344.9],[1787900400,241.71],[1787904000,180.41],[1787907600,229.69],[1787911200,113.69],[1787914800,225.15],[1787918400,286.81],[1787922000,425.42],[1787925600,464.19],[1787929200,561.35],[1787932800,783.55],[1787936400,1079.73],[1787940000,1081.99],[1787943600,1235.98],[1787947200,1113.01],[1787950800,1059.02],[1787954400,1260.96],[1787958000,768.19],[1787961600,156.25],[1787965200,343.74],[1787968800,730.04],[1787972400,758.47],[1787976000,472.04],[1787979600,791.3],[1787983200,432.68],[1787986800,284.41],[1787990400,72.71],[1787994000,93.61],[1788001200,109.77],[1788004800,151.41],[1788008400,68.05],[1788012000,151.98],[1788015600,0.0],[1788019200,219.68],[1788022800,119.09],[1788026400,232.61],[1788030000,80.36],[1788037200,90.12],[1788040800,117.12],[1788044400,119.33],[1788048000,56.88],[1788051600,332.64],[1788058800,431.03],[1788062400,286.9],[1788066000,0.0],[1788069600,152.38],[1788073200,250.94],[1788076800,293.65],[1788080400,350.88],[1788084000,470.25],[1788087600,497.87],[1788091200,422.97],[1788094800,207.15],[1788098400,138.97],[1788102000,124.26],[1788105600,328.0],[1788109200,265.25],[1788112800,373.08],[1788116400,448.1],[1788120000,284.63],[1788123600,108.15],[1788130800,168.73],[1788134400,427.12],[1788138000,629.52],[1788141600,272.85],[1788145200,233.32],[1788148800,302.57],[1788152400,221.12],[1788156000,491.83],[1788159600,383.42],[1788163200,364.37],[1788166800,430.31],[1788170400,463.99],[1788174000,230.86],[1788177600,348.04],[1788181200,454.55],[1788184800,502.28],[1788188400,364.43],[1788195600,380.32],[1788199200,392.33],[1788202800,481.38],[1788206400,581.02],[1788210000,372.67],[1788213600,401.78],[1788217200,696.06],[1788220800,737.33],[1788224400,255.43],[1788228000,416.12],[1788231600,682.53],[1788235200,554.56],[1788238800,361.53],[1788242400,432.9],[1788246000,171.29],[1788249600,88.46],[1788253200,0.0],[1788256800,230.15],[1788260400,240.7],[1788264000,85.47],[1788267600,143.38],[1788271200,370.0],[1788274800,304.72],[1788278400,426.62],[1788282000,326.56],[1788285600,223.09],[1788289200,361.77],[1788292800,512.72],[1788296400,394.91],[1788300000,569.33],[1788303600,524.48],[1788307200,391.11],[1788310800,654.74],[1788314400,552.84],[1788318000,251.64],[1788321600,198.0],[1788325200,284.65],[1788328800,178.22],[1788332400,83.06],[1788336000,90.06],[1788339600,361.27],[1788343200,96.45],[1788346800,267.51]],"china":[[1787778000,167.58],[1787781600,181.27],[1787785200,250.52],[1787788800,147.57],[1787792400,114.01],[1787796000,23.59],[1787799600,13.83],[1787803200,150.89],[1787806800,399.01],[1787810400,198.28],[1787814000,161.5],[1787817600,234.54],[1787821200,103.62],[1787824800,72.08],[1787828400,50.33],[1787832000,30.25],[1787835600,0.0],[1787839200,43.3],[1787842800,125.69],[1787846400,17.62],[1787850000,128.08],[1787853600,39.72],[1787857200,105.24],[1787860800,48.91],[1787864400,22.27],[1787868000,146.2],[1787871600,69.72],[1787875200,19.31],[1787878800,25.4],[1787882400,24.07],[1787889600,23.4],[1787893200,51.71],[1787896800,81.15],[1787900400,65.92],[1787904000,51.55],[1787907600,61.25],[1787911200,90.95],[1787914800,11.26],[1787918400,95.6],[1787922000,0.0],[1787925600,0.0],[1787929200,16.04],[1787932800,48.97],[1787936400,41.53],[1787940000,93.27],[1787943600,137.33],[1787947200,85.62],[1787950800,155.32],[1787954400,219.3],[1787958000,451.88],[1787961600,0.0],[1787965200,257.81],[1787968800,148.99],[1787972400,47.4],[1787976000,36.31],[1787979600,98.91],[1787983200,16.64],[1787986800,56.88],[1787990400,96.95],[1787994000,93.61],[1788001200,109.77],[1788004800,46.59],[1788008400,0.0],[1788012000,0.0],[1788015600,0.0],[1788019200,43.94],[1788022800,119.09],[1788026400,63.44],[1788030000,53.58],[1788037200,0.0],[1788040800,19.52],[1788044400,59.67],[1788048000,56.88],[1788051600,41.58],[1788058800,86.21],[1788062400,95.63],[1788066000,0.0],[1788069600,76.19],[1788073200,161.32],[1788076800,106.78],[1788080400,140.35],[1788084000,144.69],[1788087600,142.25],[1788091200,66.79],[1788094800,103.57],[1788098400,138.97],[1788102000,41.42],[1788105600,27.33],[1788109200,44.21],[1788112800,268.62],[1788116400,224.05],[1788120000,189.75],[1788123600,72.1],[1788130800,281.21],[1788134400,800.85],[1788138000,188.86],[1788141600,375.17],[1788145200,466.64],[1788148800,475.47],[1788152400,179.66],[1788156000,87.83],[1788159600,103.63],[1788163200,57.53],[1788166800,47.81],[1788170400,44.19],[1788174000,96.19],[1788177600,161.88],[1788181200,454.55],[1788184800,91.32],[1788188400,72.89],[1788195600,76.06],[1788199200,0.0],[1788202800,84.95],[1788206400,371.21],[1788210000,186.34],[1788213600,253.75],[1788217200,438.26],[1788220800,0.0],[1788224400,63.86],[1788228000,65.7],[1788231600,214.51],[1788235200,209.83],[1788238800,72.31],[1788242400,432.9],[1788246000,114.19],[1788249600,132.68],[1788253200,0.0],[1788256800,57.54],[1788260400,94.82],[1788264000,85.47],[1788267600,61.45],[1788271200,201.82],[1788274800,101.57],[1788278400,56.88],[1788282000,36.28],[1788285600,223.09],[1788289200,75.37],[1788292800,205.09],[1788296400,175.52],[1788300000,312.21],[1788303600,407.93],[1788307200,123.51],[1788310800,189.15],[1788314400,106.32],[1788318000,402.62],[1788321600,242.0],[1788325200,106.74],[1788328800,158.42],[1788332400,124.58],[1788336000,75.05],[1788339600,144.51],[1788343200,77.16],[1788346800,109.44]],"crypto":[[1787778000,0.0],[1787781600,108.76],[1787785200,73.68],[1787788800,73.79],[1787792400,57.0],[1787796000,47.18],[1787799600,110.67],[1787803200,75.44],[1787806800,58.68],[1787810400,66.09],[1787814000,96.9],[1787817600,75.05],[1787821200,37.68],[1787824800,96.11],[1787828400,120.79],[1787832000,20.17],[1787835600,129.34],[1787839200,77.94],[1787842800,100.55],[1787846400,299.61],[1787850000,144.09],[1787853600,119.17],[1787857200,84.19],[1787860800,146.72],[1787864400,44.55],[1787868000,29.24],[1787871600,23.24],[1787875200,115.85],[1787878800,25.4],[1787882400,0.0],[1787889600,0.0],[1787893200,51.71],[1787896800,81.15],[1787900400,65.92],[1787904000,25.77],[1787907600,38.28],[1787911200,90.95],[1787914800,33.77],[1787918400,191.2],[1787922000,106.35],[1787925600,232.1],[1787929200,160.38],[1787932800,97.94],[1787936400,41.53],[1787940000,37.31],[1787943600,68.67],[1787947200,0.0],[1787950800,70.6],[1787954400,54.82],[1787958000,45.19],[1787961600,0.0],[1787965200,57.29],[1787968800,74.49],[1787972400,0.0],[1787976000,36.31],[1787979600,148.37],[1787983200,99.85],[1787986800,28.44],[1787990400,96.95],[1787994000,0.0],[1788001200,109.77],[1788004800,69.88],[1788008400,0.0],[1788012000,151.98],[1788015600,58.51],[1788019200,29.29],[1788022800,19.85],[1788026400,105.73],[1788030000,53.58],[1788037200,30.04],[1788040800,0.0],[1788044400,0.0],[1788048000,0.0],[1788051600,166.32],[1788058800,57.47],[1788062400,31.88],[1788066000,0.0],[1788069600,38.1],[1788073200,0.0],[1788076800,0.0],[1788080400,0.0],[1788084000,18.09],[1788087600,47.42],[1788091200,22.26],[1788094800,25.89],[1788098400,39.71],[1788102000,13.81],[1788105600,41.0],[1788109200,44.21],[1788112800,0.0],[1788116400,0.0],[1788120000,47.44],[1788123600,0.0],[1788130800,224.97],[1788134400,53.39],[1788138000,157.38],[1788141600,68.21],[1788145200,46.66],[1788148800,21.61],[1788152400,41.46],[1788156000,35.13],[1788159600,31.09],[1788163200,38.35],[1788166800,71.72],[1788170400,88.38],[1788174000,153.91],[1788177600,113.31],[1788181200,454.55],[1788184800,136.99],[1788188400,72.89],[1788195600,152.13],[1788199200,217.96],[1788202800,99.11],[1788206400,0.0],[1788210000,186.34],[1788213600,21.15],[1788217200,103.12],[1788220800,92.17],[1788224400,42.57],[1788228000,43.8],[1788231600,156.01],[1788235200,59.95],[1788238800,18.08],[1788242400,0.0],[1788246000,22.84],[1788249600,44.23],[1788253200,221.73],[1788256800,172.61],[1788260400,109.41],[1788264000,256.41],[1788267600,225.32],[1788271200,151.36],[1788274800,406.3],[1788278400,85.32],[1788282000,90.71],[1788285600,0.0],[1788289200,120.59],[1788292800,41.02],[1788296400,131.64],[1788300000,55.1],[1788303600,0.0],[1788307200,82.34],[1788310800,189.15],[1788314400,170.1],[1788318000,150.98],[1788321600,55.0],[1788325200,35.58],[1788328800,79.21],[1788332400,41.53],[1788336000,60.04],[1788339600,72.25],[1788343200,0.0],[1788346800,328.31]]},"markets":{"SPX":[[1787778000,7675.7],[1787781600,7675.7],[1787785200,7675.7],[1787788800,7675.7],[1787792400,7675.7],[1787796000,7675.7],[1787799600,7675.7],[1787803200,7675.7],[1787806800,7675.7],[1787810400,7675.7],[1787814000,7675.7],[1787817600,7675.7],[1787821200,7675.7],[1787824800,7675.7],[1787828400,7675.7],[1787832000,7675.7],[1787835600,7675.7],[1787839200,7705.27],[1787842800,7723.52],[1787846400,7725.07],[1787850000,7739.11],[1787853600,7725.15],[1787857200,7716.69],[1787860800,7730.79],[1787864400,7730.99],[1787868000,7730.99],[1787871600,7730.99],[1787875200,7730.99],[1787878800,7730.99],[1787882400,7730.99],[1787889600,7730.99],[1787893200,7730.99],[1787896800,7730.99],[1787900400,7730.99],[1787904000,7730.99],[1787907600,7730.99],[1787911200,7730.99],[1787914800,7730.99],[1787918400,7730.99],[1787922000,7730.99],[1787925600,7739.32],[1787929200,7769.21],[1787932800,7725.05],[1787936400,7706.78],[1787940000,7712.29],[1787943600,7706.28],[1787947200,7711.48],[1787950800,7711.76],[1787954400,7711.76],[1787958000,7711.76],[1787961600,7711.76],[1787965200,7711.76],[1787968800,7711.76],[1787972400,7711.76],[1787976000,7711.76],[1787979600,7711.76],[1787983200,7711.76],[1787986800,7711.76],[1787990400,7711.76],[1787994000,7711.76],[1788001200,7711.76],[1788004800,7711.76],[1788008400,7711.76],[1788012000,7711.76],[1788015600,7711.76],[1788019200,7711.76],[1788022800,7711.76],[1788026400,7711.76],[1788030000,7711.76],[1788037200,7711.76],[1788040800,7711.76],[1788044400,7711.76],[1788048000,7711.76],[1788051600,7711.76],[1788058800,7711.76],[1788062400,7711.76],[1788066000,7711.76],[1788069600,7711.76],[1788073200,7711.76],[1788076800,7711.76],[1788080400,7711.76],[1788084000,7711.76],[1788087600,7711.76],[1788091200,7711.76],[1788094800,7711.76],[1788098400,7711.76],[1788102000,7711.76],[1788105600,7711.76],[1788109200,7711.76],[1788112800,7711.76],[1788116400,7711.76],[1788120000,7711.76],[1788123600,7711.76],[1788130800,7711.76],[1788134400,7711.76],[1788138000,7711.76],[1788141600,7711.76],[1788145200,7711.76],[1788148800,7711.76],[1788152400,7711.76],[1788156000,7711.76],[1788159600,7711.76],[1788163200,7711.76],[1788166800,7711.76],[1788170400,7711.76],[1788174000,7711.76],[1788177600,7711.76],[1788181200,7711.76],[1788184800,7677.35],[1788188400,7678.95],[1788195600,7675.89],[1788199200,7682.49],[1788202800,7675.95],[1788206400,7686.38],[1788210000,7686.14],[1788213600,7686.14],[1788217200,7686.14],[1788220800,7686.14],[1788224400,7686.14],[1788228000,7686.14],[1788231600,7686.14],[1788235200,7686.14],[1788238800,7686.14],[1788242400,7686.14],[1788246000,7686.14],[1788249600,7686.14],[1788253200,7686.14],[1788256800,7686.14],[1788260400,7686.14],[1788264000,7686.14],[1788267600,7686.14],[1788271200,7641.94],[1788274800,7650.24],[1788278400,7659.09],[1788282000,7635.06],[1788285600,7634.15],[1788289200,7624.29],[1788292800,7631.55],[1788296400,7631.47],[1788300000,7631.47],[1788303600,7631.47],[1788307200,7631.47],[1788310800,7631.47],[1788314400,7631.47],[1788318000,7631.47],[1788321600,7631.47],[1788325200,7631.47],[1788328800,7631.47],[1788332400,7631.47],[1788336000,7631.47],[1788339600,7631.47],[1788343200,7631.47],[1788346800,7631.47]],"IXIC":[[1787778000,26130.2],[1787781600,26130.2],[1787785200,26130.2],[1787788800,26130.2],[1787792400,26130.2],[1787796000,26130.2],[1787799600,26130.2],[1787803200,26130.2],[1787806800,26130.2],[1787810400,26130.2],[1787814000,26130.2],[1787817600,26130.2],[1787821200,26130.2],[1787824800,26130.2],[1787828400,26130.2],[1787832000,26130.2],[1787835600,26130.2],[1787839200,26382.81],[1787842800,26476.28],[1787846400,26475.38],[1787850000,26544.66],[1787853600,26471.1],[1787857200,26449.44],[1787860800,26541.35],[1787864400,26541.35],[1787868000,26541.35],[1787871600,26541.35],[1787875200,26541.35],[1787878800,26541.35],[1787882400,26541.35],[1787889600,26541.35],[1787893200,26541.35],[1787896800,26541.35],[1787900400,26541.35],[1787904000,26541.35],[1787907600,26541.35],[1787911200,26541.35],[1787914800,26541.35],[1787918400,26541.35],[1787922000,26541.35],[1787925600,26542.94],[1787929200,26689.37],[1787932800,26456.81],[1787936400,26391.08],[1787940000,26424.22],[1787943600,26380.88],[1787947200,26402.42],[1787950800,26402.42],[1787954400,26402.42],[1787958000,26402.42],[1787961600,26402.42],[1787965200,26402.42],[1787968800,26402.42],[1787972400,26402.42],[1787976000,26402.42],[1787979600,26402.42],[1787983200,26402.42],[1787986800,26402.42],[1787990400,26402.42],[1787994000,26402.42],[1788001200,26402.42],[1788004800,26402.42],[1788008400,26402.42],[1788012000,26402.42],[1788015600,26402.42],[1788019200,26402.42],[1788022800,26402.42],[1788026400,26402.42],[1788030000,26402.42],[1788037200,26402.42],[1788040800,26402.42],[1788044400,26402.42],[1788048000,26402.42],[1788051600,26402.42],[1788058800,26402.42],[1788062400,26402.42],[1788066000,26402.42],[1788069600,26402.42],[1788073200,26402.42],[1788076800,26402.42],[1788080400,26402.42],[1788084000,26402.42],[1788087600,26402.42],[1788091200,26402.42],[1788094800,26402.42],[1788098400,26402.42],[1788102000,26402.42],[1788105600,26402.42],[1788109200,26402.42],[1788112800,26402.42],[1788116400,26402.42],[1788120000,26402.42],[1788123600,26402.42],[1788130800,26402.42],[1788134400,26402.42],[1788138000,26402.42],[1788141600,26402.42],[1788145200,26402.42],[1788148800,26402.42],[1788152400,26402.42],[1788156000,26402.42],[1788159600,26402.42],[1788163200,26402.42],[1788166800,26402.42],[1788170400,26402.42],[1788174000,26402.42],[1788177600,26402.42],[1788181200,26402.42],[1788184800,26292.42],[1788188400,26305.49],[1788195600,26314.42],[1788199200,26313.63],[1788202800,26289.34],[1788206400,26370.89],[1788210000,26370.89],[1788213600,26370.89],[1788217200,26370.89],[1788220800,26370.89],[1788224400,26370.89],[1788228000,26370.89],[1788231600,26370.89],[1788235200,26370.89],[1788238800,26370.89],[1788242400,26370.89],[1788246000,26370.89],[1788249600,26370.89],[1788253200,26370.89],[1788256800,26370.89],[1788260400,26370.89],[1788264000,26370.89],[1788267600,26370.89],[1788271200,26099.88],[1788274800,26173.0],[1788278400,26235.21],[1788282000,26141.03],[1788285600,26121.62],[1788289200,26072.43],[1788292800,26099.77],[1788296400,26099.77],[1788300000,26099.77],[1788303600,26099.77],[1788307200,26099.77],[1788310800,26099.77],[1788314400,26099.77],[1788318000,26099.77],[1788321600,26099.77],[1788325200,26099.77],[1788328800,26099.77],[1788332400,26099.77],[1788336000,26099.77],[1788339600,26099.77],[1788343200,26099.77],[1788346800,26099.77]],"BTC":[[1787778000,78429.57],[1787781600,78795.45],[1787785200,78704.93],[1787788800,78981.73],[1787792400,78732.21],[1787796000,78929.27],[1787799600,78722.2],[1787803200,78832.7],[1787806800,78757.4],[1787810400,78830.0],[1787814000,78783.39],[1787817600,79045.3],[1787821200,79752.69],[1787824800,80003.94],[1787828400,79638.4],[1787832000,79500.01],[1787835600,79313.3],[1787839200,79476.5],[1787842800,80329.45],[1787846400,80358.3],[1787850000,80256.53],[1787853600,80390.79],[1787857200,80132.05],[1787860800,79901.32],[1787864400,80054.91],[1787868000,80269.2],[1787871600,80318.37],[1787875200,80211.15],[1787878800,80743.01],[1787882400,80447.95],[1787889600,79846.51],[1787893200,79616.01],[1787896800,79813.7],[1787900400,79887.78],[1787904000,79703.48],[1787907600,79385.02],[1787911200,79291.87],[1787914800,79588.67],[1787918400,79616.39],[1787922000,79439.1],[1787925600,79203.2],[1787929200,79627.67],[1787932800,78175.12],[1787936400,77752.04],[1787940000,77898.84],[1787943600,77620.74],[1787947200,77588.65],[1787950800,77391.09],[1787954400,77392.58],[1787958000,77744.59],[1787961600,77852.0],[1787965200,77707.7],[1787968800,77787.2],[1787972400,77708.32],[1787976000,77512.48],[1787979600,77646.85],[1787983200,77595.0],[1787986800,77486.99],[1787990400,77585.12],[1787994000,77636.22],[1788001200,77625.34],[1788004800,77581.74],[1788008400,77592.0],[1788012000,77699.08],[1788015600,77943.2],[1788019200,77881.87],[1788022800,78037.61],[1788026400,78136.9],[1788030000,78161.34],[1788037200,78080.47],[1788040800,78143.75],[1788044400,78234.67],[1788048000,78210.57],[1788051600,78161.75],[1788058800,78119.34],[1788062400,78136.2],[1788066000,78111.96],[1788069600,78113.74],[1788073200,78262.01],[1788076800,78112.5],[1788080400,78072.1],[1788084000,77997.41],[1788087600,78149.9],[1788091200,78214.7],[1788094800,78692.9],[1788098400,78894.2],[1788102000,78729.65],[1788105600,78808.89],[1788109200,79245.48],[1788112800,78989.83],[1788116400,79010.68],[1788120000,78881.6],[1788123600,78363.1],[1788130800,78362.9],[1788134400,77664.0],[1788138000,77973.5],[1788141600,77586.01],[1788145200,77437.08],[1788148800,77697.81],[1788152400,77550.64],[1788156000,78019.65],[1788159600,78129.98],[1788163200,78194.2],[1788166800,78436.4],[1788170400,78464.7],[1788174000,78623.92],[1788177600,78371.69],[1788181200,78073.93],[1788184800,77828.65],[1788188400,78547.94],[1788195600,78594.44],[1788199200,78820.6],[1788202800,79059.8],[1788206400,78904.09],[1788210000,78836.51],[1788213600,78963.68],[1788217200,78487.0],[1788220800,78563.37],[1788224400,78694.99],[1788228000,78310.27],[1788231600,78420.2],[1788235200,78702.3],[1788238800,78735.22],[1788242400,79077.54],[1788246000,78742.3],[1788249600,78614.0],[1788253200,77831.99],[1788256800,77946.76],[1788260400,77936.9],[1788264000,77947.14],[1788267600,77844.0],[1788271200,78216.24],[1788274800,77902.7],[1788278400,77842.4],[1788282000,77601.8],[1788285600,77189.85],[1788289200,77168.5],[1788292800,77256.0],[1788296400,77366.7],[1788300000,77150.54],[1788303600,77223.52],[1788307200,77417.32],[1788310800,77174.54],[1788314400,76954.76],[1788318000,77406.65],[1788321600,77464.04],[1788325200,77478.0],[1788328800,77654.94],[1788332400,77601.77],[1788336000,77388.0],[1788339600,76936.21],[1788343200,76621.93],[1788346800,76568.46]],"ETH":[[1787778000,2471.56],[1787781600,2500.99],[1787785200,2492.04],[1787788800,2505.31],[1787792400,2492.89],[1787796000,2500.21],[1787799600,2494.5],[1787803200,2493.01],[1787806800,2488.2],[1787810400,2494.28],[1787814000,2492.36],[1787817600,2497.82],[1787821200,2528.71],[1787824800,2534.6],[1787828400,2506.87],[1787832000,2503.4],[1787835600,2497.55],[1787839200,2495.95],[1787842800,2520.46],[1787846400,2525.23],[1787850000,2517.82],[1787853600,2516.64],[1787857200,2506.58],[1787860800,2498.46],[1787864400,2505.44],[1787868000,2509.46],[1787871600,2516.68],[1787875200,2509.75],[1787878800,2518.73],[1787882400,2511.44],[1787889600,2491.65],[1787893200,2484.95],[1787896800,2498.17],[1787900400,2503.09],[1787904000,2498.78],[1787907600,2486.11],[1787911200,2489.69],[1787914800,2507.52],[1787918400,2505.58],[1787922000,2500.0],[1787925600,2505.14],[1787929200,2512.5],[1787932800,2462.95],[1787936400,2439.24],[1787940000,2443.73],[1787943600,2431.53],[1787947200,2435.08],[1787950800,2426.86],[1787954400,2425.18],[1787958000,2439.8],[1787961600,2444.44],[1787965200,2441.64],[1787968800,2443.36],[1787972400,2439.95],[1787976000,2435.64],[1787979600,2440.0],[1787983200,2437.85],[1787986800,2435.31],[1787990400,2435.01],[1787994000,2434.33],[1788001200,2433.84],[1788004800,2435.79],[1788008400,2435.33],[1788012000,2436.42],[1788015600,2446.29],[1788019200,2445.77],[1788022800,2452.25],[1788026400,2451.0],[1788030000,2452.56],[1788037200,2450.78],[1788040800,2450.1],[1788044400,2453.15],[1788048000,2456.76],[1788051600,2458.25],[1788058800,2456.02],[1788062400,2457.12],[1788066000,2456.74],[1788069600,2455.14],[1788073200,2459.79],[1788076800,2455.31],[1788080400,2457.6],[1788084000,2453.32],[1788087600,2459.14],[1788091200,2460.99],[1788094800,2466.85],[1788098400,2474.57],[1788102000,2476.79],[1788105600,2479.36],[1788109200,2522.8],[1788112800,2504.43],[1788116400,2509.46],[1788120000,2505.86],[1788123600,2463.6],[1788130800,2467.17],[1788134400,2416.12],[1788138000,2429.68],[1788141600,2412.36],[1788145200,2406.2],[1788148800,2418.68],[1788152400,2415.91],[1788156000,2435.94],[1788159600,2440.56],[1788163200,2441.17],[1788166800,2445.65],[1788170400,2444.58],[1788174000,2454.49],[1788177600,2446.4],[1788181200,2456.38],[1788184800,2438.34],[1788188400,2468.24],[1788195600,2467.74],[1788199200,2472.68],[1788202800,2479.01],[1788206400,2482.17],[1788210000,2471.91],[1788213600,2477.68],[1788217200,2466.4],[1788220800,2466.14],[1788224400,2471.44],[1788228000,2459.98],[1788231600,2464.88],[1788235200,2473.1],[1788238800,2469.77],[1788242400,2482.19],[1788246000,2472.92],[1788249600,2472.28],[1788253200,2445.02],[1788256800,2453.4],[1788260400,2454.0],[1788264000,2453.86],[1788267600,2442.32],[1788271200,2449.72],[1788274800,2442.31],[1788278400,2445.62],[1788282000,2432.55],[1788285600,2416.0],[1788289200,2414.72],[1788292800,2415.76],[1788296400,2417.82],[1788300000,2413.57],[1788303600,2412.07],[1788307200,2417.82],[1788310800,2408.68],[1788314400,2398.56],[1788318000,2410.17],[1788321600,2411.53],[1788325200,2412.85],[1788328800,2422.91],[1788332400,2420.77],[1788336000,2415.99],[1788339600,2397.27],[1788343200,2372.74],[1788346800,2368.54]],"GOLD":[[1787778000,4647.8],[1787781600,4657.0],[1787785200,4661.9],[1787788800,4677.9],[1787792400,4661.5],[1787796000,4696.6],[1787799600,4684.0],[1787803200,4680.0],[1787806800,4671.6],[1787810400,4655.0],[1787814000,4655.4],[1787817600,4657.4],[1787821200,4653.8],[1787824800,4631.9],[1787828400,4642.8],[1787832000,4653.5],[1787835600,4638.3],[1787839200,4623.9],[1787842800,4649.0],[1787846400,4665.2],[1787850000,4668.5],[1787853600,4657.9],[1787857200,4666.4],[1787860800,4660.3],[1787864400,4654.8],[1787868000,4659.6],[1787871600,4662.3],[1787875200,4650.6],[1787878800,4642.5],[1787882400,4629.3],[1787889600,4631.6],[1787893200,4636.6],[1787896800,4626.9],[1787900400,4661.2],[1787904000,4667.1],[1787907600,4657.3],[1787911200,4658.1],[1787914800,4650.7],[1787918400,4644.5],[1787922000,4652.7],[1787925600,4647.0],[1787929200,4629.4],[1787932800,4574.9],[1787936400,4526.9],[1787940000,4516.1],[1787943600,4510.1],[1787947200,4507.0],[1787950800,4504.1],[1787954400,4504.1],[1787958000,4504.1],[1787961600,4504.1],[1787965200,4504.1],[1787968800,4504.1],[1787972400,4504.1],[1787976000,4504.1],[1787979600,4504.1],[1787983200,4504.1],[1787986800,4504.1],[1787990400,4504.1],[1787994000,4504.1],[1788001200,4504.1],[1788004800,4504.1],[1788008400,4504.1],[1788012000,4504.1],[1788015600,4504.1],[1788019200,4504.1],[1788022800,4504.1],[1788026400,4504.1],[1788030000,4504.1],[1788037200,4504.1],[1788040800,4504.1],[1788044400,4504.1],[1788048000,4504.1],[1788051600,4504.1],[1788058800,4504.1],[1788062400,4504.1],[1788066000,4504.1],[1788069600,4504.1],[1788073200,4504.1],[1788076800,4504.1],[1788080400,4504.1],[1788084000,4504.1],[1788087600,4504.1],[1788091200,4504.1],[1788094800,4504.1],[1788098400,4504.1],[1788102000,4504.1],[1788105600,4504.1],[1788109200,4504.1],[1788112800,4504.1],[1788116400,4504.1],[1788120000,4504.1],[1788123600,4504.1],[1788130800,4510.3],[1788134400,4509.7],[1788138000,4501.7],[1788141600,4482.4],[1788145200,4472.9],[1788148800,4469.9],[1788152400,4473.9],[1788156000,4485.7],[1788159600,4488.0],[1788163200,4497.3],[1788166800,4488.2],[1788170400,4496.1],[1788174000,4506.7],[1788177600,4508.8],[1788181200,4486.1],[1788184800,4470.1],[1788188400,4483.2],[1788195600,4482.5],[1788199200,4485.4],[1788202800,4479.4],[1788206400,4504.3],[1788210000,4497.3],[1788213600,4498.3],[1788217200,4495.2],[1788220800,4500.1],[1788224400,4502.5],[1788228000,4492.1],[1788231600,4492.3],[1788235200,4485.9],[1788238800,4477.0],[1788242400,4486.4],[1788246000,4479.8],[1788249600,4465.0],[1788253200,4418.7],[1788256800,4417.9],[1788260400,4425.1],[1788264000,4418.9],[1788267600,4393.0],[1788271200,4410.0],[1788274800,4410.5],[1788278400,4420.8],[1788282000,4397.5],[1788285600,4390.6],[1788289200,4377.9],[1788292800,4370.7],[1788296400,4375.7],[1788300000,4378.1],[1788303600,4373.5],[1788307200,4371.6],[1788310800,4361.4],[1788314400,4338.9],[1788318000,4350.4],[1788321600,4349.4],[1788325200,4352.5],[1788328800,4368.2],[1788332400,4368.2],[1788336000,4371.6],[1788339600,4359.9],[1788343200,4355.1],[1788346800,4357.0]],"WTI":[[1787778000,81.91],[1787781600,82.07],[1787785200,81.79],[1787788800,81.78],[1787792400,82.03],[1787796000,81.62],[1787799600,81.55],[1787803200,81.81],[1787806800,81.84],[1787810400,81.42],[1787814000,80.91],[1787817600,81.26],[1787821200,81.84],[1787824800,82.4],[1787828400,82.36],[1787832000,82.46],[1787835600,82.68],[1787839200,82.96],[1787842800,82.03],[1787846400,82.66],[1787850000,82.79],[1787853600,84.21],[1787857200,83.74],[1787860800,83.62],[1787864400,83.54],[1787868000,83.58],[1787871600,83.59],[1787875200,83.49],[1787878800,83.31],[1787882400,83.16],[1787889600,83.14],[1787893200,83.33],[1787896800,83.18],[1787900400,82.81],[1787904000,83.01],[1787907600,83.43],[1787911200,83.1],[1787914800,83.2],[1787918400,82.94],[1787922000,82.43],[1787925600,82.39],[1787929200,82.88],[1787932800,82.91],[1787936400,83.53],[1787940000,83.36],[1787943600,83.24],[1787947200,83.35],[1787950800,83.44],[1787954400,83.44],[1787958000,83.44],[1787961600,83.44],[1787965200,83.44],[1787968800,83.44],[1787972400,83.44],[1787976000,83.44],[1787979600,83.44],[1787983200,83.44],[1787986800,83.44],[1787990400,83.44],[1787994000,83.44],[1788001200,83.44],[1788004800,83.44],[1788008400,83.44],[1788012000,83.44],[1788015600,83.44],[1788019200,83.44],[1788022800,83.44],[1788026400,83.44],[1788030000,83.44],[1788037200,83.44],[1788040800,83.44],[1788044400,83.44],[1788048000,83.44],[1788051600,83.44],[1788058800,83.44],[1788062400,83.44],[1788066000,83.44],[1788069600,83.44],[1788073200,83.44],[1788076800,83.44],[1788080400,83.44],[1788084000,83.44],[1788087600,83.44],[1788091200,83.44],[1788094800,83.44],[1788098400,83.44],[1788102000,83.44],[1788105600,83.44],[1788109200,83.44],[1788112800,83.44],[1788116400,83.44],[1788120000,83.44],[1788123600,83.44],[1788130800,84.86],[1788134400,84.62],[1788138000,84.73],[1788141600,85.44],[1788145200,84.9],[1788148800,85.06],[1788152400,85.33],[1788156000,85.79],[1788159600,85.37],[1788163200,85.27],[1788166800,86.31],[1788170400,86.64],[1788174000,86.19],[1788177600,86.36],[1788181200,86.01],[1788184800,86.02],[1788188400,85.19],[1788195600,85.76],[1788199200,85.58],[1788202800,85.62],[1788206400,85.99],[1788210000,86.31],[1788213600,86.41],[1788217200,86.42],[1788220800,86.53],[1788224400,86.64],[1788228000,86.39],[1788231600,86.72],[1788235200,86.7],[1788238800,86.96],[1788242400,86.4],[1788246000,86.51],[1788249600,86.94],[1788253200,87.91],[1788256800,88.03],[1788260400,87.85],[1788264000,87.92],[1788267600,88.24],[1788271200,88.24],[1788274800,87.95],[1788278400,88.39],[1788282000,89.6],[1788285600,89.8],[1788289200,90.49],[1788292800,90.8],[1788296400,90.68],[1788300000,90.73],[1788303600,90.82],[1788307200,90.76],[1788310800,92.01],[1788314400,91.37],[1788318000,90.75],[1788321600,90.7],[1788325200,90.6],[1788328800,90.74],[1788332400,90.6],[1788336000,90.03],[1788339600,90.28],[1788343200,90.48],[1788346800,90.27]]}},"1d":{"topics":{"sanctions":[[1788294600,1742.92],[1788295500,869.57],[1788296400,1186.94],[1788297300,1294.96],[1788298200,879.12],[1788300900,903.83],[1788302700,783.87],[1788303600,465.12],[1788304500,584.8],[1788306300,421.05],[1788308100,741.05],[1788309000,535.2],[1788311700,344.23],[1788312600,352.11],[1788313500,263.5],[1788314400,543.02],[1788315300,460.83],[1788317100,573.61],[1788318000,251.64],[1788321600,1003.22],[1788322500,459.67],[1788323400,559.6],[1788324300,471.7],[1788325200,892.86],[1788326100,836.32],[1788327000,381.15],[1788328800,240.38],[1788330600,692.04],[1788331500,632.55],[1788334200,996.68],[1788337800,1061.01],[1788338700,1118.57],[1788340500,1300.58],[1788343200,221.24],[1788344100,489.43],[1788345900,0.0],[1788348600,688.58],[1788349500,656.19]],"rates":[[1788294600,1089.32],[1788295500,0.0],[1788296400,148.37],[1788297300,143.88],[1788298200,769.23],[1788300900,614.61],[1788302700,522.58],[1788303600,0.0],[1788304500,682.26],[1788306300,421.05],[1788308100,494.03],[1788309000,288.18],[1788311700,860.59],[1788312600,572.18],[1788313500,527.01],[1788314400,459.48],[1788315300,0.0],[1788317100,717.02],[1788318000,251.64],[1788321600,429.95],[1788322500,125.37],[1788323400,55.96],[1788324300,94.34],[1788325200,446.43],[1788326100,159.3],[1788327000,381.15],[1788328800,0.0],[1788330600,86.51],[1788331500,230.02],[1788334200,83.06],[1788337800,0.0],[1788338700,149.14],[1788340500,361.27],[1788343200,221.24],[1788344100,88.99],[1788345900,0.0],[1788348600,219.09],[1788349500,298.27]],"geopolitics":[[1788295500,1521.74],[1788296400,890.21],[1788297300,1294.96],[1788298200,989.01],[1788300900,506.15],[1788302700,447.93],[1788303600,0.0],[1788304500,487.33],[1788306300,842.11],[1788308100,1276.25],[1788309000,864.55],[1788311700,774.53],[1788312600,704.23],[1788313500,351.34],[1788314400,1044.28],[1788315300,0.0],[1788317100,908.22],[1788318000,452.94],[1788321600,859.91],[1788322500,793.98],[1788323400,671.52],[1788324300,1084.91],[1788325200,1785.71],[1788326100,915.97],[1788327000,762.3],[1788328800,0.0],[1788330600,692.04],[1788331500,1178.84],[1788334200,789.04],[1788337800,909.44],[1788338700,745.71],[1788340500,1083.82],[1788343200,1106.19],[1788344100,489.43],[1788345900,421.94],[1788348600,438.18],[1788349500,377.81]],"crypto":[[1788295500,0.0],[1788296400,148.37],[1788297300,0.0],[1788298200,219.78],[1788300900,36.15],[1788302700,74.65],[1788303600,0.0],[1788304500,0.0],[1788306300,0.0],[1788308100,41.17],[1788309000,123.51],[1788311700,344.23],[1788312600,88.03],[1788313500,131.75],[1788314400,208.86],[1788315300,0.0],[1788317100,143.4],[1788318000,150.98],[1788321600,143.32],[1788322500,0.0],[1788323400,55.96],[1788324300,0.0],[1788325200,0.0],[1788326100,39.82],[1788327000,34.65],[1788328800,0.0],[1788330600,86.51],[1788331500,86.26],[1788334200,41.53],[1788337800,37.89],[1788338700,74.57],[1788340500,72.25],[1788343200,0.0],[1788344100,0.0],[1788345900,0.0],[1788348600,250.39],[1788349500,377.81]]},"markets":{"SPX":[[1788294600,7631.47],[1788295500,7631.47],[1788296400,7631.47],[1788297300,7631.47],[1788298200,7631.47],[1788300900,7631.47],[1788302700,7631.47],[1788303600,7631.47],[1788304500,7631.47],[1788306300,7631.47],[1788308100,7631.47],[1788309000,7631.47],[1788311700,7631.47],[1788312600,7631.47],[1788313500,7631.47],[1788314400,7631.47],[1788315300,7631.47],[1788317100,7631.47],[1788318000,7631.47],[1788321600,7631.47],[1788322500,7631.47],[1788323400,7631.47],[1788324300,7631.47],[1788325200,7631.47],[1788326100,7631.47],[1788327000,7631.47],[1788328800,7631.47],[1788330600,7631.47],[1788331500,7631.47],[1788334200,7631.47],[1788337800,7631.47],[1788338700,7631.47],[1788340500,7631.47],[1788343200,7631.47],[1788344100,7631.47],[1788345900,7631.47],[1788348600,7631.47],[1788349500,7631.47]],"IXIC":[[1788294600,26099.77],[1788295500,26099.77],[1788296400,26099.77],[1788297300,26099.77],[1788298200,26099.77],[1788300900,26099.77],[1788302700,26099.77],[1788303600,26099.77],[1788304500,26099.77],[1788306300,26099.77],[1788308100,26099.77],[1788309000,26099.77],[1788311700,26099.77],[1788312600,26099.77],[1788313500,26099.77],[1788314400,26099.77],[1788315300,26099.77],[1788317100,26099.77],[1788318000,26099.77],[1788321600,26099.77],[1788322500,26099.77],[1788323400,26099.77],[1788324300,26099.77],[1788325200,26099.77],[1788326100,26099.77],[1788327000,26099.77],[1788328800,26099.77],[1788330600,26099.77],[1788331500,26099.77],[1788334200,26099.77],[1788337800,26099.77],[1788338700,26099.77],[1788340500,26099.77],[1788343200,26099.77],[1788344100,26099.77],[1788345900,26099.77],[1788348600,26099.77],[1788349500,26099.77]],"BTC":[[1788294600,77374.18],[1788295500,77347.3],[1788296400,77430.8],[1788297300,77086.5],[1788298200,77131.3],[1788300900,77203.26],[1788302700,77175.18],[1788303600,77234.16],[1788304500,77243.74],[1788306300,77451.7],[1788308100,77373.24],[1788309000,77235.01],[1788311700,77253.72],[1788312600,77090.6],[1788313500,76916.82],[1788314400,76952.64],[1788315300,77081.39],[1788317100,77163.84],[1788318000,77286.1],[1788321600,77470.39],[1788322500,77331.31],[1788323400,77410.8],[1788324300,77559.75],[1788325200,77524.5],[1788326100,77600.68],[1788327000,77665.15],[1788328800,77623.75],[1788330600,77477.31],[1788331500,77569.3],[1788334200,77563.79],[1788337800,77131.88],[1788338700,76942.12],[1788340500,76874.65],[1788343200,76686.5],[1788344100,76588.29],[1788345900,76540.0],[1788348600,76473.44],[1788349500,76593.09]],"ETH":[[1788294600,2419.6],[1788295500,2417.57],[1788296400,2420.23],[1788297300,2407.08],[1788298200,2412.84],[1788300900,2413.38],[1788302700,2408.64],[1788303600,2412.41],[1788304500,2412.29],[1788306300,2420.92],[1788308100,2419.62],[1788309000,2411.18],[1788311700,2410.72],[1788312600,2407.89],[1788313500,2395.8],[1788314400,2397.34],[1788315300,2402.01],[1788317100,2405.92],[1788318000,2407.84],[1788321600,2411.81],[1788322500,2407.78],[1788323400,2411.48],[1788324300,2414.28],[1788325200,2414.76],[1788326100,2415.07],[1788327000,2419.67],[1788328800,2422.02],[1788330600,2415.59],[1788331500,2420.64],[1788334200,2421.03],[1788337800,2410.48],[1788338700,2397.27],[1788340500,2390.65],[1788343200,2373.68],[1788344100,2371.62],[1788345900,2363.58],[1788348600,2373.46],[1788349500,2376.05]],"GOLD":[[1788294600,4373.0],[1788295500,4374.1],[1788296400,4375.7],[1788297300,4375.7],[1788298200,4375.7],[1788300900,4375.3],[1788302700,4374.1],[1788303600,4373.6],[1788304500,4377.1],[1788306300,4378.8],[1788308100,4375.9],[1788309000,4369.6],[1788311700,4371.7],[1788312600,4362.7],[1788313500,4355.0],[1788314400,4335.8],[1788315300,4344.7],[1788317100,4356.9],[1788318000,4349.1],[1788321600,4350.7],[1788322500,4351.2],[1788323400,4351.0],[1788324300,4351.3],[1788325200,4354.5],[1788326100,4357.7],[1788327000,4367.2],[1788328800,4366.7],[1788330600,4369.2],[1788331500,4371.2],[1788334200,4374.0],[1788337800,4371.9],[1788338700,4366.7],[1788340500,4361.4],[1788343200,4356.4],[1788344100,4353.9],[1788345900,4356.5],[1788348600,4370.8],[1788349500,4373.6]],"WTI":[[1788294600,90.78],[1788295500,90.64],[1788296400,90.68],[1788297300,90.68],[1788298200,90.68],[1788300900,90.92],[1788302700,90.81],[1788303600,90.85],[1788304500,90.83],[1788306300,90.77],[1788308100,90.9],[1788309000,91.28],[1788311700,91.44],[1788312600,91.7],[1788313500,91.91],[1788314400,91.32],[1788315300,91.05],[1788317100,90.87],[1788318000,90.75],[1788321600,90.69],[1788322500,90.75],[1788323400,90.58],[1788324300,90.55],[1788325200,90.56],[1788326100,90.61],[1788327000,90.6],[1788328800,90.76],[1788330600,90.79],[1788331500,90.68],[1788334200,90.17],[1788337800,90.11],[1788338700,90.32],[1788340500,90.48],[1788343200,90.46],[1788344100,90.14],[1788345900,90.51],[1788348600,89.56],[1788349500,89.58]]}}}}};
+const pad = n => String(n).padStart(2,'0');
+const $ = id => document.getElementById(id);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtPx = v => v==null ? '—' : (Math.abs(v)>=1000 ? Number(v).toLocaleString('en-US',{maximumFractionDigits:0}) : (Math.abs(v)>=100 ? v.toFixed(1) : v.toFixed(2)));
+const fmtPct = v => v==null ? '—' : (v>=0?'+':'')+v.toFixed(2)+'%';
+const clsOf = v => v>0.05 ? 'up' : (v<-0.05 ? 'down' : 'neu');
+const arrowOf = v => v>0.05 ? '▲' : (v<-0.05 ? '▼' : '◆');
+
+/* ---------- 時鐘（真實 HKT，由生成時間錨定）---------- */
+function initClock(){
+  const base = new Date(DASH_DATA.generated_iso).getTime();
+  const t0 = performance.now();
+  const wk = ['日','一','二','三','四','五','六'];
+  function tick(){
+    const now = new Date(base + (performance.now()-t0));
+    $('hkClock').innerHTML = pad(now.getHours())+':'+pad(now.getMinutes())+':'+pad(now.getSeconds())+'<small>HKT</small>';
+    const d = DASH_DATA.date_parts;
+    $('dateLine').innerHTML = d.y+'-'+pad(d.m)+'-'+pad(d.d)+' <small>星期'+wk[now.getDay()]+' · '+DASH_DATA.edition_label+'</small>';
+    document.title = 'Ernest 每日市觀 Dashboard — '+d.y+'-'+pad(d.m)+'-'+pad(d.d);
+    // 倒數至下一個 High 事件
+    const ev = DASH_DATA.next_event;
+    if(ev){
+      let diff = new Date(ev.iso).getTime() - now.getTime();
+      if(diff < 0) diff = 0;
+      const h=Math.floor(diff/3600000), m=Math.floor(diff%3600000/60000), s=Math.floor(diff%60000/1000);
+      $('cd').innerHTML = pad(h)+'<small>時</small>'+pad(m)+'<small>分</small>'+pad(s)+'<small>秒</small>';
+    } else {
+      $('cd').innerHTML = '—<small></small>';
+    }
+  }
+  tick(); setInterval(tick,1000);
+}
+
+/* ---------- 頂欄：溫度計 ---------- */
+function renderThermo(){
+  const t = DASH_DATA.thermo;
+  $('thermoVal').innerHTML = t.total+'<small>'+t.regime_label.toUpperCase()+' /100</small>';
+  $('needle').style.left = Math.min(96, Math.max(2,t.total))+'%';
+  // 4 段：0-30 / 31-60 / 61-80 / 81-100
+  const segs = $('thermoSegs').children;
+  const bounds = [30,60,80,100];
+  for(let i=0;i<4;i++){ segs[i].classList.toggle('on', t.total>bounds[i]-30 || (i===0&&t.total<=30&&t.total>0) || t.total> (i===0?0:bounds[i-1])); }
+  // 簡化：按分數亮段
+  for(let i=0;i<4;i++){ segs[i].classList.remove('on'); }
+  if(t.total>0) segs[0].classList.add('on');
+  if(t.total>30) segs[1].classList.add('on');
+  if(t.total>60) segs[2].classList.add('on');
+  if(t.total>80) segs[3].classList.add('on');
+  const names = $('thermoNames').children;
+  for(let i=0;i<4;i++) names[i].classList.remove('cur');
+  const ci = t.total<=30?0:t.total<=60?1:t.total<=80?2:3;
+  names[ci].classList.add('cur');
+  $('regimePill').innerHTML = '<span class="ricon">'+t.regime_icon+'</span>'+
+    '<div><b>'+t.regime_label+'</b><small>'+DASH_DATA.regime_sub+'</small></div>';
+}
+
+/* ---------- 頂欄：情緒七格 ---------- */
+function sentimentTile(k, emo, v, pct, tileCls){
+  const c = clsOf(pct);
+  return '<div class="sent '+tileCls+'"><div class="k">'+emo+' '+k+'</div>'+
+    '<div class="v">'+v+'</div><div class="p '+c+'">'+arrowOf(pct)+' '+fmtPct(pct)+'</div></div>';
+}
+function renderSentiment(){
+  const q = DASH_DATA.quotes;
+  const g = (key,label,emo,fmt) => {
+    const x = q[key]; if(!x) return '';
+    const v = fmt ? fmt(x.last) : fmtPx(x.last);
+    const tile = (x.change_pct>0.05) ? 'g-tile' : (x.change_pct<-0.05 ? 'r-tile' : '');
+    let pct = x.change_pct;
+    let pTxt = fmtPct(pct);
+    if(key==='US10Y' && x.change_bp!=null){
+      const bp = x.change_bp, bc = bp>0.05?'up':(bp<-0.05?'down':'neu');
+      return '<div class="sent '+(bp>0.05?'r-tile':bp<-0.05?'g-tile':'')+'"><div class="k">'+emo+' '+label+'</div>'+
+        '<div class="v">'+(x.last==null?'—':x.last.toFixed(2)+'%')+'</div>'+
+        '<div class="p '+bc+'">'+(bp>0?'▲':bp<0?'▼':'◆')+' '+(bp>0?'+':'')+bp.toFixed(1)+'bp</div></div>';
+    }
+    return sentimentTile(label, emo, v, pct, tile);
+  };
+  $('sentimentBox').innerHTML =
+    g('DXY','美元 DXY','💵') +
+    g('US10Y','10年債','📈') +
+    g('VIX','VIX 恐慌','😱') +
+    g('GDX','金礦 GDX','🪙') +
+    g('XAU','金價 XAU','🥇') +
+    g('WTI','油 WTI','🛢️') +
+    g('BTC','BTC','₿', v=>'$'+fmtPx(v)) +
+    '';
+  // regime pill 由 renderThermo 處理
+}
+
+/* ---------- 風險時鐘面板 ---------- */
+function renderRiskClock(){
+  const ev = DASH_DATA.next_event;
+  const chip = $('riskCountChip');
+  const n = (DASH_DATA.calendar.next24h||[]).length + (DASH_DATA.calendar.next48h||[]).length;
+  chip.textContent = 'EVENT '+pad(Math.min(n,99));
+  if(ev){
+    $('nextEvent').innerHTML =
+      '<div class="t"><span class="blip"></span>🔴 '+esc(ev.time_hm)+' '+esc(ev.title)+'（'+esc(ev.country)+'）</div>'+
+      '<div class="m">📍 高影響經濟事件 · 預測 '+esc(ev.forecast||'—')+' · 前值 '+esc(ev.previous||'—')+'</div>';
+  } else {
+    $('nextEvent').innerHTML =
+      '<div class="t"><span class="blip" style="background:var(--cyan);box-shadow:0 0 10px var(--cyan)"></span>🔵 未來 24-48h 無 High 級經濟事件</div>'+
+      '<div class="m">📍 ForexFactory 日曆實時監測中</div>';
+  }
+  $('fedChipLine').innerHTML = DASH_DATA.fed_chip;
+  // mini calendar
+  const rows = [];
+  const all = (DASH_DATA.calendar.next24h||[]).concat(DASH_DATA.calendar.next48h||[]).slice(0,6);
+  all.forEach(e=>{
+    const cls = e.delta_hours<=24 ? 'hi' : 'mid';
+    const tag = e.delta_hours<=24 ? 'HIGH 🔴' : 'MID 🟠';
+    rows.push('<div class="row"><span class="tm">'+esc(e.time_hm)+'</span><span class="ev">'+esc(e.title)+' <small style="color:var(--txt-faint)">'+esc(e.country)+'</small></span><span class="impact '+cls+'">'+tag+'</span></div>');
+  });
+  $('miniCal').innerHTML = rows.join('') || '<div class="row"><span class="ev" style="color:var(--txt-faint)">未來 48h 無高影響事件</span></div>';
+}
+
+/* ---------- 事件卡（黑天鵝/突發）---------- */
+function renderEventCards(){
+  const evs = DASH_DATA.events;
+  $('activeCount').textContent = evs.length+' ACTIVE';
+  if(!evs.length){
+    $('eventCards').innerHTML = '<div style="padding:14px;color:var(--txt-faint);font-size:12px">🔵 過去 24-48h 未偵測到可映射 E1-E12 嘅地緣/宏觀突發事件（RSS+GDELT 持續監測中）。</div>';
+    return;
+  }
+  $('eventCards').innerHTML = evs.map(e=>{
+    const tags = e.assets.map(a=>'<span class="tag '+a[3]+'">'+a[0]+' '+esc(a[1])+' <span class="strength">'+a[2]+'</span></span>').join('');
+    const flagStyle = e.cls==='cyan'
+      ? 'style="color:#04121c;background:linear-gradient(180deg,rgba(45,212,255,.95),rgba(20,150,200,.9));border:1px solid rgba(90,220,255,.55);font-weight:800"'
+      : '';
+    return '<div class="ev-card '+e.card_cls+'">'+
+      '<div class="top"><span class="ev-flag '+(e.flag[1]==='cb'?'':e.flag[1])+'" '+flagStyle+'>'+esc(e.flag[0])+'</span>'+
+      '<span class="loc">📍 '+esc(e.name)+'</span></div>'+
+      '<div class="headline">'+esc(e.headline)+'</div>'+
+      '<div class="tags">'+tags+'</div>'+
+      '<div class="if-then"><b>如果</b> '+esc(e.if_then.split('，就 ')[0].replace('如果 ',''))+'，<b>就</b> '+esc(e.if_then.split('，就 ')[1]||'')+'</div>'+
+      '<div style="margin-top:6px;font-family:var(--mono);font-size:9px;color:var(--txt-faint)">'+esc(e.etype)+' · '+esc(e.etype_name)+' · '+esc(e.time)+' · <a href="'+esc(e.url)+'" style="color:var(--cyan)" target="_blank" rel="noopener">來源 ↗</a></div>'+
+    '</div>';
+  }).join('');
+}
+
+/* ---------- 地球 chips ---------- */
+function renderGlobeChips(){
+  const boxes = {'high':[], 'med':[], 'low':[]};
+  DASH_DATA.events.forEach(e=>{
+    const label = e.name;
+    if(e.severity==='high') boxes.high.push('<span class="chip">'+esc(label)+' <b style="color:var(--red)">CRITICAL</b></span>');
+    else if(e.severity==='med') boxes.med.push('<span class="chip">'+esc(label)+' <b style="color:var(--amber)">ELEVATED</b></span>');
+    else boxes.low.push('<span class="chip">'+esc(label)+' <b style="color:var(--cyan)">WATCH</b></span>');
+  });
+  if(!DASH_DATA.events.length){
+    $('globeChips').innerHTML = '<span class="chip">全球態勢 <b style="color:var(--green)">NOMINAL</b></span>';
+  } else {
+    $('globeChips').innerHTML = boxes.high.join('')+boxes.med.join('')+boxes.low.join('');
+  }
+}
+
+/* ---------- 跑馬燈 ---------- */
+function renderTicker(){
+  const items = [];
+  DASH_DATA.events.forEach(e=>{
+    const dir = e.assets[0] ? e.assets[0][2] : '';
+    items.push(['🟠', esc(e.name)+'：'+esc(e.headline.slice(0,38)), '<b>'+dir+'</b>']);
+  });
+  const q = DASH_DATA.quotes;
+  const add = (key,emo,name,fmt)=>{ const x=q[key]; if(!x||x.last==null) return;
+    const v = fmt?fmt(x.last):fmtPx(x.last);
+    items.push([emo, esc(name)+' '+v, '<b class="'+clsOf(x.change_pct)+'">'+fmtPct(x.change_pct)+'</b>']); };
+  add('VIX','😱','VIX'); add('XAU','🥇','金價'); add('WTI','🛢️','WTI'); add('DXY','💵','DXY');
+  add('BTC','₿','BTC',v=>'$'+fmtPx(v));
+  DASH_DATA.holdings.forEach(h=>{
+    if(h.change_pct==null) return;
+    const th = h.code==='SBTU'?6:3;
+    if(Math.abs(h.change_pct)>=th){
+      items.push(['⚠️', esc(h.code)+' 今日'+(h.change_pct>0?'升':'跌')+Math.abs(h.change_pct).toFixed(1)+'%',
+        '<b class="'+clsOf(h.change_pct)+'">'+(h.attrib_found?'':'歸因待查')+'</b>']);
+    }
+  });
+  if(DASH_DATA.next_event){
+    items.push(['📅','下一高影響：'+esc(DASH_DATA.next_event.title)+' '+esc(DASH_DATA.next_event.time_hm),'<b>'+esc(DASH_DATA.next_event.country)+'</b>']);
+  }
+  const html = items.map(i=>'<span class="t-item"><span>'+i[0]+'</span><b>'+i[1]+'</b>'+i[2]+'</span>').join('');
+  $('tickerTrack').innerHTML = html + html;
+}
+
+/* ---------- 持倉矩陣（三組 + SBTU 獨立區）---------- */
+function sparkline(chg){
+  // 用今日升跌畫極簡 8 點 polyline
+  const up = (chg||0)>=0;
+  const col = up ? '#2ee6a8' : '#ff4d6d';
+  const pts = up ? '0,13 8,12 16,11 24,10 32,8 40,7 48,5 56,4'
+                 : '0,4 8,5 16,4 24,7 32,9 40,12 48,13 56,14';
+  const endY = up ? 4 : 14;
+  return '<svg class="h-sp" width="56" height="18" viewBox="0 0 56 18"><polyline points="'+pts+'" fill="none" stroke="'+col+'" stroke-width="1.5"/><circle cx="56" cy="'+endY+'" r="2" fill="'+col+'"/></svg>';
+}
+function holdingRow(h){
+  const chg = h.change_pct;
+  const c = clsOf(chg);
+  const up = (chg||0)>=0;
+  const px = h.last==null ? '—' : (h.code.indexOf('USD')>=0 ? '$'+fmtPx(h.last) : '$'+fmtPx(h.last));
+  let tag, tagCls;
+  if(chg==null){ tag='數據待更新'; tagCls='n'; }
+  else if(Math.abs(chg)>= (h.code==='SBTU'?6:3)){ tag=(up?'強利好 ↑↑':'強利空 ↓↓'); tagCls= up?'g':'r'; }
+  else if(Math.abs(chg)>=1){ tag=(up?'利好 ↑':'利空 ↓'); tagCls= up?'g':'r'; }
+  else { tag='中性 ◆'; tagCls='n'; }
+  const th = h.code==='SBTU'?6:3;
+  const alert = (chg!=null && Math.abs(chg)>=th);
+  const isNew = h.is_new ? '<span style="color:var(--cyan);font-weight:800">🆕</span>' : '';
+  // 次軌：成本價
+  let costLine = '';
+  if(h.cost_price!=null && h.pnl_cost_pct!=null){
+    const cc = h.pnl_cost_pct>=0?'up':'down';
+    costLine = '<div style="grid-column:1/-1;font-family:var(--mono);font-size:9.5px;color:var(--txt-faint)">開倉成本 $'+fmtPx(h.cost_price)+' · 累計 <span class="'+cc+'">'+(h.pnl_cost_pct>=0?'+':'')+h.pnl_cost_pct+'%</span></div>';
+  } else {
+    costLine = '<div style="grid-column:1/-1;font-family:var(--mono);font-size:9.5px;color:var(--txt-faint)">成本價未記錄（淨顯示日變動%）</div>';
+  }
+  let attribLine = '';
+  if(alert){
+    const a = h.attrib||'';
+    const found = h.attrib_found;
+    attribLine = '<div class="attrib">歸因：<b>'+(found?'':'⚠️ ')+esc(a.slice(0,70))+'</b></div>';
+  }
+  return '<div class="hold-row'+(alert?' alert':'')+'">'+
+    '<div class="h-nm">'+isNew+' '+esc(h.code)+'<small>'+esc(h.name_cn)+' · '+esc(h.account_type)+'</small></div>'+
+    '<div class="h-px '+c+'">'+px+' <span class="'+c+'">'+arrowOf(chg)+' '+(chg==null?'—':fmtPct(chg))+'</span></div>'+
+    sparkline(chg)+
+    '<div class="h-tag"><span class="h-tag '+tagCls+'">'+tag+'</span>'+(alert?'<span class="alert-badge">⚠️ 異動</span>':'')+'</div>'+
+    costLine + attribLine +
+  '</div>';
+}
+function groupHeader(title, sub, color){
+  return '<div style="padding:7px 12px;margin-top:2px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:'+color+';border-bottom:1px solid var(--line);background:rgba(13,22,39,.5)">'+title+' <span style="color:var(--txt-faint);letter-spacing:.04em">'+sub+'</span></div>';
+}
+function renderHoldings(){
+  const hs = DASH_DATA.holdings;
+  const ea = hs.filter(h=>h.group==='mt5_ea' && h.status==='open');
+  const sbtu = hs.filter(h=>h.group==='us_demo_special' && h.status==='open');
+  const us = hs.filter(h=>h.group==='us_demo' && h.status==='open');
+  const closed = hs.filter(h=>h.status==='closed');
+  let html = '';
+  html += groupHeader('🤖 MT5 EA 倉','全自動策略 · 重點風險管理','var(--cyan)');
+  html += ea.map(holdingRow).join('');
+  html += groupHeader('🎰 美股 DEMO · 2X 槓桿區','T-REX 單日 2 倍 · 波動極大 · 獨立風控','var(--red)');
+  html += sbtu.map(holdingRow).join('');
+  html += groupHeader('📈 美股 DEMO 倉','us_demo 模擬倉 · 5 隻','var(--amber)');
+  html += us.map(holdingRow).join('');
+  const wl = DASH_DATA.watchlist||[];
+  if(wl.length){
+    html += groupHeader('👀 觀察區 WATCHLIST','資料未齊 · 照報價不計 P&L','var(--txt-faint)');
+    html += wl.map(holdingRow).join('');
+  }
+  if(closed.length){
+    html += groupHeader('⏸ 已平倉觀察組','保留報價＋歸因 30 日','var(--txt-faint)');
+    html += closed.map(holdingRow).join('');
+  }
+  // 底部統計
+  const openHs = hs.filter(h=>h.status==='open' && h.change_pct!=null);
+  const gN = openHs.filter(h=>h.change_pct>0.05).length;
+  const rN = openHs.filter(h=>h.change_pct<-0.05).length;
+  const nN = openHs.length - gN - rN;
+  const avg = openHs.length ? (openHs.reduce((s,h)=>s+h.change_pct,0)/openHs.length) : 0;
+  // 金銀比
+  const q = DASH_DATA.quotes;
+  let foot = '📐 <b>金銀比</b> ';
+  if(q.XAU && q.XAG && q.XAU.last && q.XAG.last){
+    const ratio = q.XAU.last/q.XAG.last;
+    foot += '<span class="gv">'+ratio.toFixed(1)+'</span>（金銀相對強弱）<br>';
+  } else foot += '—<br>';
+  foot += '🎯 <b>今日持倉平均</b> <span class="'+clsOf(avg)+'">'+fmtPct(avg)+'</span>（'+gN+' 升 / '+nN+' 平 / '+rN+' 跌，僅計日變動）<br>';
+  foot += '🛢️ WTI <b>$'+fmtPx(q.WTI?q.WTI.last:null)+'</b> ｜ ₿ <b>$'+fmtPx(q.BTC?q.BTC.last:null)+'</b> ｜ 數據源：CNBC 實時';
+  $('holdingsBody').innerHTML = html;
+  $('matrixFoot').innerHTML = foot;
+}
+
+/* ---------- 倉位速覽 → 倉位動向（組合事件）---------- */
+function renderPosition(){
+  const logs = DASH_DATA.trade_log||[];
+  const hs = DASH_DATA.holdings.filter(h=>h.status==='open' && h.change_pct!=null);
+  const gN = hs.filter(h=>h.change_pct>0.05).length;
+  const nN = hs.filter(h=>Math.abs(h.change_pct)<=0.05).length;
+  const rN = hs.length-gN-nN;
+  const avg = hs.length ? hs.reduce((s,h)=>s+h.change_pct,0)/hs.length : 0;
+  let html = '<div style="display:flex;justify-content:space-between;font-size:11.5px"><span style="color:var(--txt-dim)">持倉日變動均值（模擬倉）</span><b class="'+clsOf(avg)+'">'+fmtPct(avg)+'</b></div>';
+  html += '<div style="height:8px;border-radius:6px;background:#0c1626;overflow:hidden;display:flex;margin-top:6px">'+
+    '<div style="width:'+(gN/Math.max(1,hs.length)*100)+'%;background:linear-gradient(90deg,#125c48,var(--green))"></div>'+
+    '<div style="width:'+(nN/Math.max(1,hs.length)*100)+'%;background:rgba(126,147,173,.35)"></div>'+
+    '<div style="width:'+(rN/Math.max(1,hs.length)*100)+'%;background:linear-gradient(90deg,#7a1f30,var(--red))"></div></div>';
+  html += '<div style="display:flex;gap:12px;font-family:var(--mono);font-size:9.5px;color:var(--txt-faint);margin-top:6px">'+
+    '<span><i style="display:inline-block;width:7px;height:7px;border-radius:2px;background:var(--green);margin-right:4px"></i>利好 '+gN+'</span>'+
+    '<span><i style="display:inline-block;width:7px;height:7px;border-radius:2px;background:rgba(126,147,173,.5);margin-right:4px"></i>中性 '+nN+'</span>'+
+    '<span><i style="display:inline-block;width:7px;height:7px;border-radius:2px;background:var(--red);margin-right:4px"></i>利空 '+rN+'</span></div>';
+  html += '<div style="border-top:1px dashed var(--line);padding-top:9px;margin-top:9px;font-size:11px;color:var(--txt-dim);line-height:1.7">📋 <b style="color:var(--cyan)">倉位動向</b>（組合事件，非市場事件）：<br>';
+  if(logs.length){
+    html += logs.slice(-4).map(l=>'· '+esc(l.date)+' '+esc(l.action)+' '+esc(l.ticker)+' @ '+esc(l.price)+' — '+esc(l.reason)).join('<br>');
+  } else {
+    html += '· 暫無開/平倉記錄（持倉成本價未記錄，P&amp;L 雙軌只顯示日變動%）';
+  }
+  html += '</div>';
+  $('positionBody').innerHTML = html;
+}
+
+/* ---------- Brief 5 卡 ---------- */
+function renderBrief(){
+  $('briefSub').textContent = 'DAILY INTEL · '+DASH_DATA.date_str+' · '+DASH_DATA.edition_label;
+  $('briefCards').innerHTML = DASH_DATA.brief.map(b=>{
+    const tags = (b.tags||[]).map(t=>'<span class="tag c">'+esc(t)+'</span>').join('');
+    const ifParts = (b.ifthen||'').split('，就 ');
+    const cond = ifParts[0].replace('如果 ','');
+    const act = ifParts[1]||'';
+    return '<div class="panel brief-card" style="--bc:'+b.color+'">'+
+      '<div class="b-no">'+b.no+'</div>'+
+      '<div class="b-txt">'+b.tag+' '+esc(b.txt)+'</div>'+
+      '<div class="b-foot">'+tags+'</div>'+
+      '<div class="b-if"><b>如果</b> '+esc(cond)+' → <b>就</b> '+esc(act)+'</div>'+
+    '</div>';
+  }).join('');
+}
+
+/* ---------- 新聞 Feed（摺疊）---------- */
+function renderFeed(){
+  $('feedCount').textContent = '// 24-48H · '+pad(DASH_DATA.feed.length)+' REPORTS';
+  $('feedBody').innerHTML = DASH_DATA.feed.slice(0,40).map(f=>{
+    let t = f.time_hm;
+    let tagMap = {'oil':'🛢️油','gold':'🥇金','semi':'💾半導體','shipping':'🚢航運','crypto':'₿加密','macro':'🏛️宏觀','geo':'🌏地緣','stock':'📈美股'};
+    const tag = tagMap[f.theme]||'📰';
+    const title = esc(f.title);
+    return '<div class="feed-row"><span class="f-time">'+esc(t)+'</span><span class="f-src">'+esc(f.source)+'</span>'+
+      '<span class="f-txt"><a href="'+esc(f.url)+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">'+title+'</a></span>'+
+      '<span class="tag c">'+tag+'</span></div>';
+  }).join('');
+}
+
+/* ---------- 經濟日曆（摺疊）---------- */
+function renderCalendarFold(){
+  const all = (DASH_DATA.calendar.next24h||[]).concat(DASH_DATA.calendar.next48h||[]);
+  $('calCount').textContent = '// NEXT 48H · '+pad(all.length)+' HIGH EVENTS';
+  $('calBody').innerHTML = all.slice(0,12).map(e=>{
+    const cls = e.delta_hours<=24?'hi':'mid';
+    const lbl = e.delta_hours<=24?'HIGH':'MID+';
+    return '<div class="cal-row"><span class="c-time">'+esc(e.time_hm)+'</span>'+
+      '<span class="impact '+cls+'" style="justify-self:start">'+lbl+'</span>'+
+      '<span class="c-name">'+esc(e.title)+'<small>'+esc(e.country)+' · '+esc(e.date_label)+'</small></span>'+
+      '<span class="c-fcst">預測 <b>'+esc(e.forecast||'—')+'</b><br>前值 '+esc(e.previous||'—')+'</span></div>';
+  }).join('') || '<div class="cal-row"><span class="c-name">未來 48h 無 High 級事件</span></div>';
+}
+
+/* ---------- 傳導矩陣摺疊（取代舊場景推演）---------- */
+function renderMatrixFold(){
+  const evs = DASH_DATA.events;
+  $('matrixFoldCount').textContent = '// ACTIVE · '+pad(evs.length)+' EVENTS';
+  if(!evs.length){
+    $('matrixFoldBody').innerHTML = '<div style="padding:8px 0;color:var(--txt-faint);font-size:12px">暫無活躍事件；矩陣規則庫 E1-E12 持續待命。</div>';
+    return;
+  }
+  $('matrixFoldBody').innerHTML = evs.map(e=>{
+    const p = e.severity==='high'?'bear':(e.severity==='med'?'base':'bull');
+    const pLabel = e.severity==='high'?'🔴 高嚴重度':(e.severity==='med'?'🟠 中級':'🔵 參考');
+    const sevIcon = e.severity==='high'?'🔴':(e.severity==='med'?'🟠':'🔵');
+    const chain = e.chain.map((s,i)=>'<div class="step" style="display:flex;gap:8px;padding:2px 0;font-size:11px;color:var(--txt)"><span style="font-family:var(--mono);width:18px;height:18px;border-radius:50%;border:1px solid rgba(45,212,255,.4);color:var(--cyan);font-size:9.5px;display:flex;align-items:center;justify-content:center;flex:none">'+(i+1)+'</span>'+esc(s)+'</div>').join('');
+    return '<div class="scen"><div class="s-h">'+sevIcon+' '+esc(e.etype)+' '+esc(e.etype_name)+'<span class="s-p '+p+'">'+pLabel+'</span></div>'+
+      '<div class="s-b" style="margin-bottom:6px">'+esc(e.headline)+'</div>'+
+      '<div style="margin:6px 0">'+chain+'</div></div>';
+  }).join('');
+}
+
+/* ---------- footer 數據源狀態 ---------- */
+function renderFooter(){
+  const s = DASH_DATA.sources_status||{};
+  $('footSources').textContent = Object.entries(s).map(([k,v])=>k+':'+(v.startsWith('OK')?'✓':'⚠')).join(' · ');
+}
+
+/* ---------- SVG 降級地圖（數據驅動）---------- */
+function projectLL(lat,lng){
+  // 等距柱狀投影：lng[-180,180]→x[0,1000]，lat[80,-60]→y[0,500]
+  const x = (lng+180)/360*1000;
+  const y = (80-lat)/140*500;
+  return [x,y];
+}
+function arcPath(slat,slng,elat,elng){
+  const [x1,y1]=projectLL(slat,slng), [x2,y2]=projectLL(elat,elng);
+  const mx=(x1+x2)/2, my=Math.min(y1,y2)-Math.abs(x2-x1)*0.18-30;
+  return 'M'+x1.toFixed(0)+','+y1.toFixed(0)+' Q'+mx.toFixed(0)+','+my.toFixed(0)+' '+x2.toFixed(0)+','+y2.toFixed(0);
+}
+function renderFallbackMap(){
+  const evs = DASH_DATA.events, arcs = DASH_DATA.arcs;
+  let arcsHtml = arcs.map(a=>'<path class="fb-arc" stroke="'+a.color+'" d="'+arcPath(a.startLat,a.startLng,a.endLat,a.endLng)+'" opacity=".45"/>').join('');
+  let marks = evs.map(e=>{
+    const [x,y]=projectLL(e.lat,e.lng);
+    const dur = (2+e.id*0.3).toFixed(1);
+    return '<g class="fb-marker" data-ev="'+e.id+'" style="cursor:pointer" transform="translate('+x.toFixed(0)+','+y.toFixed(0)+')">'+
+      '<circle r="22" fill="transparent"/>'+
+      '<circle r="14" fill="none" stroke="'+e.color+'" stroke-width="1.5" opacity=".8"><animate attributeName="r" values="6;20" dur="'+dur+'s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="'+dur+'s" repeatCount="indefinite"/></circle>'+
+      '<circle r="6" fill="'+e.color+'" stroke="#fff" stroke-width="1.5"/>'+
+      '<text class="fb-mlabel" x="12" y="-6">'+esc(e.name)+'</text></g>';
+  }).join('');
+  $('fbMapSvgDynamic').innerHTML = arcsHtml + marks;
+  document.querySelectorAll('.fb-marker').forEach(m=>m.addEventListener('click',()=>showPopover(EVENTS[+m.dataset.ev])));
+}
+
+/* ============================================================
+   Popover（事件傳導鏈卡）
+============================================================ */
+let world = null;
+function showPopover(ev){
+  try{ if(world) world.controls().autoRotate=false; }catch(e){}
+  const pop = document.getElementById('popover');
+  document.getElementById('popTitle').textContent = ev.title;
+  document.getElementById('popLoc').textContent = ev.loc;
+  document.getElementById('popTime').textContent = ev.time;
+  document.getElementById('popChain').innerHTML = ev.chain.map((s,i)=>
+    '<div class="step"><span class="n">'+(i+1)+'</span>'+esc(s)+'</div>'+(i<ev.chain.length-1?'<div class="link"></div>':'')
+  ).join('');
+  const dirTxt = {g:'利好 ↑',r:'利空 ↓',a:'關注 ◆',n:'待定 ?'};
+  document.getElementById('popAssets').innerHTML = ev.assets.map(a=>
+    '<div class="ah-row"><span class="emo">'+a[0]+'</span><span class="nm">'+esc(a[1])+'</span><span class="dir '+a[3]+'">'+a[2]+' · '+dirTxt[a[3]]+'</span></div>'
+  ).join('');
+  pop.classList.add('open');
+}
+document.getElementById('popClose').addEventListener('click',()=>{
+  document.getElementById('popover').classList.remove('open');
+  try{ if(world) world.controls().autoRotate=true; }catch(e){}
+});
+
+/* ============================================================
+   3D 地球（globe.gl CDN，失敗降級 SVG）—— 邏輯同模板原版
+============================================================ */
+function activateFallback(reason){
+  const ld = document.getElementById('globeLoading');
+  if(ld) ld.style.display='none';
+  document.getElementById('fbMap').style.display='block';
+  renderFallbackMap();
+  console.warn('[Ernest市觀] 3D 地球降級為 SVG 地圖：', reason);
+}
+function initGlobe(){
+  try{
+    if(typeof Globe === 'undefined'){ activateFallback('Globe 未定義'); return; }
+    const N = window.THREE || null;
+    const EVENTS = DASH_DATA.events, ARCS = DASH_DATA.arcs;
+
+    const markerEl = ev => {
+      const el = document.createElement('div');
+      el.className = 'g-marker '+ev.cls;
+      el.innerHTML =
+        '<div class="ripple"></div><div class="ripple r2"></div>'+
+        '<div class="core"></div>'+
+        '<div class="mlabel">'+ev.name+'</div>';
+      el.addEventListener('click', e=>{ e.stopPropagation(); showPopover(ev); });
+      el.addEventListener('mouseenter', ()=>{ try{ world.controls().autoRotate=false; }catch(e){} });
+      el.addEventListener('mouseleave', ()=>{ try{ if(!document.getElementById('popover').classList.contains('open')) world.controls().autoRotate=true; }catch(e){} });
+      return el;
+    };
+    const hexToRgba = (hex,a)=>{
+      const n = parseInt(hex.slice(1),16);
+      return 'rgba('+((n>>16)&255)+','+((n>>8)&255)+','+(n&255)+','+a+')';
+    };
+
+    const vizEl = document.getElementById('globeViz');
+    world = Globe()
+      .width(vizEl.clientWidth).height(vizEl.clientHeight)
+      .backgroundColor('rgba(0,0,0,0)')
+      .globeMaterial(new (N.MeshPhoneMaterial || N.MeshPhongMaterial)({color:0x0a1424, emissive:0x06101f, shininess:4}))
+      .atmosphereColor('#2dd4ff').atmosphereAltitude(0.22)
+      .showGraticules(true)
+      .pointsData(EVENTS).pointLat('lat').pointLng('lng').pointColor(d=>d.color)
+      .pointAltitude(0.012).pointRadius(0.16)
+      .ringsData(EVENTS).ringLat('lat').ringLng('lng')
+      .ringColor(d=>()=>d.color).ringMaxRadius(7).ringPropagationSpeed(2.2)
+      .ringRepeatPeriod(1400).ringAltitude(0.014)
+      .htmlElementsData(EVENTS).htmlElement(d=>markerEl(d))
+      .htmlLat('lat').htmlLng('lng').htmlAltitude(0.06).htmlTransitionDuration(900)
+      .arcsData(ARCS)
+      .arcStartLat('startLat').arcStartLng('startLng').arcEndLat('endLat').arcEndLng('endLng')
+      .arcColor(d=>[hexToRgba(d.color,.05), d.color])
+      .arcDashLength(0.45).arcDashGap(0.3).arcDashAnimateTime(4200)
+      .arcStroke(0.45).arcAltitudeAutoScale(0.32)
+      (document.getElementById('globeViz'));
+
+    try{ world.renderer().setPixelRatio(Math.min(window.devicePixelRatio||1,2)); }catch(e){}
+    const aspect = vizEl.clientWidth / Math.max(1,vizEl.clientHeight);
+    // 鏡頭推近：個球填滿舞台約 80-90% 高度（舊值 2.6 太遠，底部空一大舊）
+    const fitAlt = 2.02 + Math.max(0,(aspect-1.5))*0.55;
+
+    (function loadCountryPolygons(){
+      const TOPO_SRC='https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js';
+      const WORLD_SRC='https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+      const HOT={'36':'#ff4d6d','68':'#ffb020','818':'#ffb020','710':'#ff4d6d','392':'#ffb020','410':'#ffb020','156':'#ffb020','840':'#2dd4ff','826':'#2dd4ff','276':'#2dd4ff','702':'#2dd4ff'};
+      const loadScript = u => new Promise((res,rej)=>{ const s=document.createElement('script');s.src=u;s.onload=res;s.onerror=rej;document.head.appendChild(s); });
+      const hexA=(hex,a)=>{const n=parseInt(hex.slice(1),16);return 'rgba('+((n>>16)&255)+','+((n>>8)&255)+','+(n&255)+','+a+')';};
+      loadScript(TOPO_SRC).then(()=>fetch(WORLD_SRC))
+        .then(r=>{if(!r.ok)throw new Error('world-atlas '+r.status);return r.json();})
+        .then(topo=>{
+          const fc = window.topojson.feature(topo, topo.objects.countries);
+          const polys = fc.features.map(f=>{ const hot=HOT[String(f.id)];
+            return {...f, fill: hot?hexA(hot,0.22):'rgba(46,66,99,0.55)', stroke: hot?hexA(hot,0.95):'rgba(120,175,230,0.4)'}; });
+          world.polygonsData(polys).polygonCapColor(d=>d.fill).polygonSideColor(()=>'rgba(28,42,66,0.5)')
+            .polygonStrokeColor(d=>d.stroke).polygonAltitude(0.008);
+          console.log('[Ernest市觀] 國家邊界載入完成：'+polys.length+' 個國家');
+        }).catch(e=>console.warn('[Ernest市觀] 國家邊界載入失敗：',e));
+    })();
+
+    world.controls().autoRotate=true; world.controls().autoRotateSpeed=0.55;
+    world.controls().enableZoom=false; world.controls().enablePan=false;
+    world.pointOfView({lat:20,lng:45,altitude:Math.max(1.95,fitAlt)},1400);
+
+    if(N){ try{
+      const starGeo=new N.BufferGeometry(); const n=900, pos=new Float32Array(n*3);
+      for(let i=0;i<n;i++){ const r=600+Math.random()*600, th=Math.random()*Math.PI*2, ph=Math.acos(2*Math.random()-1);
+        pos[i*3]=r*Math.sin(ph)*Math.cos(th); pos[i*3+1]=r*Math.sin(ph)*Math.sin(th); pos[i*3+2]=r*Math.cos(ph); }
+      starGeo.setAttribute('position',new N.BufferAttribute(pos,3));
+      world.scene().add(new N.Points(starGeo,new N.PointsMaterial({color:0x9fd8ff,size:1.4,sizeAttenuation:true,transparent:true,opacity:0.75})));
+    }catch(e){} }
+
+    const ld=document.getElementById('globeLoading');
+    setTimeout(()=>{ if(ld) ld.style.display='none'; },600);
+    window.addEventListener('resize',()=>{ const st=document.getElementById('globeViz'); world.width(st.clientWidth).height(st.clientHeight); const a=st.clientWidth/Math.max(1,st.clientHeight); world.pointOfView({altitude:Math.max(1.95,2.02+Math.max(0,(a-1.5))*0.55)},400); });
+  }catch(err){ activateFallback(err.message||'init error'); }
+}
+
+(function boot(){
+  let done=false;
+  const fail=(r)=>{ if(done)return; done=true; activateFallback(r); };
+  const win=()=>{ if(done)return; done=true; initGlobe(); };
+  const s1=document.createElement('script');
+  s1.src='https://unpkg.com/three@0.160.0/build/three.min.js';
+  s1.onload=()=>{ const s2=document.createElement('script');
+    s2.src='https://unpkg.com/globe.gl@2.33.0/dist/globe.gl.min.js';
+    s2.onload=()=>setTimeout(win,60); s2.onerror=()=>fail('globe.gl CDN 載入失敗');
+    document.head.appendChild(s2); };
+  s1.onerror=()=>{ const s2=document.createElement('script');
+    s2.src='https://unpkg.com/globe.gl@2.33.0/dist/globe.gl.min.js';
+    s2.onload=()=>setTimeout(win,60); s2.onerror=()=>fail('CDN 全部不可達');
+    document.head.appendChild(s2); };
+  document.head.appendChild(s1);
+  setTimeout(()=>fail('CDN 載入逾時'),7000);
+})();
+
+/* ============================================================
+   即時財經直播 TV（YouTube 官方 24/7 直播嵌入，靜音自動播放；HLS 備援）
+============================================================ */
+const TV_SOURCES = [
+  {id:'bloomberg', name:'BLOOMBERG', zh:'彭博財經',
+   embed:'https://www.youtube-nocookie.com/embed/live_stream?channel=UCIALMKvObZNtJ6AmdCLP7Lg',
+   yt:'https://www.youtube.com/@markets/live'},
+  {id:'quicktake', name:'QUICKTAKE', zh:'彭博快訊',
+   embed:'https://www.youtube-nocookie.com/embed/iEpJwprxDdk',
+   yt:'https://www.youtube.com/watch?v=iEpJwprxDdk'},
+  {id:'sky', name:'SKY NEWS', zh:'天空新聞',
+   embed:'https://www.youtube-nocookie.com/embed/live_stream?channel=UCoMdktPbSTixAyNGwb-Ukfw',
+   yt:'https://www.youtube.com/@SkyNews/live'},
+  {id:'dw', name:'DW NEWS', zh:'德國之聲',
+   embed:'https://www.youtube-nocookie.com/embed/live_stream?channel=UCknLrEdhRCp1aegoMqRaCZg',
+   yt:'https://www.youtube.com/@dwnews/live'},
+  {id:'aljazeera', name:'AL JAZEERA', zh:'半島電視',
+   embed:'https://www.youtube-nocookie.com/embed/live_stream?channel=UCNye-wNBqNL5ZzHSJj3l8Bg',
+   yt:'https://www.youtube.com/@aljazeeraenglish/live'},
+  {id:'cgtn', name:'CGTN', zh:'中國環球電視網',
+   hls:'https://live.cgtn.com/1000/prog_index.m3u8',
+   yt:'https://news.cgtn.com/tv'},
+  {id:'cna', name:'CNA', zh:'亞洲新聞',
+   hls:'https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8',
+   yt:'https://www.channelnewsasia.com/watch'}
+];
+function initTV(){
+  const tabs=$('tvTabs'), frame=$('tvFrame'), video=$('tvHls'),
+        poster=$('tvPoster'), pName=$('tvPName'),
+        fail=$('tvFail'), fLink=$('tvFailLink'),
+        yt=$('tvOpenYt'), snd=$('tvSoundBtn');
+  if(!tabs||!frame) return;
+  let cur=0, muted=true, loadT=null, playing=false, ytBlocked=false, hlsP=null;
+
+  function loadHls(s){
+    const win=window;
+    if(!win.Hls||!video.canPlayType('application/vnd.apple.mpegurl')){
+      showFail(s); return;
+    }
+    fail.style.display='none'; poster.style.display='none';
+    frame.style.display='none'; video.style.display='block';
+    if(hlsP){ hlsP.destroy(); hlsP=null; }
+    const h=new win.Hls();
+    hlsP=h;
+    h.loadSource(s.hls);
+    h.attachMedia(video);
+    h.on(win.Hls.Events.MANIFEST_PARSED,()=>{ video.play().catch(()=>{}); });
+    h.on(win.Hls.Events.ERROR,(_,d)=>{
+      if(d.fatal) showFail(s);
+    });
+  }
+  function showFail(s){
+    fLink.href=s.yt;
+    fail.style.display='flex';
+    poster.style.display='none';
+    frame.style.display='';
+    video.style.display='none';
+  }
+  function play(){
+    const s=TV_SOURCES[cur];
+    playing=true;
+    fail.style.display='none';
+    poster.style.display='none';
+    if(loadT) clearTimeout(loadT);
+    loadT=setTimeout(()=>{ if(playing){ if(!ytBlocked&&s.embed) showFail(s); } }, 8000);
+    if(ytBlocked&&s.hls){ loadHls(s); return; }
+    if(!s.embed){ loadHls(s); return; }
+    frame.style.display=''; video.style.display='none';
+    frame.src=s.embed+'?autoplay=1&mute='+(muted?1:0)+'&rel=0';
+  }
+  function select(i){
+    cur=i;
+    Array.from(tabs.children).forEach((t,k)=>t.classList.toggle('active',k===i));
+    const s=TV_SOURCES[i];
+    yt.href=s.yt;
+    pName.textContent=s.name;
+    fail.style.display='none';
+    poster.style.display='flex';
+    frame.removeAttribute('src');
+    frame.style.display='';
+    video.style.display='none';
+    if(loadT) clearTimeout(loadT);
+    playing=false;
+  }
+  TV_SOURCES.forEach((s,i)=>{
+    const b=document.createElement('button');
+    b.className='tv-tab'+(i===0?' active':'');
+    b.innerHTML=s.name+' <small style="opacity:.68;font-weight:400">'+s.zh+'</small>';
+    b.onclick=()=>{
+      if(i!==cur){ muted=true; snd.innerHTML='🔇 已靜音'; select(i); }
+    };
+    tabs.appendChild(b);
+  });
+  snd.onclick=()=>{
+    muted=!muted;
+    snd.innerHTML=muted?' 已靜音':'🔊 開聲';
+    if(video.style.display!=='none') video.muted=muted;
+    if(playing) play();
+  };
+  poster.onclick=play;
+  frame.onload=()=>{ if(loadT){ clearTimeout(loadT); loadT=null; } fail.style.display='none'; };
+  yt.href=TV_SOURCES[0].yt;
+
+  // YouTube 封鎖偵測（試載一張 YouTube thumbnail）
+  const probe=new Image();
+  probe.onload=()=>{}; // YouTube 通
+  probe.onerror=()=>{ ytBlocked=true; };
+  probe.src='https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg';
+}
+
+/* ============================================================
+   NEWS ⇄ MARKETS 關聯圖（DASH_DATA.market_corr，內聯 SVG 雙軌）
+============================================================ */
+const NM = (DASH_DATA.market_corr||{windows:{},topics_meta:[],markets_meta:[],generated:''});
+function pearson(a,b){
+  const n=a.length; if(n<5) return null;
+  let ma=0,mb=0; for(let i=0;i<n;i++){ma+=a[i];mb+=b[i];} ma/=n; mb/=n;
+  let num=0,da=0,db=0;
+  for(let i=0;i<n;i++){const dx=a[i]-ma,dy=b[i]-mb;num+=dx*dy;da+=dx*dx;db+=dy*dy;}
+  if(da===0||db===0) return null;
+  return num/Math.sqrt(da*db);
+}
+function nmInterp(r){
+  if(r===null) return '數據點不足，未能計算相關係數。';
+  const a=Math.abs(r);
+  const strength=a<0.2?'幾乎冇':a<0.4?'弱':a<0.7?'中等':'強';
+  const dir=r>0?'正相關':'負相關';
+  const verb=r>0?'齊上齊落':'背馳';
+  return '呢段時間兩條線呈<b>'+strength+dir+'</b>（r = '+r.toFixed(2)+'），即「'+
+    $('nmTopic').selectedOptions[0].text+'」新聞熱度同「'+
+    $('nmMarket').selectedOptions[0].text+'」走勢大致'+verb+
+    '。留意：相關唔等於因果，只反映關注度同價格嘅同步程度。';
+}
+function nmRender(){
+  const box=$('nmChart'), stats=$('nmStats');
+  const tk=$('nmTopic').value, mk=$('nmMarket').value, wk=$('nmWindow').value;
+  const win=(NM.windows||{})[wk]||{};
+  const news=(win.topics||{})[tk], px=(win.markets||{})[mk];
+  if(!news||!px||news.length<3){
+    box.innerHTML='<div class="nm-empty">⚠️ 呢個組合暫時冇數據（採集時 GDELT/CNBC 超時會留空，下次生成自動重試）</div>';
+    stats.innerHTML=''; return;
+  }
+  const pm=new Map(px.map(p=>[p[0],p[1]]));
+  const xs=[],nv=[],pv=[];
+  news.forEach(p=>{ if(pm.has(p[0])){ xs.push(p[0]); nv.push(p[1]); pv.push(pm.get(p[0])); } });
+  if(xs.length<5){
+    box.innerHTML='<div class="nm-empty">⚠️ 對齊後數據點不足（市場休市或時段唔重疊）</div>';
+    stats.innerHTML=''; return;
+  }
+  const W=920,H=340,L=60,R=66,T=18,B=34;
+  const nMin=Math.min(...nv),nMax=Math.max(...nv),pMin=Math.min(...pv),pMax=Math.max(...pv);
+  const X=i=>L+(W-L-R)*i/(xs.length-1);
+  const Yn=v=>T+(H-T-B)*(1-(nMax===nMin?0.5:(v-nMin)/(nMax-nMin)));
+  const Yp=v=>T+(H-T-B)*(1-(pMax===pMin?0.5:(v-pMin)/(pMax-pMin)));
+  const path=arr=>arr.map((v,i)=>(i?'L':'M')+X(i).toFixed(1)+','+v.toFixed(1)).join(' ');
+  const fmtV=v=>Math.abs(v)>=1000?Math.round(v).toLocaleString('en-US'):Number(v).toFixed(2);
+  let xlab='';
+  for(let i=0;i<5;i++){
+    const idx=Math.round(i*(xs.length-1)/4);
+    const d=new Date(xs[idx]*1000);
+    const lab=wk==='1d'?pad(d.getHours())+':'+pad(d.getMinutes()):(d.getMonth()+1)+'/'+d.getDate()+' '+pad(d.getHours())+'h';
+    xlab+='<text x="'+X(idx)+'" y="'+(H-10)+'" fill="rgba(126,147,173,.75)" font-size="10" font-family="monospace" text-anchor="middle">'+lab+'</text>';
+  }
+  const ylab=(y,v,col,anchor,x)=>'<text x="'+x+'" y="'+(y+3)+'" fill="'+col+'" font-size="10" font-family="monospace" text-anchor="'+anchor+'">'+v+'</text>';
+  box.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">'+
+    '<line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(H-B)+'" stroke="rgba(86,156,214,.2)"/>'+
+    '<line x1="'+(W-R)+'" y1="'+T+'" x2="'+(W-R)+'" y2="'+(H-B)+'" stroke="rgba(86,156,214,.2)"/>'+
+    '<line x1="'+L+'" y1="'+(H-B)+'" x2="'+(W-R)+'" y2="'+(H-B)+'" stroke="rgba(86,156,214,.25)"/>'+
+    ylab(T,fmtV(nMax),'#ffb020','end',L-7)+ylab(H-B,fmtV(nMin),'#ffb020','end',L-7)+
+    ylab(T,fmtV(pMax),'#2dd4ff','start',W-R+7)+ylab(H-B,fmtV(pMin),'#2dd4ff','start',W-R+7)+
+    xlab+
+    '<path d="'+path(nv.map(Yn))+'" fill="none" stroke="#ffb020" stroke-width="1.8" opacity=".95"/>'+
+    '<path d="'+path(pv.map(Yp))+'" fill="none" stroke="#2dd4ff" stroke-width="1.8" opacity=".95"/>'+
+    '</svg>';
+  const r=pearson(nv,pv);
+  const cls=r===null?'weak':(Math.abs(r)<0.2?'weak':(r>0?'pos':'neg'));
+  stats.innerHTML=
+    '<div><span class="st">PEARSON r</span><span class="r '+cls+'">'+(r===null?'—':r.toFixed(2))+'</span></div>'+
+    '<div><span class="st">對齊樣本 n</span><span class="r weak" style="font-size:18px">'+xs.length+'</span></div>'+
+    '<div class="interp">'+nmInterp(r)+'</div>';
+}
+function initNM(){
+  const ov=$('nmOverlay'); if(!ov) return;
+  const tSel=$('nmTopic'),mSel=$('nmMarket');
+  (NM.topics_meta||[]).forEach(t=>{ const o=document.createElement('option'); o.value=t.key; o.textContent=t.zh; tSel.appendChild(o); });
+  (NM.markets_meta||[]).forEach(m=>{ const o=document.createElement('option'); o.value=m.key; o.textContent=m.zh; mSel.appendChild(o); });
+  tSel.value='sanctions'; mSel.value='SPX';
+  $('nmGen').textContent=NM.generated?('數據快照 '+NM.generated):'';
+  [tSel,mSel,$('nmWindow')].forEach(el=>el.addEventListener('change',nmRender));
+  $('nmOpenBtn').onclick=()=>{ ov.classList.add('open'); nmRender(); };
+  $('nmClose').onclick=()=>ov.classList.remove('open');
+  ov.onclick=e=>{ if(e.target===ov) ov.classList.remove('open'); };
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') ov.classList.remove('open'); });
+}
+
+/* ============================================================
+   啟動
+============================================================ */
+initClock();
+initTV();
+initNM();
+renderThermo();
+renderSentiment();
+renderRiskClock();
+renderEventCards();
+renderGlobeChips();
+renderTicker();
+renderHoldings();
+renderPosition();
+renderBrief();
+renderFeed();
+renderCalendarFold();
+renderMatrixFold();
+renderFooter();
+
+</script>
+</body>
+</html>

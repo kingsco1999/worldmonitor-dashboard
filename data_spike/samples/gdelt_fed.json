@@ -1,0 +1,96 @@
+{
+  "query": "gdelt_fed",
+  "article_count": 10,
+  "articles": [
+    {
+      "title": "The Stock Market Is Uncertain Right Now . History Says That Actually Good News for Long - Term Investors . ",
+      "url": "https://www.aol.com/articles/stock-market-uncertain-now-history-072000000.html",
+      "seendate": "20260831T080000Z",
+      "sourcecountry": "United States",
+      "domain": "aol.com",
+      "language": "English",
+      "socialimage": "https://hermes.media.static.aol.com/media/2026/08/31/76bca36c-55d5-360a-a8e1-e053bccedfbb/e64413f5-e0f2-446a-a32b-beffeaff4c02.jpg"
+    },
+    {
+      "title": " [ AI박스오피스 ]  오디세이  880만 · 스파이더맨  850만 … 8월 극장가 평정",
+      "url": "https://www.newspim.com/news/view/20260831000799",
+      "seendate": "20260831T064500Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/29/260829153626900_358_tc.jpg"
+    },
+    {
+      "title": " [ 뉴스핌 뉴스레터 Today ANDA ] 8월31일",
+      "url": "https://www.newspim.com/news/view/20260831000877",
+      "seendate": "20260831T073000Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/31/2608311548120230_t1.jpg"
+    },
+    {
+      "title": "한경협  신통상질서 대응 , 환태평양경제가 현실적 선택지  ",
+      "url": "https://www.newspim.com/news/view/20260831000872",
+      "seendate": "20260831T074500Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/06/14/2606140921196880_t1.jpg"
+    },
+    {
+      "title": "KT , 우리은행  AI 챗봇 · 상담봇  재구축 착수",
+      "url": "https://www.newspim.com/news/view/20260831000922",
+      "seendate": "20260831T074500Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2024/05/30/2405302115489010_t1.jpg"
+    },
+    {
+      "title": " [ 中 거인의 공급망 ] ①CMP 장비 강자  화해청과  없으면  CXMT  도 없다",
+      "url": "https://www.newspim.com/news/view/20260828000759",
+      "seendate": "20260831T080000Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/28/2608280243553501_239_tc.jpg"
+    },
+    {
+      "title": "넷마블 엠엔비 , 청강대 · 순천향대와 산학협력 … 쿵야  IP 활용 교육",
+      "url": "https://www.newspim.com/news/view/20260831000855",
+      "seendate": "20260831T080000Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/31/2608311534533460_t1.jpg"
+    },
+    {
+      "title": "넥슨 ,  NYPC  파이널 라운드 성료 … 144명 참가",
+      "url": "https://www.newspim.com/news/view/20260831000865",
+      "seendate": "20260831T073000Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/31/2608311540465290_t1.jpg"
+    },
+    {
+      "title": "코스피 , 이틀째 약세 … 환율 1360원대 가시화",
+      "url": "https://www.newspim.com/news/view/20260831000897",
+      "seendate": "20260831T074500Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/08/31/260831160001955_t1.jpg"
+    },
+    {
+      "title": "세제개편 한 달 , 강남3구 매물 두자릿수 증가 … 노 · 도 · 강은 신고가",
+      "url": "https://www.newspim.com/news/view/20260831000739",
+      "seendate": "20260831T064500Z",
+      "sourcecountry": "South Korea",
+      "domain": "newspim.com",
+      "language": "Korean",
+      "socialimage": "https://img.newspim.com/news/2026/04/20/260420143446919_343_tc.jpg"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "query": "gdelt_redsea",
+  "article_count": 3,
+  "articles": [
+    {
+      "title": "Yemen seizes Iranian drone shipment bound for Houthis",
+      "url": "https://www.middle-east-online.com/en/yemen-seizes-iranian-drone-shipment-bound-houthis",
+      "seendate": "20260831T073000Z",
+      "sourcecountry": "Iraq",
+      "domain": "middle-east-online.com",
+      "language": "English",
+      "socialimage": "https://www.middle-east-online.com/sites/default/files/styles/social_image/public/2026-08/2_321.jpg?e&itok=SAwwfRze"
+    },
+    {
+      "title": "Africa : All of Africa Today - August 31 , 2026",
+      "url": "https://allafrica.com/stories/202608310114.html",
+      "seendate": "20260831T071500Z",
+      "sourcecountry": "Nigeria",
+      "domain": "allafrica.com",
+      "language": "English",
+      "socialimage": "https://cdn.allafrica.com/download/pic/main/main/csiid/00660790:31c3b799d93fc32e89804bf0300237d4:arc614x376:w1200.jpg"
+    },
+    {
+      "title": "TORM ( TRMD ) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.aol.com/articles/torm-trmd-q2-2026-earnings-135009000.html",
+      "seendate": "20260831T144500Z",
+      "sourcecountry": "United States",
+      "domain": "aol.com",
+      "language": "English",
+      "socialimage": "https://hermes.media.static.aol.com/media/2026/08/31/ec688d25-8af8-3b79-8759-e7fa27f25613/2db7b308-1268-4bd0-aa8c-ea3b7ec403da.jpg"
+    }
+  ]
+}

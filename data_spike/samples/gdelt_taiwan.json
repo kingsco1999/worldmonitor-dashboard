@@ -1,0 +1,96 @@
+{
+  "query": "gdelt_taiwan",
+  "article_count": 10,
+  "articles": [
+    {
+      "title": "中共近年對台軍演目的曝光 「 聯合封控 」 台灣對外航道為主 - 軍事",
+      "url": "https://www.chinatimes.com/realtimenews/20260831002535-260417",
+      "seendate": "20260831T061500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "chinatimes.com",
+      "language": "Chinese",
+      "socialimage": "https://images.chinatimes.com/newsphoto/2026-08-31/656/20260831002536.jpg"
+    },
+    {
+      "title": "國防部 ： 中共對台威脅未曾減緩 藉威懾營造備戰氛圍 | 政治",
+      "url": "https://www.cna.com.tw:443/news/aipl/202608310094.aspx",
+      "seendate": "20260831T061500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "cna.com.tw",
+      "language": "Chinese",
+      "socialimage": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20260831/1776x1332_217352336608.jpg"
+    },
+    {
+      "title": "聯大8日開議 ！ 外交部提3訴求堅守台海現況 王義川葉元之組團赴美 | ETtoday政治新聞",
+      "url": "https://www.ettoday.net/news/20260901/3229411.htm",
+      "seendate": "20260901T051500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "ettoday.net",
+      "language": "Chinese",
+      "socialimage": "https://cdn2.ettoday.net/images/8901/e8901116.jpg"
+    },
+    {
+      "title": "共軍加速犯台整備 國防部 ： 登島能力仍不足 | 國防部 | 中共軍力報告書 | 登島能力",
+      "url": "http://www.epochtimes.com.tw/n512306/%E5%85%B1%E8%BB%8D%E5%8A%A0%E9%80%9F%E7%8A%AF%E5%8F%B0%E6%95%B4%E5%82%99-%E5%9C%8B%E9%98%B2%E9%83%A8-%E7%99%BB%E5%B3%B6%E8%83%BD%E5%8A%9B%E4%BB%8D%E4%B8%8D%E8%B6%B3.html",
+      "seendate": "20260831T173000Z",
+      "sourcecountry": "Taiwan",
+      "domain": "epochtimes.com.tw",
+      "language": "Chinese",
+      "socialimage": "http://img.epochtimes.com.tw/upload/images/2026/08/31/870832_medium.webp"
+    },
+    {
+      "title": "  羞辱习主席 、 践踏习主席 ！ 习将遭遇军队软抵抗 ＊ 阿波罗新闻网",
+      "url": "https://www.aboluowang.com/2026/0831/2427547.html",
+      "seendate": "20260831T061500Z",
+      "sourcecountry": "China",
+      "domain": "aboluowang.com",
+      "language": "Chinese",
+      "socialimage": "https://m1.aboluowang.com/uploadfile/2026/0831/20260831125600179.webp"
+    },
+    {
+      "title": "Taiwan :  Unpredictable  China strengthens air , sea control nearby",
+      "url": "https://www.staradvertiser.com/2026/08/31/breaking-news/taiwan-unpredictable-china-strengthens-air-sea-control-nearby/",
+      "seendate": "20260901T010000Z",
+      "sourcecountry": "United States",
+      "domain": "staradvertiser.com",
+      "language": "English",
+      "socialimage": "https://www.staradvertiser.com/wp-content/uploads/2026/08/web1_20260831_brk_tai01.jpg"
+    },
+    {
+      "title": "救急因應中共灰色襲擾 、 軍事壓力 國防部 ： 非急迫建軍案將延後推動",
+      "url": "https://def.ltn.com.tw/article/breakingnews/5557990",
+      "seendate": "20260831T054500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "def.ltn.com.tw",
+      "language": "Chinese",
+      "socialimage": "https://img.ltn.com.tw/Upload/def/page/800/2026/08/31/5557990_1.jpg"
+    },
+    {
+      "title": "中共軍事武力發展迅速 國防部 ： 全面檢視過往預算執行狀況 | ETtoday政治新聞",
+      "url": "https://www.ettoday.net/news/20260831/3228800.htm",
+      "seendate": "20260831T064500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "ettoday.net",
+      "language": "Chinese",
+      "socialimage": "https://cdn2.ettoday.net/images/6109/e6109843.jpg"
+    },
+    {
+      "title": "  从未听说有外国驻台机构装备核避难所 ， 日本是第一家 _ 凤凰网",
+      "url": "https://news.ifeng.com/c/8w2z8hFWaKa",
+      "seendate": "20260831T200000Z",
+      "sourcecountry": "China",
+      "domain": "news.ifeng.com",
+      "language": "Chinese",
+      "socialimage": "https://x0.ifengimg.com/ucms/2026_36/C8E4AB84C8A1E479B06DCDAA44CD294E064B5F24_size90_w750_h422.jpg"
+    },
+    {
+      "title": "國防部 ： 全面檢視過往預算 因應敵情非急迫案延後推動 | 政治",
+      "url": "https://www.cna.com.tw:443/news/aipl/202608310091.aspx",
+      "seendate": "20260831T061500Z",
+      "sourcecountry": "Taiwan",
+      "domain": "cna.com.tw",
+      "language": "Chinese",
+      "socialimage": "https://imgcdn.cna.com.tw/www/webphotos/WebCover/800/20260831/1779x1333_300123528106.jpg"
+    }
+  ]
+}

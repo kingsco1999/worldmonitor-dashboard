@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+
+# Cache
+data_v2/_nm_prices.json
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Output: keep only v2 latest + index.html for Pages
+output/*
+!output/dashboard_v2_latest.html
+!output/index.html

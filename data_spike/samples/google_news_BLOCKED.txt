@@ -1,0 +1,6 @@
+Google News RSS 測試結果：❌ 不可用
+端點：https://news.google.com/rss/search?q=<query>&hl=en-US&gl=US&ceid=US:en
+實測：HTTP 000（連接超時，25s）
+原因：news.google.com 被防火長城封鎖（DNS 解析到 142.250.99.x 但 TCP/TLS 無法建立）
+      繁中版 hl=zh-HK&gl=HK&ceid=HK:zh-Hant 同樣 HTTP 000
+替代：直接用各財經媒體 RSS（CNBC/MarketWatch/FXStreet/ForexLive/Mining/OilPrice/CoinTelegraph）全部可用

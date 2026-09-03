@@ -1,0 +1,96 @@
+{
+  "query": "gdelt_hormuz",
+  "article_count": 10,
+  "articles": [
+    {
+      "title": "آبنائے ہرمز میں بارودی سرنگوں سے ٹکرانے کے بعد سپر ٹینکر میں آگ بھڑک اٹھی",
+      "url": "https://jang.com.pk/news/1611928",
+      "seendate": "20260831T080000Z",
+      "sourcecountry": "Pakistan",
+      "domain": "jang.com.pk",
+      "language": "Urdu",
+      "socialimage": "https://jang.com.pk/assets/uploads/updates/2026-08-31/1611928_100622_updates.jpg"
+    },
+    {
+      "title": "آبنائے ہرمز سے گزرنے والے سعودی آئل ٹینکر کو روک لیا گیا ، ایرانی میڈیا کا دعویٰ",
+      "url": "https://www.express.pk/story/2830234/saudi-oil-tanker-passing-through-the-strait-of-hormuz-intercepted-iranian-media-claims-2830234",
+      "seendate": "20260831T223000Z",
+      "sourcecountry": "Pakistan",
+      "domain": "express.pk",
+      "language": "Urdu",
+      "socialimage": "https://img.express.pk/media/images/saudi-oil-tanker1788213651-0/saudi-oil-tanker1788213651-0-600x450.webp"
+    },
+    {
+      "title": "آبنائے ہرمز میں بارودی سرنگوں سے ٹکرانے کے بعد آئل ٹینکر میں آگ بھڑک اٹھی - World",
+      "url": "https://www.aaj.tv/news/30515217/oil-tanker-catches-fire-after-hitting-sea-mines-in-strait-of-hormuz",
+      "seendate": "20260831T080000Z",
+      "sourcecountry": "Pakistan",
+      "domain": "aaj.tv",
+      "language": "Urdu",
+      "socialimage": ""
+    },
+    {
+      "title": "ایران کا آبنائے ہرمز میں سعودی آئل ٹینکر روکنے کا دعویٰ - World",
+      "url": "https://www.aaj.tv/news/30515341/iranian-media-say-saudi-oil-tanker-stopped-in-strait-of-hormuz",
+      "seendate": "20260901T053000Z",
+      "sourcecountry": "Pakistan",
+      "domain": "aaj.tv",
+      "language": "Urdu",
+      "socialimage": ""
+    },
+    {
+      "title": "Tanker hit by three  unknown projectile while transiting Strait of Hormuz , says united kingdom maritime agency",
+      "url": "https://www.moneycontrol.com/world/tanker-hit-by-three-unknown-projectiles-while-transiting-strait-of-hormuz-says-uk-maritime-agency-article-14019366.html",
+      "seendate": "20260901T031500Z",
+      "sourcecountry": "India",
+      "domain": "moneycontrol.com",
+      "language": "English",
+      "socialimage": "https://images.moneycontrol.com/static-mcnews/2026/07/20260723140957_red-sea-oil-tankers-ships.jpg"
+    },
+    {
+      "title": "Трафик в Ормузском проливе сократился до пяти судов в сутки",
+      "url": "https://vestikavkaza.ru/news/trafik-v-ormuzskom-prolive-sokratilsa-do-pati-sudov-v-sutki.html",
+      "seendate": "20260831T073000Z",
+      "sourcecountry": "Russia",
+      "domain": "vestikavkaza.ru",
+      "language": "Russian",
+      "socialimage": "https://vestikavkaza.ru/upload/2026-08-31/17881502516a9501ebe686b3.38163874.jpg"
+    },
+    {
+      "title": "الاتحاد الأوروبي : سنواصل العمل مع الشركاء للضغط على إيران",
+      "url": "https://www.dostor.org/5686717",
+      "seendate": "20260831T134500Z",
+      "sourcecountry": "Egypt",
+      "domain": "dostor.org",
+      "language": "Arabic",
+      "socialimage": "https://s3.eu-west-1.amazonaws.com/cdn.dostor.org/media/img/large/2026/8/31/2026_8_31_14_12_17_808_5759.png"
+    },
+    {
+      "title": "Hürmüz Boğazı  nda yeni saldırı : Umman açıklarında petrol tankeri hedef alındı",
+      "url": "https://www.evrensel.net/haber/5998626/hurmuz-bogazi-nda-yeni-saldiri-umman-aciklarinda-petrol-tankeri-hedef-alindi",
+      "seendate": "20260901T053000Z",
+      "sourcecountry": "Turkey",
+      "domain": "evrensel.net",
+      "language": "Turkish",
+      "socialimage": "https://www.evrensel.net/images/1280/upload/dosya/359996.jpg"
+    },
+    {
+      "title": "Неизвестные снаряды попали в танкер в Ормузском проливе",
+      "url": "https://lenta.ru/news/2026/09/01/neizvestnye-snaryady-popali-v-tanker-v-ormuzskom-prolive/",
+      "seendate": "20260901T044500Z",
+      "sourcecountry": "Russia",
+      "domain": "lenta.ru",
+      "language": "Russian",
+      "socialimage": ""
+    },
+    {
+      "title": "Танкер атаковали тремя неизвестными снарядами у побережья Омана",
+      "url": "https://tvzvezda.ru/news/202691347-QvHyJ.html",
+      "seendate": "20260901T024500Z",
+      "sourcecountry": "Russia",
+      "domain": "tvzvezda.ru",
+      "language": "Russian",
+      "socialimage": "https://mcdn2.tvzvezda.ru/storage/news_other_images/2026/09/01/1e83cef0bfe64f40beadf3d39e22dc2e.jpg"
+    }
+  ]
+}
