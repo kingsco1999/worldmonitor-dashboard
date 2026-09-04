@@ -224,6 +224,89 @@ def fetch_sina_quotes():
     return out
 
 
+# ================================================================== ③.5 騰訊美股行情（持倉專用，取代 CNBC 美股數據）
+# 持倉美股 → 騰訊代碼映射
+TENCENT_US_STOCKS = {
+    "SBTU": "usSBTU",
+    "VEEV": "usVEEV",
+    "FND": "usFND",
+    "TEX": "usTEX",
+    "UHS": "usUHS",
+    "ILMN": "usILMN",
+}
+
+
+def fetch_tencent_us_quotes():
+    """騰訊行情接口（qt.gtimg.cn）— 美股持倉專用。
+    返回 {key: {last, prev_close, change_pct, high, low, source:'Tencent'}}。
+    騰訊正確返回 prev_close（昨日收市價）、high、low，唔會有 prev_close=last 嘅問題。
+    """
+    codes = ",".join(TENCENT_US_STOCKS.values())
+    url = f"https://qt.gtimg.cn/q={codes}"
+    raw = http_get(url, timeout=15, retries=2,
+                   extra_headers={"Referer": "https://finance.qq.com"})
+    quotes = {}
+    if not raw:
+        return quotes
+    try:
+        # 騰訊返回 GBK 編碼，格式：v_usSBTU="1~名~SBTU.AM~last~prev_close~open~...~date time~change~chg%~high~low~...~currency"
+        text = raw.decode("gbk", errors="ignore")
+        # 反轉 key map：usSBTU → SBTU
+        rev_map = {v: k for k, v in TENCENT_US_STOCKS.items()}
+        for line in text.strip().split(";"):
+            line = line.strip()
+            if not line or "=" not in line:
+                continue
+            _, _, val_str = line.partition("=")
+            val = val_str.strip('"').split("~")
+            if len(val) < 36:
+                continue
+            # 搵對應 key
+            tcode = val[2].rstrip(".AMN.OQ")  # SBTU.AM → SBTU, VEEV.N → VEEV, ILMN.OQ → ILMN
+            key = None
+            for tc, k in rev_map.items():
+                if tc.startswith("us") and tc[2:].upper() == tcode.upper():
+                    key = k
+                    break
+            if not key:
+                # fallback: 直接按 ticker 名匹配
+                ticker_in_name = val[2].split(".")[0]
+                for tc, k in rev_map.items():
+                    if tc[2:].upper() == ticker_in_name.upper():
+                        key = k
+                        break
+            if not key:
+                continue
+            last = _num(val[3])
+            prev_close = _num(val[4])
+            high = _num(val[33]) if len(val) > 33 else None
+            low = _num(val[34]) if len(val) > 34 else None
+            change_pct = _num(val[32]) if len(val) > 32 else None
+            change = round(last - prev_close, 4) if (last is not None and prev_close is not None) else None
+            item = {
+                "symbol": key,
+                "key": key,
+                "name": val[1],
+                "last": last,
+                "change": change,
+                "change_pct": change_pct,
+                "prev_close": prev_close,
+                "open": _num(val[5]) if len(val) > 5 else None,
+                "high": high,
+                "low": low,
+                "real_time": True,
+                "mkt_status": "",
+                "last_timedate": val[30] if len(val) > 30 else "",
+                "currency": val[35] if len(val) > 35 else "USD",
+                "source": "Tencent",
+                "change_bp": None,
+            }
+            quotes[key] = item
+    except Exception as e:
+        print(f"  [Tencent-US] 解析失敗: {type(e).__name__}: {str(e)[:80]}")
+    return quotes
+
+
 # ================================================================== ④ 經濟日曆
 FF_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
 
@@ -468,13 +551,14 @@ def collect_all(use_gdelt=True):
         "news": [],
     }
 
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=7) as ex:
         f_cnbc = ex.submit(_safe, "cnbc", fetch_cnbc_quotes, status)
         f_fred = ex.submit(_safe, "fred", fetch_fred, status)
         f_sinaq = ex.submit(_safe, "sina_quotes", fetch_sina_quotes, status)
         f_cal = ex.submit(_safe, "forexfactory", fetch_economic_calendar, status)
         f_rss = ex.submit(_safe, "rss", fetch_rss, status)
         f_sina7 = ex.submit(_safe, "sina7x24", fetch_sina_7x24, status)
+        f_tencent = ex.submit(_safe, "tencent_us", fetch_tencent_us_quotes, status)
 
         q = f_cnbc.result()
         if q:
@@ -482,6 +566,17 @@ def collect_all(use_gdelt=True):
             status["cnbc"] = f"OK · {len(bundle['quotes'])} 符號"
         else:
             status.setdefault("cnbc", "FAIL")
+
+        # ③.5 騰訊美股行情：覆蓋 CNBC 嘅持倉美股數據（prev_close 更可靠）
+        tq = f_tencent.result()
+        if tq:
+            for key, item in tq.items():
+                bundle["quotes"][key] = item
+                # 同時追加到 quotes_raw
+                bundle["quotes_raw"].append(item)
+            status["tencent_us"] = f"OK · {len(tq)} 隻美股（覆蓋 CNBC）"
+        else:
+            status.setdefault("tencent_us", "FAIL")
         fred = f_fred.result()
         if fred:
             bundle["fred"] = fred
