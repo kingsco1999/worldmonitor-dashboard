@@ -51,27 +51,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/ data_v2/
+          # Pages 用 legacy「從 main 根目錄」部署，根目錄 index.html 必須同步最新成品
+          cp -f output/dashboard_v2_latest.html index.html
+          git add index.html output/ data_v2/
           git diff --cached --quiet || git commit -m "📊 Auto update dashboard $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
 
-      - name: Prepare Pages artifact
-        run: |
-          mkdir -p _site
-          cp output/dashboard_v2_latest.html _site/index.html
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # Pages 設定為 legacy「從 main 分支根目錄」部署：push 後 GitHub 會自動
+      # 觸發 pages-build-deployment 發佈根目錄 index.html，無需 Actions artifact/deploy job。
