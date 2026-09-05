@@ -1,14 +1,14 @@
 {
  "bundle": {
-  "collected_at": "2026-09-05T10:04:44.194274+08:00",
-  "collected_at_hkt": "2026-09-05 10:04 HKT",
+  "collected_at": "2026-09-05T23:59:18.861950+08:00",
+  "collected_at_hkt": "2026-09-05 23:59 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 10 條"
+   "gdelt": "OK · 20 條"
   },
   "quotes": {
    "VIX": {
@@ -24,7 +24,7 @@
     "low": 13.8,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -42,7 +42,7 @@
     "low": 98.916,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -87,16 +87,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4429.51,
-    "change": -43.35,
-    "change_pct": -0.97,
-    "prev_close": 4472.859,
-    "open": 4484.497,
-    "high": 4489.0,
-    "low": 4366.49,
+    "last": 4427.69,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4427.693,
+    "open": 4427.693,
+    "high": 4427.693,
+    "low": 4427.693,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "7:13 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -186,7 +186,7 @@
     "low": 98.01,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 79520.51,
-    "change": -2032.3,
-    "change_pct": -2.49,
-    "prev_close": 81552.81,
-    "open": 81767.1,
-    "high": 82272.31,
-    "low": 78632.3,
+    "last": 79813.21,
+    "change": 78.71,
+    "change_pct": 0.1,
+    "prev_close": 79734.5,
+    "open": 79812.3,
+    "high": 79883.5,
+    "low": 79465.25,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:04 PM EDT",
+    "last_timedate": "11:59 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -332,7 +332,7 @@
     "low": 13.8,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -350,7 +350,7 @@
     "low": 98.916,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -395,16 +395,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4429.51,
-    "change": -43.35,
-    "change_pct": -0.97,
-    "prev_close": 4472.859,
-    "open": 4484.497,
-    "high": 4489.0,
-    "low": 4366.49,
+    "last": 4427.69,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4427.693,
+    "open": 4427.693,
+    "high": 4427.693,
+    "low": 4427.693,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "7:13 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -494,7 +494,7 @@
     "low": 98.01,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 79520.51,
-    "change": -2032.3,
-    "change_pct": -2.49,
-    "prev_close": 81552.81,
-    "open": 81767.1,
-    "high": 82272.31,
-    "low": 78632.3,
+    "last": 79813.21,
+    "change": 78.71,
+    "change_pct": 0.1,
+    "prev_close": 79734.5,
+    "open": 79812.3,
+    "high": 79883.5,
+    "low": 79465.25,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:04 PM EDT",
+    "last_timedate": "11:59 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -530,7 +530,7 @@
     "low": 40.2,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:00 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -548,7 +548,7 @@
     "low": 273.61,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -566,7 +566,7 @@
     "low": 48.8,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -584,7 +584,7 @@
     "low": 61.51,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -602,7 +602,7 @@
     "low": 167.2,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -620,7 +620,7 @@
     "low": 213.95,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:00 PM EDT",
+    "last_timedate": "09/04/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-09-01 22:00",
      "time_hm": "22:00",
      "date_label": "09/01",
-     "delta_hours": -84.1,
+     "delta_hours": -98.0,
      "forecast": "55.2",
      "previous": "55.6",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-09-02 09:30",
      "time_hm": "09:30",
      "date_label": "09/02",
-     "delta_hours": -72.6,
+     "delta_hours": -86.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "2.75%",
      "previous": "2.50%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-09-02 11:00",
      "time_hm": "11:00",
      "date_label": "09/02",
-     "delta_hours": -71.1,
+     "delta_hours": -85.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-09-02 21:45",
      "time_hm": "21:45",
      "date_label": "09/02",
-     "delta_hours": -60.3,
+     "delta_hours": -74.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-09-02 21:45",
      "time_hm": "21:45",
      "date_label": "09/02",
-     "delta_hours": -60.3,
+     "delta_hours": -74.2,
      "forecast": "2.25%",
      "previous": "2.25%",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-09-02 22:30",
      "time_hm": "22:30",
      "date_label": "09/02",
-     "delta_hours": -59.6,
+     "delta_hours": -73.5,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-09-04 16:50",
      "time_hm": "16:50",
      "date_label": "09/04",
-     "delta_hours": -17.2,
+     "delta_hours": -31.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -902,7 +902,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "15.1K",
      "previous": "75.1K",
      "impact": "High",
@@ -914,7 +914,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "6.4%",
      "previous": "6.4%",
      "impact": "High",
@@ -926,7 +926,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "0.3%",
      "previous": "0.1%",
      "impact": "High",
@@ -938,7 +938,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "55K",
      "previous": "-23K",
      "impact": "High",
@@ -950,7 +950,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "4.1%",
      "previous": "4.1%",
      "impact": "High",
@@ -958,10 +958,10 @@
     }
    ]
   },
-  "elapsed_sec": 265.8
+  "elapsed_sec": 257.9
  },
  "dash_data": {
-  "generated_iso": "2026-09-05T10:04:44.165703+08:00",
+  "generated_iso": "2026-09-05T23:59:18.850487+08:00",
   "date_str": "2026-09-05",
   "date_parts": {
    "y": 2026,
@@ -1009,12 +1009,12 @@
     "mkt_status": "REG_MKT"
    },
    "XAU": {
-    "last": 4429.51,
-    "change_pct": -0.97,
+    "last": 4427.69,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 4472.859,
-    "high": 4489.0,
-    "low": 4366.49,
+    "prev_close": 4427.693,
+    "high": 4427.693,
+    "low": 4427.693,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
@@ -1063,12 +1063,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 79520.51,
-    "change_pct": -2.49,
+    "last": 79813.21,
+    "change_pct": 0.1,
     "change_bp": null,
-    "prev_close": 81552.81,
-    "high": 82272.31,
-    "low": 78632.3,
+    "prev_close": 79734.5,
+    "high": 79883.5,
+    "low": 79465.25,
     "mkt_status": "REG_MKT"
    },
    "SBTU": {
@@ -1127,7 +1127,7 @@
    }
   },
   "thermo": {
-   "total": 39,
+   "total": 34,
    "regime": "neutral",
    "regime_icon": "⚪",
    "regime_label": "中性",
@@ -1166,11 +1166,11 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 79520.51,
-     "chg": -2.49,
+     "value": 79813.21,
+     "chg": 0.1,
      "chg_unit": "%",
-     "score": 10,
-     "note": "BTC 單日跌 1-3%"
+     "score": 5,
+     "note": "BTC ±1% 以內，橫行"
     },
     {
      "key": "GDX",
@@ -1186,8 +1186,8 @@
      "key": "XAU",
      "label": "黃金 XAU",
      "weight": 10,
-     "value": 4429.51,
-     "chg": -0.97,
+     "value": 4427.69,
+     "chg": 0.0,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1203,7 +1203,7 @@
      "note": "油 ±1.5% 以內"
     }
    ],
-   "needle_pct": 39
+   "needle_pct": 34
   },
   "regime_sub": "NEUTRAL · EA 正常，避開 🔴 事件窗口",
   "events": [
@@ -1422,7 +1422,7 @@
     "name": "渥太華 · 加拿大",
     "title": "🟠 渥太華 · 加拿大 · 中美關稅升級",
     "loc": "📍 渥太華 · 加拿大",
-    "time": "09/04 04:42 HKT · CNBC",
+    "time": "09/04 04:42 HKT · CNBC World",
     "headline": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ",
     "chain": [
      "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
@@ -1468,7 +1468,7 @@
       "g"
      ]
     ],
-    "source": "CNBC",
+    "source": "CNBC World",
     "url": "https://www.cnbc.com/2026/09/03/carney-lutnick-trump-trade-canada.html"
    },
    {
@@ -1554,8 +1554,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "09/04 13:15 HKT · GDELT/adn.com",
-    "headline": "Iran fires missiles and drones at Kuwait as strikes resume in war with U . S .",
+    "time": "09/05 22:22 HKT · 新浪7x24",
+    "headline": "哈马斯称“和平委员会”报告“与事实不符”",
     "chain": [
      "中東交火升級 → 原油供應中斷風險定價",
      "油價急升 → 通脹預期升溫、美債息升",
@@ -1600,8 +1600,8 @@
       "g"
      ]
     ],
-    "source": "GDELT/adn.com",
-    "url": "https://www.adn.com/nation-world/2026/09/03/iran-fires-missiles-and-drones-at-kuwait-as-strikes-resume-in-war-with-us/"
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-09-05/detail-iniquyis7295720.d.html"
    }
   ],
   "arcs": [
@@ -1752,7 +1752,7 @@
      "time_hkt": "2026-09-01 22:00",
      "time_hm": "22:00",
      "date_label": "09/01",
-     "delta_hours": -84.1,
+     "delta_hours": -98.0,
      "forecast": "55.2",
      "previous": "55.6",
      "impact": "High",
@@ -1764,7 +1764,7 @@
      "time_hkt": "2026-09-02 09:30",
      "time_hm": "09:30",
      "date_label": "09/02",
-     "delta_hours": -72.6,
+     "delta_hours": -86.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -1776,7 +1776,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "2.75%",
      "previous": "2.50%",
      "impact": "High",
@@ -1788,7 +1788,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1800,7 +1800,7 @@
      "time_hkt": "2026-09-02 10:00",
      "time_hm": "10:00",
      "date_label": "09/02",
-     "delta_hours": -72.1,
+     "delta_hours": -86.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1812,7 +1812,7 @@
      "time_hkt": "2026-09-02 11:00",
      "time_hm": "11:00",
      "date_label": "09/02",
-     "delta_hours": -71.1,
+     "delta_hours": -85.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1824,7 +1824,7 @@
      "time_hkt": "2026-09-02 21:45",
      "time_hm": "21:45",
      "date_label": "09/02",
-     "delta_hours": -60.3,
+     "delta_hours": -74.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1836,7 +1836,7 @@
      "time_hkt": "2026-09-02 21:45",
      "time_hm": "21:45",
      "date_label": "09/02",
-     "delta_hours": -60.3,
+     "delta_hours": -74.2,
      "forecast": "2.25%",
      "previous": "2.25%",
      "impact": "High",
@@ -1848,7 +1848,7 @@
      "time_hkt": "2026-09-02 22:30",
      "time_hm": "22:30",
      "date_label": "09/02",
-     "delta_hours": -59.6,
+     "delta_hours": -73.5,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1860,7 +1860,7 @@
      "time_hkt": "2026-09-04 16:50",
      "time_hm": "16:50",
      "date_label": "09/04",
-     "delta_hours": -17.2,
+     "delta_hours": -31.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1872,7 +1872,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "15.1K",
      "previous": "75.1K",
      "impact": "High",
@@ -1884,7 +1884,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "6.4%",
      "previous": "6.4%",
      "impact": "High",
@@ -1896,7 +1896,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "0.3%",
      "previous": "0.1%",
      "impact": "High",
@@ -1908,7 +1908,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "55K",
      "previous": "-23K",
      "impact": "High",
@@ -1920,7 +1920,7 @@
      "time_hkt": "2026-09-04 20:30",
      "time_hm": "20:30",
      "date_label": "09/04",
-     "delta_hours": -13.6,
+     "delta_hours": -27.5,
      "forecast": "4.1%",
      "previous": "4.1%",
      "impact": "High",
@@ -1938,11 +1938,11 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 4429.51,
-    "change_pct": -0.97,
-    "prev_close": 4472.859,
-    "high": 4489.0,
-    "low": 4366.49,
+    "last": 4427.69,
+    "change_pct": null,
+    "prev_close": 4427.693,
+    "high": 4427.693,
+    "low": 4427.693,
     "cost_price": null,
     "pnl_cost_pct": null,
     "attrib": "",
@@ -2128,10 +2128,10 @@
    },
    {
     "cat": "core",
-    "txt": "金 $4,430、金銀比 66.9，油 $91.2",
+    "txt": "金 $4,428、金銀比 66.9，油 $91.2",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↓1.0%"
+     "🥇金 ↑0.0%"
     ],
     "no": "BRIEF // 04",
     "color": "#ffd24a",
@@ -2139,10 +2139,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 39 分⚪中性",
+    "txt": "風險溫度 34 分⚪中性",
     "ifthen": "如果 VIX（14.5）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "⚪ 39/100"
+     "⚪ 34/100"
     ],
     "no": "BRIEF // 05",
     "color": "#9d8cff",
@@ -2152,18 +2152,10 @@
   "feed": [
    {
     "time_hm": "09/04 04:42",
-    "source": "CNBC",
+    "source": "CNBC World",
     "title": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ready'",
     "url": "https://www.cnbc.com/2026/09/03/carney-lutnick-trump-trade-canada.html",
     "theme": "stock",
-    "is_event": true
-   },
-   {
-    "time_hm": "09/04 13:15",
-    "source": "GDELT/adn.com",
-    "title": "Iran fires missiles and drones at Kuwait as strikes resume in war with U . S .",
-    "url": "https://www.adn.com/nation-world/2026/09/03/iran-fires-missiles-and-drones-at-kuwait-as-strikes-resume-in-war-with-us/",
-    "theme": "geo",
     "is_event": true
    },
    {
@@ -2196,6 +2188,14 @@
     "title": "Trump: Witkoff and Kushner will bring proposal to Putin to end the war",
     "url": "https://investinglive.com/news/trump-we-may-hit-piackaxe-mountain-very-soon/",
     "theme": "geo",
+    "is_event": true
+   },
+   {
+    "time_hm": "09/05 22:22",
+    "source": "新浪7x24",
+    "title": "哈马斯称“和平委员会”报告“与事实不符”",
+    "url": "https://finance.sina.cn/7x24/2026-09-05/detail-iniquyis7295720.d.html",
+    "theme": "stock",
     "is_event": true
    },
    {
@@ -2276,14 +2276,6 @@
     "title": "ArcBest misses profit expectations, as soft rate environment weighed on revenue",
     "url": "https://www.marketwatch.com/story/arcbest-misses-profit-expectations-as-soft-rate-environment-weighed-on-revenue-4461160b?mod=mw_rss_marketpulse",
     "theme": "macro",
-    "is_event": false
-   },
-   {
-    "time_hm": "08/13 21:18",
-    "source": "CNBC Economy",
-    "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
-    "url": "https://www.cnbc.com/2026/08/13/wholesale-prices-were-flat-in-july-below-expectations-for-0point2percent-increase.html",
-    "theme": "stock",
     "is_event": false
    },
    {
@@ -2469,6 +2461,14 @@
     "url": "https://www.cnbc.com/2026/08/26/haidilao-shares-delivery-restaurant-growth.html",
     "theme": "stock",
     "is_event": false
+   },
+   {
+    "time_hm": "08/26 21:20",
+    "source": "CNBC Finance",
+    "title": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
+    "url": "https://www.cnbc.com/2026/08/26/short-drama-china-production-ai-entertainment-economics.html",
+    "theme": "stock",
+    "is_event": false
    }
   ],
   "sources_status": {
@@ -2477,21 +2477,21 @@
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 10 條"
+   "gdelt": "OK · 20 條"
   },
   "event_counts": {
-   "E1": 1,
-   "E2": 5,
+   "E1": 3,
+   "E2": 3,
    "E3": 0,
-   "E4": 0,
+   "E4": 7,
    "E5": 3,
-   "E6": 2,
+   "E6": 3,
    "E7": 1,
    "E8": 1,
-   "E9": 4,
+   "E9": 7,
    "E10": 0,
    "E11": 0,
-   "E12": 0
+   "E12": 1
   },
   "market_corr": {
    "generated": "2026-09-03 04:39 HKT",
