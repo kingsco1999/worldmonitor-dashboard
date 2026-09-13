@@ -1,14 +1,14 @@
 {
  "bundle": {
-  "collected_at": "2026-09-13T00:13:26.640262+08:00",
-  "collected_at_hkt": "2026-09-13 00:13 HKT",
+  "collected_at": "2026-09-13T10:09:16.267652+08:00",
+  "collected_at_hkt": "2026-09-13 10:09 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "SKIP/FAIL（RSS 補頂）"
+   "gdelt": "OK · 10 條"
   },
   "quotes": {
    "VIX": {
@@ -96,7 +96,7 @@
     "low": 4347.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:19 AM EDT",
+    "last_timedate": "5:50 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -106,8 +106,8 @@
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
     "last": 64.4562,
-    "change": 0.9077,
-    "change_pct": 1.41,
+    "change": 0.8832,
+    "change_pct": 1.37,
     "prev_close": 64.4562,
     "open": 0.0,
     "high": 0.0,
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 77345.11,
-    "change": 91.66,
-    "change_pct": 0.12,
+    "last": 77260.6,
+    "change": 7.15,
+    "change_pct": 0.01,
     "prev_close": 77253.45,
     "open": 77264.5,
     "high": 77480.0,
     "low": 76966.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "12:13 PM EDT",
+    "last_timedate": "10:09 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -404,7 +404,7 @@
     "low": 4347.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:19 AM EDT",
+    "last_timedate": "5:50 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -414,8 +414,8 @@
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
     "last": 64.4562,
-    "change": 0.9077,
-    "change_pct": 1.41,
+    "change": 0.8832,
+    "change_pct": 1.37,
     "prev_close": 64.4562,
     "open": 0.0,
     "high": 0.0,
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 77345.11,
-    "change": 91.66,
-    "change_pct": 0.12,
+    "last": 77260.6,
+    "change": 7.15,
+    "change_pct": 0.01,
     "prev_close": 77253.45,
     "open": 77264.5,
     "high": 77480.0,
     "low": 76966.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "12:13 PM EDT",
+    "last_timedate": "10:09 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-09-10 20:15",
      "time_hm": "20:15",
      "date_label": "09/10",
-     "delta_hours": -52.0,
+     "delta_hours": -61.9,
      "forecast": "2.65%",
      "previous": "2.40%",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-09-10 20:15",
      "time_hm": "20:15",
      "date_label": "09/10",
-     "delta_hours": -52.0,
+     "delta_hours": -61.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-09-10 20:30",
      "time_hm": "20:30",
      "date_label": "09/10",
-     "delta_hours": -51.7,
+     "delta_hours": -61.7,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-09-10 20:30",
      "time_hm": "20:30",
      "date_label": "09/10",
-     "delta_hours": -51.7,
+     "delta_hours": -61.7,
      "forecast": "0.4%",
      "previous": "0.0%",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-09-10 20:45",
      "time_hm": "20:45",
      "date_label": "09/10",
-     "delta_hours": -51.5,
+     "delta_hours": -61.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-09-11 14:00",
      "time_hm": "14:00",
      "date_label": "09/11",
-     "delta_hours": -34.2,
+     "delta_hours": -44.2,
      "forecast": "0.0%",
      "previous": "0.3%",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "0.2%",
      "previous": "0.2%",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "2.4%",
      "previous": "2.5%",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "0.4%",
      "previous": "0.1%",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "3.4%",
      "previous": "3.4%",
      "impact": "High",
@@ -898,10 +898,10 @@
     }
    ]
   },
-  "elapsed_sec": 247.2
+  "elapsed_sec": 246.0
  },
  "dash_data": {
-  "generated_iso": "2026-09-13T00:13:26.628751+08:00",
+  "generated_iso": "2026-09-13T10:09:16.231335+08:00",
   "date_str": "2026-09-13",
   "date_parts": {
    "y": 2026,
@@ -959,7 +959,7 @@
    },
    "XAG": {
     "last": 64.4562,
-    "change_pct": 1.41,
+    "change_pct": 1.37,
     "change_bp": null,
     "prev_close": 64.4562,
     "high": 0.0,
@@ -1003,8 +1003,8 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 77345.11,
-    "change_pct": 0.12,
+    "last": 77260.6,
+    "change_pct": 0.01,
     "change_bp": null,
     "prev_close": 77253.45,
     "high": 77480.0,
@@ -1106,8 +1106,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 77345.11,
-     "chg": 0.12,
+     "value": 77260.6,
+     "chg": 0.01,
      "chg_unit": "%",
      "score": 5,
      "note": "BTC ±1% 以內，橫行"
@@ -1267,114 +1267,6 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 38.9,
-    "lng": -77.0,
-    "name": "華盛頓 · 聯儲局",
-    "title": "🟠 華盛頓 · 聯儲局 · 中美關稅升級",
-    "loc": "📍 華盛頓 · 聯儲局",
-    "time": "09/11 02:36 HKT · Mining.com",
-    "headline": "Mining stocks rally comes to abrupt halt as copper, silver prices plummet and gold slides",
-    "chain": [
-     "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
-     "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
-     "美元走強，黃金避險受惠"
-    ],
-    "if_then": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
-    "assets": [
-     [
-      "🇭🇰",
-      "港股",
-      "↓↓",
-      "r"
-     ],
-     [
-      "💾",
-      "半導體",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↓",
-      "r"
-     ],
-     [
-      "🛢️",
-      "WTI 原油",
-      "↓",
-      "r"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "Mining.com",
-    "url": "https://www.mining.com/mining-stocks-rally-comes-to-abrupt-halt-as-copper-silver-prices-plummet-and-gold-slides/"
-   },
-   {
-    "id": 3,
-    "etype": "E3",
-    "etype_name": "紅海/蘇伊士航道中斷",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 14.7,
-    "lng": 42.5,
-    "name": "紅海 · 曼德海峽",
-    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
-    "loc": "📍 紅海 · 曼德海峽",
-    "time": "09/12 05:35 HKT · CNBC",
-    "headline": "Saudi Arabia shut down East-West crude oil pipeline after multiple attacks by drones from ",
-    "chain": [
-     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
-     "集裝箱運價攀升 → 供應鏈成本轉嫁",
-     "原油影響溫和，主要衝擊航運同零售"
-    ],
-    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
-    "assets": [
-     [
-      "🛢️",
-      "WTI 原油",
-      "↑",
-      "g"
-     ],
-     [
-      "🚢",
-      "航運",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/09/11/saudi-arabia-shut-down-east-west-crude-oil-pipeline.html"
-   },
-   {
-    "id": 4,
-    "etype": "E6",
-    "etype_name": "中美關稅升級",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
     "lat": 31.5,
     "lng": 34.5,
     "name": "中東 · 伊朗/以色列",
@@ -1430,6 +1322,114 @@
     "url": "https://www.cnbc.com/2026/09/12/brics-summit-xi-putin-modi-trump.html"
    },
    {
+    "id": 3,
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "09/13 07:30 HKT · 新浪7x24",
+    "headline": "市场消息：受伊朗支持的胡塞武装沿也门红海海岸向曼德海峡推进，部署在阿拉伯海的美国海军 “乔治・华盛顿” 号航空母舰处于高度戒备状态。",
+    "chain": [
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
+    ],
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑",
+      "g"
+     ],
+     [
+      "🚢",
+      "航運",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-09-13/detail-inirrtkk4696071.d.html"
+   },
+   {
+    "id": 4,
+    "etype": "E1",
+    "etype_name": "中東武裝衝突升級",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 中東武裝衝突升級",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "09/13 08:41 HKT · 新浪7x24",
+    "headline": "市场消息：胡塞武装指责以色列在美国与和平委员会的支持下，持续在加沙实施暗杀行动。",
+    "chain": [
+     "中東交火升級 → 原油供應中斷風險定價",
+     "油價急升 → 通脹預期升溫、美債息升",
+     "避險資金湧入金銀，VIX 抬頭"
+    ],
+    "if_then": "如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑↑",
+      "g"
+     ],
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
+     [
+      "🥈",
+      "白銀 XAG",
+      "↑",
+      "g"
+     ],
+     [
+      "⛽",
+      "天然氣",
+      "↑",
+      "g"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "📈",
+      "美債 10Y",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-09-13/detail-inirrtkk4736172.d.html"
+   },
+   {
     "id": 5,
     "etype": "E8",
     "etype_name": "央行意外鷹派（加息/縮表）",
@@ -1446,8 +1446,8 @@
     "name": "華盛頓 · 聯儲局",
     "title": "🟠 華盛頓 · 聯儲局 · 央行意外鷹派（加息/縮表）",
     "loc": "📍 華盛頓 · 聯儲局",
-    "time": "09/12 05:18 HKT · ForexLive",
-    "headline": "investingLive Americas FX news wrap 11 Sept: US CPI raises odds for Fed rate hike",
+    "time": "09/12 16:15 HKT · GDELT/prokerala.com",
+    "headline": "Gold dips 2 pc on weekly basis over US Fed rate hike concerns",
     "chain": [
      "央行意外鷹派（加息/縮表）→ 實際利率升",
      "金/成長股估值受壓、美元走強",
@@ -1492,8 +1492,8 @@
       "g"
      ]
     ],
-    "source": "ForexLive",
-    "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-11-sept-us-cpi-keeps-fed-raises-odds-for-fed-rate-hike/"
+    "source": "GDELT/prokerala.com",
+    "url": "https://www.prokerala.com/news/articles/a1811398.html"
    }
   ],
   "arcs": [
@@ -1530,32 +1530,32 @@
     "etype": "E3"
    },
    {
-    "startLat": 38.9,
-    "startLng": -77.0,
+    "startLat": 31.5,
+    "startLng": 34.5,
     "endLat": 22.3,
     "endLng": 114.2,
     "color": "#ffb020",
     "etype": "E6"
    },
    {
-    "startLat": 38.9,
-    "startLng": -77.0,
+    "startLat": 31.5,
+    "startLng": 34.5,
     "endLat": 31.2,
     "endLng": 121.5,
     "color": "#ffb020",
     "etype": "E6"
    },
    {
-    "startLat": 38.9,
-    "startLng": -77.0,
+    "startLat": 31.5,
+    "startLng": 34.5,
     "endLat": 35.7,
     "endLng": 139.7,
     "color": "#ffb020",
     "etype": "E6"
    },
    {
-    "startLat": 38.9,
-    "startLng": -77.0,
+    "startLat": 31.5,
+    "startLng": 34.5,
     "endLat": 40.7,
     "endLng": -74.0,
     "color": "#ffb020",
@@ -1578,42 +1578,42 @@
     "etype": "E3"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 22.3,
-    "endLng": 114.2,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 31.2,
-    "endLng": 121.5,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 31.5,
-    "startLng": 34.5,
+    "startLat": 14.7,
+    "startLng": 42.5,
     "endLat": 35.7,
     "endLng": 139.7,
     "color": "#ffb020",
-    "etype": "E6"
+    "etype": "E1"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 50.1,
+    "endLng": 8.7,
+    "color": "#ffb020",
+    "etype": "E1"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
     "endLat": 40.7,
     "endLng": -74.0,
     "color": "#ffb020",
-    "etype": "E6"
+    "etype": "E8"
    },
    {
     "startLat": 38.9,
     "startLng": -77.0,
     "endLat": 51.5,
     "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E8"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 22.3,
+    "endLng": 114.2,
     "color": "#ffb020",
     "etype": "E8"
    },
@@ -1636,7 +1636,7 @@
      "time_hkt": "2026-09-10 20:15",
      "time_hm": "20:15",
      "date_label": "09/10",
-     "delta_hours": -52.0,
+     "delta_hours": -61.9,
      "forecast": "2.65%",
      "previous": "2.40%",
      "impact": "High",
@@ -1648,7 +1648,7 @@
      "time_hkt": "2026-09-10 20:15",
      "time_hm": "20:15",
      "date_label": "09/10",
-     "delta_hours": -52.0,
+     "delta_hours": -61.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1660,7 +1660,7 @@
      "time_hkt": "2026-09-10 20:30",
      "time_hm": "20:30",
      "date_label": "09/10",
-     "delta_hours": -51.7,
+     "delta_hours": -61.7,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -1672,7 +1672,7 @@
      "time_hkt": "2026-09-10 20:30",
      "time_hm": "20:30",
      "date_label": "09/10",
-     "delta_hours": -51.7,
+     "delta_hours": -61.7,
      "forecast": "0.4%",
      "previous": "0.0%",
      "impact": "High",
@@ -1684,7 +1684,7 @@
      "time_hkt": "2026-09-10 20:45",
      "time_hm": "20:45",
      "date_label": "09/10",
-     "delta_hours": -51.5,
+     "delta_hours": -61.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1696,7 +1696,7 @@
      "time_hkt": "2026-09-11 14:00",
      "time_hm": "14:00",
      "date_label": "09/11",
-     "delta_hours": -34.2,
+     "delta_hours": -44.2,
      "forecast": "0.0%",
      "previous": "0.3%",
      "impact": "High",
@@ -1708,7 +1708,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "0.2%",
      "previous": "0.2%",
      "impact": "High",
@@ -1720,7 +1720,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "2.4%",
      "previous": "2.5%",
      "impact": "High",
@@ -1732,7 +1732,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "0.4%",
      "previous": "0.1%",
      "impact": "High",
@@ -1744,7 +1744,7 @@
      "time_hkt": "2026-09-11 20:30",
      "time_hm": "20:30",
      "date_label": "09/11",
-     "delta_hours": -27.7,
+     "delta_hours": -37.7,
      "forecast": "3.4%",
      "previous": "3.4%",
      "impact": "High",
@@ -1782,7 +1782,7 @@
     "status": "open",
     "nature": "ea",
     "last": 64.4562,
-    "change_pct": 1.41,
+    "change_pct": 1.37,
     "prev_close": 64.4562,
     "high": 0.0,
     "low": 0.0,
@@ -1961,7 +1961,7 @@
    },
    {
     "cat": "geo",
-    "txt": "華盛頓 · 聯儲局：Mining stocks rally comes to abrupt halt a",
+    "txt": "中東 · 伊朗/以色列：Trump's America-first world is pushing oth",
     "ifthen": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
     "tags": [
      "🇭🇰 ↓↓",
@@ -1974,35 +1974,11 @@
   ],
   "feed": [
    {
-    "time_hm": "09/11 02:36",
-    "source": "Mining.com",
-    "title": "Mining stocks rally comes to abrupt halt as copper, silver prices plummet and gold slides",
-    "url": "https://www.mining.com/mining-stocks-rally-comes-to-abrupt-halt-as-copper-silver-prices-plummet-and-gold-slides/",
-    "theme": "gold",
-    "is_event": true
-   },
-   {
     "time_hm": "09/11 16:25",
     "source": "ForexLive",
     "title": "Yemen's Iran-backed Houthis have completed the takeover of Bab el-Mandeb Strait",
     "url": "https://investinglive.com/news/yemen-s-iran-backed-houthis-have-completed-the-takeover-of-bab-el-mandeb-strait/",
     "theme": "geo",
-    "is_event": true
-   },
-   {
-    "time_hm": "09/12 05:18",
-    "source": "ForexLive",
-    "title": "investingLive Americas FX news wrap 11 Sept: US CPI raises odds for Fed rate hike",
-    "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-11-sept-us-cpi-keeps-fed-raises-odds-for-fed-rate-hike/",
-    "theme": "macro",
-    "is_event": true
-   },
-   {
-    "time_hm": "09/12 05:35",
-    "source": "CNBC",
-    "title": "Saudi Arabia shut down East-West crude oil pipeline after multiple attacks by drones from Iraq",
-    "url": "https://www.cnbc.com/2026/09/11/saudi-arabia-shut-down-east-west-crude-oil-pipeline.html",
-    "theme": "oil",
     "is_event": true
    },
    {
@@ -2014,10 +1990,34 @@
     "is_event": true
    },
    {
+    "time_hm": "09/12 16:15",
+    "source": "GDELT/prokeral",
+    "title": "Gold dips 2 pc on weekly basis over US Fed rate hike concerns",
+    "url": "https://www.prokerala.com/news/articles/a1811398.html",
+    "theme": "gold",
+    "is_event": true
+   },
+   {
     "time_hm": "09/12 21:24",
     "source": "CNBC",
     "title": "Trump's America-first world is pushing other powers to hedge their bets",
     "url": "https://www.cnbc.com/2026/09/12/brics-summit-xi-putin-modi-trump.html",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "09/13 07:30",
+    "source": "新浪7x24",
+    "title": "市场消息：受伊朗支持的胡塞武装沿也门红海海岸向曼德海峡推进，部署在阿拉伯海的美国海军 “乔治・华盛顿” 号航空母舰处于高度戒备状态。",
+    "url": "https://finance.sina.cn/7x24/2026-09-13/detail-inirrtkk4696071.d.html",
+    "theme": "geo",
+    "is_event": true
+   },
+   {
+    "time_hm": "09/13 08:41",
+    "source": "新浪7x24",
+    "title": "市场消息：胡塞武装指责以色列在美国与和平委员会的支持下，持续在加沙实施暗杀行动。",
+    "url": "https://finance.sina.cn/7x24/2026-09-13/detail-inirrtkk4736172.d.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2300,17 +2300,17 @@
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "SKIP/FAIL（RSS 補頂）"
+   "gdelt": "OK · 10 條"
   },
   "event_counts": {
-   "E1": 2,
-   "E2": 3,
-   "E3": 8,
+   "E1": 4,
+   "E2": 2,
+   "E3": 14,
    "E4": 1,
    "E5": 0,
-   "E6": 2,
-   "E7": 2,
-   "E8": 3,
+   "E6": 1,
+   "E7": 0,
+   "E8": 5,
    "E9": 1,
    "E10": 0,
    "E11": 0,
