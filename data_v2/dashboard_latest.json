@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-09-19T10:18:32.838822+08:00",
-  "collected_at_hkt": "2026-09-19 10:18 HKT",
+  "collected_at": "2026-09-20T00:23:34.068717+08:00",
+  "collected_at_hkt": "2026-09-20 00:23 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -24,7 +24,7 @@
     "low": 14.8,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -42,7 +42,7 @@
     "low": 100.165,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -87,16 +87,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4377.48,
-    "change": 37.39,
-    "change_pct": 0.86,
-    "prev_close": 4340.09,
-    "open": 4359.268,
-    "high": 4398.35,
-    "low": 4334.84,
+    "last": 4376.91,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4376.91,
+    "open": 4376.91,
+    "high": 4376.91,
+    "low": 4376.91,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "6:36 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -186,7 +186,7 @@
     "low": 94.23,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 81317.81,
-    "change": 4805.73,
-    "change_pct": 6.28,
-    "prev_close": 76512.08,
-    "open": 76535.7,
-    "high": 81707.33,
-    "low": 76199.43,
+    "last": 81790.1,
+    "change": 600.58,
+    "change_pct": 0.74,
+    "prev_close": 81189.52,
+    "open": 81195.1,
+    "high": 81913.52,
+    "low": 80826.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:18 PM EDT",
+    "last_timedate": "12:23 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -332,7 +332,7 @@
     "low": 14.8,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -350,7 +350,7 @@
     "low": 100.165,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -395,16 +395,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4377.48,
-    "change": 37.39,
-    "change_pct": 0.86,
-    "prev_close": 4340.09,
-    "open": 4359.268,
-    "high": 4398.35,
-    "low": 4334.84,
+    "last": 4376.91,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4376.91,
+    "open": 4376.91,
+    "high": 4376.91,
+    "low": 4376.91,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "6:36 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -494,7 +494,7 @@
     "low": 94.23,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 81317.81,
-    "change": 4805.73,
-    "change_pct": 6.28,
-    "prev_close": 76512.08,
-    "open": 76535.7,
-    "high": 81707.33,
-    "low": 76199.43,
+    "last": 81790.1,
+    "change": 600.58,
+    "change_pct": 0.74,
+    "prev_close": 81189.52,
+    "open": 81195.1,
+    "high": 81913.52,
+    "low": 80826.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:18 PM EDT",
+    "last_timedate": "12:23 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -530,7 +530,7 @@
     "low": 43.23,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -548,7 +548,7 @@
     "low": 259.09,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -566,7 +566,7 @@
     "low": 46.65,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -584,7 +584,7 @@
     "low": 57.84,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -602,7 +602,7 @@
     "low": 176.61,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -620,7 +620,7 @@
     "low": 236.42,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:00 PM EDT",
+    "last_timedate": "09/18/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "-0.1%",
      "previous": "0.5%",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "2.0%",
      "previous": "2.0%",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "1.9%",
      "previous": "1.9%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-09-15 14:00",
      "time_hm": "14:00",
      "date_label": "09/15",
-     "delta_hours": -92.3,
+     "delta_hours": -106.4,
      "forecast": "8.3K",
      "previous": "-11.0K",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-09-16 14:00",
      "time_hm": "14:00",
      "date_label": "09/16",
-     "delta_hours": -68.3,
+     "delta_hours": -82.4,
      "forecast": "3.1%",
      "previous": "2.9%",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "4.00%",
      "previous": "3.75%",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-09-17 02:30",
      "time_hm": "02:30",
      "date_label": "09/17",
-     "delta_hours": -55.8,
+     "delta_hours": -69.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-09-17 06:45",
      "time_hm": "06:45",
      "date_label": "09/17",
-     "delta_hours": -51.6,
+     "delta_hours": -65.6,
      "forecast": "0.1%",
      "previous": "0.8%",
      "impact": "High",
@@ -902,7 +902,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -914,7 +914,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "3-0-6",
      "previous": "3-0-6",
      "impact": "High",
@@ -926,7 +926,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "3.75%",
      "previous": "3.75%",
      "impact": "High",
@@ -938,7 +938,7 @@
      "time_hkt": "2026-09-18 10:54",
      "time_hm": "10:54",
      "date_label": "09/18",
-     "delta_hours": -23.4,
+     "delta_hours": -37.5,
      "forecast": "<1.25%",
      "previous": "<1.00%",
      "impact": "High",
@@ -950,7 +950,7 @@
      "time_hkt": "2026-09-18 10:54",
      "time_hm": "10:54",
      "date_label": "09/18",
-     "delta_hours": -23.4,
+     "delta_hours": -37.5,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -962,7 +962,7 @@
      "time_hkt": "2026-09-18 14:30",
      "time_hm": "14:30",
      "date_label": "09/18",
-     "delta_hours": -19.8,
+     "delta_hours": -33.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -970,17 +970,17 @@
     }
    ]
   },
-  "elapsed_sec": 244.9
+  "elapsed_sec": 249.6
  },
  "dash_data": {
-  "generated_iso": "2026-09-19T10:18:32.805787+08:00",
-  "date_str": "2026-09-19",
+  "generated_iso": "2026-09-20T00:23:34.058798+08:00",
+  "date_str": "2026-09-20",
   "date_parts": {
    "y": 2026,
    "m": 9,
-   "d": 19
+   "d": 20
   },
-  "weekday": "星期六",
+  "weekday": "星期日",
   "edition": "evening",
   "edition_label": "晚間版",
   "quotes": {
@@ -1021,12 +1021,12 @@
     "mkt_status": "REG_MKT"
    },
    "XAU": {
-    "last": 4377.48,
-    "change_pct": 0.86,
+    "last": 4376.91,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 4340.09,
-    "high": 4398.35,
-    "low": 4334.84,
+    "prev_close": 4376.91,
+    "high": 4376.91,
+    "low": 4376.91,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
@@ -1075,12 +1075,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 81317.81,
-    "change_pct": 6.28,
+    "last": 81790.1,
+    "change_pct": 0.74,
     "change_bp": null,
-    "prev_close": 76512.08,
-    "high": 81707.33,
-    "low": 76199.43,
+    "prev_close": 81189.52,
+    "high": 81913.52,
+    "low": 80826.0,
     "mkt_status": "REG_MKT"
    },
    "SBTU": {
@@ -1139,7 +1139,7 @@
    }
   },
   "thermo": {
-   "total": 22,
+   "total": 27,
    "regime": "risk-on",
    "regime_icon": "🟢",
    "regime_label": "進攻模式",
@@ -1178,11 +1178,11 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 81317.81,
-     "chg": 6.28,
+     "value": 81790.1,
+     "chg": 0.74,
      "chg_unit": "%",
-     "score": 0,
-     "note": "BTC 單日漲 >1%，高 beta 風險偏好強"
+     "score": 5,
+     "note": "BTC ±1% 以內，橫行"
     },
     {
      "key": "GDX",
@@ -1198,8 +1198,8 @@
      "key": "XAU",
      "label": "黃金 XAU",
      "weight": 10,
-     "value": 4377.48,
-     "chg": 0.86,
+     "value": 4376.91,
+     "chg": 0.0,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1215,7 +1215,7 @@
      "note": "油溫和波動"
     }
    ],
-   "needle_pct": 22
+   "needle_pct": 27
   },
   "regime_sub": "RISK-ON · EA 正常運行，趨勢策略順風",
   "events": [
@@ -1287,72 +1287,6 @@
    },
    {
     "id": 1,
-    "etype": "E6",
-    "etype_name": "中美關稅升級",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 50.5,
-    "lng": 30.5,
-    "name": "烏克蘭 · 基輔",
-    "title": "🟠 烏克蘭 · 基輔 · 中美關稅升級",
-    "loc": "📍 烏克蘭 · 基輔",
-    "time": "09/17 16:46 HKT · CNBC World",
-    "headline": "Trump gains a tariff weapon against China and India. Will he use it?",
-    "chain": [
-     "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
-     "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
-     "美元走強，黃金避險受惠"
-    ],
-    "if_then": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
-    "assets": [
-     [
-      "🇭🇰",
-      "港股",
-      "↓↓",
-      "r"
-     ],
-     [
-      "💾",
-      "半導體",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↓",
-      "r"
-     ],
-     [
-      "🛢️",
-      "WTI 原油",
-      "↓",
-      "r"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "CNBC World",
-    "url": "https://www.cnbc.com/2026/09/17/trump-russia-sanctions-india-china-oil-tariffs.html"
-   },
-   {
-    "id": 2,
     "etype": "E3",
     "etype_name": "紅海/蘇伊士航道中斷",
     "color": "#ffb020",
@@ -1368,7 +1302,7 @@
     "name": "霍爾木茲海峽",
     "title": "🟠 霍爾木茲海峽 · 紅海/蘇伊士航道中斷",
     "loc": "📍 霍爾木茲海峽",
-    "time": "09/18 16:02 HKT · CNBC",
+    "time": "09/18 16:02 HKT · CNBC World",
     "headline": "Trump administration advances $24.3 billion fighter jet deal to Saudi Arabia as Houthis es",
     "chain": [
      "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
@@ -1390,11 +1324,11 @@
       "g"
      ]
     ],
-    "source": "CNBC",
+    "source": "CNBC World",
     "url": "https://www.cnbc.com/2026/09/18/trump-saudi-arabia-f-35-houthis-iran-war.html"
    },
    {
-    "id": 3,
+    "id": 2,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1460,7 +1394,7 @@
     "url": "https://www.mining.com/gold-is-tariff-proof-canada-has-11-billion-a-year-of-it-stuck-in-permitting/"
    },
    {
-    "id": 4,
+    "id": 3,
     "etype": "E8",
     "etype_name": "央行意外鷹派（加息/縮表）",
     "color": "#ffb020",
@@ -1526,7 +1460,7 @@
     "url": "https://www.fxstreet.com/news/japanese-yen-dovish-boj-hike-weighs-on-yen-scotiabank-202609182307"
    },
    {
-    "id": 5,
+    "id": 4,
     "etype": "E3",
     "etype_name": "紅海/蘇伊士航道中斷",
     "color": "#ffb020",
@@ -1542,8 +1476,8 @@
     "name": "紅海 · 曼德海峽",
     "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
     "loc": "📍 紅海 · 曼德海峽",
-    "time": "09/19 09:22 HKT · 新浪7x24",
-    "headline": "国际移民组织：也门战事持续 流离失所者超11.2万",
+    "time": "09/19 21:20 HKT · 新浪7x24",
+    "headline": "意大利被曝拟派多至4艘舰船赴曼德海峡",
     "chain": [
      "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
      "集裝箱運價攀升 → 供應鏈成本轉嫁",
@@ -1565,7 +1499,73 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-inisinhh9915185.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-iniskptu9692075.d.html"
+   },
+   {
+    "id": 5,
+    "etype": "E8",
+    "etype_name": "央行意外鷹派（加息/縮表）",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 38.9,
+    "lng": -77.0,
+    "name": "華盛頓 · 聯儲局",
+    "title": "🟠 華盛頓 · 聯儲局 · 央行意外鷹派（加息/縮表）",
+    "loc": "📍 華盛頓 · 聯儲局",
+    "time": "09/19 22:37 HKT · 新浪7x24",
+    "headline": "欧洲央行官员为进一步收紧货币政策铺路，通胀形势恶化",
+    "chain": [
+     "央行意外鷹派（加息/縮表）→ 實際利率升",
+     "金/成長股估值受壓、美元走強",
+     "⚠️ 日央行加息可觸發套息拆倉跨市場連鎖急跌"
+    ],
+    "if_then": "如果 鷹派落地，就 金/成長股受壓、美元強；留意日央行加息引發拆倉",
+    "assets": [
+     [
+      "📈",
+      "美債 10Y",
+      "↑↑",
+      "g"
+     ],
+     [
+      "💾",
+      "半導體",
+      "↓↓",
+      "r"
+     ],
+     [
+      "🥇",
+      "黃金 XAU",
+      "↓",
+      "r"
+     ],
+     [
+      "🥈",
+      "白銀 XAG",
+      "↓",
+      "r"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-iniskptt2969293.d.html"
    }
   ],
   "arcs": [
@@ -1594,38 +1594,6 @@
     "etype": "E2"
    },
    {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 22.3,
-    "endLng": 114.2,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 31.2,
-    "endLng": 121.5,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 35.7,
-    "endLng": 139.7,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 40.7,
-    "endLng": -74.0,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
     "startLat": 26.6,
     "startLng": 56.3,
     "endLat": 51.5,
@@ -1712,6 +1680,38 @@
     "endLng": 103.8,
     "color": "#ffb020",
     "etype": "E3"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 40.7,
+    "endLng": -74.0,
+    "color": "#ffb020",
+    "etype": "E8"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E8"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 22.3,
+    "endLng": 114.2,
+    "color": "#ffb020",
+    "etype": "E8"
+   },
+   {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 1.35,
+    "endLng": 103.8,
+    "color": "#ffb020",
+    "etype": "E8"
    }
   ],
   "calendar": {
@@ -1724,7 +1724,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "-0.1%",
      "previous": "0.5%",
      "impact": "High",
@@ -1736,7 +1736,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "2.0%",
      "previous": "2.0%",
      "impact": "High",
@@ -1748,7 +1748,7 @@
      "time_hkt": "2026-09-14 20:30",
      "time_hm": "20:30",
      "date_label": "09/14",
-     "delta_hours": -109.8,
+     "delta_hours": -123.9,
      "forecast": "1.9%",
      "previous": "1.9%",
      "impact": "High",
@@ -1760,7 +1760,7 @@
      "time_hkt": "2026-09-15 14:00",
      "time_hm": "14:00",
      "date_label": "09/15",
-     "delta_hours": -92.3,
+     "delta_hours": -106.4,
      "forecast": "8.3K",
      "previous": "-11.0K",
      "impact": "High",
@@ -1772,7 +1772,7 @@
      "time_hkt": "2026-09-16 14:00",
      "time_hm": "14:00",
      "date_label": "09/16",
-     "delta_hours": -68.3,
+     "delta_hours": -82.4,
      "forecast": "3.1%",
      "previous": "2.9%",
      "impact": "High",
@@ -1784,7 +1784,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "4.00%",
      "previous": "3.75%",
      "impact": "High",
@@ -1796,7 +1796,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1808,7 +1808,7 @@
      "time_hkt": "2026-09-17 02:00",
      "time_hm": "02:00",
      "date_label": "09/17",
-     "delta_hours": -56.3,
+     "delta_hours": -70.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1820,7 +1820,7 @@
      "time_hkt": "2026-09-17 02:30",
      "time_hm": "02:30",
      "date_label": "09/17",
-     "delta_hours": -55.8,
+     "delta_hours": -69.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1832,7 +1832,7 @@
      "time_hkt": "2026-09-17 06:45",
      "time_hm": "06:45",
      "date_label": "09/17",
-     "delta_hours": -51.6,
+     "delta_hours": -65.6,
      "forecast": "0.1%",
      "previous": "0.8%",
      "impact": "High",
@@ -1844,7 +1844,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1856,7 +1856,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "3-0-6",
      "previous": "3-0-6",
      "impact": "High",
@@ -1868,7 +1868,7 @@
      "time_hkt": "2026-09-17 19:00",
      "time_hm": "19:00",
      "date_label": "09/17",
-     "delta_hours": -39.3,
+     "delta_hours": -53.4,
      "forecast": "3.75%",
      "previous": "3.75%",
      "impact": "High",
@@ -1880,7 +1880,7 @@
      "time_hkt": "2026-09-18 10:54",
      "time_hm": "10:54",
      "date_label": "09/18",
-     "delta_hours": -23.4,
+     "delta_hours": -37.5,
      "forecast": "<1.25%",
      "previous": "<1.00%",
      "impact": "High",
@@ -1892,7 +1892,7 @@
      "time_hkt": "2026-09-18 10:54",
      "time_hm": "10:54",
      "date_label": "09/18",
-     "delta_hours": -23.4,
+     "delta_hours": -37.5,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1904,7 +1904,7 @@
      "time_hkt": "2026-09-18 14:30",
      "time_hm": "14:30",
      "date_label": "09/18",
-     "delta_hours": -19.8,
+     "delta_hours": -33.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1922,11 +1922,11 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 4377.48,
-    "change_pct": 0.86,
-    "prev_close": 4340.09,
-    "high": 4398.35,
-    "low": 4334.84,
+    "last": 4376.91,
+    "change_pct": null,
+    "prev_close": 4376.91,
+    "high": 4376.91,
+    "low": 4376.91,
     "cost_price": null,
     "pnl_cost_pct": null,
     "attrib": "",
@@ -2102,7 +2102,7 @@
     "txt": "金 $4,377、金銀比 66.1，油 $99.5",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↑0.9%"
+     "🥇金 ↑0.0%"
     ],
     "no": "BRIEF // 03",
     "color": "#ffd24a",
@@ -2110,10 +2110,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 22 分🟢進攻模式",
+    "txt": "風險溫度 27 分🟢進攻模式",
     "ifthen": "如果 VIX（14.8）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "🟢 22/100"
+     "🟢 27/100"
     ],
     "no": "BRIEF // 04",
     "color": "#9d8cff",
@@ -2121,7 +2121,7 @@
    },
    {
     "cat": "geo",
-    "txt": "烏克蘭 · 基輔：Trump gains a tariff weapon against China ",
+    "txt": "渥太華 · 加拿大：Gold is tariff-proof. Canada has $11 billi",
     "ifthen": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
     "tags": [
      "🇭🇰 ↓↓",
@@ -2134,16 +2134,8 @@
   ],
   "feed": [
    {
-    "time_hm": "09/17 16:46",
-    "source": "CNBC World",
-    "title": "Trump gains a tariff weapon against China and India. Will he use it?",
-    "url": "https://www.cnbc.com/2026/09/17/trump-russia-sanctions-india-china-oil-tariffs.html",
-    "theme": "stock",
-    "is_event": true
-   },
-   {
     "time_hm": "09/18 16:02",
-    "source": "CNBC",
+    "source": "CNBC World",
     "title": "Trump administration advances $24.3 billion fighter jet deal to Saudi Arabia as Houthis escalate attacks",
     "url": "https://www.cnbc.com/2026/09/18/trump-saudi-arabia-f-35-houthis-iran-war.html",
     "theme": "geo",
@@ -2174,10 +2166,18 @@
     "is_event": true
    },
    {
-    "time_hm": "09/19 09:22",
+    "time_hm": "09/19 21:20",
     "source": "新浪7x24",
-    "title": "国际移民组织：也门战事持续 流离失所者超11.2万",
-    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-inisinhh9915185.d.html",
+    "title": "意大利被曝拟派多至4艘舰船赴曼德海峡",
+    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-iniskptu9692075.d.html",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "09/19 22:37",
+    "source": "新浪7x24",
+    "title": "欧洲央行官员为进一步收紧货币政策铺路，通胀形势恶化",
+    "url": "https://finance.sina.cn/7x24/2026-09-19/detail-iniskptt2969293.d.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2382,14 +2382,6 @@
     "is_event": false
    },
    {
-    "time_hm": "09/01 18:50",
-    "source": "CNBC Economy",
-    "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
-    "url": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html",
-    "theme": "macro",
-    "is_event": false
-   },
-   {
     "time_hm": "09/02 05:40",
     "source": "CNBC Investing",
     "title": "Dell surges 9% after lifting fiscal 2027 forecast on AI server strength",
@@ -2452,6 +2444,14 @@
     "url": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
     "theme": "stock",
     "is_event": false
+   },
+   {
+    "time_hm": "09/03 20:25",
+    "source": "CNBC Economy",
+    "title": "'Danger zone of extreme weather': UN warns of supersized El Niño set to hit global economy and markets",
+    "url": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html",
+    "theme": "geo",
+    "is_event": false
    }
   ],
   "sources_status": {
@@ -2465,12 +2465,12 @@
   "event_counts": {
    "E1": 2,
    "E2": 4,
-   "E3": 4,
+   "E3": 2,
    "E4": 1,
    "E5": 0,
-   "E6": 2,
+   "E6": 1,
    "E7": 1,
-   "E8": 7,
+   "E8": 5,
    "E9": 0,
    "E10": 0,
    "E11": 0,
