@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-10-04T01:12:18.363405+08:00",
-  "collected_at_hkt": "2026-10-04 01:12 HKT",
+  "collected_at": "2026-10-04T11:27:25.327150+08:00",
+  "collected_at_hkt": "2026-10-04 11:27 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -96,7 +96,7 @@
     "low": 4142.342,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:07 AM EDT",
+    "last_timedate": "11:04 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 84862.33,
-    "change": 688.61,
-    "change_pct": 0.82,
-    "prev_close": 84173.72,
-    "open": 84299.66,
-    "high": 84948.15,
-    "low": 84204.98,
+    "last": 84813.66,
+    "change": 8.26,
+    "change_pct": 0.01,
+    "prev_close": 84805.4,
+    "open": 84835.5,
+    "high": 84900.2,
+    "low": 84540.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:12 PM EDT",
+    "last_timedate": "11:27 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -404,7 +404,7 @@
     "low": 4142.342,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:07 AM EDT",
+    "last_timedate": "11:04 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 84862.33,
-    "change": 688.61,
-    "change_pct": 0.82,
-    "prev_close": 84173.72,
-    "open": 84299.66,
-    "high": 84948.15,
-    "low": 84204.98,
+    "last": 84813.66,
+    "change": 8.26,
+    "change_pct": 0.01,
+    "prev_close": 84805.4,
+    "open": 84835.5,
+    "high": 84900.2,
+    "low": 84540.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:12 PM EDT",
+    "last_timedate": "11:27 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-09-29 12:30",
      "time_hm": "12:30",
      "date_label": "09/29",
-     "delta_hours": -108.7,
+     "delta_hours": -119.0,
      "forecast": "4.60%",
      "previous": "4.35%",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-09-29 12:30",
      "time_hm": "12:30",
      "date_label": "09/29",
-     "delta_hours": -108.7,
+     "delta_hours": -119.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "0.5%",
      "previous": "1.0%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "4.1%",
      "previous": "3.5%",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "0.3%",
      "previous": "0.5%",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-09-30 20:30",
      "time_hm": "20:30",
      "date_label": "09/30",
-     "delta_hours": -76.7,
+     "delta_hours": -87.0,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-09-30 20:30",
      "time_hm": "20:30",
      "date_label": "09/30",
-     "delta_hours": -76.7,
+     "delta_hours": -87.0,
      "forecast": "1.5%",
      "previous": "1.5%",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "89K",
      "previous": "162K",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "4.1%",
      "previous": "4.1%",
      "impact": "High",
@@ -898,10 +898,10 @@
     }
    ]
   },
-  "elapsed_sec": 249.8
+  "elapsed_sec": 267.2
  },
  "dash_data": {
-  "generated_iso": "2026-10-04T01:12:18.351923+08:00",
+  "generated_iso": "2026-10-04T11:27:25.316353+08:00",
   "date_str": "2026-10-04",
   "date_parts": {
    "y": 2026,
@@ -1003,12 +1003,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 84862.33,
-    "change_pct": 0.82,
+    "last": 84813.66,
+    "change_pct": 0.01,
     "change_bp": null,
-    "prev_close": 84173.72,
-    "high": 84948.15,
-    "low": 84204.98,
+    "prev_close": 84805.4,
+    "high": 84900.2,
+    "low": 84540.32,
     "mkt_status": "REG_MKT"
    },
    "SBTU": {
@@ -1106,8 +1106,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 84862.33,
-     "chg": 0.82,
+     "value": 84813.66,
+     "chg": 0.01,
      "chg_unit": "%",
      "score": 5,
      "note": "BTC ±1% 以內，橫行"
@@ -1230,8 +1230,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "10/03 00:50 HKT · OilPrice",
-    "headline": "Dated Brent Above $120 Signals a Serious Oil Squeeze",
+    "time": "10/04 03:00 HKT · OilPrice",
+    "headline": "Iran Is Losing Some of Its Leverage Over the Strait of Hormuz",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1277,7 +1277,7 @@
      ]
     ],
     "source": "OilPrice",
-    "url": "https://oilprice.com/Energy/Crude-Oil/Dated-Brent-Above-120-Signals-a-Serious-Oil-Squeeze.html"
+    "url": "https://oilprice.com/Energy/Energy-General/Iran-Is-Losing-Some-of-Its-Leverage-Over-the-Strait-of-Hormuz.html"
    },
    {
     "id": 2,
@@ -1428,8 +1428,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/03 23:06 HKT · 新浪7x24",
-    "headline": "以色列空袭加沙致5人死亡 哈马斯发声明谴责",
+    "time": "10/04 06:25 HKT · 新浪7x24",
+    "headline": "以军称对哈马斯高级官员发动打击",
     "chain": [
      "中東交火升級 → 原油供應中斷風險定價",
      "油價急升 → 通脹預期升溫、美債息升",
@@ -1475,12 +1475,12 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-03/detail-inityimt3792257.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-04/detail-initzerm0212171.d.html"
    },
    {
     "id": 5,
-    "etype": "E8",
-    "etype_name": "央行意外鷹派（加息/縮表）",
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
     "color": "#ffb020",
     "cls": "amber",
     "card_cls": "hot",
@@ -1489,59 +1489,35 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 38.9,
-    "lng": -77.0,
-    "name": "華盛頓 · 聯儲局",
-    "title": "🟠 華盛頓 · 聯儲局 · 央行意外鷹派（加息/縮表）",
-    "loc": "📍 華盛頓 · 聯儲局",
-    "time": "10/02 21:29 HKT · CNBC",
-    "headline": "Traders now see little chance of a Fed rate hike in October after weak jobs report",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "10/04 10:32 HKT · 新浪7x24",
+    "headline": "沙特阿美炼油厂遭胡塞武装导弹袭击，沙特计划大规模反攻",
     "chain": [
-     "央行意外鷹派（加息/縮表）→ 實際利率升",
-     "金/成長股估值受壓、美元走強",
-     "⚠️ 日央行加息可觸發套息拆倉跨市場連鎖急跌"
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
     ],
-    "if_then": "如果 鷹派落地，就 金/成長股受壓、美元強；留意日央行加息引發拆倉",
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
     "assets": [
      [
-      "📈",
-      "美債 10Y",
-      "↑↑",
-      "g"
-     ],
-     [
-      "💾",
-      "半導體",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↓",
-      "r"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↓",
-      "r"
-     ],
-     [
-      "💵",
-      "美元 DXY",
+      "🛢️",
+      "WTI 原油",
       "↑",
       "g"
      ],
      [
-      "😱",
-      "VIX 恐慌",
+      "🚢",
+      "航運",
       "↑",
       "g"
      ]
     ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-10-04/detail-initzkxi0209624.d.html"
    }
   ],
   "arcs": [
@@ -1700,7 +1676,7 @@
      "time_hkt": "2026-09-29 12:30",
      "time_hm": "12:30",
      "date_label": "09/29",
-     "delta_hours": -108.7,
+     "delta_hours": -119.0,
      "forecast": "4.60%",
      "previous": "4.35%",
      "impact": "High",
@@ -1712,7 +1688,7 @@
      "time_hkt": "2026-09-29 12:30",
      "time_hm": "12:30",
      "date_label": "09/29",
-     "delta_hours": -108.7,
+     "delta_hours": -119.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1724,7 +1700,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "0.5%",
      "previous": "1.0%",
      "impact": "High",
@@ -1736,7 +1712,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "4.1%",
      "previous": "3.5%",
      "impact": "High",
@@ -1748,7 +1724,7 @@
      "time_hkt": "2026-09-30 09:30",
      "time_hm": "09:30",
      "date_label": "09/30",
-     "delta_hours": -87.7,
+     "delta_hours": -98.0,
      "forecast": "0.3%",
      "previous": "0.5%",
      "impact": "High",
@@ -1760,7 +1736,7 @@
      "time_hkt": "2026-09-30 20:30",
      "time_hm": "20:30",
      "date_label": "09/30",
-     "delta_hours": -76.7,
+     "delta_hours": -87.0,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -1772,7 +1748,7 @@
      "time_hkt": "2026-09-30 20:30",
      "time_hm": "20:30",
      "date_label": "09/30",
-     "delta_hours": -76.7,
+     "delta_hours": -87.0,
      "forecast": "1.5%",
      "previous": "1.5%",
      "impact": "High",
@@ -1784,7 +1760,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -1796,7 +1772,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "89K",
      "previous": "162K",
      "impact": "High",
@@ -1808,7 +1784,7 @@
      "time_hkt": "2026-10-02 20:30",
      "time_hm": "20:30",
      "date_label": "10/02",
-     "delta_hours": -28.7,
+     "delta_hours": -39.0,
      "forecast": "4.1%",
      "previous": "4.1%",
      "impact": "High",
@@ -2047,14 +2023,6 @@
     "is_event": true
    },
    {
-    "time_hm": "10/02 21:29",
-    "source": "CNBC",
-    "title": "Traders now see little chance of a Fed rate hike in October after weak jobs report",
-    "url": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html",
-    "theme": "macro",
-    "is_event": true
-   },
-   {
     "time_hm": "10/02 22:29",
     "source": "FXStreet",
     "title": "Canada labour market: Tariff effects assessed – RBC",
@@ -2071,19 +2039,27 @@
     "is_event": true
    },
    {
-    "time_hm": "10/03 00:50",
+    "time_hm": "10/04 03:00",
     "source": "OilPrice",
-    "title": "Dated Brent Above $120 Signals a Serious Oil Squeeze",
-    "url": "https://oilprice.com/Energy/Crude-Oil/Dated-Brent-Above-120-Signals-a-Serious-Oil-Squeeze.html",
-    "theme": "oil",
+    "title": "Iran Is Losing Some of Its Leverage Over the Strait of Hormuz",
+    "url": "https://oilprice.com/Energy/Energy-General/Iran-Is-Losing-Some-of-Its-Leverage-Over-the-Strait-of-Hormuz.html",
+    "theme": "geo",
     "is_event": true
    },
    {
-    "time_hm": "10/03 23:06",
+    "time_hm": "10/04 06:25",
     "source": "新浪7x24",
-    "title": "以色列空袭加沙致5人死亡 哈马斯发声明谴责",
-    "url": "https://finance.sina.cn/7x24/2026-10-03/detail-inityimt3792257.d.html",
+    "title": "以军称对哈马斯高级官员发动打击",
+    "url": "https://finance.sina.cn/7x24/2026-10-04/detail-initzerm0212171.d.html",
     "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/04 10:32",
+    "source": "新浪7x24",
+    "title": "沙特阿美炼油厂遭胡塞武装导弹袭击，沙特计划大规模反攻",
+    "url": "https://finance.sina.cn/7x24/2026-10-04/detail-initzkxi0209624.d.html",
+    "theme": "oil",
     "is_event": true
    },
    {
@@ -2368,13 +2344,13 @@
    "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 7,
-   "E2": 3,
-   "E3": 3,
+   "E1": 2,
+   "E2": 4,
+   "E3": 4,
    "E4": 0,
    "E5": 1,
    "E6": 2,
-   "E7": 1,
+   "E7": 0,
    "E8": 1,
    "E9": 1,
    "E10": 1,
