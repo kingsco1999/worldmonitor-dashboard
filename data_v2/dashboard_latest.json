@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-10-11T01:47:25.782228+08:00",
-  "collected_at_hkt": "2026-10-11 01:47 HKT",
+  "collected_at": "2026-10-11T10:58:51.767302+08:00",
+  "collected_at_hkt": "2026-10-11 10:58 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -96,7 +96,7 @@
     "low": 4193.834,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "12:51 PM EDT",
+    "last_timedate": "9:41 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 83055.39,
-    "change": 732.96,
-    "change_pct": 0.89,
+    "last": 83018.25,
+    "change": 695.82,
+    "change_pct": 0.85,
     "prev_close": 82322.43,
     "open": 82251.2,
-    "high": 83080.33,
+    "high": 83091.84,
     "low": 82242.31,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:47 PM EDT",
+    "last_timedate": "10:58 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -404,7 +404,7 @@
     "low": 4193.834,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "12:51 PM EDT",
+    "last_timedate": "9:41 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 83055.39,
-    "change": 732.96,
-    "change_pct": 0.89,
+    "last": 83018.25,
+    "change": 695.82,
+    "change_pct": 0.85,
     "prev_close": 82322.43,
     "open": 82251.2,
-    "high": 83080.33,
+    "high": 83091.84,
     "low": 82242.31,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:47 PM EDT",
+    "last_timedate": "10:58 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-10-06 14:35",
      "time_hm": "14:35",
      "date_label": "10/06",
-     "delta_hours": -107.2,
+     "delta_hours": -116.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-10-08 02:00",
      "time_hm": "02:00",
      "date_label": "10/08",
-     "delta_hours": -71.8,
+     "delta_hours": -81.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-10-08 20:15",
      "time_hm": "20:15",
      "date_label": "10/08",
-     "delta_hours": -53.5,
+     "delta_hours": -62.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-10-09 20:30",
      "time_hm": "20:30",
      "date_label": "10/09",
-     "delta_hours": -29.3,
+     "delta_hours": -38.5,
      "forecast": "6.1K",
      "previous": "-41.7K",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-10-09 20:30",
      "time_hm": "20:30",
      "date_label": "10/09",
-     "delta_hours": -29.3,
+     "delta_hours": -38.5,
      "forecast": "6.5%",
      "previous": "6.4%",
      "impact": "High",
@@ -838,10 +838,10 @@
     }
    ]
   },
-  "elapsed_sec": 249.4
+  "elapsed_sec": 253.2
  },
  "dash_data": {
-  "generated_iso": "2026-10-11T01:47:25.774018+08:00",
+  "generated_iso": "2026-10-11T10:58:51.755352+08:00",
   "date_str": "2026-10-11",
   "date_parts": {
    "y": 2026,
@@ -943,11 +943,11 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 83055.39,
-    "change_pct": 0.89,
+    "last": 83018.25,
+    "change_pct": 0.85,
     "change_bp": null,
     "prev_close": 82322.43,
-    "high": 83080.33,
+    "high": 83091.84,
     "low": 82242.31,
     "mkt_status": "REG_MKT"
    },
@@ -1046,8 +1046,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 83055.39,
-     "chg": 0.89,
+     "value": 83018.25,
+     "chg": 0.85,
      "chg_unit": "%",
      "score": 5,
      "note": "BTC ±1% 以內，橫行"
@@ -1104,8 +1104,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "10/10 23:00 HKT · OilPrice",
-    "headline": "The Iran War Is Fueling a Boom in Clean Energy",
+    "time": "10/11 03:00 HKT · OilPrice",
+    "headline": "Southeast Asia Needs More Power, But Its Weak Grid Could Be a Problem",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1151,7 +1151,7 @@
      ]
     ],
     "source": "OilPrice",
-    "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Is-Fueling-a-Boom-in-Clean-Energy.html"
+    "url": "https://oilprice.com/Energy/Energy-General/Southeast-Asia-Needs-More-Power-But-Its-Weak-Grid-Could-Be-a-Problem.html"
    },
    {
     "id": 1,
@@ -1287,72 +1287,6 @@
    },
    {
     "id": 3,
-    "etype": "E4",
-    "etype_name": "台海/東海地緣升溫",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 26.6,
-    "lng": 56.3,
-    "name": "霍爾木茲海峽",
-    "title": "🟠 霍爾木茲海峽 · 台海/東海地緣升溫",
-    "loc": "📍 霍爾木茲海峽",
-    "time": "10/09 10:52 HKT · CNBC World",
-    "headline": "U.S. East Asian envoy says investors are overpricing Taiwan conflict risk",
-    "chain": [
-     "台海軍演/越線 → 地緣風險溢價急升",
-     "全球 90%+ 先進半導體產能受威脅 → 科技股↓↓",
-     "避險買金、日元升值，VIX 抬頭"
-    ],
-    "if_then": "如果 演訓升級為實彈封鎖，就 半導體供應鏈溢價急升，VEEV/ILMN 等科技股先減一半",
-    "assets": [
-     [
-      "🇭🇰",
-      "港股",
-      "↓↓",
-      "r"
-     ],
-     [
-      "💾",
-      "半導體",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "📈",
-      "美債 10Y",
-      "↓",
-      "r"
-     ],
-     [
-      "😱",
-      "VIX 恐慌",
-      "↑",
-      "g"
-     ],
-     [
-      "🇺🇸",
-      "美股",
-      "↓",
-      "r"
-     ]
-    ],
-    "source": "CNBC World",
-    "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html"
-   },
-   {
-    "id": 4,
     "etype": "E1",
     "etype_name": "中東武裝衝突升級",
     "color": "#ffb020",
@@ -1368,8 +1302,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/10 23:08 HKT · 新浪7x24",
-    "headline": "伊朗外长指责以色列总理内塔尼亚胡为了逃脱法律制裁，不惜牺牲更多美国人的生命和资源。",
+    "time": "10/10 14:45 HKT · GDELT/jpost.com",
+    "headline": "Israeli researchers : Premature birth may cause lifelong kidney damage",
     "chain": [
      "中東交火升級 → 原油供應中斷風險定價",
      "油價急升 → 通脹預期升溫、美債息升",
@@ -1414,8 +1348,68 @@
       "g"
      ]
     ],
+    "source": "GDELT/jpost.com",
+    "url": "http://www.jpost.com/health-and-wellness/article-911002"
+   },
+   {
+    "id": 4,
+    "etype": "E7",
+    "etype_name": "出口管制/金融制裁",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 38.9,
+    "lng": -77.0,
+    "name": "華盛頓 · 聯儲局",
+    "title": "🟠 華盛頓 · 聯儲局 · 出口管制/金融制裁",
+    "loc": "📍 華盛頓 · 聯儲局",
+    "time": "10/11 09:11 HKT · 新浪7x24",
+    "headline": "美乌现分歧 英国首相力挺泽连斯基",
+    "chain": [
+     "出口管制/金融制裁 → 被制裁板塊↓↓",
+     "國產替代受惠；貨幣體系受動搖",
+     "黃金中長線受惠（儲備多元化）"
+    ],
+    "if_then": "如果 制裁名單擴大，就 被制裁板塊急跌、國產替代受惠，金中長線受惠",
+    "assets": [
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↑",
+      "g"
+     ],
+     [
+      "🇭🇰",
+      "港股",
+      "↓",
+      "r"
+     ],
+     [
+      "💾",
+      "半導體",
+      "↓",
+      "r"
+     ]
+    ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-10/detail-iniuufia0655817.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuvhur7309519.d.html"
    },
    {
     "id": 5,
@@ -1434,8 +1428,8 @@
     "name": "紅海 · 曼德海峽",
     "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
     "loc": "📍 紅海 · 曼德海峽",
-    "time": "10/11 00:30 HKT · 新浪7x24",
-    "headline": "也门胡塞武装接连发动袭击后，美国、英国、德国与西班牙于周六警告本国公民，避开沙特首都利雅得的哈立德国王国际机场及其周边区域。",
+    "time": "10/11 10:43 HKT · 新浪7x24",
+    "headline": "联合国秘书长谴责胡塞武装对沙特机场发动袭击",
     "chain": [
      "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
      "集裝箱運價攀升 → 供應鏈成本轉嫁",
@@ -1457,7 +1451,7 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuumqy0586423.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuvhuq0636249.d.html"
    }
   ],
   "arcs": [
@@ -1526,30 +1520,6 @@
     "etype": "E5"
    },
    {
-    "startLat": 26.6,
-    "startLng": 56.3,
-    "endLat": 37.6,
-    "endLng": -122.4,
-    "color": "#ffb020",
-    "etype": "E4"
-   },
-   {
-    "startLat": 26.6,
-    "startLng": 56.3,
-    "endLat": 36.6,
-    "endLng": 128.0,
-    "color": "#ffb020",
-    "etype": "E4"
-   },
-   {
-    "startLat": 26.6,
-    "startLng": 56.3,
-    "endLat": 31.2,
-    "endLng": 121.5,
-    "color": "#ffb020",
-    "etype": "E4"
-   },
-   {
     "startLat": 31.5,
     "startLng": 34.5,
     "endLat": 35.7,
@@ -1582,6 +1552,14 @@
     "etype": "E1"
    },
    {
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 22.3,
+    "endLng": 114.2,
+    "color": "#ffb020",
+    "etype": "E7"
+   },
+   {
     "startLat": 14.7,
     "startLng": 42.5,
     "endLat": 51.5,
@@ -1608,7 +1586,7 @@
      "time_hkt": "2026-10-06 14:35",
      "time_hm": "14:35",
      "date_label": "10/06",
-     "delta_hours": -107.2,
+     "delta_hours": -116.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1620,7 +1598,7 @@
      "time_hkt": "2026-10-08 02:00",
      "time_hm": "02:00",
      "date_label": "10/08",
-     "delta_hours": -71.8,
+     "delta_hours": -81.0,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1632,7 +1610,7 @@
      "time_hkt": "2026-10-08 20:15",
      "time_hm": "20:15",
      "date_label": "10/08",
-     "delta_hours": -53.5,
+     "delta_hours": -62.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1644,7 +1622,7 @@
      "time_hkt": "2026-10-09 20:30",
      "time_hm": "20:30",
      "date_label": "10/09",
-     "delta_hours": -29.3,
+     "delta_hours": -38.5,
      "forecast": "6.1K",
      "previous": "-41.7K",
      "impact": "High",
@@ -1656,7 +1634,7 @@
      "time_hkt": "2026-10-09 20:30",
      "time_hm": "20:30",
      "date_label": "10/09",
-     "delta_hours": -29.3,
+     "delta_hours": -38.5,
      "forecast": "6.5%",
      "previous": "6.4%",
      "impact": "High",
@@ -1825,7 +1803,7 @@
   "brief": [
    {
     "cat": "risk",
-    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：The Iran War Is Fueling a Boom in Clean ",
+    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Southeast Asia Needs More Power, But Its",
     "ifthen": "如果 海峽 48h 內未恢復通行，就 WTI 見 $90 並帶動金銀破位，收緊風險倉",
     "tags": [
      "🛢️ 原油 ↑↑",
@@ -1887,14 +1865,6 @@
   ],
   "feed": [
    {
-    "time_hm": "10/09 10:52",
-    "source": "CNBC World",
-    "title": "U.S. East Asian envoy says investors are overpricing Taiwan conflict risk",
-    "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
     "time_hm": "10/10 03:18",
     "source": "CNBC",
     "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
@@ -1911,26 +1881,34 @@
     "is_event": true
    },
    {
-    "time_hm": "10/10 23:00",
+    "time_hm": "10/10 14:45",
+    "source": "GDELT/jpost.co",
+    "title": "Israeli researchers : Premature birth may cause lifelong kidney damage",
+    "url": "http://www.jpost.com/health-and-wellness/article-911002",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/11 03:00",
     "source": "OilPrice",
-    "title": "The Iran War Is Fueling a Boom in Clean Energy",
-    "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Is-Fueling-a-Boom-in-Clean-Energy.html",
-    "theme": "geo",
+    "title": "Southeast Asia Needs More Power, But Its Weak Grid Could Be a Problem",
+    "url": "https://oilprice.com/Energy/Energy-General/Southeast-Asia-Needs-More-Power-But-Its-Weak-Grid-Could-Be-a-Problem.html",
+    "theme": "stock",
     "is_event": true
    },
    {
-    "time_hm": "10/10 23:08",
+    "time_hm": "10/11 09:11",
     "source": "新浪7x24",
-    "title": "伊朗外长指责以色列总理内塔尼亚胡为了逃脱法律制裁，不惜牺牲更多美国人的生命和资源。",
-    "url": "https://finance.sina.cn/7x24/2026-10-10/detail-iniuufia0655817.d.html",
-    "theme": "geo",
+    "title": "美乌现分歧 英国首相力挺泽连斯基",
+    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuvhur7309519.d.html",
+    "theme": "stock",
     "is_event": true
    },
    {
-    "time_hm": "10/11 00:30",
+    "time_hm": "10/11 10:43",
     "source": "新浪7x24",
-    "title": "也门胡塞武装接连发动袭击后，美国、英国、德国与西班牙于周六警告本国公民，避开沙特首都利雅得的哈立德国王国际机场及其周边区域。",
-    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuumqy0586423.d.html",
+    "title": "联合国秘书长谴责胡塞武装对沙特机场发动袭击",
+    "url": "https://finance.sina.cn/7x24/2026-10-11/detail-iniuvhuq0636249.d.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2216,10 +2194,10 @@
    "gdelt": "OK · 10 條"
   },
   "event_counts": {
-   "E1": 4,
-   "E2": 2,
-   "E3": 3,
-   "E4": 10,
+   "E1": 3,
+   "E2": 4,
+   "E3": 5,
+   "E4": 0,
    "E5": 2,
    "E6": 0,
    "E7": 1,
@@ -2227,7 +2205,7 @@
    "E9": 0,
    "E10": 1,
    "E11": 0,
-   "E12": 3
+   "E12": 2
   },
   "market_corr": {
    "generated": "2026-09-03 04:39 HKT",
