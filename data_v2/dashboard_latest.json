@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-10-12T02:00:23.877526+08:00",
-  "collected_at_hkt": "2026-10-12 02:00 HKT",
+  "collected_at": "2026-10-12T11:22:00.130726+08:00",
+  "collected_at_hkt": "2026-10-12 11:22 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -33,16 +33,16 @@
     "symbol": ".DXY",
     "key": "DXY",
     "name": "ICE U.S. Dollar Index",
-    "last": 102.231,
-    "change": 0.093,
-    "change_pct": 0.09,
-    "prev_close": 102.138,
-    "open": 102.128,
-    "high": 102.335,
-    "low": 101.92,
+    "last": 102.179,
+    "change": -0.034,
+    "change_pct": -0.03,
+    "prev_close": 102.213,
+    "open": 102.303,
+    "high": 102.303,
+    "low": 102.1,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/09/26 EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -87,16 +87,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4193.83,
-    "change": null,
-    "change_pct": null,
+    "last": 4190.4,
+    "change": -3.43,
+    "change_pct": -0.08,
     "prev_close": 4193.834,
     "open": 4193.834,
-    "high": 4193.834,
-    "low": 4193.834,
+    "high": 4199.19,
+    "low": 4184.75,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:49 PM EDT",
+    "last_timedate": "10:39 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -105,16 +105,16 @@
     "symbol": "XAG=",
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
-    "last": 60.8052,
-    "change": 1.4627,
-    "change_pct": 2.41,
+    "last": 61.0068,
+    "change": 0.2016,
+    "change_pct": 0.33,
     "prev_close": 60.8052,
-    "open": 0.0,
+    "open": 60.78,
     "high": 0.0,
     "low": 0.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -123,16 +123,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 4216.3,
-    "change": null,
-    "change_pct": null,
+    "last": 4227.8,
+    "change": 11.5,
+    "change_pct": 0.27,
     "prev_close": 4216.3,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 4220.8,
+    "high": 4242.3,
+    "low": 4209.1,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -141,16 +141,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Nov'26)",
-    "last": 91.85,
-    "change": null,
-    "change_pct": null,
+    "last": 90.07,
+    "change": -1.78,
+    "change_pct": -1.94,
     "prev_close": 91.85,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 91.83,
+    "high": 92.62,
+    "low": 89.61,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -159,16 +159,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 61.048,
-    "change": null,
-    "change_pct": null,
+    "last": 61.31,
+    "change": 0.262,
+    "change_pct": 0.43,
     "prev_close": 61.048,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 61.29,
+    "high": 61.745,
+    "low": 61.065,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 83744.41,
-    "change": 755.25,
-    "change_pct": 0.91,
-    "prev_close": 82989.16,
-    "open": 83004.61,
-    "high": 84105.5,
-    "low": 82718.0,
+    "last": 83621.5,
+    "change": 3.08,
+    "change_pct": 0.0,
+    "prev_close": 83618.42,
+    "open": 83576.4,
+    "high": 83936.1,
+    "low": 83209.22,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "2:00 PM EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -341,16 +341,16 @@
     "symbol": ".DXY",
     "key": "DXY",
     "name": "ICE U.S. Dollar Index",
-    "last": 102.231,
-    "change": 0.093,
-    "change_pct": 0.09,
-    "prev_close": 102.138,
-    "open": 102.128,
-    "high": 102.335,
-    "low": 101.92,
+    "last": 102.179,
+    "change": -0.034,
+    "change_pct": -0.03,
+    "prev_close": 102.213,
+    "open": 102.303,
+    "high": 102.303,
+    "low": 102.1,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/09/26 EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -395,16 +395,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 4193.83,
-    "change": null,
-    "change_pct": null,
+    "last": 4190.4,
+    "change": -3.43,
+    "change_pct": -0.08,
     "prev_close": 4193.834,
     "open": 4193.834,
-    "high": 4193.834,
-    "low": 4193.834,
+    "high": 4199.19,
+    "low": 4184.75,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:49 PM EDT",
+    "last_timedate": "10:39 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -413,16 +413,16 @@
     "symbol": "XAG=",
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
-    "last": 60.8052,
-    "change": 1.4627,
-    "change_pct": 2.41,
+    "last": 61.0068,
+    "change": 0.2016,
+    "change_pct": 0.33,
     "prev_close": 60.8052,
-    "open": 0.0,
+    "open": 60.78,
     "high": 0.0,
     "low": 0.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:00 PM EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -431,16 +431,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 4216.3,
-    "change": null,
-    "change_pct": null,
+    "last": 4227.8,
+    "change": 11.5,
+    "change_pct": 0.27,
     "prev_close": 4216.3,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 4220.8,
+    "high": 4242.3,
+    "low": 4209.1,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -449,16 +449,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Nov'26)",
-    "last": 91.85,
-    "change": null,
-    "change_pct": null,
+    "last": 90.07,
+    "change": -1.78,
+    "change_pct": -1.94,
     "prev_close": 91.85,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 91.83,
+    "high": 92.62,
+    "low": 89.61,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -467,16 +467,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 61.048,
-    "change": null,
-    "change_pct": null,
+    "last": 61.31,
+    "change": 0.262,
+    "change_pct": 0.43,
     "prev_close": 61.048,
-    "open": 0.0,
-    "high": 0.0,
-    "low": 0.0,
+    "open": 61.29,
+    "high": 61.745,
+    "low": 61.065,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10/10/26 EDT",
+    "last_timedate": "11:11 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 83744.41,
-    "change": 755.25,
-    "change_pct": 0.91,
-    "prev_close": 82989.16,
-    "open": 83004.61,
-    "high": 84105.5,
-    "low": 82718.0,
+    "last": 83621.5,
+    "change": 3.08,
+    "change_pct": 0.0,
+    "prev_close": 83618.42,
+    "open": 83576.4,
+    "high": 83936.1,
+    "low": 83209.22,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "2:00 PM EDT",
+    "last_timedate": "11:21 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -737,37 +737,37 @@
   "fred": {},
   "sina_quotes": {
    "VIX": {
-    "last": 17.05,
-    "prev_close": 17.62,
-    "time": "2026-10-10 04:59:58",
+    "last": 16.996,
+    "prev_close": 17.12,
+    "time": "2026-10-12 11:03:32",
     "name": "VIX恐慌指数期货",
     "source": "Sina"
    },
    "GOLD_FUT": {
-    "last": 4221.774,
-    "prev_close": 4157.0,
-    "time": "2026-10-10 04:59:59",
+    "last": 4229.573,
+    "prev_close": 4216.3,
+    "time": "2026-10-12 11:21:59",
     "name": "纽约黄金",
     "source": "Sina"
    },
    "WTI": {
-    "last": 91.716,
-    "prev_close": 91.49,
-    "time": "2026-10-10 04:59:58",
+    "last": 89.91,
+    "prev_close": 91.85,
+    "time": "2026-10-12 11:21:56",
     "name": "纽约原油",
     "source": "Sina"
    },
    "SILVER_FUT": {
-    "last": 61.148,
-    "prev_close": 59.424,
-    "time": "2026-10-10 04:59:59",
+    "last": 61.285,
+    "prev_close": 61.048,
+    "time": "2026-10-12 11:21:58",
     "name": "纽约白银",
     "source": "Sina"
    },
    "NATGAS": {
-    "last": 3.206,
-    "prev_close": 3.168,
-    "time": "2026-10-10 04:59:58",
+    "last": 3.152,
+    "prev_close": 3.22,
+    "time": "2026-10-12 11:21:44",
     "name": "美国天然气",
     "source": "Sina"
    }
@@ -782,7 +782,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "2.5%",
      "previous": "2.4%",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "0.6%",
      "previous": "0.4%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "3.6%",
      "previous": "3.4%",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-10-15 08:30",
      "time_hm": "08:30",
      "date_label": "10/15",
-     "delta_hours": 78.5,
+     "delta_hours": 69.1,
      "forecast": "20.0K",
      "previous": "39.5K",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-10-15 08:30",
      "time_hm": "08:30",
      "date_label": "10/15",
-     "delta_hours": 78.5,
+     "delta_hours": 69.1,
      "forecast": "4.6%",
      "previous": "4.6%",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-10-15 14:00",
      "time_hm": "14:00",
      "date_label": "10/15",
-     "delta_hours": 84.0,
+     "delta_hours": 74.6,
      "forecast": "-0.1%",
      "previous": "0.4%",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.5%",
      "previous": "1.4%",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.5%",
      "previous": "0.4%",
      "impact": "High",
@@ -902,7 +902,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.3%",
      "previous": "1.2%",
      "impact": "High",
@@ -914,7 +914,7 @@
      "time_hkt": "2026-10-16 10:00",
      "time_hm": "10:00",
      "date_label": "10/16",
-     "delta_hours": 104.0,
+     "delta_hours": 94.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -926,7 +926,7 @@
      "time_hkt": "2026-10-16 11:30",
      "time_hm": "11:30",
      "date_label": "10/16",
-     "delta_hours": 105.5,
+     "delta_hours": 96.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -934,10 +934,10 @@
     }
    ]
   },
-  "elapsed_sec": 246.6
+  "elapsed_sec": 247.0
  },
  "dash_data": {
-  "generated_iso": "2026-10-12T02:00:23.855526+08:00",
+  "generated_iso": "2026-10-12T11:22:00.120057+08:00",
   "date_str": "2026-10-12",
   "date_parts": {
    "y": 2026,
@@ -958,12 +958,12 @@
     "mkt_status": "REG_MKT"
    },
    "DXY": {
-    "last": 102.231,
-    "change_pct": 0.09,
+    "last": 102.179,
+    "change_pct": -0.03,
     "change_bp": null,
-    "prev_close": 102.138,
-    "high": 102.335,
-    "low": 101.92,
+    "prev_close": 102.213,
+    "high": 102.303,
+    "low": 102.1,
     "mkt_status": "REG_MKT"
    },
    "US10Y": {
@@ -985,17 +985,17 @@
     "mkt_status": "REG_MKT"
    },
    "XAU": {
-    "last": 4193.83,
-    "change_pct": null,
+    "last": 4190.4,
+    "change_pct": -0.08,
     "change_bp": null,
     "prev_close": 4193.834,
-    "high": 4193.834,
-    "low": 4193.834,
+    "high": 4199.19,
+    "low": 4184.75,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
-    "last": 60.8052,
-    "change_pct": 2.41,
+    "last": 61.0068,
+    "change_pct": 0.33,
     "change_bp": null,
     "prev_close": 60.8052,
     "high": 0.0,
@@ -1003,30 +1003,30 @@
     "mkt_status": "REG_MKT"
    },
    "GOLD_FUT": {
-    "last": 4216.3,
-    "change_pct": null,
+    "last": 4227.8,
+    "change_pct": 0.27,
     "change_bp": null,
     "prev_close": 4216.3,
-    "high": 0.0,
-    "low": 0.0,
+    "high": 4242.3,
+    "low": 4209.1,
     "mkt_status": "REG_MKT"
    },
    "WTI": {
-    "last": 91.85,
-    "change_pct": null,
+    "last": 90.07,
+    "change_pct": -1.94,
     "change_bp": null,
     "prev_close": 91.85,
-    "high": 0.0,
-    "low": 0.0,
+    "high": 92.62,
+    "low": 89.61,
     "mkt_status": "REG_MKT"
    },
    "SILVER_FUT": {
-    "last": 61.048,
-    "change_pct": null,
+    "last": 61.31,
+    "change_pct": 0.43,
     "change_bp": null,
     "prev_close": 61.048,
-    "high": 0.0,
-    "low": 0.0,
+    "high": 61.745,
+    "low": 61.065,
     "mkt_status": "REG_MKT"
    },
    "GDX": {
@@ -1039,12 +1039,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 83744.41,
-    "change_pct": 0.91,
+    "last": 83621.5,
+    "change_pct": 0.0,
     "change_bp": null,
-    "prev_close": 82989.16,
-    "high": 84105.5,
-    "low": 82718.0,
+    "prev_close": 83618.42,
+    "high": 83936.1,
+    "low": 83209.22,
     "mkt_status": "REG_MKT"
    },
    "SBTU": {
@@ -1132,8 +1132,8 @@
      "key": "DXY",
      "label": "美元 DXY",
      "weight": 15,
-     "value": 102.231,
-     "chg": 0.09,
+     "value": 102.179,
+     "chg": -0.03,
      "chg_unit": "%",
      "score": 5,
      "note": "美元 ±0.3% 以內，平穩"
@@ -1142,8 +1142,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 83744.41,
-     "chg": 0.91,
+     "value": 83621.5,
+     "chg": 0.0,
      "chg_unit": "%",
      "score": 5,
      "note": "BTC ±1% 以內，橫行"
@@ -1162,8 +1162,8 @@
      "key": "XAU",
      "label": "黃金 XAU",
      "weight": 10,
-     "value": 4193.83,
-     "chg": 0.0,
+     "value": 4190.4,
+     "chg": -0.08,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1172,11 +1172,11 @@
      "key": "WTI",
      "label": "WTI 原油",
      "weight": 10,
-     "value": 91.85,
-     "chg": 0.0,
+     "value": 90.07,
+     "chg": -1.94,
      "chg_unit": "%",
      "score": 3,
-     "note": "油 ±1.5% 以內"
+     "note": "油溫和波動"
     }
    ],
    "needle_pct": 20
@@ -1251,72 +1251,6 @@
    },
    {
     "id": 1,
-    "etype": "E10",
-    "etype_name": "衰退型數據爆冷",
-    "color": "#ff4d6d",
-    "cls": "red",
-    "card_cls": "sw",
-    "flag": [
-     "🦢 BLACK SWAN",
-     "sw"
-    ],
-    "severity": "high",
-    "lat": 38.9,
-    "lng": -77.0,
-    "name": "華盛頓 · 聯儲局",
-    "title": "🔴 華盛頓 · 聯儲局 · 衰退型數據爆冷",
-    "loc": "📍 華盛頓 · 聯儲局",
-    "time": "10/10 03:18 HKT · CNBC",
-    "headline": "Americans' debt problems are flashing a warning not seen since the Great Recession",
-    "chain": [
-     "衰退型數據爆冷 → 需求崩塌預期",
-     "油暴跌↓↓、資金湧入美債（息急降）",
-     "VIX 升，防禦板塊（醫藥/公用）相對抗跌"
-    ],
-    "if_then": "如果 數據連續爆冷，就 衰退交易主導：油跌、美債升、UHS 等防禦相對抗跌",
-    "assets": [
-     [
-      "🛢️",
-      "WTI 原油",
-      "↓↓",
-      "r"
-     ],
-     [
-      "📈",
-      "美債 10Y",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↓",
-      "r"
-     ],
-     [
-      "⛽",
-      "天然氣",
-      "↓",
-      "r"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↓",
-      "r"
-     ]
-    ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
-   },
-   {
-    "id": 2,
     "etype": "E5",
     "etype_name": "俄烏戰事升級",
     "color": "#ffb020",
@@ -1332,8 +1266,8 @@
     "name": "烏克蘭 · 基輔",
     "title": "🟠 烏克蘭 · 基輔 · 俄烏戰事升級",
     "loc": "📍 烏克蘭 · 基輔",
-    "time": "10/10 10:09 HKT · CNBC World",
-    "headline": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
+    "time": "10/12 09:01 HKT · OilPrice",
+    "headline": "Trump's Russia-Ukraine Energy Ceasefire May Only Cover Oil Refineries",
     "chain": [
      "俄烏戰事升級 → 歐洲天然氣/糧食通道受擾",
      "TTF 天然氣↑↑、小麥供應憂慮",
@@ -1378,11 +1312,11 @@
       "r"
      ]
     ],
-    "source": "CNBC World",
-    "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html"
+    "source": "OilPrice",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Trumps-Russia-Ukraine-Energy-Ceasefire-May-Only-Cover-Oil-Refineries.html"
    },
    {
-    "id": 3,
+    "id": 2,
     "etype": "E3",
     "etype_name": "紅海/蘇伊士航道中斷",
     "color": "#ffb020",
@@ -1398,8 +1332,8 @@
     "name": "紅海 · 曼德海峽",
     "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
     "loc": "📍 紅海 · 曼德海峽",
-    "time": "10/12 01:44 HKT · 新浪7x24",
-    "headline": "巴沙埃土四国谴责胡塞武装持续对沙特发动袭击",
+    "time": "10/12 09:15 HKT · FXStreet",
+    "headline": "Saudi-led coalition says it intercepted Houthi ballistic missile toward Khamis Mushait",
     "chain": [
      "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
      "集裝箱運價攀升 → 供應鏈成本轉嫁",
@@ -1420,13 +1354,13 @@
       "g"
      ]
     ],
-    "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvx7193932.d.html"
+    "source": "FXStreet",
+    "url": "https://www.fxstreet.com/news/saudi-led-coalition-says-it-intercepted-houthi-ballistic-missile-toward-khamis-mushait-202610120115"
    },
    {
-    "id": 4,
-    "etype": "E1",
-    "etype_name": "中東武裝衝突升級",
+    "id": 3,
+    "etype": "E8",
+    "etype_name": "央行意外鷹派（加息/縮表）",
     "color": "#ffb020",
     "cls": "amber",
     "card_cls": "hot",
@@ -1435,43 +1369,43 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 31.5,
-    "lng": 34.5,
-    "name": "中東 · 伊朗/以色列",
-    "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
-    "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/12 01:51 HKT · 新浪7x24",
-    "headline": "黎巴嫩军队表示，以色列持续在该国南部的侵犯行为，是对现有谅解的违反，也是对国际法的侵犯。",
+    "lat": 38.9,
+    "lng": -77.0,
+    "name": "華盛頓 · 聯儲局",
+    "title": "🟠 華盛頓 · 聯儲局 · 央行意外鷹派（加息/縮表）",
+    "loc": "📍 華盛頓 · 聯儲局",
+    "time": "10/12 10:52 HKT · 新浪7x24",
+    "headline": "光大期货：海外加息预期萦绕，黄金低位徘徊",
     "chain": [
-     "中東交火升級 → 原油供應中斷風險定價",
-     "油價急升 → 通脹預期升溫、美債息升",
-     "避險資金湧入金銀，VIX 抬頭"
+     "央行意外鷹派（加息/縮表）→ 實際利率升",
+     "金/成長股估值受壓、美元走強",
+     "⚠️ 日央行加息可觸發套息拆倉跨市場連鎖急跌"
     ],
-    "if_then": "如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上",
+    "if_then": "如果 鷹派落地，就 金/成長股受壓、美元強；留意日央行加息引發拆倉",
     "assets": [
      [
-      "🛢️",
-      "WTI 原油",
+      "📈",
+      "美債 10Y",
       "↑↑",
       "g"
      ],
      [
+      "💾",
+      "半導體",
+      "↓↓",
+      "r"
+     ],
+     [
       "🥇",
       "黃金 XAU",
-      "↑",
-      "g"
+      "↓",
+      "r"
      ],
      [
       "🥈",
       "白銀 XAG",
-      "↑",
-      "g"
-     ],
-     [
-      "⛽",
-      "天然氣",
-      "↑",
-      "g"
+      "↓",
+      "r"
      ],
      [
       "💵",
@@ -1480,14 +1414,80 @@
       "g"
      ],
      [
-      "📈",
-      "美債 10Y",
+      "😱",
+      "VIX 恐慌",
       "↑",
       "g"
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvw0426721.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuxrzp7225497.d.html"
+   },
+   {
+    "id": 4,
+    "etype": "E12",
+    "etype_name": "停火/地緣降級",
+    "color": "#2dd4ff",
+    "cls": "cyan",
+    "card_cls": "cb",
+    "flag": [
+     "🏛️ WATCH",
+     "cb"
+    ],
+    "severity": "ref",
+    "lat": 39.9,
+    "lng": 116.4,
+    "name": "北京",
+    "title": "🔵 北京 · 停火/地緣降級",
+    "loc": "📍 北京",
+    "time": "10/12 10:51 HKT · ForexLive",
+    "headline": "investingLive Asia-Pacific market news: Gulf strikes, truce doubts,",
+    "chain": [
+     "停火/地緣降級 → 避險溢價回吐",
+     "油金回落、航運風險降",
+     "風險資產反彈、BTC 回升"
+    ],
+    "if_then": "如果 停火破裂再升級，就 強度升一級，避險交易重啟",
+    "assets": [
+     [
+      "🥇",
+      "黃金 XAU",
+      "↓",
+      "r"
+     ],
+     [
+      "🛢️",
+      "WTI 原油",
+      "↓",
+      "r"
+     ],
+     [
+      "⛽",
+      "天然氣",
+      "↓",
+      "r"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↓",
+      "r"
+     ],
+     [
+      "🇺🇸",
+      "美股",
+      "↑",
+      "g"
+     ],
+     [
+      "🇭🇰",
+      "港股",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "ForexLive",
+    "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-gulf-strikes-truce-doubts/"
    },
    {
     "id": 5,
@@ -1506,8 +1506,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🔵 中東 · 伊朗/以色列 · 停火/地緣降級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/12 01:33 HKT · 新浪7x24",
-    "headline": "泽连斯基：特朗普发表停火声明后，俄罗斯袭击了乌克兰发电厂。",
+    "time": "10/12 11:12 HKT · 新浪7x24",
+    "headline": "美国中期选举压力加剧之际 特朗普与泽连斯基的关系面临破裂风险",
     "chain": [
      "停火/地緣降級 → 避險溢價回吐",
      "油金回落、航運風險降",
@@ -1553,7 +1553,7 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvw0412787.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuxrzn0474387.d.html"
    }
   ],
   "arcs": [
@@ -1582,92 +1582,92 @@
     "etype": "E2"
    },
    {
+    "startLat": 50.5,
+    "startLng": 30.5,
+    "endLat": 50.1,
+    "endLng": 8.7,
+    "color": "#ffb020",
+    "etype": "E5"
+   },
+   {
+    "startLat": 50.5,
+    "startLng": 30.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E5"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E3"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 1.35,
+    "endLng": 103.8,
+    "color": "#ffb020",
+    "etype": "E3"
+   },
+   {
     "startLat": 38.9,
     "startLng": -77.0,
     "endLat": 40.7,
     "endLng": -74.0,
-    "color": "#ff4d6d",
-    "etype": "E10"
+    "color": "#ffb020",
+    "etype": "E8"
    },
    {
     "startLat": 38.9,
     "startLng": -77.0,
     "endLat": 51.5,
     "endLng": -0.1,
-    "color": "#ff4d6d",
-    "etype": "E10"
+    "color": "#ffb020",
+    "etype": "E8"
    },
    {
     "startLat": 38.9,
     "startLng": -77.0,
-    "endLat": 35.7,
-    "endLng": 139.7,
-    "color": "#ff4d6d",
-    "etype": "E10"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 50.1,
-    "endLng": 8.7,
+    "endLat": 22.3,
+    "endLng": 114.2,
     "color": "#ffb020",
-    "etype": "E5"
+    "etype": "E8"
    },
    {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 51.5,
-    "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E5"
-   },
-   {
-    "startLat": 14.7,
-    "startLng": 42.5,
-    "endLat": 51.5,
-    "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E3"
-   },
-   {
-    "startLat": 14.7,
-    "startLng": 42.5,
+    "startLat": 38.9,
+    "startLng": -77.0,
     "endLat": 1.35,
     "endLng": 103.8,
     "color": "#ffb020",
-    "etype": "E3"
+    "etype": "E8"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 35.7,
-    "endLng": 139.7,
-    "color": "#ffb020",
-    "etype": "E1"
+    "startLat": 39.9,
+    "startLng": 116.4,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#2dd4ff",
+    "etype": "E12"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 1.35,
-    "endLng": 103.8,
-    "color": "#ffb020",
-    "etype": "E1"
-   },
-   {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 50.1,
-    "endLng": 8.7,
-    "color": "#ffb020",
-    "etype": "E1"
+    "startLat": 39.9,
+    "startLng": 116.4,
+    "endLat": 40.7,
+    "endLng": -74.0,
+    "color": "#2dd4ff",
+    "etype": "E12"
    },
    {
     "startLat": 31.5,
     "startLng": 34.5,
     "endLat": 51.5,
     "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E1"
+    "color": "#2dd4ff",
+    "etype": "E12"
    },
    {
     "startLat": 31.5,
@@ -1688,7 +1688,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -1700,7 +1700,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "2.5%",
      "previous": "2.4%",
      "impact": "High",
@@ -1712,7 +1712,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "0.6%",
      "previous": "0.4%",
      "impact": "High",
@@ -1724,7 +1724,7 @@
      "time_hkt": "2026-10-14 20:30",
      "time_hm": "20:30",
      "date_label": "10/14",
-     "delta_hours": 66.5,
+     "delta_hours": 57.1,
      "forecast": "3.6%",
      "previous": "3.4%",
      "impact": "High",
@@ -1736,7 +1736,7 @@
      "time_hkt": "2026-10-15 08:30",
      "time_hm": "08:30",
      "date_label": "10/15",
-     "delta_hours": 78.5,
+     "delta_hours": 69.1,
      "forecast": "20.0K",
      "previous": "39.5K",
      "impact": "High",
@@ -1748,7 +1748,7 @@
      "time_hkt": "2026-10-15 08:30",
      "time_hm": "08:30",
      "date_label": "10/15",
-     "delta_hours": 78.5,
+     "delta_hours": 69.1,
      "forecast": "4.6%",
      "previous": "4.6%",
      "impact": "High",
@@ -1760,7 +1760,7 @@
      "time_hkt": "2026-10-15 14:00",
      "time_hm": "14:00",
      "date_label": "10/15",
-     "delta_hours": 84.0,
+     "delta_hours": 74.6,
      "forecast": "-0.1%",
      "previous": "0.4%",
      "impact": "High",
@@ -1772,7 +1772,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -1784,7 +1784,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.5%",
      "previous": "1.4%",
      "impact": "High",
@@ -1796,7 +1796,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.5%",
      "previous": "0.4%",
      "impact": "High",
@@ -1808,7 +1808,7 @@
      "time_hkt": "2026-10-15 20:30",
      "time_hm": "20:30",
      "date_label": "10/15",
-     "delta_hours": 90.5,
+     "delta_hours": 81.1,
      "forecast": "0.3%",
      "previous": "1.2%",
      "impact": "High",
@@ -1820,7 +1820,7 @@
      "time_hkt": "2026-10-16 10:00",
      "time_hm": "10:00",
      "date_label": "10/16",
-     "delta_hours": 104.0,
+     "delta_hours": 94.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1832,7 +1832,7 @@
      "time_hkt": "2026-10-16 11:30",
      "time_hm": "11:30",
      "date_label": "10/16",
-     "delta_hours": 105.5,
+     "delta_hours": 96.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1850,11 +1850,11 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 4193.83,
-    "change_pct": null,
+    "last": 4190.4,
+    "change_pct": -0.08,
     "prev_close": 4193.834,
-    "high": 4193.834,
-    "low": 4193.834,
+    "high": 4199.19,
+    "low": 4184.75,
     "cost_price": null,
     "pnl_cost_pct": null,
     "attrib": "",
@@ -1869,8 +1869,8 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 60.8052,
-    "change_pct": 2.41,
+    "last": 61.0068,
+    "change_pct": 0.33,
     "prev_close": 60.8052,
     "high": 0.0,
     "low": 0.0,
@@ -1952,7 +1952,7 @@
     "low": 50.37,
     "cost_price": null,
     "pnl_cost_pct": null,
-    "attrib": "WTI holds steady as traders weigh US-Iran tensions and supply risks",
+    "attrib": "WTI declines to near $90.00 despite escalating Middle East conflict, supply risk",
     "attrib_found": true,
     "is_new": false,
     "notes": "工業機械（吊機/高空作業平台）；基建景氣；鋁鋼關稅影響成本（E6）"
@@ -2040,10 +2040,10 @@
    },
    {
     "cat": "core",
-    "txt": "金 $4,194、金銀比 69.0，油 $91.8",
+    "txt": "金 $4,190、金銀比 68.7，油 $90.1",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↑0.0%"
+     "🥇金 ↓0.1%"
     ],
     "no": "BRIEF // 04",
     "color": "#ffd24a",
@@ -2063,22 +2063,6 @@
   ],
   "feed": [
    {
-    "time_hm": "10/10 03:18",
-    "source": "CNBC",
-    "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
-    "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
-    "time_hm": "10/10 10:09",
-    "source": "CNBC World",
-    "title": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
-    "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
     "time_hm": "10/11 03:00",
     "source": "OilPrice",
     "title": "Southeast Asia Needs More Power, But Its Weak Grid Could Be a Problem",
@@ -2087,26 +2071,42 @@
     "is_event": true
    },
    {
-    "time_hm": "10/12 01:33",
-    "source": "新浪7x24",
-    "title": "泽连斯基：特朗普发表停火声明后，俄罗斯袭击了乌克兰发电厂。",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvw0412787.d.html",
+    "time_hm": "10/12 09:01",
+    "source": "OilPrice",
+    "title": "Trump's Russia-Ukraine Energy Ceasefire May Only Cover Oil Refineries",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Trumps-Russia-Ukraine-Energy-Ceasefire-May-Only-Cover-Oil-Refineries.html",
+    "theme": "oil",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/12 09:15",
+    "source": "FXStreet",
+    "title": "Saudi-led coalition says it intercepted Houthi ballistic missile toward Khamis Mushait",
+    "url": "https://www.fxstreet.com/news/saudi-led-coalition-says-it-intercepted-houthi-ballistic-missile-toward-khamis-mushait-202610120115",
     "theme": "geo",
     "is_event": true
    },
    {
-    "time_hm": "10/12 01:44",
-    "source": "新浪7x24",
-    "title": "巴沙埃土四国谴责胡塞武装持续对沙特发动袭击",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvx7193932.d.html",
-    "theme": "stock",
+    "time_hm": "10/12 10:51",
+    "source": "ForexLive",
+    "title": "investingLive Asia-Pacific market news: Gulf strikes, truce doubts,",
+    "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-gulf-strikes-truce-doubts/",
+    "theme": "geo",
     "is_event": true
    },
    {
-    "time_hm": "10/12 01:51",
+    "time_hm": "10/12 10:52",
     "source": "新浪7x24",
-    "title": "黎巴嫩军队表示，以色列持续在该国南部的侵犯行为，是对现有谅解的违反，也是对国际法的侵犯。",
-    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuwuvw0426721.d.html",
+    "title": "光大期货：海外加息预期萦绕，黄金低位徘徊",
+    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuxrzp7225497.d.html",
+    "theme": "macro",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/12 11:12",
+    "source": "新浪7x24",
+    "title": "美国中期选举压力加剧之际 特朗普与泽连斯基的关系面临破裂风险",
+    "url": "https://finance.sina.cn/7x24/2026-10-12/detail-iniuxrzn0474387.d.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2392,18 +2392,18 @@
    "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 3,
+   "E1": 0,
    "E2": 3,
-   "E3": 10,
-   "E4": 0,
-   "E5": 1,
+   "E3": 4,
+   "E4": 1,
+   "E5": 3,
    "E6": 0,
    "E7": 0,
-   "E8": 0,
-   "E9": 0,
-   "E10": 1,
+   "E8": 1,
+   "E9": 1,
+   "E10": 0,
    "E11": 0,
-   "E12": 4
+   "E12": 7
   },
   "market_corr": {
    "generated": "2026-09-03 04:39 HKT",
