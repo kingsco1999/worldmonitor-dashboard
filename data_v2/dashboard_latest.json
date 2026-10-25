@@ -1,14 +1,14 @@
 {
  "bundle": {
-  "collected_at": "2026-10-25T10:22:25.839482+08:00",
-  "collected_at_hkt": "2026-10-25 10:22 HKT",
+  "collected_at": "2026-10-26T01:01:37.534013+08:00",
+  "collected_at_hkt": "2026-10-26 01:01 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "SKIP/FAIL（RSS 補頂）"
+   "gdelt": "OK · 10 條"
   },
   "quotes": {
    "VIX": {
@@ -96,7 +96,7 @@
     "low": 3995.52,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "8:24 PM EDT",
+    "last_timedate": "11:06 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -123,16 +123,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 4010.0,
-    "change": -50.4,
-    "change_pct": -1.24,
-    "prev_close": 4060.4,
-    "open": 4042.2,
-    "high": 4050.2,
-    "low": 3989.1,
+    "last": 4007.9,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4007.9,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -141,16 +141,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Dec'26)",
-    "last": 103.44,
-    "change": 3.97,
-    "change_pct": 3.99,
-    "prev_close": 99.47,
-    "open": 99.1,
-    "high": 103.92,
-    "low": 98.84,
+    "last": 103.27,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 103.27,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -159,16 +159,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 53.96,
-    "change": -1.047,
-    "change_pct": -1.9,
-    "prev_close": 55.007,
-    "open": 54.695,
-    "high": 54.795,
-    "low": 53.075,
+    "last": 53.949,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 53.949,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 80742.18,
-    "change": -465.15,
-    "change_pct": -0.57,
-    "prev_close": 81207.33,
-    "open": 81187.0,
-    "high": 81400.0,
-    "low": 79165.7,
+    "last": 80711.08,
+    "change": 296.93,
+    "change_pct": 0.37,
+    "prev_close": 80414.15,
+    "open": 80381.7,
+    "high": 80918.48,
+    "low": 80000.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:22 PM EDT",
+    "last_timedate": "1:01 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -404,7 +404,7 @@
     "low": 3995.52,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "8:24 PM EDT",
+    "last_timedate": "11:06 AM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -431,16 +431,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 4010.0,
-    "change": -50.4,
-    "change_pct": -1.24,
-    "prev_close": 4060.4,
-    "open": 4042.2,
-    "high": 4050.2,
-    "low": 3989.1,
+    "last": 4007.9,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 4007.9,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -449,16 +449,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Dec'26)",
-    "last": 103.44,
-    "change": 3.97,
-    "change_pct": 3.99,
-    "prev_close": 99.47,
-    "open": 99.1,
-    "high": 103.92,
-    "low": 98.84,
+    "last": 103.27,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 103.27,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -467,16 +467,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 53.96,
-    "change": -1.047,
-    "change_pct": -1.9,
-    "prev_close": 55.007,
-    "open": 54.695,
-    "high": 54.795,
-    "low": 53.075,
+    "last": 53.949,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 53.949,
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "6:43 PM EDT",
+    "last_timedate": "10/24/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 80742.18,
-    "change": -465.15,
-    "change_pct": -0.57,
-    "prev_close": 81207.33,
-    "open": 81187.0,
-    "high": 81400.0,
-    "low": 79165.7,
+    "last": 80711.08,
+    "change": 296.93,
+    "change_pct": 0.37,
+    "prev_close": 80414.15,
+    "open": 80381.7,
+    "high": 80918.48,
+    "low": 80000.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "10:22 PM EDT",
+    "last_timedate": "1:01 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -778,77 +778,293 @@
    "all_high": [
     {
      "title": "CPI m/m",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "0.2%",
-     "previous": "-0.1%",
-     "impact": "High",
-     "source": "ForexFactory"
-    },
-    {
-     "title": "Median CPI y/y",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "2.0%",
-     "previous": "2.0%",
-     "impact": "High",
-     "source": "ForexFactory"
-    },
-    {
-     "title": "Trimmed CPI y/y",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "1.9%",
-     "previous": "1.9%",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "0.7%",
+     "previous": "0.4%",
      "impact": "High",
      "source": "ForexFactory"
     },
     {
      "title": "CPI y/y",
-     "country": "GBP",
-     "time_hkt": "2026-10-21 14:00",
-     "time_hm": "14:00",
-     "date_label": "10/21",
-     "delta_hours": -92.4,
-     "forecast": "3.4%",
-     "previous": "3.1%",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "4.2%",
+     "previous": "4.0%",
      "impact": "High",
      "source": "ForexFactory"
     },
     {
-     "title": "CPI q/q",
+     "title": "Trimmed Mean CPI m/m",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "0.3%",
+     "previous": "0.2%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Official Cash Rate",
      "country": "NZD",
-     "time_hkt": "2026-10-22 05:45",
-     "time_hm": "05:45",
-     "date_label": "10/22",
-     "delta_hours": -76.6,
-     "forecast": "0.8%",
+     "time_hkt": "2026-10-28 09:00",
+     "time_hm": "09:00",
+     "date_label": "10/28",
+     "delta_hours": 56.0,
+     "forecast": "3.00%",
+     "previous": "2.75%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "RBNZ Rate Statement",
+     "country": "NZD",
+     "time_hkt": "2026-10-28 09:00",
+     "time_hm": "09:00",
+     "date_label": "10/28",
+     "delta_hours": 56.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "RBNZ Press Conference",
+     "country": "NZD",
+     "time_hkt": "2026-10-28 10:00",
+     "time_hm": "10:00",
+     "date_label": "10/28",
+     "delta_hours": 57.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Annual Budget Release",
+     "country": "GBP",
+     "time_hkt": "2026-10-28 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/28",
+     "delta_hours": 67.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Monetary Policy Report",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Rate Statement",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Overnight Rate",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "2.50%",
+     "previous": "2.25%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Press Conference",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 22:30",
+     "time_hm": "22:30",
+     "date_label": "10/28",
+     "delta_hours": 69.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Federal Funds Rate",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:00",
+     "time_hm": "02:00",
+     "date_label": "10/29",
+     "delta_hours": 73.0,
+     "forecast": "4.00%",
+     "previous": "4.00%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "FOMC Statement",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:00",
+     "time_hm": "02:00",
+     "date_label": "10/29",
+     "delta_hours": 73.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "FOMC Press Conference",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:30",
+     "time_hm": "02:30",
+     "date_label": "10/29",
+     "delta_hours": 73.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Advance GDP q/q",
+     "country": "USD",
+     "time_hkt": "2026-10-29 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/29",
+     "delta_hours": 91.5,
+     "forecast": "3.2%",
      "previous": "1.5%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Core PCE Price Index m/m",
+     "country": "USD",
+     "time_hkt": "2026-10-29 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/29",
+     "delta_hours": 91.5,
+     "forecast": "0.3%",
+     "previous": "0.2%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Main Refinancing Rate",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:15",
+     "time_hm": "21:15",
+     "date_label": "10/29",
+     "delta_hours": 92.2,
+     "forecast": "2.65%",
+     "previous": "2.65%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Monetary Policy Statement",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:15",
+     "time_hm": "21:15",
+     "date_label": "10/29",
+     "delta_hours": 92.2,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "ECB Press Conference",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/29",
+     "delta_hours": 92.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Policy Rate",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:30",
+     "time_hm": "10:30",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "<1.25%",
+     "previous": "<1.25%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Monetary Policy Statement",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:30",
+     "time_hm": "10:30",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Outlook Report",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:31",
+     "time_hm": "10:31",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Press Conference",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 13:30",
+     "time_hm": "13:30",
+     "date_label": "10/30",
+     "delta_hours": 108.5,
+     "forecast": "",
+     "previous": "",
      "impact": "High",
      "source": "ForexFactory"
     }
    ]
   },
-  "elapsed_sec": 247.1
+  "elapsed_sec": 255.9
  },
  "dash_data": {
-  "generated_iso": "2026-10-25T10:22:25.827846+08:00",
-  "date_str": "2026-10-25",
+  "generated_iso": "2026-10-26T01:01:37.436897+08:00",
+  "date_str": "2026-10-26",
   "date_parts": {
    "y": 2026,
    "m": 10,
-   "d": 25
+   "d": 26
   },
-  "weekday": "星期日",
+  "weekday": "星期一",
   "edition": "evening",
   "edition_label": "晚間版",
   "quotes": {
@@ -907,30 +1123,30 @@
     "mkt_status": "REG_MKT"
    },
    "GOLD_FUT": {
-    "last": 4010.0,
-    "change_pct": -1.24,
+    "last": 4007.9,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 4060.4,
-    "high": 4050.2,
-    "low": 3989.1,
+    "prev_close": 4007.9,
+    "high": 0.0,
+    "low": 0.0,
     "mkt_status": "REG_MKT"
    },
    "WTI": {
-    "last": 103.44,
-    "change_pct": 3.99,
+    "last": 103.27,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 99.47,
-    "high": 103.92,
-    "low": 98.84,
+    "prev_close": 103.27,
+    "high": 0.0,
+    "low": 0.0,
     "mkt_status": "REG_MKT"
    },
    "SILVER_FUT": {
-    "last": 53.96,
-    "change_pct": -1.9,
+    "last": 53.949,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 55.007,
-    "high": 54.795,
-    "low": 53.075,
+    "prev_close": 53.949,
+    "high": 0.0,
+    "low": 0.0,
     "mkt_status": "REG_MKT"
    },
    "GDX": {
@@ -943,12 +1159,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 80742.18,
-    "change_pct": -0.57,
+    "last": 80711.08,
+    "change_pct": 0.37,
     "change_bp": null,
-    "prev_close": 81207.33,
-    "high": 81400.0,
-    "low": 79165.7,
+    "prev_close": 80414.15,
+    "high": 80918.48,
+    "low": 80000.0,
     "mkt_status": "REG_MKT"
    },
    "SBTU": {
@@ -1007,7 +1223,7 @@
    }
   },
   "thermo": {
-   "total": 47,
+   "total": 41,
    "regime": "neutral",
    "regime_icon": "⚪",
    "regime_label": "中性",
@@ -1046,8 +1262,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 80742.18,
-     "chg": -0.57,
+     "value": 80711.08,
+     "chg": 0.37,
      "chg_unit": "%",
      "score": 5,
      "note": "BTC ±1% 以內，橫行"
@@ -1076,14 +1292,14 @@
      "key": "WTI",
      "label": "WTI 原油",
      "weight": 10,
-     "value": 103.44,
-     "chg": 3.99,
+     "value": 103.27,
+     "chg": 0.0,
      "chg_unit": "%",
-     "score": 9,
-     "note": "油漲 >3%，供應衝擊/滯脹風險"
+     "score": 3,
+     "note": "油 ±1.5% 以內"
     }
    ],
-   "needle_pct": 47
+   "needle_pct": 41
   },
   "regime_sub": "NEUTRAL · EA 正常，避開 🔴 事件窗口",
   "events": [
@@ -1170,8 +1386,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/23 22:16 HKT · ForexLive",
-    "headline": "Why the market senses a weekend Iran escalation and what happens next",
+    "time": "10/26 00:07 HKT · 新浪7x24",
+    "headline": "以色列对加沙地带南部汗尤尼斯市以东的谢赫纳赛尔街区发动空袭，造成人员伤亡。",
     "chain": [
      "中東交火升級 → 原油供應中斷風險定價",
      "油價急升 → 通脹預期升溫、美債息升",
@@ -1216,77 +1432,11 @@
       "g"
      ]
     ],
-    "source": "ForexLive",
-    "url": "https://investinglive.com/commodities/the-market-senses-a-weekend-iran-escalation/"
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-10-26/detail-iniwnkhh2805173.d.html"
    },
    {
     "id": 2,
-    "etype": "E5",
-    "etype_name": "俄烏戰事升級",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 50.5,
-    "lng": 30.5,
-    "name": "烏克蘭 · 基輔",
-    "title": "🟠 烏克蘭 · 基輔 · 俄烏戰事升級",
-    "loc": "📍 烏克蘭 · 基輔",
-    "time": "10/24 04:52 HKT · CNBC",
-    "headline": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-    "chain": [
-     "俄烏戰事升級 → 歐洲天然氣/糧食通道受擾",
-     "TTF 天然氣↑↑、小麥供應憂慮",
-     "核威脅言論 → 黃金避險需求升"
-    ],
-    "if_then": "如果 斷供或核威脅升級，就 天然氣/金價急升，歐洲資產避險",
-    "assets": [
-     [
-      "⛽",
-      "天然氣",
-      "↑↑",
-      "g"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🛢️",
-      "WTI 原油",
-      "↑",
-      "g"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ],
-     [
-      "😱",
-      "VIX 恐慌",
-      "↑",
-      "g"
-     ],
-     [
-      "🇺🇸",
-      "美股",
-      "↓",
-      "r"
-     ]
-    ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html"
-   },
-   {
-    "id": 3,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1302,8 +1452,8 @@
     "name": "華盛頓 · 聯儲局",
     "title": "🟠 華盛頓 · 聯儲局 · 中美關稅升級",
     "loc": "📍 華盛頓 · 聯儲局",
-    "time": "10/24 05:26 HKT · CNBC",
-    "headline": "Trump dropping some Canada tariffs but 'replacing' them with other products",
+    "time": "10/26 00:42 HKT · CNBC",
+    "headline": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
     "chain": [
      "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
      "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
@@ -1349,12 +1499,12 @@
      ]
     ],
     "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html"
+    "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html"
    },
    {
-    "id": 4,
-    "etype": "E3",
-    "etype_name": "紅海/蘇伊士航道中斷",
+    "id": 3,
+    "etype": "E5",
+    "etype_name": "俄烏戰事升級",
     "color": "#ffb020",
     "cls": "amber",
     "card_cls": "hot",
@@ -1363,20 +1513,32 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 14.7,
-    "lng": 42.5,
-    "name": "紅海 · 曼德海峽",
-    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
-    "loc": "📍 紅海 · 曼德海峽",
-    "time": "10/25 09:37 HKT · 新浪7x24",
-    "headline": "也门胡塞武装再次警告不要使用沙特利雅得机场",
+    "lat": 50.5,
+    "lng": 30.5,
+    "name": "烏克蘭 · 基輔",
+    "title": "🟠 烏克蘭 · 基輔 · 俄烏戰事升級",
+    "loc": "📍 烏克蘭 · 基輔",
+    "time": "10/25 04:38 HKT · CNBC",
+    "headline": "After SpaceX restores high-speed service, Musk claims Ukraine violated Starlink agreement",
     "chain": [
-     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
-     "集裝箱運價攀升 → 供應鏈成本轉嫁",
-     "原油影響溫和，主要衝擊航運同零售"
+     "俄烏戰事升級 → 歐洲天然氣/糧食通道受擾",
+     "TTF 天然氣↑↑、小麥供應憂慮",
+     "核威脅言論 → 黃金避險需求升"
     ],
-    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
+    "if_then": "如果 斷供或核威脅升級，就 天然氣/金價急升，歐洲資產避險",
     "assets": [
+     [
+      "⛽",
+      "天然氣",
+      "↑↑",
+      "g"
+     ],
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
      [
       "🛢️",
       "WTI 原油",
@@ -1384,14 +1546,146 @@
       "g"
      ],
      [
-      "🚢",
-      "航運",
+      "💵",
+      "美元 DXY",
       "↑",
       "g"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↑",
+      "g"
+     ],
+     [
+      "🇺🇸",
+      "美股",
+      "↓",
+      "r"
+     ]
+    ],
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html"
+   },
+   {
+    "id": 4,
+    "etype": "E7",
+    "etype_name": "出口管制/金融制裁",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 38.9,
+    "lng": -77.0,
+    "name": "華盛頓 · 聯儲局",
+    "title": "🟠 華盛頓 · 聯儲局 · 出口管制/金融制裁",
+    "loc": "📍 華盛頓 · 聯儲局",
+    "time": "10/25 23:11 HKT · 新浪7x24",
+    "headline": "津巴布韦总统呼吁西方国家无条件解除制裁",
+    "chain": [
+     "出口管制/金融制裁 → 被制裁板塊↓↓",
+     "國產替代受惠；貨幣體系受動搖",
+     "黃金中長線受惠（儲備多元化）"
+    ],
+    "if_then": "如果 制裁名單擴大，就 被制裁板塊急跌、國產替代受惠，金中長線受惠",
+    "assets": [
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↑",
+      "g"
+     ],
+     [
+      "🇭🇰",
+      "港股",
+      "↓",
+      "r"
+     ],
+     [
+      "💾",
+      "半導體",
+      "↓",
+      "r"
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwkwey3292151.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwncym9691114.d.html"
+   },
+   {
+    "id": 5,
+    "etype": "E7",
+    "etype_name": "出口管制/金融制裁",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 31.5,
+    "lng": 34.5,
+    "name": "中東 · 伊朗/以色列",
+    "title": "🟠 中東 · 伊朗/以色列 · 出口管制/金融制裁",
+    "loc": "📍 中東 · 伊朗/以色列",
+    "time": "10/25 23:42 HKT · 新浪7x24",
+    "headline": "伊朗航空表示，制裁导致其官方网站域名被封，迫使这家国有航空公司将在线服务迁移至新网址。该公司称已将.com域名替换为伊朗的.ir域名。",
+    "chain": [
+     "出口管制/金融制裁 → 被制裁板塊↓↓",
+     "國產替代受惠；貨幣體系受動搖",
+     "黃金中長線受惠（儲備多元化）"
+    ],
+    "if_then": "如果 制裁名單擴大，就 被制裁板塊急跌、國產替代受惠，金中長線受惠",
+    "assets": [
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "😱",
+      "VIX 恐慌",
+      "↑",
+      "g"
+     ],
+     [
+      "🇭🇰",
+      "港股",
+      "↓",
+      "r"
+     ],
+     [
+      "💾",
+      "半導體",
+      "↓",
+      "r"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwnkhi9570770.d.html"
    }
   ],
   "arcs": [
@@ -1460,22 +1754,6 @@
     "etype": "E1"
    },
    {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 50.1,
-    "endLng": 8.7,
-    "color": "#ffb020",
-    "etype": "E5"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 51.5,
-    "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E5"
-   },
-   {
     "startLat": 38.9,
     "startLng": -77.0,
     "endLat": 22.3,
@@ -1508,20 +1786,44 @@
     "etype": "E6"
    },
    {
-    "startLat": 14.7,
-    "startLng": 42.5,
+    "startLat": 50.5,
+    "startLng": 30.5,
+    "endLat": 50.1,
+    "endLng": 8.7,
+    "color": "#ffb020",
+    "etype": "E5"
+   },
+   {
+    "startLat": 50.5,
+    "startLng": 30.5,
     "endLat": 51.5,
     "endLng": -0.1,
     "color": "#ffb020",
-    "etype": "E3"
+    "etype": "E5"
    },
    {
-    "startLat": 14.7,
-    "startLng": 42.5,
-    "endLat": 1.35,
-    "endLng": 103.8,
+    "startLat": 38.9,
+    "startLng": -77.0,
+    "endLat": 51.5,
+    "endLng": -0.1,
     "color": "#ffb020",
-    "etype": "E3"
+    "etype": "E7"
+   },
+   {
+    "startLat": 31.5,
+    "startLng": 34.5,
+    "endLat": 40.7,
+    "endLng": -74.0,
+    "color": "#ffb020",
+    "etype": "E7"
+   },
+   {
+    "startLat": 31.5,
+    "startLng": 34.5,
+    "endLat": 22.3,
+    "endLng": 114.2,
+    "color": "#ffb020",
+    "etype": "E7"
    }
   ],
   "calendar": {
@@ -1530,68 +1832,284 @@
    "all_high": [
     {
      "title": "CPI m/m",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "0.2%",
-     "previous": "-0.1%",
-     "impact": "High",
-     "source": "ForexFactory"
-    },
-    {
-     "title": "Median CPI y/y",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "2.0%",
-     "previous": "2.0%",
-     "impact": "High",
-     "source": "ForexFactory"
-    },
-    {
-     "title": "Trimmed CPI y/y",
-     "country": "CAD",
-     "time_hkt": "2026-10-19 20:30",
-     "time_hm": "20:30",
-     "date_label": "10/19",
-     "delta_hours": -133.9,
-     "forecast": "1.9%",
-     "previous": "1.9%",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "0.7%",
+     "previous": "0.4%",
      "impact": "High",
      "source": "ForexFactory"
     },
     {
      "title": "CPI y/y",
-     "country": "GBP",
-     "time_hkt": "2026-10-21 14:00",
-     "time_hm": "14:00",
-     "date_label": "10/21",
-     "delta_hours": -92.4,
-     "forecast": "3.4%",
-     "previous": "3.1%",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "4.2%",
+     "previous": "4.0%",
      "impact": "High",
      "source": "ForexFactory"
     },
     {
-     "title": "CPI q/q",
+     "title": "Trimmed Mean CPI m/m",
+     "country": "AUD",
+     "time_hkt": "2026-10-28 08:30",
+     "time_hm": "08:30",
+     "date_label": "10/28",
+     "delta_hours": 55.5,
+     "forecast": "0.3%",
+     "previous": "0.2%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Official Cash Rate",
      "country": "NZD",
-     "time_hkt": "2026-10-22 05:45",
-     "time_hm": "05:45",
-     "date_label": "10/22",
-     "delta_hours": -76.6,
-     "forecast": "0.8%",
+     "time_hkt": "2026-10-28 09:00",
+     "time_hm": "09:00",
+     "date_label": "10/28",
+     "delta_hours": 56.0,
+     "forecast": "3.00%",
+     "previous": "2.75%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "RBNZ Rate Statement",
+     "country": "NZD",
+     "time_hkt": "2026-10-28 09:00",
+     "time_hm": "09:00",
+     "date_label": "10/28",
+     "delta_hours": 56.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "RBNZ Press Conference",
+     "country": "NZD",
+     "time_hkt": "2026-10-28 10:00",
+     "time_hm": "10:00",
+     "date_label": "10/28",
+     "delta_hours": 57.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Annual Budget Release",
+     "country": "GBP",
+     "time_hkt": "2026-10-28 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/28",
+     "delta_hours": 67.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Monetary Policy Report",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Rate Statement",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Overnight Rate",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/28",
+     "delta_hours": 68.7,
+     "forecast": "2.50%",
+     "previous": "2.25%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOC Press Conference",
+     "country": "CAD",
+     "time_hkt": "2026-10-28 22:30",
+     "time_hm": "22:30",
+     "date_label": "10/28",
+     "delta_hours": 69.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Federal Funds Rate",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:00",
+     "time_hm": "02:00",
+     "date_label": "10/29",
+     "delta_hours": 73.0,
+     "forecast": "4.00%",
+     "previous": "4.00%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "FOMC Statement",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:00",
+     "time_hm": "02:00",
+     "date_label": "10/29",
+     "delta_hours": 73.0,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "FOMC Press Conference",
+     "country": "USD",
+     "time_hkt": "2026-10-29 02:30",
+     "time_hm": "02:30",
+     "date_label": "10/29",
+     "delta_hours": 73.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Advance GDP q/q",
+     "country": "USD",
+     "time_hkt": "2026-10-29 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/29",
+     "delta_hours": 91.5,
+     "forecast": "3.2%",
      "previous": "1.5%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Core PCE Price Index m/m",
+     "country": "USD",
+     "time_hkt": "2026-10-29 20:30",
+     "time_hm": "20:30",
+     "date_label": "10/29",
+     "delta_hours": 91.5,
+     "forecast": "0.3%",
+     "previous": "0.2%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Main Refinancing Rate",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:15",
+     "time_hm": "21:15",
+     "date_label": "10/29",
+     "delta_hours": 92.2,
+     "forecast": "2.65%",
+     "previous": "2.65%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Monetary Policy Statement",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:15",
+     "time_hm": "21:15",
+     "date_label": "10/29",
+     "delta_hours": 92.2,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "ECB Press Conference",
+     "country": "EUR",
+     "time_hkt": "2026-10-29 21:45",
+     "time_hm": "21:45",
+     "date_label": "10/29",
+     "delta_hours": 92.7,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Policy Rate",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:30",
+     "time_hm": "10:30",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "<1.25%",
+     "previous": "<1.25%",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "Monetary Policy Statement",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:30",
+     "time_hm": "10:30",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Outlook Report",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 10:31",
+     "time_hm": "10:31",
+     "date_label": "10/30",
+     "delta_hours": 105.5,
+     "forecast": "",
+     "previous": "",
+     "impact": "High",
+     "source": "ForexFactory"
+    },
+    {
+     "title": "BOJ Press Conference",
+     "country": "JPY",
+     "time_hkt": "2026-10-30 13:30",
+     "time_hm": "13:30",
+     "date_label": "10/30",
+     "delta_hours": 108.5,
+     "forecast": "",
+     "previous": "",
      "impact": "High",
      "source": "ForexFactory"
     }
    ]
   },
   "next_event": null,
-  "fed_chip": "🤖 <span><b>EA 暫停提示：</b>🔴 高影響事件窗口前 30 分鐘＋後 60 分鐘一律暫停 EA；US10Y 今日 <b>+4.6bp</b>（CNBC 實時）。</span>",
+  "fed_chip": "🤖 <span><b>EA 暫停提示：</b>10/28 09:00 Official Cash Rate（NZD）｜事件前 30 分鐘＋後 60 分鐘暫停 EA。US10Y 今日 <b>+4.6bp</b>（CNBC 實時）</span>",
   "holdings": [
    {
     "code": "XAUUSD",
@@ -1751,7 +2269,7 @@
   "brief": [
    {
     "cat": "core",
-    "txt": "金 $3,996、金銀比 74.1，油 $103.4",
+    "txt": "金 $3,996、金銀比 74.1，油 $103.3",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
      "🥇金 ↑0.0%"
@@ -1762,10 +2280,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 47 分⚪中性",
+    "txt": "風險溫度 41 分⚪中性",
     "ifthen": "如果 VIX（19.4）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "⚪ 47/100"
+     "⚪ 41/100"
     ],
     "no": "BRIEF // 02",
     "color": "#9d8cff",
@@ -1786,30 +2304,6 @@
   ],
   "feed": [
    {
-    "time_hm": "10/23 22:16",
-    "source": "ForexLive",
-    "title": "Why the market senses a weekend Iran escalation and what happens next",
-    "url": "https://investinglive.com/commodities/the-market-senses-a-weekend-iran-escalation/",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
-    "time_hm": "10/24 04:52",
-    "source": "CNBC",
-    "title": "In hunt for Starlink alternative, Ukraine partners with Nokia and satellite maker ICEYE",
-    "url": "https://www.cnbc.com/2026/10/23/ukraine-partners-with-nokia-and-iceye-for-starlink-alternative.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
-    "time_hm": "10/24 05:26",
-    "source": "CNBC",
-    "title": "Trump dropping some Canada tariffs but 'replacing' them with other products",
-    "url": "https://www.cnbc.com/2026/10/23/trump-tariffs-canada-susan-collins.html",
-    "theme": "stock",
-    "is_event": true
-   },
-   {
     "time_hm": "10/24 06:00",
     "source": "OilPrice",
     "title": "Why Trump and Carney Haven’t Touched Energy in Their Tariff War",
@@ -1818,10 +2312,42 @@
     "is_event": true
    },
    {
-    "time_hm": "10/25 09:37",
+    "time_hm": "10/25 04:38",
+    "source": "CNBC",
+    "title": "After SpaceX restores high-speed service, Musk claims Ukraine violated Starlink agreement",
+    "url": "https://www.cnbc.com/2026/10/24/ukraine-starlink-starshield-service-restored.html",
+    "theme": "geo",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/25 23:11",
     "source": "新浪7x24",
-    "title": "也门胡塞武装再次警告不要使用沙特利雅得机场",
-    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwkwey3292151.d.html",
+    "title": "津巴布韦总统呼吁西方国家无条件解除制裁",
+    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwncym9691114.d.html",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/25 23:42",
+    "source": "新浪7x24",
+    "title": "伊朗航空表示，制裁导致其官方网站域名被封，迫使这家国有航空公司将在线服务迁移至新网址。该公司称已将.com域名替换为伊朗的.ir域名。",
+    "url": "https://finance.sina.cn/7x24/2026-10-25/detail-iniwnkhi9570770.d.html",
+    "theme": "geo",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/26 00:07",
+    "source": "新浪7x24",
+    "title": "以色列对加沙地带南部汗尤尼斯市以东的谢赫纳赛尔街区发动空袭，造成人员伤亡。",
+    "url": "https://finance.sina.cn/7x24/2026-10-26/detail-iniwnkhh2805173.d.html",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "10/26 00:42",
+    "source": "CNBC",
+    "title": "Audi defends plans for a $4 billion Georgia plant amid VW restructuring, tariffs",
+    "url": "https://www.cnbc.com/2026/10/25/audi-georgia-us-plant-tariffs-volkswagen.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2096,14 +2622,6 @@
     "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
     "theme": "geo",
     "is_event": false
-   },
-   {
-    "time_hm": "10/13 14:20",
-    "source": "CNBC Finance",
-    "title": "Visa gets Beijing's green light for bank card business after 40 years of working with China",
-    "url": "https://www.cnbc.com/2026/10/13/visa-china-green-light-bank-card-business-.html",
-    "theme": "stock",
-    "is_event": false
    }
   ],
   "sources_status": {
@@ -2112,16 +2630,16 @@
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "SKIP/FAIL（RSS 補頂）"
+   "gdelt": "OK · 10 條"
   },
   "event_counts": {
-   "E1": 2,
+   "E1": 7,
    "E2": 0,
-   "E3": 2,
+   "E3": 4,
    "E4": 0,
-   "E5": 6,
-   "E6": 4,
-   "E7": 0,
+   "E5": 2,
+   "E6": 6,
+   "E7": 2,
    "E8": 0,
    "E9": 0,
    "E10": 0,
