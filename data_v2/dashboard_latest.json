@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-10-31T11:20:43.395476+08:00",
-  "collected_at_hkt": "2026-10-31 11:20 HKT",
+  "collected_at": "2026-11-01T01:39:28.734167+08:00",
+  "collected_at_hkt": "2026-11-01 01:39 HKT",
   "sources_status": {
    "cnbc": "OK · 17 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -24,7 +24,7 @@
     "low": 18.03,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -42,7 +42,7 @@
     "low": 101.544,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -88,15 +88,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3875.02,
-    "change": -145.4,
-    "change_pct": -3.62,
-    "prev_close": 4020.423,
-    "open": 4003.79,
-    "high": 4012.9,
-    "low": 3870.41,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 3875.024,
+    "open": 3875.024,
+    "high": 3875.024,
+    "low": 3875.024,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:09 PM EDT",
+    "last_timedate": "1:24 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -186,7 +186,7 @@
     "low": 75.83,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 77219.46,
-    "change": 670.56,
-    "change_pct": 0.88,
+    "last": 77465.27,
+    "change": 916.37,
+    "change_pct": 1.2,
     "prev_close": 76548.9,
     "open": 76762.29,
-    "high": 77485.78,
+    "high": 77581.4,
     "low": 76480.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11:20 PM EDT",
+    "last_timedate": "1:39 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -332,7 +332,7 @@
     "low": 18.03,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -350,7 +350,7 @@
     "low": 101.544,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -396,15 +396,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3875.02,
-    "change": -145.4,
-    "change_pct": -3.62,
-    "prev_close": 4020.423,
-    "open": 4003.79,
-    "high": 4012.9,
-    "low": 3870.41,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 3875.024,
+    "open": 3875.024,
+    "high": 3875.024,
+    "low": 3875.024,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:09 PM EDT",
+    "last_timedate": "1:24 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -494,7 +494,7 @@
     "low": 75.83,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 77219.46,
-    "change": 670.56,
-    "change_pct": 0.88,
+    "last": 77465.27,
+    "change": 916.37,
+    "change_pct": 1.2,
     "prev_close": 76548.9,
     "open": 76762.29,
-    "high": 77485.78,
+    "high": 77581.4,
     "low": 76480.32,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11:20 PM EDT",
+    "last_timedate": "1:39 PM EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -530,7 +530,7 @@
     "low": 22.5,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:00 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -548,7 +548,7 @@
     "low": 309.42,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -566,7 +566,7 @@
     "low": 46.02,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -584,7 +584,7 @@
     "low": 55.09,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -602,7 +602,7 @@
     "low": 175.15,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -620,7 +620,7 @@
     "low": 231.18,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:00 PM EDT",
+    "last_timedate": "10/30/26 EDT",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -782,7 +782,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "0.7%",
      "previous": "0.4%",
      "impact": "High",
@@ -794,7 +794,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "4.2%",
      "previous": "4.0%",
      "impact": "High",
@@ -806,7 +806,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -818,7 +818,7 @@
      "time_hkt": "2026-10-28 09:00",
      "time_hm": "09:00",
      "date_label": "10/28",
-     "delta_hours": -74.3,
+     "delta_hours": -88.7,
      "forecast": "3.00%",
      "previous": "2.75%",
      "impact": "High",
@@ -830,7 +830,7 @@
      "time_hkt": "2026-10-28 09:00",
      "time_hm": "09:00",
      "date_label": "10/28",
-     "delta_hours": -74.3,
+     "delta_hours": -88.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -842,7 +842,7 @@
      "time_hkt": "2026-10-28 10:00",
      "time_hm": "10:00",
      "date_label": "10/28",
-     "delta_hours": -73.3,
+     "delta_hours": -87.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -854,7 +854,7 @@
      "time_hkt": "2026-10-28 20:30",
      "time_hm": "20:30",
      "date_label": "10/28",
-     "delta_hours": -62.8,
+     "delta_hours": -77.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -866,7 +866,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -878,7 +878,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -890,7 +890,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "2.50%",
      "previous": "2.25%",
      "impact": "High",
@@ -902,7 +902,7 @@
      "time_hkt": "2026-10-28 22:30",
      "time_hm": "22:30",
      "date_label": "10/28",
-     "delta_hours": -60.8,
+     "delta_hours": -75.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -914,7 +914,7 @@
      "time_hkt": "2026-10-29 02:00",
      "time_hm": "02:00",
      "date_label": "10/29",
-     "delta_hours": -57.3,
+     "delta_hours": -71.7,
      "forecast": "4.00%",
      "previous": "4.00%",
      "impact": "High",
@@ -926,7 +926,7 @@
      "time_hkt": "2026-10-29 02:00",
      "time_hm": "02:00",
      "date_label": "10/29",
-     "delta_hours": -57.3,
+     "delta_hours": -71.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -938,7 +938,7 @@
      "time_hkt": "2026-10-29 02:30",
      "time_hm": "02:30",
      "date_label": "10/29",
-     "delta_hours": -56.8,
+     "delta_hours": -71.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -950,7 +950,7 @@
      "time_hkt": "2026-10-29 20:30",
      "time_hm": "20:30",
      "date_label": "10/29",
-     "delta_hours": -38.8,
+     "delta_hours": -53.2,
      "forecast": "3.2%",
      "previous": "1.5%",
      "impact": "High",
@@ -962,7 +962,7 @@
      "time_hkt": "2026-10-29 20:30",
      "time_hm": "20:30",
      "date_label": "10/29",
-     "delta_hours": -38.8,
+     "delta_hours": -53.2,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -974,7 +974,7 @@
      "time_hkt": "2026-10-29 21:15",
      "time_hm": "21:15",
      "date_label": "10/29",
-     "delta_hours": -38.1,
+     "delta_hours": -52.4,
      "forecast": "2.65%",
      "previous": "2.65%",
      "impact": "High",
@@ -986,7 +986,7 @@
      "time_hkt": "2026-10-29 21:15",
      "time_hm": "21:15",
      "date_label": "10/29",
-     "delta_hours": -38.1,
+     "delta_hours": -52.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -998,7 +998,7 @@
      "time_hkt": "2026-10-29 21:45",
      "time_hm": "21:45",
      "date_label": "10/29",
-     "delta_hours": -37.6,
+     "delta_hours": -51.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1010,7 +1010,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1022,7 +1022,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "<1.25%",
      "previous": "<1.25%",
      "impact": "High",
@@ -1034,7 +1034,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1046,7 +1046,7 @@
      "time_hkt": "2026-10-30 14:30",
      "time_hm": "14:30",
      "date_label": "10/30",
-     "delta_hours": -20.8,
+     "delta_hours": -35.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1054,17 +1054,17 @@
     }
    ]
   },
-  "elapsed_sec": 253.8
+  "elapsed_sec": 238.0
  },
  "dash_data": {
-  "generated_iso": "2026-10-31T11:20:43.363787+08:00",
-  "date_str": "2026-10-31",
+  "generated_iso": "2026-11-01T01:39:28.725087+08:00",
+  "date_str": "2026-11-01",
   "date_parts": {
    "y": 2026,
-   "m": 10,
-   "d": 31
+   "m": 11,
+   "d": 1
   },
-  "weekday": "星期六",
+  "weekday": "星期日",
   "edition": "evening",
   "edition_label": "晚間版",
   "quotes": {
@@ -1106,11 +1106,11 @@
    },
    "XAU": {
     "last": 3875.02,
-    "change_pct": -3.62,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 4020.423,
-    "high": 4012.9,
-    "low": 3870.41,
+    "prev_close": 3875.024,
+    "high": 3875.024,
+    "low": 3875.024,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
@@ -1159,11 +1159,11 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 77219.46,
-    "change_pct": 0.88,
+    "last": 77465.27,
+    "change_pct": 1.2,
     "change_bp": null,
     "prev_close": 76548.9,
-    "high": 77485.78,
+    "high": 77581.4,
     "low": 76480.32,
     "mkt_status": "REG_MKT"
    },
@@ -1223,7 +1223,7 @@
    }
   },
   "thermo": {
-   "total": 49,
+   "total": 44,
    "regime": "neutral",
    "regime_icon": "⚪",
    "regime_label": "中性",
@@ -1262,11 +1262,11 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 77219.46,
-     "chg": 0.88,
+     "value": 77465.27,
+     "chg": 1.2,
      "chg_unit": "%",
-     "score": 5,
-     "note": "BTC ±1% 以內，橫行"
+     "score": 0,
+     "note": "BTC 單日漲 >1%，高 beta 風險偏好強"
     },
     {
      "key": "GDX",
@@ -1283,10 +1283,10 @@
      "label": "黃金 XAU",
      "weight": 10,
      "value": 3875.02,
-     "chg": -3.62,
+     "chg": 0.0,
      "chg_unit": "%",
      "score": 4,
-     "note": "金波動但信號混合"
+     "note": "金 ±1% 以內"
     },
     {
      "key": "WTI",
@@ -1299,7 +1299,7 @@
      "note": "油 ±1.5% 以內"
     }
    ],
-   "needle_pct": 49
+   "needle_pct": 44
   },
   "regime_sub": "NEUTRAL · EA 正常，避開 🔴 事件窗口",
   "events": [
@@ -1320,8 +1320,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "10/31 02:28 HKT · CNBC",
-    "headline": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait ",
+    "time": "10/30 20:30 HKT · OilPrice",
+    "headline": "Brent Hits $117 as Tanker Catches Fire in Strait of Hormuz",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1366,8 +1366,8 @@
       "g"
      ]
     ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html"
+    "source": "OilPrice",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Hits-117-as-Tanker-Catches-Fire-in-Strait-of-Hormuz.html"
    },
    {
     "id": 1,
@@ -1386,7 +1386,7 @@
     "name": "烏克蘭 · 基輔",
     "title": "🟠 烏克蘭 · 基輔 · 俄烏戰事升級",
     "loc": "📍 烏克蘭 · 基輔",
-    "time": "10/31 00:44 HKT · CNBC",
+    "time": "10/31 00:44 HKT · CNBC Investing",
     "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukra",
     "chain": [
      "俄烏戰事升級 → 歐洲天然氣/糧食通道受擾",
@@ -1432,13 +1432,13 @@
       "r"
      ]
     ],
-    "source": "CNBC",
+    "source": "CNBC Investing",
     "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html"
    },
    {
     "id": 2,
-    "etype": "E1",
-    "etype_name": "中東武裝衝突升級",
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
     "color": "#ffb020",
     "cls": "amber",
     "card_cls": "hot",
@@ -1447,59 +1447,35 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 31.5,
-    "lng": 34.5,
-    "name": "中東 · 伊朗/以色列",
-    "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
-    "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/31 11:11 HKT · 新浪7x24",
-    "headline": "伊媒指控Axios记者借媒体报道发动心理战 称核问题根本不在谈判议程",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "11/01 00:22 HKT · 新浪7x24",
+    "headline": "胡塞武装：过去24小时内，沙特战机对首都萨那及焦夫省、塔伊兹省、萨达省、哈杰省和拉赫季省的民用目标实施了66次空袭和导弹打击。袭击由从哈米斯穆谢特和塔伊夫军事基",
     "chain": [
-     "中東交火升級 → 原油供應中斷風險定價",
-     "油價急升 → 通脹預期升溫、美債息升",
-     "避險資金湧入金銀，VIX 抬頭"
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
     ],
-    "if_then": "如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上",
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
     "assets": [
      [
       "🛢️",
       "WTI 原油",
-      "↑↑",
-      "g"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
       "↑",
       "g"
      ],
      [
-      "🥈",
-      "白銀 XAG",
-      "↑",
-      "g"
-     ],
-     [
-      "⛽",
-      "天然氣",
-      "↑",
-      "g"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ],
-     [
-      "📈",
-      "美債 10Y",
+      "🚢",
+      "航運",
       "↑",
       "g"
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-31/detail-inixaray1803051.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-11-01/detail-inixcwwk1432446.d.html"
    },
    {
     "id": 3,
@@ -1518,8 +1494,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🔵 中東 · 伊朗/以色列 · 停火/地緣降級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "10/31 10:30 HKT · 新浪7x24",
-    "headline": "俄称阿列什基人道主义救援顺利完成",
+    "time": "11/01 00:33 HKT · 新浪7x24",
+    "headline": "美国国务卿鲁比奥：国际社会对黑海有限停火方案的关注度日益上升。",
     "chain": [
      "停火/地緣降級 → 避險溢價回吐",
      "油金回落、航運風險降",
@@ -1565,7 +1541,7 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-10-31/detail-inixaray1775935.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-11-01/detail-inixcwwm7209205.d.html"
    }
   ],
   "arcs": [
@@ -1610,36 +1586,28 @@
     "etype": "E5"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 35.7,
-    "endLng": 139.7,
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
     "color": "#ffb020",
-    "etype": "E1"
+    "etype": "E3"
    },
    {
-    "startLat": 31.5,
-    "startLng": 34.5,
+    "startLat": 14.7,
+    "startLng": 42.5,
     "endLat": 1.35,
     "endLng": 103.8,
     "color": "#ffb020",
-    "etype": "E1"
-   },
-   {
-    "startLat": 31.5,
-    "startLng": 34.5,
-    "endLat": 50.1,
-    "endLng": 8.7,
-    "color": "#ffb020",
-    "etype": "E1"
+    "etype": "E3"
    },
    {
     "startLat": 31.5,
     "startLng": 34.5,
     "endLat": 51.5,
     "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E1"
+    "color": "#2dd4ff",
+    "etype": "E12"
    },
    {
     "startLat": 31.5,
@@ -1660,7 +1628,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "0.7%",
      "previous": "0.4%",
      "impact": "High",
@@ -1672,7 +1640,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "4.2%",
      "previous": "4.0%",
      "impact": "High",
@@ -1684,7 +1652,7 @@
      "time_hkt": "2026-10-28 08:30",
      "time_hm": "08:30",
      "date_label": "10/28",
-     "delta_hours": -74.8,
+     "delta_hours": -89.2,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -1696,7 +1664,7 @@
      "time_hkt": "2026-10-28 09:00",
      "time_hm": "09:00",
      "date_label": "10/28",
-     "delta_hours": -74.3,
+     "delta_hours": -88.7,
      "forecast": "3.00%",
      "previous": "2.75%",
      "impact": "High",
@@ -1708,7 +1676,7 @@
      "time_hkt": "2026-10-28 09:00",
      "time_hm": "09:00",
      "date_label": "10/28",
-     "delta_hours": -74.3,
+     "delta_hours": -88.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1720,7 +1688,7 @@
      "time_hkt": "2026-10-28 10:00",
      "time_hm": "10:00",
      "date_label": "10/28",
-     "delta_hours": -73.3,
+     "delta_hours": -87.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1732,7 +1700,7 @@
      "time_hkt": "2026-10-28 20:30",
      "time_hm": "20:30",
      "date_label": "10/28",
-     "delta_hours": -62.8,
+     "delta_hours": -77.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1744,7 +1712,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1756,7 +1724,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1768,7 +1736,7 @@
      "time_hkt": "2026-10-28 21:45",
      "time_hm": "21:45",
      "date_label": "10/28",
-     "delta_hours": -61.6,
+     "delta_hours": -75.9,
      "forecast": "2.50%",
      "previous": "2.25%",
      "impact": "High",
@@ -1780,7 +1748,7 @@
      "time_hkt": "2026-10-28 22:30",
      "time_hm": "22:30",
      "date_label": "10/28",
-     "delta_hours": -60.8,
+     "delta_hours": -75.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1792,7 +1760,7 @@
      "time_hkt": "2026-10-29 02:00",
      "time_hm": "02:00",
      "date_label": "10/29",
-     "delta_hours": -57.3,
+     "delta_hours": -71.7,
      "forecast": "4.00%",
      "previous": "4.00%",
      "impact": "High",
@@ -1804,7 +1772,7 @@
      "time_hkt": "2026-10-29 02:00",
      "time_hm": "02:00",
      "date_label": "10/29",
-     "delta_hours": -57.3,
+     "delta_hours": -71.7,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1816,7 +1784,7 @@
      "time_hkt": "2026-10-29 02:30",
      "time_hm": "02:30",
      "date_label": "10/29",
-     "delta_hours": -56.8,
+     "delta_hours": -71.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1828,7 +1796,7 @@
      "time_hkt": "2026-10-29 20:30",
      "time_hm": "20:30",
      "date_label": "10/29",
-     "delta_hours": -38.8,
+     "delta_hours": -53.2,
      "forecast": "3.2%",
      "previous": "1.5%",
      "impact": "High",
@@ -1840,7 +1808,7 @@
      "time_hkt": "2026-10-29 20:30",
      "time_hm": "20:30",
      "date_label": "10/29",
-     "delta_hours": -38.8,
+     "delta_hours": -53.2,
      "forecast": "0.3%",
      "previous": "0.2%",
      "impact": "High",
@@ -1852,7 +1820,7 @@
      "time_hkt": "2026-10-29 21:15",
      "time_hm": "21:15",
      "date_label": "10/29",
-     "delta_hours": -38.1,
+     "delta_hours": -52.4,
      "forecast": "2.65%",
      "previous": "2.65%",
      "impact": "High",
@@ -1864,7 +1832,7 @@
      "time_hkt": "2026-10-29 21:15",
      "time_hm": "21:15",
      "date_label": "10/29",
-     "delta_hours": -38.1,
+     "delta_hours": -52.4,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1876,7 +1844,7 @@
      "time_hkt": "2026-10-29 21:45",
      "time_hm": "21:45",
      "date_label": "10/29",
-     "delta_hours": -37.6,
+     "delta_hours": -51.9,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1888,7 +1856,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1900,7 +1868,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "<1.25%",
      "previous": "<1.25%",
      "impact": "High",
@@ -1912,7 +1880,7 @@
      "time_hkt": "2026-10-30 11:02",
      "time_hm": "11:02",
      "date_label": "10/30",
-     "delta_hours": -24.3,
+     "delta_hours": -38.6,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1924,7 +1892,7 @@
      "time_hkt": "2026-10-30 14:30",
      "time_hm": "14:30",
      "date_label": "10/30",
-     "delta_hours": -20.8,
+     "delta_hours": -35.2,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1943,14 +1911,14 @@
     "status": "open",
     "nature": "ea",
     "last": 3875.02,
-    "change_pct": -3.62,
-    "prev_close": 4020.423,
-    "high": 4012.9,
-    "low": 3870.41,
+    "change_pct": null,
+    "prev_close": 3875.024,
+    "high": 3875.024,
+    "low": 3875.024,
     "cost_price": null,
     "pnl_cost_pct": null,
-    "attrib": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
-    "attrib_found": true,
+    "attrib": "",
+    "attrib_found": false,
     "is_new": false,
     "notes": "MT5 全自動 EA；主導變量 DXY/US10Y/避險需求"
    },
@@ -2093,7 +2061,7 @@
   "brief": [
    {
     "cat": "risk",
-    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Tankers defy sharp escalation of Iranian",
+    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Brent Hits $117 as Tanker Catches Fire i",
     "ifthen": "如果 海峽 48h 內未恢復通行，就 WTI 見 $90 並帶動金銀破位，收緊風險倉",
     "tags": [
      "🛢️ 原油 ↑↑",
@@ -2135,7 +2103,7 @@
     "txt": "金 $3,875、金銀比 78.9，油 $103.0",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↓3.6%"
+     "🥇金 ↑0.0%"
     ],
     "no": "BRIEF // 04",
     "color": "#ffd24a",
@@ -2143,10 +2111,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 49 分⚪中性",
+    "txt": "風險溫度 44 分⚪中性",
     "ifthen": "如果 VIX（19.4）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "⚪ 49/100"
+     "⚪ 44/100"
     ],
     "no": "BRIEF // 05",
     "color": "#9d8cff",
@@ -2155,35 +2123,35 @@
   ],
   "feed": [
    {
+    "time_hm": "10/30 20:30",
+    "source": "OilPrice",
+    "title": "Brent Hits $117 as Tanker Catches Fire in Strait of Hormuz",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Hits-117-as-Tanker-Catches-Fire-in-Strait-of-Hormuz.html",
+    "theme": "oil",
+    "is_event": true
+   },
+   {
     "time_hm": "10/31 00:44",
-    "source": "CNBC",
+    "source": "CNBC Investing",
     "title": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
     "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
     "theme": "geo",
     "is_event": true
    },
    {
-    "time_hm": "10/31 02:28",
-    "source": "CNBC",
-    "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
-    "url": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
-    "theme": "oil",
-    "is_event": true
-   },
-   {
-    "time_hm": "10/31 10:30",
+    "time_hm": "11/01 00:22",
     "source": "新浪7x24",
-    "title": "俄称阿列什基人道主义救援顺利完成",
-    "url": "https://finance.sina.cn/7x24/2026-10-31/detail-inixaray1775935.d.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
-    "time_hm": "10/31 11:11",
-    "source": "新浪7x24",
-    "title": "伊媒指控Axios记者借媒体报道发动心理战 称核问题根本不在谈判议程",
-    "url": "https://finance.sina.cn/7x24/2026-10-31/detail-inixaray1803051.d.html",
+    "title": "胡塞武装：过去24小时内，沙特战机对首都萨那及焦夫省、塔伊兹省、萨达省、哈杰省和拉赫季省的民用目标实施了66次空袭和导弹打击。袭击由从哈米斯穆谢特和塔伊夫军事基",
+    "url": "https://finance.sina.cn/7x24/2026-11-01/detail-inixcwwk1432446.d.html",
     "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "11/01 00:33",
+    "source": "新浪7x24",
+    "title": "美国国务卿鲁比奥：国际社会对黑海有限停火方案的关注度日益上升。",
+    "url": "https://finance.sina.cn/7x24/2026-11-01/detail-inixcwwm7209205.d.html",
+    "theme": "geo",
     "is_event": true
    },
    {
@@ -2484,9 +2452,9 @@
    "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 2,
-   "E2": 4,
-   "E3": 0,
+   "E1": 0,
+   "E2": 3,
+   "E3": 1,
    "E4": 0,
    "E5": 2,
    "E6": 0,
