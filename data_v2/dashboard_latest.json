@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-11-14T12:07:32.245110+08:00",
-  "collected_at_hkt": "2026-11-14 12:07 HKT",
+  "collected_at": "2026-11-15T02:42:22.501818+08:00",
+  "collected_at_hkt": "2026-11-15 02:42 HKT",
   "sources_status": {
    "cnbc": "OK · 16 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -24,7 +24,7 @@
     "low": 17.64,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -42,7 +42,7 @@
     "low": 103.056,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -88,15 +88,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3880.04,
-    "change": 3.69,
-    "change_pct": 0.1,
-    "prev_close": 3876.35,
-    "open": 3919.18,
-    "high": 3922.35,
-    "low": 3868.16,
+    "change": -0.26,
+    "change_pct": -0.01,
+    "prev_close": 3880.3,
+    "open": 3880.04,
+    "high": 3880.04,
+    "low": 3880.04,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "8:44 PM EST",
+    "last_timedate": "9:19 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -132,7 +132,7 @@
     "low": 3871.1,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11/12/26 EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -168,7 +168,7 @@
     "low": 48.405,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11/12/26 EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -186,7 +186,7 @@
     "low": 79.87,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 66671.21,
-    "change": -2208.03,
-    "change_pct": -3.21,
+    "last": 65798.16,
+    "change": -3081.08,
+    "change_pct": -4.47,
     "prev_close": 68879.24,
     "open": 68835.1,
     "high": 68835.1,
-    "low": 66567.83,
+    "low": 65020.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11:07 PM EST",
+    "last_timedate": "1:42 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -332,7 +332,7 @@
     "low": 17.64,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -350,7 +350,7 @@
     "low": 103.056,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -396,15 +396,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3880.04,
-    "change": 3.69,
-    "change_pct": 0.1,
-    "prev_close": 3876.35,
-    "open": 3919.18,
-    "high": 3922.35,
-    "low": 3868.16,
+    "change": -0.26,
+    "change_pct": -0.01,
+    "prev_close": 3880.3,
+    "open": 3880.04,
+    "high": 3880.04,
+    "low": 3880.04,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "8:44 PM EST",
+    "last_timedate": "9:19 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -440,7 +440,7 @@
     "low": 3871.1,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11/12/26 EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -476,7 +476,7 @@
     "low": 48.405,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11/12/26 EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -494,7 +494,7 @@
     "low": 79.87,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 66671.21,
-    "change": -2208.03,
-    "change_pct": -3.21,
+    "last": 65798.16,
+    "change": -3081.08,
+    "change_pct": -4.47,
     "prev_close": 68879.24,
     "open": 68835.1,
     "high": 68835.1,
-    "low": 66567.83,
+    "low": 65020.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "11:07 PM EST",
+    "last_timedate": "1:42 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -530,7 +530,7 @@
     "low": 299.36,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -548,7 +548,7 @@
     "low": 47.48,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -566,7 +566,7 @@
     "low": 55.65,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -584,7 +584,7 @@
     "low": 191.96,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -602,7 +602,7 @@
     "low": 202.6,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:00 PM EST",
+    "last_timedate": "11/13/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -764,7 +764,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -86.6,
+     "delta_hours": -101.2,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -776,7 +776,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -86.6,
+     "delta_hours": -101.2,
      "forecast": "0.3%",
      "previous": "0.6%",
      "impact": "High",
@@ -788,7 +788,7 @@
      "time_hkt": "2026-11-12 15:00",
      "time_hm": "15:00",
      "date_label": "11/12",
-     "delta_hours": -45.1,
+     "delta_hours": -59.7,
      "forecast": "0.0%",
      "previous": "0.1%",
      "impact": "High",
@@ -800,7 +800,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -14.6,
+     "delta_hours": -29.2,
      "forecast": "0.3%",
      "previous": "0.7%",
      "impact": "High",
@@ -812,7 +812,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -14.6,
+     "delta_hours": -29.2,
      "forecast": "0.4%",
      "previous": "1.3%",
      "impact": "High",
@@ -820,17 +820,17 @@
     }
    ]
   },
-  "elapsed_sec": 254.1
+  "elapsed_sec": 247.9
  },
  "dash_data": {
-  "generated_iso": "2026-11-14T12:07:32.227869+08:00",
-  "date_str": "2026-11-14",
+  "generated_iso": "2026-11-15T02:42:22.490862+08:00",
+  "date_str": "2026-11-15",
   "date_parts": {
    "y": 2026,
    "m": 11,
-   "d": 14
+   "d": 15
   },
-  "weekday": "星期六",
+  "weekday": "星期日",
   "edition": "evening",
   "edition_label": "晚間版",
   "quotes": {
@@ -872,11 +872,11 @@
    },
    "XAU": {
     "last": 3880.04,
-    "change_pct": 0.1,
+    "change_pct": -0.01,
     "change_bp": null,
-    "prev_close": 3876.35,
-    "high": 3922.35,
-    "low": 3868.16,
+    "prev_close": 3880.3,
+    "high": 3880.04,
+    "low": 3880.04,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
@@ -925,12 +925,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 66671.21,
-    "change_pct": -3.21,
+    "last": 65798.16,
+    "change_pct": -4.47,
     "change_bp": null,
     "prev_close": 68879.24,
     "high": 68835.1,
-    "low": 66567.83,
+    "low": 65020.0,
     "mkt_status": "REG_MKT"
    },
    "VEEV": {
@@ -1028,8 +1028,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 66671.21,
-     "chg": -3.21,
+     "value": 65798.16,
+     "chg": -4.47,
      "chg_unit": "%",
      "score": 13,
      "note": "BTC 單日跌 3-6%"
@@ -1049,7 +1049,7 @@
      "label": "黃金 XAU",
      "weight": 10,
      "value": 3880.04,
-     "chg": 0.1,
+     "chg": -0.01,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1086,8 +1086,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "11/13 20:45 HKT · OilPrice",
-    "headline": "Iran Says Gas Tanker Hit Mine in Strait of Hormuz",
+    "time": "11/14 01:30 HKT · OilPrice",
+    "headline": "Iraq’s Oil Production Soars to 2019 High as Hormuz Flows Surge",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1133,76 +1133,10 @@
      ]
     ],
     "source": "OilPrice",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Gas-Tanker-Hit-Mine-in-Strait-of-Hormuz.html"
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraqs-Oil-Production-Soars-to-2019-High-as-Hormuz-Flows-Surge.html"
    },
    {
     "id": 1,
-    "etype": "E6",
-    "etype_name": "中美關稅升級",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 45.4,
-    "lng": -75.7,
-    "name": "渥太華 · 加拿大",
-    "title": "🟠 渥太華 · 加拿大 · 中美關稅升級",
-    "loc": "📍 渥太華 · 加拿大",
-    "time": "11/13 22:24 HKT · CNBC",
-    "headline": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep productio",
-    "chain": [
-     "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
-     "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
-     "美元走強，黃金避險受惠"
-    ],
-    "if_then": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
-    "assets": [
-     [
-      "🇭🇰",
-      "港股",
-      "↓↓",
-      "r"
-     ],
-     [
-      "💾",
-      "半導體",
-      "↓↓",
-      "r"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↓",
-      "r"
-     ],
-     [
-      "🛢️",
-      "WTI 原油",
-      "↓",
-      "r"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html"
-   },
-   {
-    "id": 2,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1268,7 +1202,7 @@
     "url": "https://investinglive.com/news/investinglive-americas-market-news-wrap-hawkish-fed-worries-ebb-after-ppi/"
    },
    {
-    "id": 3,
+    "id": 2,
     "etype": "E1",
     "etype_name": "中東武裝衝突升級",
     "color": "#ffb020",
@@ -1334,7 +1268,7 @@
     "url": "https://investinglive.com/stocks/nasdaq-s-suckers-rally-is-approaching-a-key-resistance-amid-hawkish-fed-bets-us-iran-tensions/"
    },
    {
-    "id": 4,
+    "id": 3,
     "etype": "E5",
     "etype_name": "俄烏戰事升級",
     "color": "#ffb020",
@@ -1398,6 +1332,48 @@
     ],
     "source": "OilPrice",
     "url": "https://oilprice.com/Energy/Energy-General/Germany-Is-Dismantling-a-Nord-Stream-Power-Plant-for-Ukraine.html"
+   },
+   {
+    "id": 4,
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "11/15 01:54 HKT · 新浪7x24",
+    "headline": "胡塞武装：沙特主导的联军对也门发动72次空袭",
+    "chain": [
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
+    ],
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑",
+      "g"
+     ],
+     [
+      "🚢",
+      "航運",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniytwwp0071228.d.html"
    },
    {
     "id": 5,
@@ -1492,38 +1468,6 @@
     "etype": "E2"
    },
    {
-    "startLat": 45.4,
-    "startLng": -75.7,
-    "endLat": 22.3,
-    "endLng": 114.2,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 45.4,
-    "startLng": -75.7,
-    "endLat": 31.2,
-    "endLng": 121.5,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 45.4,
-    "startLng": -75.7,
-    "endLat": 35.7,
-    "endLng": 139.7,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
-    "startLat": 45.4,
-    "startLng": -75.7,
-    "endLat": 40.7,
-    "endLng": -74.0,
-    "color": "#ffb020",
-    "etype": "E6"
-   },
-   {
     "startLat": 31.5,
     "startLng": 34.5,
     "endLat": 22.3,
@@ -1594,6 +1538,22 @@
     "endLng": -0.1,
     "color": "#ffb020",
     "etype": "E5"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E3"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 1.35,
+    "endLng": 103.8,
+    "color": "#ffb020",
+    "etype": "E3"
    }
   ],
   "calendar": {
@@ -1606,7 +1566,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -86.6,
+     "delta_hours": -101.2,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -1618,7 +1578,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -86.6,
+     "delta_hours": -101.2,
      "forecast": "0.3%",
      "previous": "0.6%",
      "impact": "High",
@@ -1630,7 +1590,7 @@
      "time_hkt": "2026-11-12 15:00",
      "time_hm": "15:00",
      "date_label": "11/12",
-     "delta_hours": -45.1,
+     "delta_hours": -59.7,
      "forecast": "0.0%",
      "previous": "0.1%",
      "impact": "High",
@@ -1642,7 +1602,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -14.6,
+     "delta_hours": -29.2,
      "forecast": "0.3%",
      "previous": "0.7%",
      "impact": "High",
@@ -1654,7 +1614,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -14.6,
+     "delta_hours": -29.2,
      "forecast": "0.4%",
      "previous": "1.3%",
      "impact": "High",
@@ -1673,10 +1633,10 @@
     "status": "open",
     "nature": "ea",
     "last": 3880.04,
-    "change_pct": 0.1,
-    "prev_close": 3876.35,
-    "high": 3922.35,
-    "low": 3868.16,
+    "change_pct": -0.01,
+    "prev_close": 3880.3,
+    "high": 3880.04,
+    "low": 3880.04,
     "cost_price": null,
     "pnl_cost_pct": null,
     "attrib": "",
@@ -1823,7 +1783,7 @@
   "brief": [
    {
     "cat": "risk",
-    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Iran Says Gas Tanker Hit Mine in Strait ",
+    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Iraq’s Oil Production Soars to 2019 High",
     "ifthen": "如果 海峽 48h 內未恢復通行，就 WTI 見 $90 並帶動金銀破位，收緊風險倉",
     "tags": [
      "🛢️ 原油 ↑↑",
@@ -1839,7 +1799,7 @@
     "txt": "金 $3,880、金銀比 79.6，油 $88.9",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↑0.1%"
+     "🥇金 ↓0.0%"
     ],
     "no": "BRIEF // 02",
     "color": "#ffd24a",
@@ -1858,7 +1818,7 @@
    },
    {
     "cat": "geo",
-    "txt": "渥太華 · 加拿大：‘We will sue them’: Canada threatens Stell",
+    "txt": "中東 · 伊朗/以色列：investingLive Americas market news wrap: H",
     "ifthen": "如果 關稅正式落地，就 港股/科技/供應鏈 ↓↓，TEX 成本端受壓、FND 審慎",
     "tags": [
      "🇭🇰 ↓↓",
@@ -1870,14 +1830,6 @@
    }
   ],
   "feed": [
-   {
-    "time_hm": "11/13 20:45",
-    "source": "OilPrice",
-    "title": "Iran Says Gas Tanker Hit Mine in Strait of Hormuz",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-Gas-Tanker-Hit-Mine-in-Strait-of-Hormuz.html",
-    "theme": "shipping",
-    "is_event": true
-   },
    {
     "time_hm": "11/13 20:46",
     "source": "ForexLive",
@@ -1895,14 +1847,6 @@
     "is_event": true
    },
    {
-    "time_hm": "11/13 22:24",
-    "source": "CNBC",
-    "title": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
-    "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
     "time_hm": "11/14 00:10",
     "source": "OilPrice",
     "title": "Germany Is Dismantling a Nord Stream Power Plant for Ukraine",
@@ -1911,11 +1855,27 @@
     "is_event": true
    },
    {
+    "time_hm": "11/14 01:30",
+    "source": "OilPrice",
+    "title": "Iraq’s Oil Production Soars to 2019 High as Hormuz Flows Surge",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraqs-Oil-Production-Soars-to-2019-High-as-Hormuz-Flows-Surge.html",
+    "theme": "oil",
+    "is_event": true
+   },
+   {
     "time_hm": "11/14 06:02",
     "source": "ForexLive",
     "title": "investingLive Americas market news wrap: Hawkish Fed worries ebb after PPI",
     "url": "https://investinglive.com/news/investinglive-americas-market-news-wrap-hawkish-fed-worries-ebb-after-ppi/",
     "theme": "macro",
+    "is_event": true
+   },
+   {
+    "time_hm": "11/15 01:54",
+    "source": "新浪7x24",
+    "title": "胡塞武装：沙特主导的联军对也门发动72次空袭",
+    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniytwwp0071228.d.html",
+    "theme": "stock",
     "is_event": true
    },
    {
@@ -2143,22 +2103,6 @@
     "is_event": false
    },
    {
-    "time_hm": "10/31 00:55",
-    "source": "CNBC Finance",
-    "title": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
-    "url": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
-    "theme": "stock",
-    "is_event": false
-   },
-   {
-    "time_hm": "10/31 05:53",
-    "source": "CNBC Finance",
-    "title": "Fed officials are already saying they’ll need to get back to hiking rates",
-    "url": "https://www.cnbc.com/2026/10/30/musalem-fed-monetary-policy-tightening.html",
-    "theme": "macro",
-    "is_event": false
-   },
-   {
     "time_hm": "10/31 16:09",
     "source": "MarketWatch",
     "title": "Anheuser-Busch InBev shares slip as sales come up shy of estimates",
@@ -2189,6 +2133,22 @@
     "url": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
     "theme": "stock",
     "is_event": false
+   },
+   {
+    "time_hm": "11/03 11:46",
+    "source": "CNBC Economy",
+    "title": "Australia hikes rates to 18-year high to fight inflation",
+    "url": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
+    "theme": "macro",
+    "is_event": false
+   },
+   {
+    "time_hm": "11/03 14:46",
+    "source": "CNBC Finance",
+    "title": "Blackstone president calls for more equity to fund AI buildout as debt risks mount",
+    "url": "https://www.cnbc.com/2026/11/03/equity-ai-debt-blackstone-pimco-financing.html",
+    "theme": "stock",
+    "is_event": false
    }
   ],
   "sources_status": {
@@ -2201,11 +2161,11 @@
   },
   "event_counts": {
    "E1": 3,
-   "E2": 2,
-   "E3": 0,
+   "E2": 1,
+   "E3": 1,
    "E4": 0,
    "E5": 1,
-   "E6": 3,
+   "E6": 2,
    "E7": 0,
    "E8": 1,
    "E9": 0,
