@@ -1,7 +1,7 @@
 {
  "bundle": {
-  "collected_at": "2026-11-15T02:42:22.501818+08:00",
-  "collected_at_hkt": "2026-11-15 02:42 HKT",
+  "collected_at": "2026-11-15T11:53:23.264169+08:00",
+  "collected_at_hkt": "2026-11-15 11:53 HKT",
   "sources_status": {
    "cnbc": "OK · 16 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
@@ -88,15 +88,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3880.04,
-    "change": -0.26,
-    "change_pct": -0.01,
-    "prev_close": 3880.3,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 3880.04,
     "open": 3880.04,
     "high": 3880.04,
     "low": 3880.04,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "9:19 AM EST",
+    "last_timedate": "7:48 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 65798.16,
-    "change": -3081.08,
-    "change_pct": -4.47,
+    "last": 64852.69,
+    "change": -4026.55,
+    "change_pct": -5.85,
     "prev_close": 68879.24,
     "open": 68835.1,
     "high": 68835.1,
-    "low": 65020.0,
+    "low": 62000.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:42 PM EST",
+    "last_timedate": "10:53 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -396,15 +396,15 @@
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
     "last": 3880.04,
-    "change": -0.26,
-    "change_pct": -0.01,
-    "prev_close": 3880.3,
+    "change": null,
+    "change_pct": null,
+    "prev_close": 3880.04,
     "open": 3880.04,
     "high": 3880.04,
     "low": 3880.04,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "9:19 AM EST",
+    "last_timedate": "7:48 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 65798.16,
-    "change": -3081.08,
-    "change_pct": -4.47,
+    "last": 64852.69,
+    "change": -4026.55,
+    "change_pct": -5.85,
     "prev_close": 68879.24,
     "open": 68835.1,
     "high": 68835.1,
-    "low": 65020.0,
+    "low": 62000.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:42 PM EST",
+    "last_timedate": "10:53 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -764,7 +764,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -101.2,
+     "delta_hours": -110.4,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -776,7 +776,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -101.2,
+     "delta_hours": -110.4,
      "forecast": "0.3%",
      "previous": "0.6%",
      "impact": "High",
@@ -788,7 +788,7 @@
      "time_hkt": "2026-11-12 15:00",
      "time_hm": "15:00",
      "date_label": "11/12",
-     "delta_hours": -59.7,
+     "delta_hours": -68.9,
      "forecast": "0.0%",
      "previous": "0.1%",
      "impact": "High",
@@ -800,7 +800,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -29.2,
+     "delta_hours": -38.4,
      "forecast": "0.3%",
      "previous": "0.7%",
      "impact": "High",
@@ -812,7 +812,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -29.2,
+     "delta_hours": -38.4,
      "forecast": "0.4%",
      "previous": "1.3%",
      "impact": "High",
@@ -820,10 +820,10 @@
     }
    ]
   },
-  "elapsed_sec": 247.9
+  "elapsed_sec": 239.1
  },
  "dash_data": {
-  "generated_iso": "2026-11-15T02:42:22.490862+08:00",
+  "generated_iso": "2026-11-15T11:53:23.256031+08:00",
   "date_str": "2026-11-15",
   "date_parts": {
    "y": 2026,
@@ -872,9 +872,9 @@
    },
    "XAU": {
     "last": 3880.04,
-    "change_pct": -0.01,
+    "change_pct": null,
     "change_bp": null,
-    "prev_close": 3880.3,
+    "prev_close": 3880.04,
     "high": 3880.04,
     "low": 3880.04,
     "mkt_status": "REG_MKT"
@@ -925,12 +925,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 65798.16,
-    "change_pct": -4.47,
+    "last": 64852.69,
+    "change_pct": -5.85,
     "change_bp": null,
     "prev_close": 68879.24,
     "high": 68835.1,
-    "low": 65020.0,
+    "low": 62000.0,
     "mkt_status": "REG_MKT"
    },
    "VEEV": {
@@ -1028,8 +1028,8 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 65798.16,
-     "chg": -4.47,
+     "value": 64852.69,
+     "chg": -5.85,
      "chg_unit": "%",
      "score": 13,
      "note": "BTC 單日跌 3-6%"
@@ -1049,7 +1049,7 @@
      "label": "黃金 XAU",
      "weight": 10,
      "value": 3880.04,
-     "chg": -0.01,
+     "chg": 0.0,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1203,72 +1203,6 @@
    },
    {
     "id": 2,
-    "etype": "E1",
-    "etype_name": "中東武裝衝突升級",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 31.5,
-    "lng": 34.5,
-    "name": "中東 · 伊朗/以色列",
-    "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
-    "loc": "📍 中東 · 伊朗/以色列",
-    "time": "11/13 20:58 HKT · ForexLive",
-    "headline": "Nasdaq's suckers' rally is approaching a key resistance amid hawkish Fed bets, US-Iran ten",
-    "chain": [
-     "中東交火升級 → 原油供應中斷風險定價",
-     "油價急升 → 通脹預期升溫、美債息升",
-     "避險資金湧入金銀，VIX 抬頭"
-    ],
-    "if_then": "如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上",
-    "assets": [
-     [
-      "🛢️",
-      "WTI 原油",
-      "↑↑",
-      "g"
-     ],
-     [
-      "🥇",
-      "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "🥈",
-      "白銀 XAG",
-      "↑",
-      "g"
-     ],
-     [
-      "⛽",
-      "天然氣",
-      "↑",
-      "g"
-     ],
-     [
-      "💵",
-      "美元 DXY",
-      "↑",
-      "g"
-     ],
-     [
-      "📈",
-      "美債 10Y",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "ForexLive",
-    "url": "https://investinglive.com/stocks/nasdaq-s-suckers-rally-is-approaching-a-key-resistance-amid-hawkish-fed-bets-us-iran-tensions/"
-   },
-   {
-    "id": 3,
     "etype": "E5",
     "etype_name": "俄烏戰事升級",
     "color": "#ffb020",
@@ -1334,6 +1268,72 @@
     "url": "https://oilprice.com/Energy/Energy-General/Germany-Is-Dismantling-a-Nord-Stream-Power-Plant-for-Ukraine.html"
    },
    {
+    "id": 3,
+    "etype": "E1",
+    "etype_name": "中東武裝衝突升級",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 31.5,
+    "lng": 34.5,
+    "name": "中東 · 伊朗/以色列",
+    "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
+    "loc": "📍 中東 · 伊朗/以色列",
+    "time": "11/15 10:54 HKT · 新浪7x24",
+    "headline": "西媒：以色列游说集团变成美政坛“瘟神”",
+    "chain": [
+     "中東交火升級 → 原油供應中斷風險定價",
+     "油價急升 → 通脹預期升溫、美債息升",
+     "避險資金湧入金銀，VIX 抬頭"
+    ],
+    "if_then": "如果 72h 內進一步升級，就 油價風險溢價擴大、XAU 加倉；否則溢價通常回吐一半以上",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑↑",
+      "g"
+     ],
+     [
+      "🥇",
+      "黃金 XAU",
+      "↑",
+      "g"
+     ],
+     [
+      "🥈",
+      "白銀 XAG",
+      "↑",
+      "g"
+     ],
+     [
+      "⛽",
+      "天然氣",
+      "↑",
+      "g"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
+     ],
+     [
+      "📈",
+      "美債 10Y",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniyupue9839742.d.html"
+   },
+   {
     "id": 4,
     "etype": "E3",
     "etype_name": "紅海/蘇伊士航道中斷",
@@ -1350,8 +1350,8 @@
     "name": "紅海 · 曼德海峽",
     "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
     "loc": "📍 紅海 · 曼德海峽",
-    "time": "11/15 01:54 HKT · 新浪7x24",
-    "headline": "胡塞武装：沙特主导的联军对也门发动72次空袭",
+    "time": "11/15 11:40 HKT · 新浪7x24",
+    "headline": "胡塞武装军事发言人叶海亚·萨雷亚：今天凌晨成功击落一架沙特敌方所属的CH-4型武装侦察无人机；这是局势升级以来，我方武装部队击落的第五架此类无人机。我方武装部队",
     "chain": [
      "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
      "集裝箱運價攀升 → 供應鏈成本轉嫁",
@@ -1373,7 +1373,7 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniytwwp0071228.d.html"
+    "url": "https://finance.sina.com.cn/7x24/"
    },
    {
     "id": 5,
@@ -1500,6 +1500,22 @@
     "etype": "E6"
    },
    {
+    "startLat": 50.5,
+    "startLng": 30.5,
+    "endLat": 50.1,
+    "endLng": 8.7,
+    "color": "#ffb020",
+    "etype": "E5"
+   },
+   {
+    "startLat": 50.5,
+    "startLng": 30.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E5"
+   },
+   {
     "startLat": 31.5,
     "startLng": 34.5,
     "endLat": 1.35,
@@ -1522,22 +1538,6 @@
     "endLng": -0.1,
     "color": "#ffb020",
     "etype": "E1"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 50.1,
-    "endLng": 8.7,
-    "color": "#ffb020",
-    "etype": "E5"
-   },
-   {
-    "startLat": 50.5,
-    "startLng": 30.5,
-    "endLat": 51.5,
-    "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E5"
    },
    {
     "startLat": 14.7,
@@ -1566,7 +1566,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -101.2,
+     "delta_hours": -110.4,
      "forecast": "0.2%",
      "previous": "0.3%",
      "impact": "High",
@@ -1578,7 +1578,7 @@
      "time_hkt": "2026-11-10 21:30",
      "time_hm": "21:30",
      "date_label": "11/10",
-     "delta_hours": -101.2,
+     "delta_hours": -110.4,
      "forecast": "0.3%",
      "previous": "0.6%",
      "impact": "High",
@@ -1590,7 +1590,7 @@
      "time_hkt": "2026-11-12 15:00",
      "time_hm": "15:00",
      "date_label": "11/12",
-     "delta_hours": -59.7,
+     "delta_hours": -68.9,
      "forecast": "0.0%",
      "previous": "0.1%",
      "impact": "High",
@@ -1602,7 +1602,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -29.2,
+     "delta_hours": -38.4,
      "forecast": "0.3%",
      "previous": "0.7%",
      "impact": "High",
@@ -1614,7 +1614,7 @@
      "time_hkt": "2026-11-13 21:30",
      "time_hm": "21:30",
      "date_label": "11/13",
-     "delta_hours": -29.2,
+     "delta_hours": -38.4,
      "forecast": "0.4%",
      "previous": "1.3%",
      "impact": "High",
@@ -1633,8 +1633,8 @@
     "status": "open",
     "nature": "ea",
     "last": 3880.04,
-    "change_pct": -0.01,
-    "prev_close": 3880.3,
+    "change_pct": null,
+    "prev_close": 3880.04,
     "high": 3880.04,
     "low": 3880.04,
     "cost_price": null,
@@ -1799,7 +1799,7 @@
     "txt": "金 $3,880、金銀比 79.6，油 $88.9",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↓0.0%"
+     "🥇金 ↑0.0%"
     ],
     "no": "BRIEF // 02",
     "color": "#ffd24a",
@@ -1839,14 +1839,6 @@
     "is_event": true
    },
    {
-    "time_hm": "11/13 20:58",
-    "source": "ForexLive",
-    "title": "Nasdaq's suckers' rally is approaching a key resistance amid hawkish Fed bets, US-Iran tensions",
-    "url": "https://investinglive.com/stocks/nasdaq-s-suckers-rally-is-approaching-a-key-resistance-amid-hawkish-fed-bets-us-iran-tensions/",
-    "theme": "geo",
-    "is_event": true
-   },
-   {
     "time_hm": "11/14 00:10",
     "source": "OilPrice",
     "title": "Germany Is Dismantling a Nord Stream Power Plant for Ukraine",
@@ -1871,10 +1863,18 @@
     "is_event": true
    },
    {
-    "time_hm": "11/15 01:54",
+    "time_hm": "11/15 10:54",
     "source": "新浪7x24",
-    "title": "胡塞武装：沙特主导的联军对也门发动72次空袭",
-    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniytwwp0071228.d.html",
+    "title": "西媒：以色列游说集团变成美政坛“瘟神”",
+    "url": "https://finance.sina.cn/7x24/2026-11-15/detail-iniyupue9839742.d.html",
+    "theme": "stock",
+    "is_event": true
+   },
+   {
+    "time_hm": "11/15 11:40",
+    "source": "新浪7x24",
+    "title": "胡塞武装军事发言人叶海亚·萨雷亚：今天凌晨成功击落一架沙特敌方所属的CH-4型武装侦察无人机；这是局势升级以来，我方武装部队击落的第五架此类无人机。我方武装部队",
+    "url": "https://finance.sina.com.cn/7x24/",
     "theme": "stock",
     "is_event": true
    },
@@ -2160,9 +2160,9 @@
    "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 3,
+   "E1": 7,
    "E2": 1,
-   "E3": 1,
+   "E3": 3,
    "E4": 0,
    "E5": 1,
    "E6": 2,
