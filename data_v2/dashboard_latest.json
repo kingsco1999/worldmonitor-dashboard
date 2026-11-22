@@ -1,14 +1,14 @@
 {
  "bundle": {
-  "collected_at": "2026-11-22T04:01:56.799849+08:00",
-  "collected_at_hkt": "2026-11-22 04:01 HKT",
+  "collected_at": "2026-11-22T12:07:29.118429+08:00",
+  "collected_at_hkt": "2026-11-22 12:07 HKT",
   "sources_status": {
    "cnbc": "OK · 16 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 20 條"
+   "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "quotes": {
    "VIX": {
@@ -96,7 +96,7 @@
     "low": 3532.29,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:38 AM EST",
+    "last_timedate": "4:50 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 60230.4,
-    "change": 1842.82,
-    "change_pct": 3.16,
-    "prev_close": 58387.58,
-    "open": 58326.05,
-    "high": 60864.5,
-    "low": 55142.16,
+    "last": 59374.19,
+    "change": -912.9,
+    "change_pct": -1.51,
+    "prev_close": 60287.09,
+    "open": 60327.0,
+    "high": 60402.62,
+    "low": 58999.08,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "3:01 PM EST",
+    "last_timedate": "11:07 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -404,7 +404,7 @@
     "low": 3532.29,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "1:38 AM EST",
+    "last_timedate": "4:50 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 60230.4,
-    "change": 1842.82,
-    "change_pct": 3.16,
-    "prev_close": 58387.58,
-    "open": 58326.05,
-    "high": 60864.5,
-    "low": 55142.16,
+    "last": 59374.19,
+    "change": -912.9,
+    "change_pct": -1.51,
+    "prev_close": 60287.09,
+    "open": 60327.0,
+    "high": 60402.62,
+    "low": 58999.08,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "3:01 PM EST",
+    "last_timedate": "11:07 PM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -764,7 +764,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "0.3%",
      "previous": "0.1%",
      "impact": "High",
@@ -776,7 +776,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "2.0%",
      "previous": "1.9%",
      "impact": "High",
@@ -788,7 +788,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "1.9%",
      "previous": "1.8%",
      "impact": "High",
@@ -800,7 +800,7 @@
      "time_hkt": "2026-11-17 01:00",
      "time_hm": "01:00",
      "date_label": "11/17",
-     "delta_hours": -123.0,
+     "delta_hours": -131.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -812,7 +812,7 @@
      "time_hkt": "2026-11-17 06:50",
      "time_hm": "06:50",
      "date_label": "11/17",
-     "delta_hours": -117.2,
+     "delta_hours": -125.3,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -824,7 +824,7 @@
      "time_hkt": "2026-11-17 10:00",
      "time_hm": "10:00",
      "date_label": "11/17",
-     "delta_hours": -114.0,
+     "delta_hours": -122.1,
      "forecast": "",
      "previous": "2.34%",
      "impact": "High",
@@ -836,7 +836,7 @@
      "time_hkt": "2026-11-17 21:30",
      "time_hm": "21:30",
      "date_label": "11/17",
-     "delta_hours": -102.5,
+     "delta_hours": -110.6,
      "forecast": "0.4%",
      "previous": "0.9%",
      "impact": "High",
@@ -848,7 +848,7 @@
      "time_hkt": "2026-11-17 21:30",
      "time_hm": "21:30",
      "date_label": "11/17",
-     "delta_hours": -102.5,
+     "delta_hours": -110.6,
      "forecast": "0.1%",
      "previous": "0.8%",
      "impact": "High",
@@ -860,7 +860,7 @@
      "time_hkt": "2026-11-18 15:00",
      "time_hm": "15:00",
      "date_label": "11/18",
-     "delta_hours": -85.0,
+     "delta_hours": -93.1,
      "forecast": "3.6%",
      "previous": "3.5%",
      "impact": "High",
@@ -872,7 +872,7 @@
      "time_hkt": "2026-11-18 23:00",
      "time_hm": "23:00",
      "date_label": "11/18",
-     "delta_hours": -77.0,
+     "delta_hours": -85.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -884,7 +884,7 @@
      "time_hkt": "2026-11-19 03:00",
      "time_hm": "03:00",
      "date_label": "11/19",
-     "delta_hours": -73.0,
+     "delta_hours": -81.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -896,7 +896,7 @@
      "time_hkt": "2026-11-19 08:30",
      "time_hm": "08:30",
      "date_label": "11/19",
-     "delta_hours": -67.5,
+     "delta_hours": -75.6,
      "forecast": "25.5K",
      "previous": "-39.3K",
      "impact": "High",
@@ -908,7 +908,7 @@
      "time_hkt": "2026-11-19 08:30",
      "time_hm": "08:30",
      "date_label": "11/19",
-     "delta_hours": -67.5,
+     "delta_hours": -75.6,
      "forecast": "4.7%",
      "previous": "4.7%",
      "impact": "High",
@@ -916,10 +916,10 @@
     }
    ]
   },
-  "elapsed_sec": 256.4
+  "elapsed_sec": 250.8
  },
  "dash_data": {
-  "generated_iso": "2026-11-22T04:01:56.641046+08:00",
+  "generated_iso": "2026-11-22T12:07:29.107762+08:00",
   "date_str": "2026-11-22",
   "date_parts": {
    "y": 2026,
@@ -1021,12 +1021,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 60230.4,
-    "change_pct": 3.16,
+    "last": 59374.19,
+    "change_pct": -1.51,
     "change_bp": null,
-    "prev_close": 58387.58,
-    "high": 60864.5,
-    "low": 55142.16,
+    "prev_close": 60287.09,
+    "high": 60402.62,
+    "low": 58999.08,
     "mkt_status": "REG_MKT"
    },
    "VEEV": {
@@ -1085,10 +1085,10 @@
    }
   },
   "thermo": {
-   "total": 59,
-   "regime": "neutral",
-   "regime_icon": "⚪",
-   "regime_label": "中性",
+   "total": 69,
+   "regime": "risk-off",
+   "regime_icon": "🟠",
+   "regime_label": "避險模式",
    "cells": [
     {
      "key": "VIX",
@@ -1124,11 +1124,11 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 60230.4,
-     "chg": 3.16,
+     "value": 59374.19,
+     "chg": -1.51,
      "chg_unit": "%",
-     "score": 0,
-     "note": "BTC 單日漲 >1%，高 beta 風險偏好強"
+     "score": 10,
+     "note": "BTC 單日跌 1-3%"
     },
     {
      "key": "GDX",
@@ -1161,9 +1161,9 @@
      "note": "油 ±1.5% 以內"
     }
    ],
-   "needle_pct": 59
+   "needle_pct": 69
   },
-  "regime_sub": "NEUTRAL · EA 正常，避開 🔴 事件窗口",
+  "regime_sub": "RISK-OFF · 建議暫停高 beta EA、收窄倉位",
   "events": [
    {
     "id": 0,
@@ -1182,8 +1182,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "11/22 00:30 HKT · GDELT/aa.com.tr",
-    "headline": "Iran says oil tanker catches fire after hitting mine in Strait of Hormuz",
+    "time": "11/21 02:30 HKT · OilPrice",
+    "headline": "Saudi Arabia Expands Oil Storage in Japan as Tokyo Restocks",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1228,8 +1228,8 @@
       "g"
      ]
     ],
-    "source": "GDELT/aa.com.tr",
-    "url": "https://aa.com.tr/en/middle-east/iran-says-oil-tanker-catches-fire-after-hitting-mine-in-strait-of-hormuz/4133044"
+    "source": "OilPrice",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Expands-Oil-Storage-in-Japan-as-Tokyo-Restocks.html"
    },
    {
     "id": 1,
@@ -1299,6 +1299,48 @@
    },
    {
     "id": 2,
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "11/21 01:11 HKT · OilPrice",
+    "headline": "Tankers Are Being Hit Daily. So Why Is Oil Falling?",
+    "chain": [
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
+    ],
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑",
+      "g"
+     ],
+     [
+      "🚢",
+      "航運",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "OilPrice",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html"
+   },
+   {
+    "id": 3,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1364,7 +1406,7 @@
     "url": "https://www.mining.com/copper-price-sinks-into-bear-market-erasing-2026-gains-in-worst-week-of-the-year/"
    },
    {
-    "id": 3,
+    "id": 4,
     "etype": "E1",
     "etype_name": "中東武裝衝突升級",
     "color": "#ffb020",
@@ -1380,8 +1422,8 @@
     "name": "中東 · 伊朗/以色列",
     "title": "🟠 中東 · 伊朗/以色列 · 中東武裝衝突升級",
     "loc": "📍 中東 · 伊朗/以色列",
-    "time": "11/22 00:43 HKT · 新浪7x24",
-    "headline": "黎巴嫩总统：拒绝让黎巴嫩成为以色列或伊朗任何一方的棋子。",
+    "time": "11/22 08:10 HKT · 新浪7x24",
+    "headline": "俄罗斯国家原子能公司：伊俄关系及布什尔核电站项目不惧外部压力",
     "chain": [
      "中東交火升級 → 原油供應中斷風險定價",
      "油價急升 → 通脹預期升溫、美債息升",
@@ -1427,54 +1469,12 @@
      ]
     ],
     "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizpqms6379428.d.html"
-   },
-   {
-    "id": 4,
-    "etype": "E3",
-    "etype_name": "紅海/蘇伊士航道中斷",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 14.7,
-    "lng": 42.5,
-    "name": "紅海 · 曼德海峽",
-    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
-    "loc": "📍 紅海 · 曼德海峽",
-    "time": "11/22 03:45 HKT · 新浪7x24",
-    "headline": "沙特主导的多国联军称拦截并摧毁一架来袭无人机",
-    "chain": [
-     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
-     "集裝箱運價攀升 → 供應鏈成本轉嫁",
-     "原油影響溫和，主要衝擊航運同零售"
-    ],
-    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
-    "assets": [
-     [
-      "🛢️",
-      "WTI 原油",
-      "↑",
-      "g"
-     ],
-     [
-      "🚢",
-      "航運",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "新浪7x24",
-    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizputs3102807.d.html"
+    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizqfin2957428.d.html"
    },
    {
     "id": 5,
-    "etype": "E4",
-    "etype_name": "台海/東海地緣升溫",
+    "etype": "E8",
+    "etype_name": "央行意外鷹派（加息/縮表）",
     "color": "#ffb020",
     "cls": "amber",
     "card_cls": "hot",
@@ -1483,25 +1483,25 @@
      "hot"
     ],
     "severity": "med",
-    "lat": 23.7,
-    "lng": 121.0,
-    "name": "台海",
-    "title": "🟠 台海 · 台海/東海地緣升溫",
-    "loc": "📍 台海",
-    "time": "11/20 21:29 HKT · CNBC Finance",
-    "headline": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
+    "lat": 38.9,
+    "lng": -77.0,
+    "name": "華盛頓 · 聯儲局",
+    "title": "🟠 華盛頓 · 聯儲局 · 央行意外鷹派（加息/縮表）",
+    "loc": "📍 華盛頓 · 聯儲局",
+    "time": "11/22 08:31 HKT · 新浪7x24",
+    "headline": "中金：外部“逆风”再起引致超调 保持信心",
     "chain": [
-     "台海軍演/越線 → 地緣風險溢價急升",
-     "全球 90%+ 先進半導體產能受威脅 → 科技股↓↓",
-     "避險買金、日元升值，VIX 抬頭"
+     "央行意外鷹派（加息/縮表）→ 實際利率升",
+     "金/成長股估值受壓、美元走強",
+     "⚠️ 日央行加息可觸發套息拆倉跨市場連鎖急跌"
     ],
-    "if_then": "如果 演訓升級為實彈封鎖，就 半導體供應鏈溢價急升，VEEV/ILMN 等科技股先減一半",
+    "if_then": "如果 鷹派落地，就 金/成長股受壓、美元強；留意日央行加息引發拆倉",
     "assets": [
      [
-      "🇭🇰",
-      "港股",
-      "↓↓",
-      "r"
+      "📈",
+      "美債 10Y",
+      "↑↑",
+      "g"
      ],
      [
       "💾",
@@ -1512,30 +1512,30 @@
      [
       "🥇",
       "黃金 XAU",
-      "↑",
-      "g"
-     ],
-     [
-      "📈",
-      "美債 10Y",
       "↓",
       "r"
+     ],
+     [
+      "🥈",
+      "白銀 XAG",
+      "↓",
+      "r"
+     ],
+     [
+      "💵",
+      "美元 DXY",
+      "↑",
+      "g"
      ],
      [
       "😱",
       "VIX 恐慌",
       "↑",
       "g"
-     ],
-     [
-      "🇺🇸",
-      "美股",
-      "↓",
-      "r"
      ]
     ],
-    "source": "CNBC Finance",
-    "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html"
+    "source": "新浪7x24",
+    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizqfin2971863.d.html"
    }
   ],
   "arcs": [
@@ -1578,6 +1578,22 @@
     "endLng": -0.1,
     "color": "#ffb020",
     "etype": "E5"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E3"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 1.35,
+    "endLng": 103.8,
+    "color": "#ffb020",
+    "etype": "E3"
    },
    {
     "startLat": 38.9,
@@ -1644,44 +1660,20 @@
     "etype": "E1"
    },
    {
-    "startLat": 14.7,
-    "startLng": 42.5,
+    "startLat": 38.9,
+    "startLng": -77.0,
     "endLat": 51.5,
     "endLng": -0.1,
     "color": "#ffb020",
-    "etype": "E3"
+    "etype": "E8"
    },
    {
-    "startLat": 14.7,
-    "startLng": 42.5,
+    "startLat": 38.9,
+    "startLng": -77.0,
     "endLat": 1.35,
     "endLng": 103.8,
     "color": "#ffb020",
-    "etype": "E3"
-   },
-   {
-    "startLat": 23.7,
-    "startLng": 121.0,
-    "endLat": 35.7,
-    "endLng": 139.7,
-    "color": "#ffb020",
-    "etype": "E4"
-   },
-   {
-    "startLat": 23.7,
-    "startLng": 121.0,
-    "endLat": 37.6,
-    "endLng": -122.4,
-    "color": "#ffb020",
-    "etype": "E4"
-   },
-   {
-    "startLat": 23.7,
-    "startLng": 121.0,
-    "endLat": 36.6,
-    "endLng": 128.0,
-    "color": "#ffb020",
-    "etype": "E4"
+    "etype": "E8"
    }
   ],
   "calendar": {
@@ -1694,7 +1686,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "0.3%",
      "previous": "0.1%",
      "impact": "High",
@@ -1706,7 +1698,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "2.0%",
      "previous": "1.9%",
      "impact": "High",
@@ -1718,7 +1710,7 @@
      "time_hkt": "2026-11-16 21:30",
      "time_hm": "21:30",
      "date_label": "11/16",
-     "delta_hours": -126.5,
+     "delta_hours": -134.6,
      "forecast": "1.9%",
      "previous": "1.8%",
      "impact": "High",
@@ -1730,7 +1722,7 @@
      "time_hkt": "2026-11-17 01:00",
      "time_hm": "01:00",
      "date_label": "11/17",
-     "delta_hours": -123.0,
+     "delta_hours": -131.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1742,7 +1734,7 @@
      "time_hkt": "2026-11-17 06:50",
      "time_hm": "06:50",
      "date_label": "11/17",
-     "delta_hours": -117.2,
+     "delta_hours": -125.3,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1754,7 +1746,7 @@
      "time_hkt": "2026-11-17 10:00",
      "time_hm": "10:00",
      "date_label": "11/17",
-     "delta_hours": -114.0,
+     "delta_hours": -122.1,
      "forecast": "",
      "previous": "2.34%",
      "impact": "High",
@@ -1766,7 +1758,7 @@
      "time_hkt": "2026-11-17 21:30",
      "time_hm": "21:30",
      "date_label": "11/17",
-     "delta_hours": -102.5,
+     "delta_hours": -110.6,
      "forecast": "0.4%",
      "previous": "0.9%",
      "impact": "High",
@@ -1778,7 +1770,7 @@
      "time_hkt": "2026-11-17 21:30",
      "time_hm": "21:30",
      "date_label": "11/17",
-     "delta_hours": -102.5,
+     "delta_hours": -110.6,
      "forecast": "0.1%",
      "previous": "0.8%",
      "impact": "High",
@@ -1790,7 +1782,7 @@
      "time_hkt": "2026-11-18 15:00",
      "time_hm": "15:00",
      "date_label": "11/18",
-     "delta_hours": -85.0,
+     "delta_hours": -93.1,
      "forecast": "3.6%",
      "previous": "3.5%",
      "impact": "High",
@@ -1802,7 +1794,7 @@
      "time_hkt": "2026-11-18 23:00",
      "time_hm": "23:00",
      "date_label": "11/18",
-     "delta_hours": -77.0,
+     "delta_hours": -85.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1814,7 +1806,7 @@
      "time_hkt": "2026-11-19 03:00",
      "time_hm": "03:00",
      "date_label": "11/19",
-     "delta_hours": -73.0,
+     "delta_hours": -81.1,
      "forecast": "",
      "previous": "",
      "impact": "High",
@@ -1826,7 +1818,7 @@
      "time_hkt": "2026-11-19 08:30",
      "time_hm": "08:30",
      "date_label": "11/19",
-     "delta_hours": -67.5,
+     "delta_hours": -75.6,
      "forecast": "25.5K",
      "previous": "-39.3K",
      "impact": "High",
@@ -1838,7 +1830,7 @@
      "time_hkt": "2026-11-19 08:30",
      "time_hm": "08:30",
      "date_label": "11/19",
-     "delta_hours": -67.5,
+     "delta_hours": -75.6,
      "forecast": "4.7%",
      "previous": "4.7%",
      "impact": "High",
@@ -1882,7 +1874,7 @@
     "low": 0.0,
     "cost_price": null,
     "pnl_cost_pct": null,
-    "attrib": "Gold , silver plummet as Fed rate fears trigger selloff",
+    "attrib": "Tudor dumps copper miners, doubles down on gold, silver",
     "attrib_found": true,
     "is_new": false,
     "notes": "白銀 EA；beta 高過金；金銀比 >70 關注均值回歸"
@@ -2007,7 +1999,7 @@
   "brief": [
    {
     "cat": "risk",
-    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Iran says oil tanker catches fire after ",
+    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Saudi Arabia Expands Oil Storage in Japa",
     "ifthen": "如果 海峽 48h 內未恢復通行，就 WTI 見 $90 並帶動金銀破位，收緊風險倉",
     "tags": [
      "🛢️ 原油 ↑↑",
@@ -2057,10 +2049,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 59 分⚪中性",
+    "txt": "風險溫度 69 分🟠避險模式",
     "ifthen": "如果 VIX（35.9）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "⚪ 59/100"
+     "🟠 69/100"
     ],
     "no": "BRIEF // 05",
     "color": "#9d8cff",
@@ -2077,11 +2069,11 @@
     "is_event": true
    },
    {
-    "time_hm": "11/20 21:29",
-    "source": "CNBC Finance",
-    "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-    "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
-    "theme": "geo",
+    "time_hm": "11/21 01:11",
+    "source": "OilPrice",
+    "title": "Tankers Are Being Hit Daily. So Why Is Oil Falling?",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Tankers-Are-Being-Hit-Daily-So-Why-Is-Oil-Falling.html",
+    "theme": "oil",
     "is_event": true
    },
    {
@@ -2093,26 +2085,26 @@
     "is_event": true
    },
    {
-    "time_hm": "11/22 00:30",
-    "source": "GDELT/aa.com.t",
-    "title": "Iran says oil tanker catches fire after hitting mine in Strait of Hormuz",
-    "url": "https://aa.com.tr/en/middle-east/iran-says-oil-tanker-catches-fire-after-hitting-mine-in-strait-of-hormuz/4133044",
+    "time_hm": "11/21 02:30",
+    "source": "OilPrice",
+    "title": "Saudi Arabia Expands Oil Storage in Japan as Tokyo Restocks",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Expands-Oil-Storage-in-Japan-as-Tokyo-Restocks.html",
     "theme": "oil",
     "is_event": true
    },
    {
-    "time_hm": "11/22 00:43",
+    "time_hm": "11/22 08:10",
     "source": "新浪7x24",
-    "title": "黎巴嫩总统：拒绝让黎巴嫩成为以色列或伊朗任何一方的棋子。",
-    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizpqms6379428.d.html",
+    "title": "俄罗斯国家原子能公司：伊俄关系及布什尔核电站项目不惧外部压力",
+    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizqfin2957428.d.html",
     "theme": "geo",
     "is_event": true
    },
    {
-    "time_hm": "11/22 03:45",
+    "time_hm": "11/22 08:31",
     "source": "新浪7x24",
-    "title": "沙特主导的多国联军称拦截并摧毁一架来袭无人机",
-    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizputs3102807.d.html",
+    "title": "中金：外部“逆风”再起引致超调 保持信心",
+    "url": "https://finance.sina.cn/7x24/2026-11-22/detail-inizqfin2971863.d.html",
     "theme": "stock",
     "is_event": true
    },
@@ -2395,17 +2387,17 @@
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 20 條"
+   "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 4,
-   "E2": 6,
-   "E3": 6,
+   "E1": 1,
+   "E2": 1,
+   "E3": 1,
    "E4": 1,
    "E5": 1,
    "E6": 1,
-   "E7": 0,
-   "E8": 0,
+   "E7": 1,
+   "E8": 1,
    "E9": 0,
    "E10": 0,
    "E11": 0,
