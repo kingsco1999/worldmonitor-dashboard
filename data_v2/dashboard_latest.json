@@ -1,14 +1,14 @@
 {
  "bundle": {
-  "collected_at": "2026-11-26T06:26:08.916642+08:00",
-  "collected_at_hkt": "2026-11-26 06:26 HKT",
+  "collected_at": "2026-11-26T13:59:57.695396+08:00",
+  "collected_at_hkt": "2026-11-26 13:59 HKT",
   "sources_status": {
    "cnbc": "OK · 16 符號",
    "tencent_us": "OK · 6 隻美股（覆蓋 CNBC）",
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 10 條"
+   "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "quotes": {
    "VIX": {
@@ -24,7 +24,7 @@
     "low": 27.49,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -33,16 +33,16 @@
     "symbol": ".DXY",
     "key": "DXY",
     "name": "ICE U.S. Dollar Index",
-    "last": 103.705,
-    "change": -0.109,
-    "change_pct": -0.1,
-    "prev_close": 103.814,
-    "open": 103.864,
-    "high": 104.101,
-    "low": 103.549,
+    "last": 103.812,
+    "change": 0.147,
+    "change_pct": 0.14,
+    "prev_close": 103.665,
+    "open": 103.726,
+    "high": 103.84,
+    "low": 103.685,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:26 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -87,16 +87,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 3588.94,
-    "change": 7.94,
-    "change_pct": 0.22,
+    "last": 3578.12,
+    "change": -2.88,
+    "change_pct": -0.08,
     "prev_close": 3581.0,
-    "open": 3551.79,
-    "high": 3589.26,
-    "low": 3430.1,
+    "open": 3589.59,
+    "high": 3603.41,
+    "low": 3574.69,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:22 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -105,16 +105,16 @@
     "symbol": "XAG=",
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
-    "last": 41.3775,
-    "change": 0.1597,
-    "change_pct": 0.39,
-    "prev_close": 41.2178,
-    "open": 41.2189,
+    "last": 41.76,
+    "change": 0.5421,
+    "change_pct": 1.32,
+    "prev_close": 41.2179,
+    "open": 41.2178,
     "high": 0.0,
     "low": 0.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:02 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -123,16 +123,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 3588.4,
-    "change": 26.5,
-    "change_pct": 0.74,
-    "prev_close": 3561.9,
-    "open": 3559.3,
-    "high": 3588.9,
-    "low": 3425.2,
+    "last": 3577.2,
+    "change": 41.4,
+    "change_pct": 1.17,
+    "prev_close": 3535.8,
+    "open": 3590.3,
+    "high": 3604.9,
+    "low": 3549.9,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "12:49 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -141,16 +141,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Jan'27)",
-    "last": 84.15,
-    "change": 2.1,
-    "change_pct": 2.56,
-    "prev_close": 82.05,
-    "open": 81.68,
-    "high": 84.27,
-    "low": 80.13,
+    "last": 84.67,
+    "change": 0.99,
+    "change_pct": 1.18,
+    "prev_close": 83.68,
+    "open": 84.09,
+    "high": 85.23,
+    "low": 83.8,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "12:49 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -159,16 +159,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 41.15,
-    "change": 0.368,
-    "change_pct": 0.9,
-    "prev_close": 40.782,
-    "open": 40.795,
-    "high": 41.285,
-    "low": 37.955,
+    "last": 41.395,
+    "change": 1.337,
+    "change_pct": 3.34,
+    "prev_close": 40.058,
+    "open": 41.275,
+    "high": 42.005,
+    "low": 40.59,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:58 PM EST",
+    "last_timedate": "12:45 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -186,7 +186,7 @@
     "low": 67.93,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -195,16 +195,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 59960.42,
-    "change": 362.6,
-    "change_pct": 0.61,
-    "prev_close": 59597.82,
-    "open": 59692.63,
-    "high": 60405.81,
-    "low": 57226.7,
+    "last": 60730.85,
+    "change": 734.89,
+    "change_pct": 1.22,
+    "prev_close": 59995.96,
+    "open": 60213.8,
+    "high": 61419.84,
+    "low": 59862.93,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:26 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -332,7 +332,7 @@
     "low": 27.49,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:15 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -341,16 +341,16 @@
     "symbol": ".DXY",
     "key": "DXY",
     "name": "ICE U.S. Dollar Index",
-    "last": 103.705,
-    "change": -0.109,
-    "change_pct": -0.1,
-    "prev_close": 103.814,
-    "open": 103.864,
-    "high": 104.101,
-    "low": 103.549,
+    "last": 103.812,
+    "change": 0.147,
+    "change_pct": 0.14,
+    "prev_close": 103.665,
+    "open": 103.726,
+    "high": 103.84,
+    "low": 103.685,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:26 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -395,16 +395,16 @@
     "symbol": "XAU=",
     "key": "XAU",
     "name": "Gold / US Dollar Spot",
-    "last": 3588.94,
-    "change": 7.94,
-    "change_pct": 0.22,
+    "last": 3578.12,
+    "change": -2.88,
+    "change_pct": -0.08,
     "prev_close": 3581.0,
-    "open": 3551.79,
-    "high": 3589.26,
-    "low": 3430.1,
+    "open": 3589.59,
+    "high": 3603.41,
+    "low": 3574.69,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:22 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -413,16 +413,16 @@
     "symbol": "XAG=",
     "key": "XAG",
     "name": "Silver / US Dollar Spot",
-    "last": 41.3775,
-    "change": 0.1597,
-    "change_pct": 0.39,
-    "prev_close": 41.2178,
-    "open": 41.2189,
+    "last": 41.76,
+    "change": 0.5421,
+    "change_pct": 1.32,
+    "prev_close": 41.2179,
+    "open": 41.2178,
     "high": 0.0,
     "low": 0.0,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:02 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -431,16 +431,16 @@
     "symbol": "@GC.1",
     "key": "GOLD_FUT",
     "name": "Gold COMEX (Dec'26)",
-    "last": 3588.4,
-    "change": 26.5,
-    "change_pct": 0.74,
-    "prev_close": 3561.9,
-    "open": 3559.3,
-    "high": 3588.9,
-    "low": 3425.2,
+    "last": 3577.2,
+    "change": 41.4,
+    "change_pct": 1.17,
+    "prev_close": 3535.8,
+    "open": 3590.3,
+    "high": 3604.9,
+    "low": 3549.9,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "12:49 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -449,16 +449,16 @@
     "symbol": "@CL.1",
     "key": "WTI",
     "name": "WTI Crude (Jan'27)",
-    "last": 84.15,
-    "change": 2.1,
-    "change_pct": 2.56,
-    "prev_close": 82.05,
-    "open": 81.68,
-    "high": 84.27,
-    "low": 80.13,
+    "last": 84.67,
+    "change": 0.99,
+    "change_pct": 1.18,
+    "prev_close": 83.68,
+    "open": 84.09,
+    "high": 85.23,
+    "low": 83.8,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:59 PM EST",
+    "last_timedate": "12:49 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -467,16 +467,16 @@
     "symbol": "@SI.1",
     "key": "SILVER_FUT",
     "name": "Silver COMEX (Dec'26)",
-    "last": 41.15,
-    "change": 0.368,
-    "change_pct": 0.9,
-    "prev_close": 40.782,
-    "open": 40.795,
-    "high": 41.285,
-    "low": 37.955,
+    "last": 41.395,
+    "change": 1.337,
+    "change_pct": 3.34,
+    "prev_close": 40.058,
+    "open": 41.275,
+    "high": 42.005,
+    "low": 40.59,
     "real_time": false,
     "mkt_status": "REG_MKT",
-    "last_timedate": "4:58 PM EST",
+    "last_timedate": "12:45 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -494,7 +494,7 @@
     "low": 67.93,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -503,16 +503,16 @@
     "symbol": "BTC.CM=",
     "key": "BTC",
     "name": "Bitcoin/USD Coin Metrics",
-    "last": 59960.42,
-    "change": 362.6,
-    "change_pct": 0.61,
-    "prev_close": 59597.82,
-    "open": 59692.63,
-    "high": 60405.81,
-    "low": 57226.7,
+    "last": 60730.85,
+    "change": 734.89,
+    "change_pct": 1.22,
+    "prev_close": 59995.96,
+    "open": 60213.8,
+    "high": 61419.84,
+    "low": 59862.93,
     "real_time": true,
     "mkt_status": "REG_MKT",
-    "last_timedate": "5:26 PM EST",
+    "last_timedate": "12:59 AM EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -530,7 +530,7 @@
     "low": 263.5,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -548,7 +548,7 @@
     "low": 47.36,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -566,7 +566,7 @@
     "low": 56.16,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -584,7 +584,7 @@
     "low": 180.52,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:10 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -602,7 +602,7 @@
     "low": 192.54,
     "real_time": true,
     "mkt_status": "POST_MKT",
-    "last_timedate": "4:00 PM EST",
+    "last_timedate": "11/25/26 EST",
     "currency": "USD",
     "source": "CNBC",
     "change_bp": null
@@ -719,37 +719,37 @@
   "fred": {},
   "sina_quotes": {
    "VIX": {
-    "last": 25.229,
-    "prev_close": 23.98,
-    "time": "2026-11-26 05:59:59",
+    "last": 24.578,
+    "prev_close": 25.03,
+    "time": "2026-11-26 13:51:26",
     "name": "VIX恐慌指数期货",
     "source": "Sina"
    },
    "GOLD_FUT": {
-    "last": 3617.8,
-    "prev_close": 3591.1,
-    "time": "2026-11-26 05:59:57",
+    "last": 3609.857,
+    "prev_close": 3564.6,
+    "time": "2026-11-26 13:59:57",
     "name": "纽约黄金",
     "source": "Sina"
    },
    "WTI": {
-    "last": 84.163,
-    "prev_close": 82.05,
-    "time": "2026-11-26 05:59:58",
+    "last": 84.31,
+    "prev_close": 83.68,
+    "time": "2026-11-26 13:59:57",
     "name": "纽约原油",
     "source": "Sina"
    },
    "SILVER_FUT": {
-    "last": 41.678,
-    "prev_close": 41.252,
-    "time": "2026-11-26 05:59:53",
+    "last": 42.042,
+    "prev_close": 40.538,
+    "time": "2026-11-26 13:59:54",
     "name": "纽约白银",
     "source": "Sina"
    },
    "NATGAS": {
-    "last": 3.68,
-    "prev_close": 3.663,
-    "time": "2026-11-26 05:59:58",
+    "last": 3.647,
+    "prev_close": 3.658,
+    "time": "2026-11-26 13:59:45",
     "name": "美国天然气",
     "source": "Sina"
    }
@@ -764,7 +764,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "0.4%",
      "previous": "0.8%",
      "impact": "High",
@@ -776,7 +776,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "4.7%",
      "previous": "4.3%",
      "impact": "High",
@@ -788,7 +788,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -800,7 +800,7 @@
      "time_hkt": "2026-11-25 21:30",
      "time_hm": "21:30",
      "date_label": "11/25",
-     "delta_hours": -8.9,
+     "delta_hours": -16.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -812,7 +812,7 @@
      "time_hkt": "2026-11-25 21:30",
      "time_hm": "21:30",
      "date_label": "11/25",
-     "delta_hours": -8.9,
+     "delta_hours": -16.5,
      "forecast": "3.5%",
      "previous": "3.4%",
      "impact": "High",
@@ -820,10 +820,10 @@
     }
    ]
   },
-  "elapsed_sec": 254.3
+  "elapsed_sec": 249.9
  },
  "dash_data": {
-  "generated_iso": "2026-11-26T06:26:08.843379+08:00",
+  "generated_iso": "2026-11-26T13:59:57.661210+08:00",
   "date_str": "2026-11-26",
   "date_parts": {
    "y": 2026,
@@ -844,12 +844,12 @@
     "mkt_status": "REG_MKT"
    },
    "DXY": {
-    "last": 103.705,
-    "change_pct": -0.1,
+    "last": 103.812,
+    "change_pct": 0.14,
     "change_bp": null,
-    "prev_close": 103.814,
-    "high": 104.101,
-    "low": 103.549,
+    "prev_close": 103.665,
+    "high": 103.84,
+    "low": 103.685,
     "mkt_status": "REG_MKT"
    },
    "US10Y": {
@@ -871,48 +871,48 @@
     "mkt_status": "REG_MKT"
    },
    "XAU": {
-    "last": 3588.94,
-    "change_pct": 0.22,
+    "last": 3578.12,
+    "change_pct": -0.08,
     "change_bp": null,
     "prev_close": 3581.0,
-    "high": 3589.26,
-    "low": 3430.1,
+    "high": 3603.41,
+    "low": 3574.69,
     "mkt_status": "REG_MKT"
    },
    "XAG": {
-    "last": 41.3775,
-    "change_pct": 0.39,
+    "last": 41.76,
+    "change_pct": 1.32,
     "change_bp": null,
-    "prev_close": 41.2178,
+    "prev_close": 41.2179,
     "high": 0.0,
     "low": 0.0,
     "mkt_status": "REG_MKT"
    },
    "GOLD_FUT": {
-    "last": 3588.4,
-    "change_pct": 0.74,
+    "last": 3577.2,
+    "change_pct": 1.17,
     "change_bp": null,
-    "prev_close": 3561.9,
-    "high": 3588.9,
-    "low": 3425.2,
+    "prev_close": 3535.8,
+    "high": 3604.9,
+    "low": 3549.9,
     "mkt_status": "REG_MKT"
    },
    "WTI": {
-    "last": 84.15,
-    "change_pct": 2.56,
+    "last": 84.67,
+    "change_pct": 1.18,
     "change_bp": null,
-    "prev_close": 82.05,
-    "high": 84.27,
-    "low": 80.13,
+    "prev_close": 83.68,
+    "high": 85.23,
+    "low": 83.8,
     "mkt_status": "REG_MKT"
    },
    "SILVER_FUT": {
-    "last": 41.15,
-    "change_pct": 0.9,
+    "last": 41.395,
+    "change_pct": 3.34,
     "change_bp": null,
-    "prev_close": 40.782,
-    "high": 41.285,
-    "low": 37.955,
+    "prev_close": 40.058,
+    "high": 42.005,
+    "low": 40.59,
     "mkt_status": "REG_MKT"
    },
    "GDX": {
@@ -925,12 +925,12 @@
     "mkt_status": "POST_MKT"
    },
    "BTC": {
-    "last": 59960.42,
-    "change_pct": 0.61,
+    "last": 60730.85,
+    "change_pct": 1.22,
     "change_bp": null,
-    "prev_close": 59597.82,
-    "high": 60405.81,
-    "low": 57226.7,
+    "prev_close": 59995.96,
+    "high": 61419.84,
+    "low": 59862.93,
     "mkt_status": "REG_MKT"
    },
    "VEEV": {
@@ -989,7 +989,7 @@
    }
   },
   "thermo": {
-   "total": 42,
+   "total": 35,
    "regime": "neutral",
    "regime_icon": "⚪",
    "regime_label": "中性",
@@ -1018,8 +1018,8 @@
      "key": "DXY",
      "label": "美元 DXY",
      "weight": 15,
-     "value": 103.705,
-     "chg": -0.1,
+     "value": 103.812,
+     "chg": 0.14,
      "chg_unit": "%",
      "score": 5,
      "note": "美元 ±0.3% 以內，平穩"
@@ -1028,11 +1028,11 @@
      "key": "BTC",
      "label": "比特幣",
      "weight": 15,
-     "value": 59960.42,
-     "chg": 0.61,
+     "value": 60730.85,
+     "chg": 1.22,
      "chg_unit": "%",
-     "score": 5,
-     "note": "BTC ±1% 以內，橫行"
+     "score": 0,
+     "note": "BTC 單日漲 >1%，高 beta 風險偏好強"
     },
     {
      "key": "GDX",
@@ -1048,8 +1048,8 @@
      "key": "XAU",
      "label": "黃金 XAU",
      "weight": 10,
-     "value": 3588.94,
-     "chg": 0.22,
+     "value": 3578.12,
+     "chg": -0.08,
      "chg_unit": "%",
      "score": 4,
      "note": "金 ±1% 以內"
@@ -1058,14 +1058,14 @@
      "key": "WTI",
      "label": "WTI 原油",
      "weight": 10,
-     "value": 84.15,
-     "chg": 2.56,
+     "value": 84.67,
+     "chg": 1.18,
      "chg_unit": "%",
-     "score": 5,
-     "note": "油漲 1.5-3%，溫和通脹"
+     "score": 3,
+     "note": "油 ±1.5% 以內"
     }
    ],
-   "needle_pct": 42
+   "needle_pct": 35
   },
   "regime_sub": "NEUTRAL · EA 正常，避開 🔴 事件窗口",
   "events": [
@@ -1086,8 +1086,8 @@
     "name": "霍爾木茲海峽",
     "title": "🔴 霍爾木茲海峽 · 霍爾木茲/海灣航道封鎖",
     "loc": "📍 霍爾木茲海峽",
-    "time": "11/25 13:45 HKT · GDELT/aninews.in",
-    "headline": "Iran claims downing of US MQ - 9 , Lucas drones over Strait of Hormuz",
+    "time": "11/26 13:18 HKT · OilPrice",
+    "headline": "Oil Rallies as Hormuz Mine Strikes Rattle Global Markets",
     "chain": [
      "霍爾木茲通行受阻 → 全球約 20% 石油海運受威脅",
      "供應休克 → 油價↑↑、航運保險費飆升",
@@ -1132,8 +1132,8 @@
       "g"
      ]
     ],
-    "source": "GDELT/aninews.in",
-    "url": "https://aninews.in/news/world/middle-east/iran-claims-downing-of-us-mq-9-lucas-drones-over-strait-of-hormuz20261125101519/"
+    "source": "OilPrice",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rallies-as-Hormuz-Mine-Strikes-Rattle-Global-Markets.html"
    },
    {
     "id": 1,
@@ -1152,8 +1152,8 @@
     "name": "華盛頓 · 聯儲局",
     "title": "🔴 華盛頓 · 聯儲局 · 衰退型數據爆冷",
     "loc": "📍 華盛頓 · 聯儲局",
-    "time": "11/26 03:16 HKT · MarketWatch",
-    "headline": "Why macro investor Raoul Pal says the dollar is the signal to watch for stocks and crypto",
+    "time": "11/26 13:36 HKT · CNBC",
+    "headline": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
     "chain": [
      "衰退型數據爆冷 → 需求崩塌預期",
      "油暴跌↓↓、資金湧入美債（息急降）",
@@ -1198,8 +1198,8 @@
       "r"
      ]
     ],
-    "source": "MarketWatch",
-    "url": "https://www.marketwatch.com/story/why-macro-investor-raoul-pal-says-the-dollar-is-the-signal-to-watch-for-stocks-and-crypto-d36f3c49?mod=mw_rss_topstories"
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html"
    },
    {
     "id": 2,
@@ -1269,48 +1269,6 @@
    },
    {
     "id": 3,
-    "etype": "E3",
-    "etype_name": "紅海/蘇伊士航道中斷",
-    "color": "#ffb020",
-    "cls": "amber",
-    "card_cls": "hot",
-    "flag": [
-     "⚡ SIGNAL EVENT",
-     "hot"
-    ],
-    "severity": "med",
-    "lat": 14.7,
-    "lng": 42.5,
-    "name": "紅海 · 曼德海峽",
-    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
-    "loc": "📍 紅海 · 曼德海峽",
-    "time": "11/25 23:30 HKT · OilPrice",
-    "headline": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
-    "chain": [
-     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
-     "集裝箱運價攀升 → 供應鏈成本轉嫁",
-     "原油影響溫和，主要衝擊航運同零售"
-    ],
-    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
-    "assets": [
-     [
-      "🛢️",
-      "WTI 原油",
-      "↑",
-      "g"
-     ],
-     [
-      "🚢",
-      "航運",
-      "↑",
-      "g"
-     ]
-    ],
-    "source": "OilPrice",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html"
-   },
-   {
-    "id": 4,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1326,8 +1284,8 @@
     "name": "北京",
     "title": "🟠 北京 · 中美關稅升級",
     "loc": "📍 北京",
-    "time": "11/26 00:02 HKT · CNBC",
-    "headline": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+    "time": "11/26 12:12 HKT · CNBC",
+    "headline": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
     "chain": [
      "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
      "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
@@ -1373,10 +1331,10 @@
      ]
     ],
     "source": "CNBC",
-    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
+    "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html"
    },
    {
-    "id": 5,
+    "id": 4,
     "etype": "E6",
     "etype_name": "中美關稅升級",
     "color": "#ffb020",
@@ -1392,8 +1350,8 @@
     "name": "華盛頓 · 聯儲局",
     "title": "🟠 華盛頓 · 聯儲局 · 中美關稅升級",
     "loc": "📍 華盛頓 · 聯儲局",
-    "time": "11/26 01:33 HKT · CoinTelegraph",
-    "headline": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
+    "time": "11/26 12:49 HKT · CNBC",
+    "headline": "South Korea's Kospi leads gains as tech rebound lifts Asia markets",
     "chain": [
      "中美關稅升級 → 成本稅推升物價、壓縮企業利潤",
      "港股/科技/供應鏈 ↓↓；鋁鋼關稅推工業機械成本",
@@ -1438,8 +1396,50 @@
       "g"
      ]
     ],
-    "source": "CoinTelegraph",
-    "url": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html"
+   },
+   {
+    "id": 5,
+    "etype": "E3",
+    "etype_name": "紅海/蘇伊士航道中斷",
+    "color": "#ffb020",
+    "cls": "amber",
+    "card_cls": "hot",
+    "flag": [
+     "⚡ SIGNAL EVENT",
+     "hot"
+    ],
+    "severity": "med",
+    "lat": 14.7,
+    "lng": 42.5,
+    "name": "紅海 · 曼德海峽",
+    "title": "🟠 紅海 · 曼德海峽 · 紅海/蘇伊士航道中斷",
+    "loc": "📍 紅海 · 曼德海峽",
+    "time": "11/25 10:36 HKT · CNBC World",
+    "headline": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
+    "chain": [
+     "紅海船隻遇襲 → 航運繞道好望角（+10-14 日）",
+     "集裝箱運價攀升 → 供應鏈成本轉嫁",
+     "原油影響溫和，主要衝擊航運同零售"
+    ],
+    "if_then": "如果 繞道持續逾兩週，就 航運股續強、零售成本壓力浮現，TEX 留意出貨指引",
+    "assets": [
+     [
+      "🛢️",
+      "WTI 原油",
+      "↑",
+      "g"
+     ],
+     [
+      "🚢",
+      "航運",
+      "↑",
+      "g"
+     ]
+    ],
+    "source": "CNBC World",
+    "url": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html"
    }
   ],
   "arcs": [
@@ -1508,22 +1508,6 @@
     "etype": "E5"
    },
    {
-    "startLat": 14.7,
-    "startLng": 42.5,
-    "endLat": 51.5,
-    "endLng": -0.1,
-    "color": "#ffb020",
-    "etype": "E3"
-   },
-   {
-    "startLat": 14.7,
-    "startLng": 42.5,
-    "endLat": 1.35,
-    "endLng": 103.8,
-    "color": "#ffb020",
-    "etype": "E3"
-   },
-   {
     "startLat": 39.9,
     "startLng": 116.4,
     "endLat": 22.3,
@@ -1570,6 +1554,22 @@
     "endLng": 121.5,
     "color": "#ffb020",
     "etype": "E6"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 51.5,
+    "endLng": -0.1,
+    "color": "#ffb020",
+    "etype": "E3"
+   },
+   {
+    "startLat": 14.7,
+    "startLng": 42.5,
+    "endLat": 1.35,
+    "endLng": 103.8,
+    "color": "#ffb020",
+    "etype": "E3"
    }
   ],
   "calendar": {
@@ -1582,7 +1582,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "0.4%",
      "previous": "0.8%",
      "impact": "High",
@@ -1594,7 +1594,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "4.7%",
      "previous": "4.3%",
      "impact": "High",
@@ -1606,7 +1606,7 @@
      "time_hkt": "2026-11-25 08:30",
      "time_hm": "08:30",
      "date_label": "11/25",
-     "delta_hours": -21.9,
+     "delta_hours": -29.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -1618,7 +1618,7 @@
      "time_hkt": "2026-11-25 21:30",
      "time_hm": "21:30",
      "date_label": "11/25",
-     "delta_hours": -8.9,
+     "delta_hours": -16.5,
      "forecast": "0.3%",
      "previous": "0.3%",
      "impact": "High",
@@ -1630,7 +1630,7 @@
      "time_hkt": "2026-11-25 21:30",
      "time_hm": "21:30",
      "date_label": "11/25",
-     "delta_hours": -8.9,
+     "delta_hours": -16.5,
      "forecast": "3.5%",
      "previous": "3.4%",
      "impact": "High",
@@ -1648,11 +1648,11 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 3588.94,
-    "change_pct": 0.22,
+    "last": 3578.12,
+    "change_pct": -0.08,
     "prev_close": 3581.0,
-    "high": 3589.26,
-    "low": 3430.1,
+    "high": 3603.41,
+    "low": 3574.69,
     "cost_price": null,
     "pnl_cost_pct": null,
     "attrib": "",
@@ -1667,9 +1667,9 @@
     "group": "mt5_ea",
     "status": "open",
     "nature": "ea",
-    "last": 41.3775,
-    "change_pct": 0.39,
-    "prev_close": 41.2178,
+    "last": 41.76,
+    "change_pct": 1.32,
+    "prev_close": 41.2179,
     "high": 0.0,
     "low": 0.0,
     "cost_price": null,
@@ -1799,7 +1799,7 @@
   "brief": [
    {
     "cat": "risk",
-    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Iran claims downing of US MQ - 9 , Lucas",
+    "txt": "霍爾木茲海峽霍爾木茲/海灣航道封鎖：Oil Rallies as Hormuz Mine Strikes Rattl",
     "ifthen": "如果 海峽 48h 內未恢復通行，就 WTI 見 $90 並帶動金銀破位，收緊風險倉",
     "tags": [
      "🛢️ 原油 ↑↑",
@@ -1838,10 +1838,10 @@
    },
    {
     "cat": "core",
-    "txt": "金 $3,589、金銀比 86.7，油 $84.2",
+    "txt": "金 $3,578、金銀比 85.7，油 $84.7",
     "ifthen": "如果 金銀比跌穿長期中位，就 白銀轉強，XAG EA 留意加倉",
     "tags": [
-     "🥇金 ↑0.2%"
+     "🥇金 ↓0.1%"
     ],
     "no": "BRIEF // 04",
     "color": "#ffd24a",
@@ -1849,10 +1849,10 @@
    },
    {
     "cat": "temp",
-    "txt": "風險溫度 42 分⚪中性",
+    "txt": "風險溫度 35 分⚪中性",
     "ifthen": "如果 VIX（28.3）升穿 20，就 暫停高 beta 持倉；分數>80 即時全停 EA",
     "tags": [
-     "⚪ 42/100"
+     "⚪ 35/100"
     ],
     "no": "BRIEF // 05",
     "color": "#9d8cff",
@@ -1861,10 +1861,10 @@
   ],
   "feed": [
    {
-    "time_hm": "11/25 13:45",
-    "source": "GDELT/aninews.",
-    "title": "Iran claims downing of US MQ - 9 , Lucas drones over Strait of Hormuz",
-    "url": "https://aninews.in/news/world/middle-east/iran-claims-downing-of-us-mq-9-lucas-drones-over-strait-of-hormuz20261125101519/",
+    "time_hm": "11/25 10:36",
+    "source": "CNBC World",
+    "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
+    "url": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
     "theme": "geo",
     "is_event": true
    },
@@ -1877,35 +1877,35 @@
     "is_event": true
    },
    {
-    "time_hm": "11/25 23:30",
-    "source": "OilPrice",
-    "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
-    "theme": "oil",
-    "is_event": true
-   },
-   {
-    "time_hm": "11/26 00:02",
+    "time_hm": "11/26 12:12",
     "source": "CNBC",
-    "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+    "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+    "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
     "theme": "stock",
     "is_event": true
    },
    {
-    "time_hm": "11/26 01:33",
-    "source": "CoinTelegraph",
-    "title": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
-    "url": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "theme": "crypto",
+    "time_hm": "11/26 12:49",
+    "source": "CNBC",
+    "title": "South Korea's Kospi leads gains as tech rebound lifts Asia markets",
+    "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+    "theme": "stock",
     "is_event": true
    },
    {
-    "time_hm": "11/26 03:16",
-    "source": "MarketWatch",
-    "title": "Why macro investor Raoul Pal says the dollar is the signal to watch for stocks and crypto",
-    "url": "https://www.marketwatch.com/story/why-macro-investor-raoul-pal-says-the-dollar-is-the-signal-to-watch-for-stocks-and-crypto-d36f3c49?mod=mw_rss_topstories",
-    "theme": "crypto",
+    "time_hm": "11/26 13:18",
+    "source": "OilPrice",
+    "title": "Oil Rallies as Hormuz Mine Strikes Rattle Global Markets",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rallies-as-Hormuz-Mine-Strikes-Rattle-Global-Markets.html",
+    "theme": "oil",
+    "is_event": true
+   },
+   {
+    "time_hm": "11/26 13:36",
+    "source": "CNBC",
+    "title": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
+    "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
+    "theme": "geo",
     "is_event": true
    },
    {
@@ -2187,17 +2187,17 @@
    "fred": "FAIL",
    "sina_quotes": "OK · 5 品種（備援）",
    "forexfactory": "OK · 未來24h 0 個 High 事件",
-   "gdelt": "OK · 10 條"
+   "gdelt": "SKIP/FAIL（RSS 補頂）"
   },
   "event_counts": {
-   "E1": 3,
-   "E2": 6,
-   "E3": 4,
+   "E1": 0,
+   "E2": 1,
+   "E3": 1,
    "E4": 0,
    "E5": 3,
-   "E6": 4,
-   "E7": 2,
-   "E8": 2,
+   "E6": 5,
+   "E7": 1,
+   "E8": 1,
    "E9": 0,
    "E10": 2,
    "E11": 0,
